@@ -1,0 +1,43 @@
+{
+  "name": "optronix",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.1",
+    "bytez.js": "^1.1.18",
+    "cloudinary": "^2.8.0",
+    "cloudinary-react": "^1.8.1",
+    "contentful": "^11.7.3",
+    "framer-motion": "^12.23.3",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.525.0",
+    "nodemailer": "^7.0.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-router-dom": "^7.0.2",
+    "react-router-hash-link": "^2.4.3",
+    "react-slick": "^0.30.2",
+    "react-youtube": "^10.1.0",
+    "slick-carousel": "^1.8.1",
+    "streamifier": "^0.1.1",
+    "styled-components": "^6.1.19",
+    "sweetalert2": "^11.26.3",
+    "swiper": "^11.2.6",
+    "vite": "^8.0.8",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "webp": "python3 tools/convert_to_webp.py -i src/components/img -q 82",
+    "webp:lossless": "python3 tools/convert_to_webp.py -i src/components/img --lossless",
+    "build:with-webp": "npm run webp && npm run build"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1"
+  }
+}

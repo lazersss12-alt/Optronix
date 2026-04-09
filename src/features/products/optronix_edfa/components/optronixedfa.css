@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.optronixedfa-page {
+    display: grid;
+    grid-template-columns: 6.25rem 1fr 6.25rem;
+    background-image:
+        linear-gradient(to top, rgb(255, 254, 254), rgba(255, 255, 255, 0.692)),
+        url('../../../../assets/images/sum01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.optronixedfa-page-pro-main {
+    grid-column: 2/3;
+    padding-top: 50px;
+}
+
+
+.optronixedfa-page-pro-name {
+    text-align: center;
+
+}
+
+.optronixedfa-page-pro-art {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.optronixedfa-btn {
+    border: none;
+    background-color: white;
+}
+
+.button-size.active {
+    background-color: rgb(207, 207, 207);
+}
+
+@media screen and (max-width: 768px) {
+
+    .optronixedfa-page {
+        display: grid;
+        grid-template-columns: 4px 1fr 4px;
+    }
+
+
+    .optronixedfa-page-pro-main {
+        grid-column: 2/3;
+        padding-top: 50px;
+    }
+
+}
+
+
+/* Main Page Layout */
+
+/* Banner Fix */
+.optronixedfaproduct-page-main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.optronixedfa-page-banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    /* Removing extra space below image */
+}
+
+.banner-image {
+    width: 100% !important;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-image {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,158 @@
+.zigzag-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+/* LEFT SECTION */
+.left-content {
+  flex: 1 1 50%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px 40px 40px;
+}
+
+.dots-background {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  text-align: center;
+}
+
+.animated-dots,
+.right-dots {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Base dot style */
+.dot {
+  position: absolute;
+  opacity: 0.5;
+  transition: transform 2s ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* Circle */
+.circle {
+  width: 14px;
+  height: 14px;
+  background-color: #f19e9e;
+  border-radius: 50%;
+}
+
+/* Triangle */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 14px solid #ffa6a6;
+}
+
+/* Square */
+.square {
+  width: 14px;
+  height: 14px;
+  background-color: #ffa6a6;
+}
+
+/* Rounded Square */
+.rounded-square {
+  width: 14px;
+  height: 14px;
+  background-color: #ffa6a6;
+  border-radius: 4px;
+}
+
+/* Floating Dot Positions */
+.dot1 { top: 10%; left: 15%; animation: float1 6s infinite alternate; }
+.dot2 { top: 20%; left: 80%; animation: float2 4s infinite alternate; }
+.dot3 { top: 50%; left: 40%; animation: float3 5.5s infinite alternate; }
+.dot4 { top: 75%; left: 60%; animation: float4 3s infinite alternate; }
+.dot5 { top: 65%; left: 20%; animation: float5 4s infinite alternate; }
+.dot6 { top: 35%; left: 10%; animation: float6 7s infinite alternate; }
+.dot7 { top: 55%; left: 90%; animation: float7 5s infinite alternate; }
+.dot8 { top: 5%; left: 50%; animation: float8 6s infinite alternate; }
+.dot9 { top: 85%; left: 35%; animation: float9 3s infinite alternate; }
+.dot10 { top: 45%; left: 70%; animation: float10 12s infinite alternate; }
+.dot11 { top: 25%; left: 30%; animation: float11 4s infinite alternate; }
+.dot12 { top: 60%; left: 10%; animation: float12 5.5s infinite alternate; }
+
+/* Floating Animations */
+@keyframes float1  { from { transform: translate(0, 0); } to { transform: translate(-20px, 25px); } }
+@keyframes float2  { from { transform: translate(0, 0); } to { transform: translate(30px, -20px); } }
+@keyframes float3  { from { transform: translate(0, 0); } to { transform: translate(-15px, -25px); } }
+@keyframes float4  { from { transform: translate(0, 0); } to { transform: translate(25px, 25px); } }
+@keyframes float5  { from { transform: translate(0, 0); } to { transform: translate(-30px, 30px); } }
+@keyframes float6  { from { transform: translate(0, 0); } to { transform: translate(20px, -20px); } }
+@keyframes float7  { from { transform: translate(0, 0); } to { transform: translate(-25px, 20px); } }
+@keyframes float8  { from { transform: translate(0, 0); } to { transform: translate(15px, -30px); } }
+@keyframes float9  { from { transform: translate(0, 0); } to { transform: translate(-20px, -20px); } }
+@keyframes float10 { from { transform: translate(0, 0); } to { transform: translate(20px, 20px); } }
+@keyframes float11 { from { transform: translate(0, 0); } to { transform: translate(-18px, 18px); } }
+@keyframes float12 { from { transform: translate(0, 0); } to { transform: translate(24px, -18px); } }
+
+/* RIGHT COLLAGE SECTION */
+.right-collage {
+  flex: 1 1 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px 40px 10px;
+}
+
+.zigzag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 450px;
+  position: relative;
+  z-index: 2;
+}
+
+.zigzag-img {
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.zigzag-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.img1 { margin-top: 0px; height: 140px; width: 130px; }
+.img2 { margin-top: 40px; height: 160px; width: 150px; }
+.img3 { margin-top: -60px; margin-right: 20px; height: 200px; width: 160px; }
+.img4 { margin-left: -20px; margin-top: -5px; height: 180px; width: 130px; }
+.img5 { margin-top: 0px; height: 130px; width: 130px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .zigzag-container {
+    flex-direction: column-reverse;
+  }
+
+  .left-content,
+  .right-collage {
+    flex: 1 1 100%;
+    padding: 0 20px;
+  }
+
+  .img1, .img5 { height: 130px; width: 120px; }
+  .img2 { height: 150px; width: 140px; }
+  .img3 { height: 180px; width: 150px; margin-top: -40px; }
+  .img4 { height: 160px; width: 120px; margin-top: -5px; }
+}

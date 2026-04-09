@@ -1,0 +1,359 @@
+.scroll-container {
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+  display: none;
+  }
+  
+  .box {
+  padding: 50px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  .timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+  
+  .timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #a04030;
+  transform: translateX(-50%);
+  z-index: 0;
+  }
+  
+  .timeline-event-row {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  z-index: 1;
+  }
+  
+  .timeline-circle {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid #a04030;
+  z-index: 2;
+  }
+  
+  .left-pane, .right-pane {
+  width: 50%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  }
+  
+  .image-collage {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .image-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  }
+  
+  .image-box img {
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .content-block {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .event-title {
+  margin-top: 0;
+  color: #333;
+  }
+  
+  .event-date {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+  .left-pane, .right-pane {
+  padding: 0 30px;
+  }
+  .timeline-event-row {
+  margin-bottom: 80px;
+  }
+  }
+  
+  @media (max-width: 768px) {
+  .timeline-line {
+  left: 20px;
+  transform: none;
+  }
+  .timeline-circle {
+  left: 20px;
+  transform: none;
+  }
+  .left-pane, .right-pane {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 0;
+  }
+  .content-block {
+  text-align: left !important;
+  }
+  .image-box img {
+  width: 100% !important;
+  margin-bottom: 10px;
+  }
+  .timeline-event-row {
+  flex-direction: column;
+  margin-bottom: 60px;
+  }
+  .left-pane {
+  order: 2;
+  }
+  .right-pane {
+  order: 1;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  .box {
+  padding: 30px 10px;
+  }
+  .left-pane, .right-pane {
+  padding-left: 50px;
+  }
+  .timeline-event-row {
+  margin-bottom: 50px;
+  }
+  .content-block {
+  padding: 15px;
+  }
+  .image-collage {
+  padding: 15px;
+  }
+  }
+  
+  /* Desktop defaults already match your current inline styles */
+  
+  /* Mobile + Tablet */
+  @media (max-width: 1024px) {
+  .timeline-line {
+  left: 24px !important;
+  transform: none !important;
+  }
+  .timeline-circle {
+  left: 24px !important;
+  transform: translateX(-50%) !important;
+  }
+  .timeline-event-row {
+  display: flex !important;
+  flex-direction: column !important;
+  padding-left: 56px !important;
+  margin-bottom: 40px;
+  }
+  .image-pane { order: 1 !important; }
+  .text-pane { order: 2 !important; }
+  
+  .image-collage {
+  padding: 12px !important;
+  overflow: hidden;
+  }
+  .image-collage .image-box {
+  display: grid !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 0;
+  gap: 0;
+  }
+  .image-collage .image-box img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+  scroll-snap-align: start;
+  flex: none !important;
+  border-radius: 8px;
+  display: block;
+  }
+  .box { padding: 16px 10px !important; }
+  .left-pane, .right-pane { padding: 0 !important; }
+  .content-block { padding: 12px !important; text-align: left !important; }
+  }
+  
+  /* Optional desktop layout */
+  @media (min-width: 769px) {
+  .image-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  }
+  .image-box img {
+  width: calc(50% - 5px);
+  }
+  .image-box img:only-child {
+  width: 100%;
+  }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+  .scroll-container {
+  display: flex;
+  justify-content: center !important;
+  }
+  .timeline-container {
+  margin: 0 auto;
+  max-width: 90%;
+  }
+  .box {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 30px 20px;
+  }
+  }
+  
+
+  @media (max-width: 1024px) {
+ 
+  .timeline-line,
+  .timeline-circle {
+  display: none !important;
+  }
+
+  .timeline-event-row {
+  padding: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  }
+  .timeline-event-row .left-pane,
+  .timeline-event-row .right-pane {
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+  }
+  
+  /* Image card flush to the edges (so first image starts at x=0) */
+  .timeline-event-row .image-collage {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  }
+  
+  /* Force scroller to start at first image and align left */
+  .timeline-event-row .image-collage .image-box {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  gap: 12px !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  scroll-padding-left: 0 !important;
+  }
+  
+  .timeline-event-row .image-collage .image-box img {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  height: auto !important;
+  scroll-snap-align: start;
+  display: block;
+  }
+  
+  /* Text card full width */
+  .timeline-event-row .content-block {
+  width: 100% !important;
+  box-sizing: border-box;
+  }
+  }
+
+
+
+  :root {
+    /* How much of the next image should peek in (tweak to taste) */
+    --peek: clamp(32px, 8vw, 64px);
+  }
+  
+  @media (max-width: 1024px) {
+    /* Horizontal scroller with snap */
+    .timeline-event-row .image-collage .image-box {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      gap: 12px !important;
+  
+      /* ensures the last image can fully snap into view */
+      padding-right: var(--peek) !important;
+    }
+  
+    /* Each slide is a bit narrower than the viewport so next one peeks */
+    .timeline-event-row .image-collage .image-box img {
+      flex: 0 0 calc(100% - var(--peek)) !important;
+      width: calc(100% - var(--peek)) !important;
+      height: auto !important;
+      object-fit: cover;
+      scroll-snap-align: start;
+      border-radius: 8px;
+    }
+  
+    /* First image stays flush-left (no extra left padding needed) */
+    .timeline-event-row .image-collage {
+      padding-left: 0 !important;
+      margin-left: 0 !important;
+    }
+  
+    /* If there's only one image, don't show a peek */
+    .timeline-event-row .image-collage .image-box:has(> img:only-child) {
+      padding-right: 0 !important;
+    }
+    .timeline-event-row .image-collage .image-box:has(> img:only-child) img {
+      flex-basis: 100% !important;
+      width: 100% !important;
+    }
+    .timeline-event-row .image-collage {
+      position: relative;
+    }
+    .timeline-event-row .image-collage::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 40px;
+      pointer-events: none;
+      background: linear-gradient(to right, transparent, rgba(0,0,0,0.08));
+      border-radius: 0 8px 8px 0;
+    }
+  }

@@ -1,0 +1,571 @@
+/* =======================================
+   Educational section — zoom-proof, fluid
+   ======================================= */
+
+/* Fluid tokens */
+:root {
+  --pageMaxW: 1400px;;
+  --padX: clamp(0.75rem, 3vw, 3rem);
+  --padY: clamp(1rem, 3vw, 3rem);
+  --gap: clamp(0.5rem, 2vw, 1.25rem);
+
+  --cardMin: 14rem;          /* ~224px */
+  --cardIdeal: 28vw;         /* fluid width */
+  --cardMax: 20rem;          /* ~320px */
+  --radius: 0.75rem;
+}
+
+/* Container */
+.educational-container {
+  margin: 0 auto;
+  padding: var(--padY) var(--padX);
+  max-width: var(--pageMaxW);
+  display: grid;
+  row-gap: clamp(1rem, 2vw, 2rem);
+  align-items: start;
+  justify-items: center;
+  position: relative;
+
+  /* enables container queries below */
+  container-type: inline-size;
+}
+
+/* Heading */
+.educational-heading {
+  text-align: center;
+  font-weight: 600;
+  margin: 0 0 clamp(0.75rem, 2vw, 1.5rem);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+/* Horizontal Slider (grid-based scroller + snap) */
+.video-slider {
+  display: flex;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(var(--cardMin), var(--cardIdeal), var(--cardMax));
+  /* gap: clamp(0.5rem, 2vw, 1.25rem); */
+  gap: 12px;
+
+  width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+  user-select: none; 
+}
+.video-slider::-webkit-scrollbar { display: none; }
+.video-slider:active { cursor: grabbing; }
+/* Video Card */
+.video-card {
+  inline-size: 100%;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: visible;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 0 0 auto;            /* allow explicit control via flex-basis */
+  scroll-snap-align: start;
+}
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Slide-in Animation */
+@keyframes slideInRightToLeft {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.slide-in { animation: slideInRightToLeft 0.6s ease forwards; }
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  /* aspect-ratio: 3.5 / 4; */
+  aspect-ratio: 35 / 40;
+  overflow: hidden;
+}
+.video-thumbnail {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 35 / 40;   /* modern browsers keep consistent height */
+  object-fit: cover; 
+}
+
+/* Play Button (scales with zoom) */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(2.5rem, 6vw, 4rem);
+  height: clamp(2.5rem, 6vw, 4rem);
+  background-color: #912b2c;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: auto;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+.video-wrapper:hover .play-button { opacity: 1; }
+
+/* Always show play button on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .play-button { opacity: 0.9; }
+}
+
+/* White Play Triangle (scales too) */
+.play-button::before {
+  content: '';
+  display: block;
+  width: 0; height: 0;
+  border-left: clamp(0.6rem, 1.2vw, 1rem) solid #fff;
+  border-top: clamp(0.35rem, 0.7vw, 0.6rem) solid transparent;
+  border-bottom: clamp(0.35rem, 0.7vw, 0.6rem) solid transparent;
+  margin-left: clamp(1px, 0.2vw, 2px);
+}
+
+/* Info Text */
+.video-info { padding: clamp(0.75rem, 2.2vw, 1rem); }
+.video-info h4 {
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  margin: 0 0 0.4rem;
+  color: #222;
+  text-align: center;
+}
+.video-info p {
+  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+.video-info h4,
+.video-info p {
+  white-space: normal;        /* allow wrapping */
+  overflow-wrap: anywhere;    /* break long words if needed */
+  word-break: break-word;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(0.5rem, 2vw, 1.25rem);
+}
+.modal-content {
+  position: relative;
+  width: min(90vw, 52rem);
+  background: #000;
+  padding: 0;
+  border-radius: clamp(0.5rem, 1vw, 0.75rem);
+  overflow: hidden;
+
+  /* Keep 16:9 regardless of zoom */
+  aspect-ratio: 16 / 9;
+}
+.modal-content iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+  aspect-ratio: 16 / 9;
+}
+.close-btn {
+  position: absolute;
+  top: clamp(6px, 1vw, 10px);
+  right: clamp(6px, 1vw, 10px);
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* Explore More Section */
+.exploree-wrapper {
+  position: absolute;
+  top: 50%;
+  right: clamp(0rem, 2vw, 1rem); /* keep inside container */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  outline: none;
+}
+.exploree-btn {
+  background: #f9f9f9;
+  color: #A7402D;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 50%;
+  padding: clamp(0.75rem, 2.2vw, 1rem);
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease, box-shadow 0.3s ease;
+}
+.exploree-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.arrow {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 900;
+  line-height: 0;
+  transition: transform 0.4s ease;
+}
+.exploree-btn:hover .arrow { transform: translateX(5px); }
+
+/* Container queries: adjust for extreme narrow widths (or high zoom-in) */
+@container (max-width: 62rem) {
+  /* Make cards larger relative to the viewport for better readability */
+  .video-slider { grid-auto-columns: 80%; }
+  /* Bring the Explore button into flow below the slider */
+  .exploree-wrapper {
+    position: static;
+    transform: none;
+    margin-top: var(--gap);
+  }
+}
+@container (max-width: 36rem) {
+  .video-slider { grid-auto-columns: 100%; }
+  .educational-heading { font-size: clamp(1.1rem, 5vw, 1.4rem); }
+  .video-card { border-radius: clamp(0.5rem, 2vw, 0.75rem); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .slide-in { animation: none; }
+  .video-card { transition: none; }
+  .video-slider { scroll-behavior: auto; }
+}
+
+
+
+
+
+/* Anchor for overlay arrows */
+.educational-container { position: relative; }
+
+/* Arrow buttons (shown only when hasOverflow === true) */
+.vid-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(32px, 5vw, 40px);
+  height: clamp(32px, 5vw, 40px);
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: rgba(0,0,0,0.55);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  transition: transform .15s ease, background .15s ease, opacity .15s ease;
+}
+.vid-arrow:hover { background: rgba(255, 255, 255, 0.7); transform: translateY(-50%) scale(1.04); }
+.vid-arrow.left  { left: 8px; top: 293px }
+.vid-arrow.right { right: 8px; top: 293px}
+.vid-arrow.disabled,
+.vid-arrow:disabled { opacity: 0.45; pointer-events: none; }
+
+
+
+
+/* Up to 1052px: pill/rectangular CTA centered under the slider */
+@media (max-width: 1052px) {
+  /* Place the button below the slider and center it */
+  .exploree-wrapper {
+    position: static !important;
+    transform: none !important;
+    inset: auto !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: var(--gap) !important;
+  }
+
+  .exploree-btn {
+    /* Style to match the sample */
+    background: #A7402D !important;         /* brand color */
+    color: #fff !important;
+    border: 0 !important;
+    border-radius: 12px !important;          /* rounded rectangle (not circle) */
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    font-weight: 800 !important;
+    font-size: clamp(0.85rem, 2.6vw, 0.95rem) !important;
+
+    /* Comfortable tap target */
+    min-height: 44px !important;
+    padding: 0.6rem 1.25rem !important;      /* adjust if you want wider button */
+    white-space: nowrap !important;
+
+    /* Layout */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+
+    /* Polish */
+    box-shadow: 0 8px 18px rgba(167,64,45,0.22) !important;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease !important;
+  }
+
+  .exploree-btn:hover {
+    transform: translateY(-2px) !important;
+    background: #b95341 !important;
+    box-shadow: 0 10px 22px rgba(167,64,45,0.28) !important;
+  }
+  .exploree-btn:active { transform: translateY(0) !important; }
+  .exploree-btn:focus-visible {
+    outline: 3px solid color-mix(in srgb, #A7402D 35%, white) !important;
+    outline-offset: 2px !important;
+  }
+
+  /* Optional: hide any arrow glyph inside to match your screenshot */
+  .exploree-btn .arrow { display: none !important; }
+}
+
+/* Ultra-narrow phones: allow wrapping if needed */
+@media (max-width: 340px) {
+  .exploree-btn {
+    white-space: normal !important;
+    text-align: center !important;
+    padding: 0.55rem 0.9rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .video-card { flex-basis: 220px; min-width: 220px; max-width: 220px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .video-card { flex-basis: 160px; min-width: 160px; max-width: 160px; }
+}
+
+
+
+
+
+
+
+/* ============================
+   DESKTOP LAYOUT (1025px +)
+   Match screenshot: large cards, 4 across, centered container
+   ============================ */
+
+@media screen and (min-width: 1025px) {
+
+  /* Container: center and limit width so cards align like screenshot */
+  .educational-container {
+    max-width: 1200px;      /* adjust to match your page grid if needed */
+    margin: 0 auto;
+    padding: 30px 20px;     /* vertical spacing like screenshot */
+  }
+
+  /* Slider: keep it flexible but keep cards in a visible row */
+  .video-slider {
+    display: flex;
+    gap: 28px;              /* gutter between cards (adjust to taste) */
+    padding: 8px 0;
+    overflow-x: visible;    /* desktop shows all cards — no forced horizontal scroll */
+    justify-content: space-between; /* distribute cards evenly */
+    align-items: stretch;
+  }
+
+  /* Desktop card sizing: match screenshot proportions (approx. 4 cards) */
+  .video-card {
+    flex: 0 0 calc((100% - 3 * 28px) / 4); /* 4 cards with equal gaps */
+    max-width: calc((100% - 3 * 28px) / 4);
+    min-width: 220px;       /* safety lower bound so images don't collapse */
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: none; /* no snap on desktop */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  /* Thumbnail: large and full-bleed inside card */
+  .video-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+    height: auto;
+  }
+
+  .video-thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 30 / 35;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Play button (centered) — keep large size like screenshot */
+  .play-button {
+    width: 64px;
+    height: 64px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.45);
+    border: 0;
+  }
+  .play-button::before {
+    border-width: 16px 0 16px 24px;
+    margin-left: 8px;
+  }
+
+  /* Info area (title + description) */
+  .video-info {
+    padding: 22px 18px;
+    background: #fff;
+    text-align: center;
+  }
+  .video-info h4 {
+    margin: 0 0 8px;
+    font-size: 1.06rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .video-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* Ensure modal and other components are unaffected */
+  .modal-content iframe { height: 520px; } /* large player on desktop */
+}
+
+/* ============================
+   MOBILE / TABLET rules (leave below 1025px) - keep the small-card rules
+   (This part is kept minimal here; your earlier mobile rules remain active)
+   ============================ */
+
+/* Tablet: <= 1024px (example) */
+@media screen and (max-width: 1024px) {
+  .video-slider { overflow-x: auto; scroll-snap-type: x mandatory; }
+  .video-card { flex-basis: 220px; min-width: 220px; max-width: 220px; }
+  .play-button { width: 42px; height: 42px; }
+  .modal-content iframe { height: 300px; }
+}
+
+/* Mobile: <= 768px */
+@media screen and (max-width: 768px) {
+  .video-card { flex-basis: 160px; min-width: 160px; max-width: 160px; }
+  .video-info h4 { font-size: 0.88rem; }
+  .video-info p { font-size: 0.78rem; }
+  .play-button { width: 38px; height: 38px; }
+  .modal-content iframe { height: 220px; }
+}
+
+/* Small phones: <= 420px */
+@media screen and (max-width: 420px) {
+  .video-card { flex-basis: 140px; min-width: 140px; max-width: 140px; }
+  .play-button { width: 34px; height: 34px; }
+  .modal-content iframe { height: 180px; }
+}
+
+.play-button {
+  display: none !important;
+}
+.modal-close-btn {
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #ffffff;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-close-btn:hover {
+  background: #f1f1f1;
+}
+
+/* Mobile adjustment */
+@media screen and (max-width:480px) {
+  .modal-close-btn {
+    top: -25px;
+    right: -25px;
+    width: 34px;
+    height: 34px;
+    font-size: 22px;
+  }
+  .vid-arrow right .vid-arrow left{
+    display: none;
+  }
+}
+
+.educational-heading {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.educational-heading span {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  position: relative;
+}
+
+/* Underline */
+.educational-heading span::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 4px;
+  background: #a33f2f;
+  margin: 6px auto 0 auto;
+  border-radius: 2px;
+}

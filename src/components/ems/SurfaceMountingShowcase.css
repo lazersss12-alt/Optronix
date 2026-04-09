@@ -1,0 +1,721 @@
+/* Info Section */
+.info-section {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-section>div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.info-section p {
+  font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+  line-height: 1.8;
+  margin: 0 auto 1.5rem auto;
+  max-width: 800px;
+}
+
+/* Main container for each showcase section */
+/* Main container for each showcase section */
+.showcase-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #000;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  gap: 1rem;
+
+
+  padding: 2rem 0;
+
+
+}
+
+.showcase-container>.showcase-text,
+.showcase-container>.showcase-image {
+
+  min-width: 280px;
+
+}
+
+/* Ensure content is properly centered */
+/* Text content */
+.showcase-text {
+  flex: 1 1 400px;
+  padding: 2rem;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align content to the left */
+  background: #000;
+}
+
+.showcase-text,
+.showcase-image {
+  flex: 1 1 45%;
+  /* let them adapt gracefully */
+  min-width: 280px;
+  /* prevents crushing on extreme zoom in */
+  max-width: 50%;
+}
+
+.showcase-image img,
+.showcase-image video {
+  width: 100%;
+  max-width: clamp(280px, 90%, 1200px);
+  height: auto;
+  object-fit: contain;
+}
+
+.showcase-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.showcase-heading {
+  font-size: clamp(1.4rem, 2vw, 2.5rem);
+  margin: 0 0 1rem 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.showcase-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  line-height: 1.7;
+}
+
+.showcase-list li {
+  margin: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #ddd;
+}
+
+.showcase-list li:before {
+  content: '•';
+  color: #ff6b00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Image/Video container */
+.showcase-image {
+  flex: 1 1 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 50%;
+  max-height: 90vh;
+}
+
+.showcase-image img,
+.showcase-image video {
+  max-width: 100%;
+  max-height: min(80vh, 100%);
+  object-fit: contain;
+  border-radius: 8px;
+  background: #000;
+  transition: transform 0.3s ease;
+}
+
+.media-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .showcase-image {
+    min-height: 55vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .showcase-image {
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-container {
+    flex-direction: column;
+  }
+
+  .showcase-text,
+  .showcase-image {
+    max-width: 100%;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .showcase-image {
+    min-height: 40vh;
+    order: -1;
+  }
+
+  .showcase-image img,
+  .showcase-image video {
+    max-height: 60vh;
+    width: 100%;
+    height: auto;
+  }
+
+  .showcase-dots {
+    bottom: 20px;
+  }
+
+  .showcase-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+  }
+
+}
+
+/* Media elements */
+.showcase-image img,
+.showcase-image video {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #000;
+  margin: 0 auto;
+}
+
+.showcase-right .showcase-image::before {
+  left: auto;
+  right: 0;
+  background: linear-gradient(to left, #000000 0%, transparent 100%);
+}
+
+.showcase-heading {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Removed heading underline */
+
+.showcase-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.showcase-list li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+}
+
+.showcase-list li span {
+  color: #ff4d4d;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Controls */
+.showcase-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.showcase-arrow {
+  color: white;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  width: clamp(35px, 4vw, 55px);
+  height: clamp(35px, 4vw, 55px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.showcase-arrow:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Dots navigation */
+.showcase-dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.showcase-dot {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.showcase-dot.active,
+.showcase-dot:hover {
+  opacity: 1;
+  color: #ff4d4d;
+  transform: scale(1.2);
+}
+
+/* Right Layout */
+.showcase-right {
+  flex-direction: row-reverse;
+}
+
+/* Tablet Landscape (1024px - 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .showcase-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .showcase-text,
+  .showcase-image {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .showcase-image {
+    order: -1;
+  }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .showcase-heading {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+  }
+
+  .showcase-list {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .showcase-dots {
+    bottom: 1rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .showcase-container {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .showcase-image {
+    order: -1;
+    margin-bottom: 1rem;
+    width: 100%;
+    min-height: 40vh;
+    max-height: 50vh;
+    padding: 1rem;
+  }
+
+  .showcase-text {
+    padding: 1.5rem;
+    max-width: 100%;
+    background: #000000 !important;
+  }
+
+  .showcase-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .showcase-list {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .showcase-arrow {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.8rem !important;
+  }
+
+  .showcase-dots {
+    bottom: 20px !important;
+  }
+}
+
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .showcase-heading {
+    font-size: 1.4rem;
+  }
+
+  .showcase-list {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+  }
+
+  .showcase-image {
+    min-height: 35vh;
+    max-height: 45vh;
+    padding: 0.5rem;
+  }
+
+  .showcase-arrow {
+    width: 35px !important;
+    height: 35px !important;
+    font-size: 1.5rem !important;
+  }
+
+  .showcase-dots {
+    bottom: 15px !important;
+  }
+
+  .showcase-dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-text {
+    padding: 2rem 1.5rem;
+  }
+
+  .showcase-heading {
+    margin-left: 20px;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .showcase-list {
+    font-size: 1rem;
+  }
+
+  .showcase-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+}
+
+/* Right layout variant */
+.showcase-right {
+  flex-direction: row-reverse;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+  .showcase-container {
+    flex-direction: column;
+  }
+
+  .showcase-text,
+  .showcase-image {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .showcase-image {
+    padding: 1rem;
+  }
+}
+
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* For ultra-large screens/zoom out */
+
+@media (min-width: 1800px) {
+  .showcase-container {
+    justify-content: center;
+    /* keep things centered, not stretched forever */
+  }
+
+  .showcase-container>.showcase-text,
+  .showcase-container>.showcase-image {
+    max-width: 800px;
+    /* both together won’t exceed ~1600px total */
+  }
+
+  .showcase-image img,
+  .showcase-image video {
+
+    max-width: 100%;
+    /* scale naturally */
+    height: auto;
+  }
+
+  .showcase-heading {
+    font-size: 2.5rem;
+    /* don’t balloon */
+  }
+}
+
+@media (max-width: 400px) {
+
+  .showcase-text,
+  .showcase-image {
+    min-width: 0;
+    /* let them shrink gracefully without forcing side-scroll */
+    max-width: 100%;
+  }
+
+  .showcase-heading {
+    font-size: 1.1rem;
+    /* readable but not exploding */
+  }
+
+  .showcase-list {
+    font-size: 0.8rem;
+    /* keep compact when super-zoomed */
+  }
+
+  .showcase-image img,
+  .showcase-image video {
+    max-height: 50vh;
+    /* stop image eating the whole screen */
+  }
+}
+
+
+
+
+
+/* Defaults (normal zoom) — adjust to match your current design */
+.showcase-container {
+  --arrow-size: 48px;
+  --arrow-icon: 24px;
+  --dot-size: 8px;
+  --dot-gap: 8px;
+  --dots-offset: 20px;
+}
+
+/* Image wrapper */
+.showcase-image {
+  position: relative;
+}
+
+/* Overlay that holds arrows and dots */
+.showcase-controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 8px;
+}
+
+/* RESET arrow positioning across all devices and center the icon */
+.showcase-controls .showcase-arrow,
+.showcase-arrow,
+.showcase-arrow.left,
+.showcase-arrow.right {
+  position: static !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  align-self: center !important;
+
+  pointer-events: auto;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .45);
+  color: #fff;
+  font-size: var(--arrow-icon);
+  line-height: 1;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+/* Ensure inner icon/text has no baseline gap */
+.showcase-arrow>svg,
+.showcase-arrow>i,
+.showcase-arrow>span,
+.showcase-arrow .icon {
+  display: block;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Dots centered at bottom */
+.showcase-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: var(--dots-offset);
+  display: flex;
+  align-items: center;
+  gap: var(--dot-gap);
+}
+
+/* If you keep "•", visually hide it and render as a dot box */
+.showcase-dot {
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .45);
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.showcase-dot.active {
+  background: #fff;
+}
+
+/* Zoom OUT: larger targets */
+.showcase-container.zoom-out {
+  --arrow-size: 64px;
+  --arrow-icon: 28px;
+  --dot-size: 12px;
+  --dot-gap: 10px;
+  --dots-offset: 14px;
+}
+
+/* Zoom IN: smaller to avoid overlap */
+.showcase-container.zoom-in {
+  --arrow-size: 40px;
+  --arrow-icon: 20px;
+  --dot-size: 6px;
+  --dot-gap: 6px;
+  --dots-offset: 8px;
+}
+
+
+
+/* Vertically center arrows inside the image container (all devices) */
+.showcase-image {
+  position: relative !important;
+}
+
+.showcase-controls {
+  position: absolute !important;
+  inset: 0 !important;
+  /* full overlay on the image */
+  pointer-events: none !important;
+  /* layout doesn't matter for arrows since they're absolutely positioned */
+}
+
+/* Core arrow style + vertical centering */
+.showcase-controls .showcase-arrow {
+  position: absolute !important;
+  top: 100% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+
+  pointer-events: auto !important;
+  width: var(--arrow-size);
+  height: var(--arrow-size);
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, .45);
+  color: #fff;
+  font-size: var(--arrow-icon);
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+/* Place left/right arrows at edges */
+.showcase-controls .showcase-arrow.left,
+.showcase-controls .showcase-arrow.prev {
+  left: 8px !important;
+  right: auto !important;
+}
+
+.showcase-controls .showcase-arrow.right,
+.showcase-controls .showcase-arrow.next {
+  right: 8px !important;
+  left: auto !important;
+}
+
+/* Fallback if you don't have .left/.right classes: use DOM order */
+.showcase-controls .showcase-arrow:first-of-type {
+  left: 8px !important;
+  right: auto !important;
+}
+
+.showcase-controls .showcase-arrow:last-of-type {
+  right: 8px !important;
+  left: auto !important;
+}
+
+/* Keep dots centered at bottom */
+.showcase-dots {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  bottom: var(--dots-offset) !important;
+  display: flex;
+  align-items: center;
+  gap: var(--dot-gap);
+}

@@ -1,0 +1,102 @@
+import React, { useState, useEffect } from 'react';
+import './smt.css';
+import '../../pages/PageHeader.css';  // Importing PageHeader styles
+  // ✅ Unified stylesheet
+
+// Assets
+import ProductionLineImage from '../img/Opticalplant.png';
+
+import RodentResistantIcon from '../img/f4.png';
+import StandardLengthIcon from '../img/f2.png';
+import ExternalUseIcon from '../img/f3.png';
+import FireRetardantIcon from '../img/final png 1.png';
+import PremiumQualityIcon from '../img/png5.png';
+import InternalUseIcon from '../img/fr.png';
+import WaterResistantIcon from '../img/png7.png';
+import RapidDeploymentIcon from '../img/png8.png';
+import TelecomIcon from '../img/png6.png';
+
+const SMT = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const checkIfMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
+  
+
+  const featuresData = [
+    { icon: RodentResistantIcon, title: 'Rodent Resistant', description: 'Rodent-resistant sheathing for durability.' },
+    { icon: StandardLengthIcon, title: 'Standard Length', description: 'Standard lengths for fast installation.' },
+    { icon: ExternalUseIcon, title: 'External Use', description: 'Weather-resistant jackets for outdoor use.' },
+    { icon: RapidDeploymentIcon, title: 'Rapid Deployment', description: 'Quick and efficient installation.', hideOnMobile: true },
+    { icon: FireRetardantIcon, title: 'Fire Retardant', description: 'Flame-retardant materials enhance safety.' },
+    { icon: PremiumQualityIcon, title: 'Premium Quality', description: 'Superior performance and reliability.' },
+    { icon: InternalUseIcon, title: 'Internal Use', description: 'Low-smoke & fire-safe for indoor cabling.' },
+    { icon: WaterResistantIcon, title: 'Water Resistant', description: 'Moisture-blocking design to prevent ingress.' },
+    { icon: TelecomIcon, title: 'Telecommunications', description: 'High-speed fiber for telecom networks.' }
+  ];
+
+  return (
+    <div>
+      {/* Header Section */}
+      <div className="header-wrapper">
+        <div className="header">
+          <div
+            className="header-banner"
+            style={{
+              '--header-height': '75vh',
+              '--header-height-mobile': '50vh',
+              backgroundImage: `
+              linear-gradient(rgba(0, 0, 0, 0.3)),
+                
+                url(${ProductionLineImage})
+              `,
+            }}
+          >
+            <div className="header-inner">
+              <h1 className="header-title">Optical Fiber Cable Manufacturing Facility</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Intro Section */}
+      <section className="intro-section">
+        <div className="intro-inner">
+          <p>
+            Candid Optronix Pvt. Ltd. operates a state-of-the-art Optical Fiber Cable Manufacturing Facility in Kotdwar, Uttarakhand. Equipped with high-speed production lines, integrated QA, and dedicated utilities, we deliver consistent, high-quality optical fiber cables for backbone, access, and FTTH networks.
+          </p>
+          <p>
+            Our process covers end-to-end manufacturing—from fiber coloring to final cable sheathing—with strict quality controls at every stage.
+          </p>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="features-section">
+        <h2 className="features-heading">Features</h2>
+        <div className="features-grid">
+          {featuresData
+            .filter((feature, index, arr) => {
+              if (feature.title === 'Rapid Deployment' && isMobile) return false;
+              return index === arr.findIndex(f => f.title === feature.title);
+            })
+            .map((feature, index) => (
+              <div key={index} className="feature-card">
+                <div className="feature-icon">
+                  <img src={feature.icon} alt={feature.title} loading="lazy" />
+                </div>
+                <h3 className="feature-title">{feature.title}</h3>
+                <p className="feature-description">{feature.description}</p>
+              </div>
+            ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default SMT;

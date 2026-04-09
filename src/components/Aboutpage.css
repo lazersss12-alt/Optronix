@@ -1,0 +1,944 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.about-page-container {
+  display: grid;
+  grid-template-columns: 2rem 1fr 1fr 2rem;
+  margin-top: 20px;
+}
+
+.about-page-container-about {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.about-page-container-image {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.about-image {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .about-page-container {
+    display: grid;
+    grid-template-columns: 0.5rem 1fr 0.5rem;
+    grid-template-rows: auto;
+  }
+
+  .about-page-container-about {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+  }
+
+  .about-page-container-image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+.news-title {
+  color: #8a2e10;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 30px 90px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 4rem;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Values Section */
+.values-section {
+  margin-bottom: 4rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* always 3 cards side by side */
+  gap: 2rem;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.value-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 1rem;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 0.5rem;
+}
+
+.card-content h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card-divider {
+  height: 2px;
+  width: 40px;
+  background: #A7402D;
+  margin-bottom: 0.5rem;
+}
+
+.values-list {
+  list-style: none;
+  padding: 0;
+}
+
+.values-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.values-list li::before {
+  content: "•";
+  color: #A7402D;
+  position: absolute;
+  left: 0;
+}
+
+/* Publications Section */
+.aman {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #A7402D;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.aman::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #A7402D;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: 1fr 1fr; /* two cards side by side */
+  }
+  .aman{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr; /* stack vertically on small screens */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  
+  .aman{
+    font-size: 1.5rem;
+  }
+}
+
+
+/* this is new css */
+
+/* Main Container */
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.hero-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-section__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-section__description {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  text-align: justify;
+  margin: 0;
+}
+
+.hero-section__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section__image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-section__image:hover {
+  transform: scale(1.02);
+}
+
+/* Values Section */
+.values-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.values-section__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Value Card */
+.value-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.value-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.value-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.value-card__divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff, transparent);
+  border-radius: 2px;
+}
+
+.value-card__text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.value-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.value-card__list-item {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.value-card__list-item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Publications Section */
+.publications-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.publications-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.publications-section__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section,
+  .values-section,
+  .publications-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section__container {
+    gap: 2rem;
+  }
+
+  .hero-section__title {
+    text-align: center;
+  }
+
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .values-section__grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section,
+  .values-section,
+  .publications-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .value-card__title {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+
+
+
+/* Prevent horizontal scroll from full-bleed sections */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Full-bleed hero banner */
+.hero-banner {
+  width: 100%;
+  /* Escape any centered container: */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* Banner image style */
+.hero-banner__img {
+  display: block;
+  width: 100%;
+  height: clamp(240px, 50vh, 600px); /* adjust banner height */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Centered copy below the banner */
+.hero-copy {
+  max-width: min(1000px, 92vw);
+  margin: clamp(16px, 4vw, 40px) auto;
+  text-align: center;
+  line-height: 1.7;
+  color: #0f172a; /* tweak to your theme */
+  padding-inline: 12px;
+}
+
+.hero-copy__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.hero-copy__description {
+  font-size: clamp(15px, 1.6vw, 18px);
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Keep the rest of the page in a comfortable width */
+.values-section__grid,
+.publications-section__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+
+/* Optional: nicer paragraph rhythm in cards */
+.value-card__text {
+  line-height: 1.75;
+}
+
+
+
+/* Avoid horizontal scroll from full-bleed sections */
+html, body { overflow-x: hidden; }
+
+/* Existing banner (unchanged) */
+.hero-banner {
+  width: 100%;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+  background: #0b0c10;
+}
+.hero-banner__img {
+  display: block;
+  width: 100%;
+  height: clamp(260px, 52vh, 640px);
+  object-fit: cover;
+  object-position: center;
+}
+
+/* --- New designed background behind the About Us copy --- */
+.hero-surface {
+  position: relative;
+  isolation: isolate;
+  width: 100%;                          /* full viewport width */
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(28px, 6vw, 88px) 0;     /* vertical breathing room */
+  background: #ffffff;                    /* base to blend with rest */
+  overflow: hidden;
+}
+
+/* Centered inner container for the text */
+.hero-surface__inner {
+  max-width: min(1000px, 92vw);
+  margin: 0 auto;
+  padding-inline: 16px;
+  text-align: center;
+}
+
+/* Overlays (visual only) */
+.hero-surface__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Gentle red gradients + slight vignette to echo the banner */
+.hero-surface__overlay--gradient {
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(220, 38, 38, 0.10), transparent 60%),
+    radial-gradient(900px 500px at 10% 120%, rgba(220, 38, 38, 0.08), transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.06) 0%, rgba(0,0,0,0.02) 30%, rgba(0,0,0,0.00) 100%);
+}
+
+/* Subtle geometric grid pattern (inline SVG) */
+.hero-surface__overlay--pattern {
+  opacity: 0.22;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1NicgaGVpZ2h0PSc1Nicgdmlld0JveD0nMCAwIDU2IDU2Jz48ZyBmaWxsPSdub25lJyBzdHJva2U9JyMxMjEnIHN0cm9rZS1vcGFjaXR5PScwLjE4JyBzdHJva2Utd2lkdGg9JzEnPjxwYXRoIGQ9J00wIDI4SDU2TTI4IDBWNTYnLz48Y2lyY2xlIGN4PScyOCcgY3k9JzI4JyByPScxLjYnIGZpbGw9JyMwMDAnIGZpbGwtb3BhY2l0eT0nMC4xOCcvPjwvZz48L3N2Zz4=");
+  background-size: 56px 56px;
+  background-repeat: repeat;
+  mix-blend-mode: multiply; /* faint, non-intrusive */
+}
+
+/* Soft glow accents (on large screens) */
+.hero-surface__glow {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  filter: blur(10px);
+  opacity: 0.25;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.55) 0%, rgba(239, 68, 68, 0) 65%);
+}
+.hero-surface__glow--a { top: -40px; left: -120px; }
+.hero-surface__glow--b { bottom: -60px; right: -140px; }
+
+/* Copy styles (reuse your existing typography) */
+.hero-copy__title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #0f172a;
+}
+.hero-copy__description {
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.7;
+  margin: 0;
+  color: #0f172a;
+  opacity: 0.92;
+}
+
+/* Content areas below remain tidy */
+.values-section__grid,
+.publications-section__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-inline: 16px;
+}
+.value-card__text { line-height: 1.75; }
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero-surface__glow { display: none; }
+}
+
+
+
+
+
+/* Utility to force edge-to-edge on desktop */
+@media (min-width: 1024px) {
+  .hero-banner {
+    position: relative;
+    /* break out of any parent with max-width/padding */
+    left: 50%;
+    right: 50%;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+
+    border-radius: 0;           /* flush edges */
+    height: min(60vh, 720px);   /* set a cinematic height */
+    overflow: hidden;
+    z-index: 1;                 /* sit above container backgrounds */
+  }
+
+  /* If supported, use dynamic viewport to avoid 1–2px gaps */
+  @supports (width: 100dvw) {
+    .hero-banner {
+      width: 100dvw !important;
+      max-width: 100dvw !important;
+      margin-left: -50dvw !important;
+      margin-right: -50dvw !important;
+    }
+  }
+
+  /* Make the image fill the banner area neatly */
+  .hero-banner__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;          /* fill without distortion */
+    object-position: center 35%;
+  }
+}
+  /* Mobile/tablet: contained and clean */
+.hero-banner {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.hero-banner__img {
+  display: block;
+  width: 100%;
+  height: auto;         /* shows full image on small screens */
+  object-fit: contain;
+  object-position: center;
+  background: #000;     /* subtle letterbox if aspect ratio differs */
+}
+  /* Remove default body margin */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Don’t let ancestors clip the breakout */
+.about-page,
+.about-page * {
+  overflow-x: visible;
+}
+
+/* If your layout uses a grid container, ensure banner spans all columns */
+.about-page > .hero-banner {
+  grid-column: 1 / -1;
+}
+
+/* Full-bleed helper (no horizontal scrollbar) */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+@supports not (overflow: clip) {
+  html, body { overflow-x: hidden; }
+}
+
+/* Optional: tidy up spacing for inner wrappers */
+:root {
+  --container-max: 1280px;
+  --section-gutter: clamp(16px, 3.5vw, 56px);
+}
+
+/* 1) HERO SURFACE — full width background on desktop */
+.hero-surface {
+  position: relative;
+  padding-block: clamp(40px, 8vw, 96px);
+  overflow-x: clip; /* prevents overlays creating a scrollbar */
+}
+
+/* Keep the text centered with an inner max-width */
+.hero-surface__inner {
+  max-width: min(var(--container-max), 92vw);
+  margin-inline: auto;
+  padding-inline: var(--section-gutter);
+}
+
+@media (min-width: 1024px) {
+  .hero-surface {
+    width: 100dvw;
+    margin-left: calc(50% - 50dvw);
+    margin-right: calc(50% - 50dvw);
+  }
+  /* Fallback if dvw isn’t supported */
+  @supports not (width: 100dvw) {
+    .hero-surface {
+      width: 100%;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+  }
+}
+
+/* 2) VALUES SECTION — full width background on desktop */
+.values-section {
+  position: relative;
+  padding-block: clamp(40px, 7vw, 84px);
+  overflow-x: clip;
+}
+
+/* The grid/content stays nicely centered */
+.values-section__grid {
+  max-width: min(var(--container-max), 92vw);
+  margin-inline: auto;
+  padding-inline: var(--section-gutter);
+}
+
+@media (min-width: 1024px) {
+  .values-section {
+    width: 100dvw;
+    margin-left: calc(50% - 50dvw);
+    margin-right: calc(50% - 50dvw);
+  }
+  @supports not (width: 100dvw) {
+    .values-section {
+      width: 100%;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+  }
+}
+
+/* If your page uses a grid container, ensure these span all columns */
+.about-page > .hero-surface,
+.about-page > .values-section {
+  grid-column: 1 / -1;
+}
+
+/* Box-sizing guard to avoid width overflow from padding */
+*, *::before, *::after { box-sizing: border-box; }
+
+
+/* 1) Kill the black letterbox everywhere */
+.hero-banner,
+.hero-banner__img {
+  background: transparent !important;
+}
+
+/* 2) Tablet-only: make the image naturally responsive (no cropping) */
+@media (min-width: 768px) and (max-width: 2000px) {
+  .hero-banner {
+    width: 100%;
+    height: auto;          /* no fixed height on tablets */
+    margin: 0;
+    border-radius: 12px;   /* keep your design */
+    overflow: hidden;
+  }
+
+  .hero-banner__img {
+    display: block;
+    width: 100%;
+    height: auto;          /* keeps the image aspect ratio */
+    object-fit: contain;   /* show full image; no letterboxing since bg is transparent */
+    object-position: center 35%;
+  }
+}
+
+
+/* Desktop: overlap the hero slightly to remove the white band */
+@media (min-width: 1024px) {
+  :root { --hero-overlap-desktop: 32px; } /* adjust 16–48px as needed */
+
+  /* If .hero-surface immediately follows the hero */
+  .hero-banner + .hero-surface {
+    margin-top: calc(-1 * var(--hero-overlap-desktop));
+    padding-top: calc(clamp(40px, 8vw, 96px) + var(--hero-overlap-desktop));
+  }
+}
+
+/* Default: no overlap */
+:root { --hero-gap: 0px; }
+
+/* If .hero-surface immediately follows the hero */
+.hero-banner + .hero-surface { margin-top: calc(-1 * var(--hero-gap)); }
+
+/* If there's a wrapper between them, use this instead (optional) */
+/* .hero-banner ~ .hero-surface { margin-top: calc(-1 * var(--hero-gap)); } */
+
+/* Tablet portrait/landscape */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  :root { --hero-gap: 12px; }      /* tweak if needed */
+}
+
+
+/* Default: no overlap */
+:root { --hero-gap: 0px; }
+
+/* If .hero-surface immediately follows the hero */
+.hero-banner + .hero-surface { margin-top: calc(-1 * var(--hero-gap)); }
+
+/* If there's a wrapper between them, use this instead (optional) */
+/* .hero-banner ~ .hero-surface { margin-top: calc(-1 * var(--hero-gap)); } */
+
+/* Tablet portrait/landscape */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  :root { --hero-gap: 12px; }      /* tweak if needed */
+}
+
+/* Desktop ranges (do not change hero size) */
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  :root { --hero-gap: 18px; }
+}
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  :root { --hero-gap: 24px; }
+}
+@media (min-width: 1440px) and (max-width: 1919.98px) {
+  :root { --hero-gap: 30px; }
+}
+@media (min-width: 1920px) {
+  :root { --hero-gap: 36px; }
+}
+
+/* Optional: keep the original vertical rhythm inside the section
+   by adding the overlap back as padding. Remove if you prefer tighter spacing. */
+.hero-banner + .hero-surface {
+  padding-top: calc(clamp(40px, 8vw, 96px) + var(--hero-gap));
+}
+
+
+/* Desktop: let .hero-surface overlap the hero and sit above it */
+@media (min-width: 1024px) {
+  /* Option A (recommended): keep hero as-is, lift the next section above it */
+  .hero-surface {
+    position: relative;
+    z-index: 2;                 /* above .hero-banner (which is z-index: 1) */
+    margin-top: -28px;          /* adjust as needed: -20px to -40px */
+    padding-top: calc(clamp(40px, 8vw, 96px) + 28px); /* preserve internal spacing */
+  }
+
+  /* Micro hairline fix for sub‑pixel rounding on some browsers */
+  .hero-banner { margin-bottom: 0px !important; }
+}
+
+/* If you prefer to drop the hero’s stacking instead of raising the section:
+@media (min-width: 1024px) {
+  
+  .hero-banner + .hero-surface { margin-top: 0 !important; padding-top: calc(clamp(40px, 8vw, 96px) + 28px);  z-index: 5 !important; }
+  
+}
+
+
+/* Optional: fine-tune by width without changing the image size */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .hero-surface { margin-top: -30px; padding-top: calc(clamp(40px, 8vw, 96px) + 30px); }
+}
+@media (min-width: 1440px) and (max-width: 1919.98px) {
+  .hero-surface { margin-top: -32px; padding-top: calc(clamp(40px, 8vw, 96px) + 32px); }
+}
+@media (min-width: 1920px) {
+  .hero-surface { margin-top: -36px; padding-top: calc(clamp(40px, 8vw, 96px) + 36px); }
+}
+
+
+
+/* Fix: stop desktop overlap that cuts the hero image */
+@media (min-width: 1024px) {
+  :root {
+    --hero-overlap-desktop: 0 !important;
+    --hero-gap: 0 !important;
+  }
+
+  .hero-banner { z-index: 2 !important; }
+
+  .hero-banner + .hero-surface,
+  .hero-surface {
+    margin-top: 0 !important;
+    padding-top: clamp(40px, 8vw, 96px) !important;
+    z-index: 1 !important; /* keep it under the hero if they touch */
+  }
+}
+
+
+
+
+/* Tighten vertical spacing between sections */
+:root{
+  --section-pad-tight: clamp(24px, 3.5vw, 48px); /* top/bottom padding per section */
+  --section-gap-tight: 0px;                      /* extra gap between adjacent sections */
+}
+
+/* Hero copy block */
+.hero-surface {
+  padding-block: var(--section-pad-tight) !important;
+  margin-top: var(--section-gap-tight) !important;
+}
+
+/* If .hero-surface follows the banner */
+.hero-banner + .hero-surface {
+  margin-top: var(--section-gap-tight) !important;   /* keep flush to the banner */
+  padding-top: var(--section-pad-tight) !important;
+}
+
+/* Next sections */
+.values-section,
+.publications-section {
+  padding-top: var(--section-pad-tight) !important;
+  padding-bottom: var(--section-pad-tight) !important;
+  margin-top: var(--section-gap-tight) !important;
+}
+
+/* Optional: a slightly tighter look on desktop */
+@media (min-width: 1024px) {
+  :root { --section-pad-tight: 32px; }
+}
+
+/* Even, tidy paragraph lines under the hero copy */
+.hero-copy__description,
+.hero-section__description {
+  max-width: 72ch;                 /* readable measure */
+  margin-inline: auto;
+  text-align: justify !important;  /* even left/right edges */
+  text-justify: inter-word;
+  text-align-last: center;         /* keep the last line centered */
+  -moz-text-align-last: center;
+  hyphens: auto;                   /* softer justification */
+}
+
+/* Optional: nicer multi‑line heading */
+.hero-copy__title { text-wrap: balance; }
+
+/* Make the hero paragraph span from Vision (left) to Core Values (right) */
+@media (min-width: 1024px) {
+  /* Use the same container width/padding as the cards grid */
+  .hero-surface__inner {
+    max-width: min(var(--container-max), 92vw) !important;
+    padding-inline: var(--section-gutter) !important;
+  }
+
+  /* Remove the 72ch limit and fill the container */
+  .hero-copy__description,
+  .hero-section__description {
+    max-width: none !important;
+    width: 100% !important;
+    margin-inline: 0 !important;
+    text-align: justify;        /* keep edges clean */
+    text-align-last: left;      /* last line aligns with the left edge */
+    text-justify: inter-word;
+    hyphens: auto;
+  }
+}

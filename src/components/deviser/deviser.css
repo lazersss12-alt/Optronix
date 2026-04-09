@@ -1,0 +1,736 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.deviser-page{
+    display: grid;
+    grid-template-columns: 6.25rem 1fr 6.25rem;
+    background-image: 
+    linear-gradient(to top, rgb(255, 254, 254), rgba(255, 255, 255, 0.692)),
+    url("../img/sum01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.deviser-page-pro-main{
+    grid-column: 2/3;
+    padding-top: 50px;
+}
+
+
+.deviser-page-pro-name{
+    text-align: center;
+    
+}
+
+.deviser-page-pro-art{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.deviserpro-btn{
+    border: none;
+    background-color: white;
+    
+}
+
+.button-size.active{
+    background-color: rgb(207, 207, 207);
+}
+
+.deviser-logo{
+    width: 25%;
+}
+ /* .spec-table-container {
+  overflow-x: auto;
+  margin: 30px 0;
+}
+.spec-table {
+  min-width: 600px;
+  border-collapse: collapse;
+  width: 100%;
+}
+.spec-table th, .spec-table td {
+  border: 1px solid #b0b0b0;
+  padding: 8px 12px;
+  text-align: left;
+}  */
+  .spec-table-container {
+  overflow-x: auto;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  max-width: 1200px;  /* Prevents full-width expansion */
+   width: 100%;  /* Table container only as wide as needed */
+  display: flex; /* Added for better centering */
+  justify-content: center; /* Center the table horizontally */
+}
+
+.spec-table {
+ 
+  border-collapse: collapse;
+  border: 1px solid #e0a060;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  margin: 0 auto; /* Additional centering for the table itself */
+}
+.spec-table .table-header {
+  background-color: #4f7ca0; /* Blue header color */
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  border: 1px solid #3d6382;
+  width: 75%; /* Adjust this value to control how much of the row is covered */
+}
+.spec-table .empty-header {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+}
+
+.spec-table th {
+  background-color: #f7f9fc;
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.spec-table td {
+  padding: 12px 16px;
+   border: 1px solid #e0e0e0;
+  color: #4a5568;
+  transition: background-color 0.2s ease;
+}
+.spec-table td:first-child {
+  color: #4f7ca0; /* Blue text to match header */
+  font-weight: 500;
+}
+
+.spec-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+.spec-table tr:nth-child(even) {
+  background-color: #fafbfd;
+}
+
+/* Rounded corners for the table */
+ .spec-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.spec-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.spec-table tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.spec-table tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}  */
+/* Tablet range (700px–980px): sidebar on top-left, products below */
+@media screen and (min-width: 700px) and (max-width: 980px) {
+  .deviserproduct-page {
+    grid-template-columns: 1fr; /* collapse layout to 1 column */
+    gap: 1rem;
+  }
+   /* Sidebar on top-left */
+   .deviserproduct-page-controls {
+    grid-column: 1/-1;
+    position: static;     /* remove sticky */
+    top: auto;
+    width: auto;
+    margin: 0 0 15px 0;
+    text-align: left;     /* make it left-aligned */
+    box-shadow: none;     
+    border-bottom: 1px solid #eee;
+    padding: 0 10px;
+  }
+
+  /* Products grid */
+  .deviserproduct-page-product {
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 10px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .spec-table th, 
+  .spec-table td {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+    .deviser-page{
+        display: grid;
+        grid-template-columns: .8rem 1fr .8rem; 
+    }
+
+
+    .deviser-page-pro-main{
+        grid-column: 2/3;
+        padding-top: 50px;
+    }
+
+    .deviser-logo{
+        width: 50%;
+    }
+    .deviserproduct-page {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  
+    .deviserproduct-page-controls {
+      grid-column: 1/-1;
+      position: static;
+      top: auto;
+      margin-bottom: 10px;
+      text-align: left;   /* top-left */
+      padding: 0 5px;
+      box-shadow: none;
+      border-bottom: 1px solid #eee;
+    }
+  
+    .deviserproduct-page-product {
+      grid-column: 1/-1;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      padding: 0 5px;
+    }
+  
+    .product-card {
+      padding: 10px 8px;
+    }
+  
+    .product-title { font-size: 13px; }
+    .product-description { font-size: 11px; }
+
+}
+@media screen and (max-width: 1024px) {
+  .deviserproduct-page-product {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .product-title {
+    font-size: 14px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+   /* Sidebar moves on top */
+   .deviserproduct-page-controls {
+    grid-column: 1 / -1;            /* full width */
+    position: relative;                /* no sticky */
+    margin-bottom: 20px;             /* spacing below sidebar */
+    width: 100%;
+  }
+
+  /* Product grid below: 2 cards per row */
+  .deviserproduct-page-product {
+    grid-column: 1 / -1;             
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* ✅ 2 cards per row */
+                               /* row + col spacing */
+    padding: 0 10px;
+  }
+
+  /* Make each card fit nicely */
+  .product-card {
+    width: 100%;
+    margin: 0;     /* ✅ remove side margins */
+    min-width: 0;  /* ✅ allow shrink */
+    box-sizing: border-box; /* equal consistent look */
+  }
+}
+@media screen and (max-width: 768px) {
+  .deviserproduct-page {
+    grid-template-columns: 1fr;   /* keep stack */
+  }
+
+  .deviserproduct-page-product {
+    grid-template-columns: repeat(2, 1fr); /* ✅ still 2 per row */
+    gap: 0;
+    padding: 0 8px;
+  }
+
+  .product-card {
+    min-height: 280px;
+    padding: 12px;
+  }
+
+  .product-title {
+    font-size: 14px;
+  }
+
+  .product-description {
+    font-size: 12px;
+  }
+}
+/* Small Phones (≤600px) */
+@media screen and (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;   /* stack instead of left/right */
+    gap: 4px;
+    align-items: center;
+  }
+
+  .dbtn_product,
+  .dbtn_product2 {
+    font-size: 12px;
+  }
+}
+/* deviser product page */
+
+.deviserproduct-page {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar and content */
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tabs Section */
+.deviserproduct-page-controls {
+    grid-column: 1/2;  /* First column for sidebar */
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.button-size {
+    padding: 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-size:hover {
+    background-color: #edd9d6;
+    border-radius: 8px;
+}
+
+.button-size.active{
+    background-color: #edd9d6;
+    border-radius: 8px;
+    
+}
+.button-size:hover .button-btn {
+    color: #aa3e2d;
+}
+
+.button-size.active .button-btn h4 {
+    color: #aa3e2d;
+}
+
+
+
+
+.button-btn {
+    border: none;
+    color: #a3a3a3;
+    font-weight: 600;
+    margin-left: 10px;
+    padding-right: 50px;
+}
+
+
+
+
+/* Default (inactive) state for special tab */
+.button-size.special-tab {
+  background-color: white; /* light blue or your custom color */
+}
+
+/* Active state for special tab */
+.button-size.special-tab.active {
+  background-color: white; 
+}
+
+/* Optional: adjust text color for contrast */
+.special-tab .button-btn h4 {
+  color: black;
+  font-size: 20px;
+}
+
+.special-tab.active .button-btn h4 {
+  color: black;
+  font-size: 20px;
+}
+
+/* Product Grid */
+.deviserproduct-page-product {
+    grid-column: 2/3;  /* Second column for products */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+}
+
+/* Single Product Card */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 80%;
+  margin: 0 0 20px 0;
+  padding: 20px;  /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  min-height: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 0 0 auto;  /* Prevent flex items from growing/shrinking */
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* Product Image */
+.product-image {
+  width: 140px; 
+  height: auto;
+  background-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  object-fit: contain;
+  display: block;
+}
+/* Product Title */
+.product-title {
+  font-size: clamp(12px, 1vw, 16px);
+  
+  font-weight: 700;
+  color: #222;
+  margin: 6px 0;
+  text-align: center;
+}
+
+/* Product Name Button */
+.product-name-button {
+  background-color: #A7402D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  margin: 10px 0;
+  cursor: default;
+}
+
+/* Product Description */
+.product-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Buttons Section */
+.product-buttonsd {
+  margin-top: auto;            
+  display: flex;
+  justify-content: center; 
+  flex-direction: column; /* left vs right */
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;       /* safe inside padding */
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  width: 100%;
+}
+
+/* Button Styles */
+.dbtn_product1 {
+  display: block;
+  width: auto;
+  min-width: 160px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #A7402D;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* Footer row (Read More | Download Catalog) */
+.product-footer-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;    /* prevents moving to next line */
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;       /* full card width */
+  padding: 0 10px;    /* small inset padding */
+}
+
+.dbtn_product1:hover {
+  background-color: #8c3626;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Bottom buttons row */
+.dbtn_product,
+.dbtn_product2 {
+  margin-top: auto;
+  background: none;
+  border: none;
+  width: auto;
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0;
+
+  white-space: nowrap;  /* keeps text in one line */
+  overflow: hidden;     /* no spilling */
+  white-space: nowrap;  /* keeps text in one line */
+  overflow: hidden;     /* no spilling */
+  text-overflow: ellipsis;
+}
+
+/* Position Read More on left */
+.dbtn_product {
+  margin-top: 1px;
+  float: left;
+  margin-right: 8px;
+  
+}
+
+/* Position Download Catalog on right */
+.dbtn_product2 {
+  float: right;
+  margin-left: 8px;
+  margin-top: -1px;
+}
+
+.dbtn_product:hover,
+.dbtn_product2:hover {
+  /* background-color: #f5f5f5; */
+  /* color: #A7402D; */
+  /* border-color: #ccc; */
+  /* transition: color 0.2s ease; */
+}
+
+.dbtn_product1:hover {
+  background-color: #872d1c;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+/* Mobile Responsive */
+@media screen and (max-width: 1024px) {
+  .dbtn_product1 {
+    min-width: 120px;   /* smaller size */
+    max-width: 60%;     /* narrower than card */
+    margin: 15px auto 20px auto; /* center it */
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product-card {
+    width: 100%;     /* take full space */
+    margin: 0 0 15px 0; /* spacing between cards */
+    max-width: 100%;
+  }
+  .product-footer-links {
+    flex-direction: row;   /* stack vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 0;
+  }
+  .dbtn_product1 {
+    min-width: 120px;  /* smaller but not tiny */
+    max-width: 60%;    /* keep centered, narrower */
+    margin: 10px auto 20px -10px; /* center it */
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .product-image { max-height: 90px; }
+  .product-title { font-size: 13px; }
+  .product-description { font-size: 11px; }
+   {
+    flex: 1 1 80%;   /* Buttons stack full width */
+    max-width: 80%;
+    font-size: 10px;
+  }
+  .dbtn_product,
+  
+  .dbtn_product2 {
+    flex: 1 1 80%;   /* take full width */
+    max-width: 90%;
+    margin-top: -30px;
+    font-size: 10px;
+    text-align: center;
+    white-space: normal;  /* allow wrapping */
+  }
+}
+@media screen and (max-width: 980px) {
+  .product-card {
+    padding: 12px 8px; 
+    flex-wrap: nowrap; 
+  }
+  .dbtn_product1 {
+    min-width: 120px;   /* smaller size */
+    max-width: 60%;     /* narrower than card */
+    margin: 15px auto 20px auto; /* center it */
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+  .product-image { max-height: 110px;
+  margin-top: -30px; width: 110%; object-fit: contain; }
+  .product-title { font-size: 18px; }
+  .product-description { font-size: 12px; }
+   .dbtn_product, .dbtn_product2 {
+    font-size: 15px;
+   
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .product-card {  width: 100%;     /* take full space */
+    margin: 0 0 15px 0; /* spacing between cards */
+    max-width: 100%; }
+  .product-image { max-height: 70px; }
+  .product-title { font-size: 12px; }
+  .product-description { font-size: 10px; }
+  .dbtn_product1, .dbtn_product, .dbtn_product2 {
+    margin-top: -10px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Prevent tap highlight on mobile browsers */
+.button-size,
+.button-btn,
+.dbtn_product,
+.dbtn_product1,
+.dbtn_product2 {
+  -webkit-tap-highlight-color: transparent; /* For iOS Safari */
+  
+}
+
+
+
+
+
+/* If you already defined these in your global CSS (from Sumitomo),
+   you can omit the :root block below. */
+   :root {
+    --gutter: clamp(0.5rem, 4vw, 3rem);
+    --maxW: 72rem;
+    --h1: clamp(1.5rem, 3.2vw + 0.5rem, 3rem);
+    --text: clamp(1rem, 0.45vw + 0.9rem, 1.125rem);
+  }
+  
+  /* Safe defaults */
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  img { max-width: 100%; display: block; }
+  
+  /* Page wrapper */
+  .deviser-page{
+    display: grid;
+    grid-template-columns: var(--gutter) minmax(0, 1fr) var(--gutter);
+    /* no min-height to avoid pushing content below */
+    background: transparent;
+  }
+  
+  /* Content container */
+  .deviser-page-pro-main{
+    grid-column: 2/3;
+    width: min(100%, var(--maxW));
+    margin-inline: auto;
+    padding-block-start: clamp(1rem, 3vw, 3.5rem); /* top only */
+    padding-block-end: 0;                           /* no bottom space */
+  }
+  
+  /* Heading/logo */
+  .deviser-page-pro-name{
+    text-align: center;
+    font-size: var(--h1);
+    margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
+  }
+  
+  .deviser-logo{
+    width: clamp(160px, 28vw, 420px);
+    height: auto;
+    margin-inline: auto;
+  }
+  
+  /* Paragraph */
+  .deviser-page-pro-art{
+    font-size: var(--text);
+    line-height: 1.65;
+    max-width: 65ch;
+    margin-inline: auto;
+    padding-inline: clamp(0px, 1vw, 10px);
+    margin-bottom: 0; /* keep tight for the next section */
+  }
+  
+  /* CTA as a styled Link */
+  .deviserpro-btn{
+    display: inline-block;
+    margin-top: clamp(0.75rem, 2vw, 1.25rem);
+    padding: 0.6rem 1rem;
+    background-color: #e6e6e6;
+    color: #111;
+    text-decoration: none;
+    border-radius: 0.375rem;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  }
+  .deviserpro-btn:hover{ background-color: #dcdcdc; }
+  .deviserpro-btn:focus-visible{ outline: 2px solid #0a66ff; outline-offset: 2px; }
+  
+  /* Ensure last child doesn't add extra bottom space */
+  .deviser-page-pro-main > :last-child{ margin-bottom: 0; }
+  
+  /* Tiny screens tweak */
+  @media (max-width: 480px){
+    .deviser-page{
+      grid-template-columns: clamp(0.5rem, 2vw, 0.8rem) 1fr clamp(0.5rem, 2vw, 0.8rem);
+    }
+    .deviser-logo{
+      width: clamp(160px, 60vw, 340px);
+    }
+  }
+
+
+

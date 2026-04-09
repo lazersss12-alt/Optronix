@@ -1,0 +1,366 @@
+/* Hide rapid deployment card on mobile */
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+/* Card container styles */
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Ensure all cards have equal height */
+.feature-card > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Fix content overflow */
+.feature-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* Grid layout adjustments */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0 10px;
+  }
+  
+  .feature-card {
+    padding: 12px 10px;
+    min-height: 180px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .feature-card p {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .feature-card {
+    min-height: auto;
+  }
+}
+
+/* Ensure images don't cause overflow */
+.feature-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/* Reuse header styles from PageHeader.css */
+.header-wrapper {
+  width: 100%;
+  background: #000;
+}
+
+.intro-section {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.intro-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ================= Features ================= */
+.features-section {
+  padding: 80px 0;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.features-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 70px;
+  background: linear-gradient(90deg,#fff,#aaa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.1);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(220,53,69,0.9);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.feature-icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 8px 0;
+  color:#fff;
+}
+
+.feature-description {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.header.zoom-out .header-banner {
+  max-height: 460px;   /* smaller cap for zoom-out */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  
+  
+  .features-heading {
+  font-size: 1.75rem;
+  margin-bottom: 32px;
+  }
+  
+  .features-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px;
+  padding: 0 12px;
+  align-items: stretch; /* make rows even-height */
+  }
+  
+  .feature-card {
+  padding: 16px;
+  border-radius: 14px;
+  height: 100%; /* stretch to equal heights in each row */
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  }
+  
+  .feature-title {
+  font-size: 1rem;
+  margin: 6px 0 4px;
+  }
+  
+  .feature-description {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere; /* prevent overflow in narrow columns */
+  }
+  }
+  
+  /* Small phones */
+  @media (max-width: 400px) {
+  .features-grid {
+  gap: 12px;
+  padding: 0 10px;
+  }
+  .feature-card { padding: 14px; }
+  .feature-title { font-size: 0.95rem; }
+  .feature-description { font-size: 0.85rem; }
+  .feature-icon { width: 38px; height: 38px; }
+  }
+  
+  /* Very small devices */
+  @media (max-width: 320px) {
+  .features-grid {
+  gap: 10px;
+  padding: 0 8px;
+  }
+  .feature-title { font-size: 0.9rem; }
+  .feature-description { font-size: 0.8rem; }
+  }
+
+
+
+
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(220,53,69,0.9);
+    display: grid;
+    place-items: center; 
+    padding: 8px; 
+    box-sizing: border-box;
+    }
+    
+    .feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+    }
+    
+  
+    @media (max-width: 768px) {
+    .feature-icon {
+    width: 48px;
+    height: 48px;
+    padding: 6px; 
+    }
+    }
+    
+    
+    @media (max-width: 400px) {
+    .feature-icon {
+    width: 44px;
+    height: 44px;
+    padding: 5px;
+    }
+    }
+
+    @media (min-width: 1025px) {
+    
+      .features-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      }
+      }
+
+
+
+      .header-banner {
+        position: relative;
+        width: 100%;
+        height: 20vh !important;           /* <-- Full viewport height always */
+        min-height: 600px !important;         /* Ensure good size even on laptops */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        background-size: cover;     /* Fill width+height, crop if necessary */
+        background-position: center;
+        background-repeat: no-repeat;
+      
+        color: white;
+        text-align: center;
+        padding: 0 1rem;
+        overflow: hidden;
+      }
+      
+      /* Dark gradient overlay */
+      .header-banner::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.55) 0%,
+          rgba(0, 0, 0, 0.45) 40%,
+          rgba(0, 0, 0, 0.25) 70%,
+          rgba(0, 0, 0, 0.1) 100%
+        );
+        z-index: 1;
+      }
+      
+      .header-inner {
+        position: relative;
+        z-index: 2;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      
+      .header-title {
+        font-size: clamp(2rem, 5vw, 3.5rem); /* Scales with screen width */
+        font-weight: 700;
+        margin-top: -250px !important;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1.3;
+      }

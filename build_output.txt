@@ -1,0 +1,441 @@
+﻿
+> optronix@0.1.0 build
+> set NODE_OPTIONS=--max_old_space_size=4096 && set DISABLE_ESLINT_PLUGIN=true && set GENERATE_SOURCEMAP=false && craco build
+
+Creating an optimized production build...
+node.exe : 
+Browserslist: browsers 
+data (caniuse-lite) is 
+7 months old. Please 
+run:
+At C:\Program 
+Files\nodejs\npm.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo      
+        : NotSpecified  
+  : (Browserslist: b.   
+ ..ld. Please run::S    
+tring) [], RemoteEx    
+ception
+    + FullyQualifiedErr 
+   orId : NativeComman  
+  dError
+ 
+  npx update-browserslis
+t-db@latest
+  Why you should do it 
+regularly: https://githu
+b.com/browserslist/updat
+e-db#readme
+Compiled with warnings.
+
+[eslint] 
+src\components\Executives.jsx
+  Line 24:39:  The ref value 'sectionRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'sectionRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+src\components\LandingBlogSlider.jsx
+  Line 113:5:   The element section has an implicit role of region. Defining this explicitly is redundant and should be avoided                                                                                  jsx-a11y/no-redundant-roles
+  Line 157:23:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You donΓÇÖt need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+  Line 161:25:  No duplicate props allowed                                                                                                                                                                       react/jsx-no-duplicate-props
+
+src\components\layout\Footer.jsx
+  Line 1:1:  Unexpected Unicode BOM (Byte Order Mark)  unicode-bom
+
+src\components\layout\Header\Header.jsx
+  Line 158:17:  The attribute aria-expanded is not supported by the role textbox. This role is implicit on the element input  jsx-a11y/role-supports-aria-props
+
+src\components\ui\ImageSlider.jsx
+  Line 1:1:  Unexpected Unicode BOM (Byte Order Mark)  unicode-bom
+  Line 5:8:  'logo' is defined but never used          no-unused-vars
+
+src\components\ui\SurfaceMountingShowcase.jsx
+  Line 1:27:  'useEffect' is defined but never used  no-unused-vars
+
+src\features\ems\pages\ofcpage.jsx
+  Line 18:8:  'Machine10' is defined but never used  no-unused-vars
+  Line 26:8:  'Machine18' is defined but never used  no-unused-vars
+
+src\features\landing\sections\LazySection.jsx
+  Line 1:1:  Unexpected Unicode BOM (Byte Order Mark)  unicode-bom
+
+src\features\products\deviser\components\Deviserproduct.jsx
+  Line 240:19:  No duplicate props allowed  react/jsx-no-duplicate-props
+
+src\features\products\deviser\components\Deviserproducteight.jsx
+  Line 318:8:   'AccordionTable' is defined but never used  no-unused-vars
+  Line 375:11:  'imgs' is assigned a value but never used   no-unused-vars
+
+src\features\products\deviser\components\Deviserproductfour.jsx
+  Line 553:9:  'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\deviser\components\Deviserproductnine.jsx
+  Line 262:8:   'AccordionTable' is defined but never used  no-unused-vars
+  Line 319:11:  'imgs' is assigned a value but never used   no-unused-vars
+
+src\features\products\deviser\components\Deviserproductsix.jsx
+  Line 304:8:  'AccordionTable' is defined but never used  no-unused-vars
+
+src\features\products\deviser\components\Deviserproductthree.jsx
+  Line 546:9:  'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\deviser\components\Deviserproducttwo.jsx
+  Line 594:96:  Unnecessary escape character: \"  no-useless-escape
+
+src\features\products\deviser\components\Devsierproductseven.jsx
+  Line 285:8:   'AccordionTable' is defined but never used  no-unused-vars
+  Line 343:11:  'imgs' is assigned a value but never used   no-unused-vars
+
+src\features\products\deviser\components\deviserpro.jsx
+  Line 1:8:   'React' is defined but never used        no-unused-vars
+  Line 2:10:  'Link' is defined but never used         no-unused-vars
+  Line 3:8:   'deviserlogo' is defined but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproducteight.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproducteleven.jsx
+  Line 40:15:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductfive.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductfour.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductfourteen.jsx
+  Line 41:15:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductnine.jsx
+  Line 40:15:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductone.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductseven.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductsix.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductten.jsx
+  Line 40:15:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductthirteen.jsx
+  Line 40:15:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproductthree.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproducttwelve.jsx
+  Line 40:15:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\Optronixedfaproducttwo.jsx
+  Line 40:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_edfa\components\optronixedfapro.jsx
+  Line 1:8:   'React' is defined but never used  no-unused-vars
+  Line 3:10:  'Link' is defined but never used   no-unused-vars
+
+src\features\products\optronix_edfa\components\optronixedfaproduct.jsx
+  Line 348:19:  No duplicate props allowed  react/jsx-no-duplicate-props
+
+src\features\products\optronix_fiber\components\Optronixfiberpro.jsx
+  Line 1:8:  'React' is defined but never used  no-unused-vars
+  Line 3:9:  'Link' is defined but never used   no-unused-vars
+
+src\features\products\optronix_fiber\components\Optronixfiberproduct.jsx
+  Line 168:19:  No duplicate props allowed  react/jsx-no-duplicate-props
+
+src\features\products\optronix_fiber\components\Optronixfiberproductfive.jsx
+  Line 61:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_fiber\components\Optronixfiberproductfour.jsx
+  Line 325:142:  Unnecessary escape character: \l           no-useless-escape
+  Line 350:11:   'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_fiber\components\Optronixfiberproductone.jsx
+  Line 538:11:  'imgs' is assigned a value but never used            no-unused-vars
+  Line 547:9:   'specAccordions' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_fiber\components\Optronixfiberproductthree.jsx
+  Line 322:138:  Unnecessary escape character: \l           no-useless-escape
+  Line 347:11:   'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_fiber\components\Optronixfiberproducttwo.jsx
+  Line 324:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponpro.jsx
+  Line 1:8:  'React' is defined but never used  no-unused-vars
+  Line 3:9:  'Link' is defined but never used   no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproduct.jsx
+  Line 20:8:    'op821gwvdgb' is defined but never used  no-unused-vars
+  Line 278:19:  No duplicate props allowed               react/jsx-no-duplicate-props
+
+src\features\products\optronix_pon\components\Optronixponproducteight.jsx
+  Line 289:8:   'subfc8r' is defined but never used        no-unused-vars
+  Line 339:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproducteleven.jsx
+  Line 286:8:   'subfc8r' is defined but never used        no-unused-vars
+  Line 336:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductfive.jsx
+  Line 338:8:   'fc8rImg' is defined but never used                   no-unused-vars
+  Line 388:11:  'imgs' is assigned a value but never used             no-unused-vars
+  Line 402:9:   'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductfour.jsx
+  Line 347:8:   'fc8rImg' is defined but never used                   no-unused-vars
+  Line 350:8:   'AccordionTable' is defined but never used            no-unused-vars
+  Line 399:11:  'imgs' is assigned a value but never used             no-unused-vars
+  Line 407:9:   'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductnine.jsx
+  Line 297:8:   'subfc8r' is defined but never used        no-unused-vars
+  Line 347:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductone.jsx
+  Line 344:8:   'fc8rImg' is defined but never used                   no-unused-vars
+  Line 347:8:   'AccordionTable' is defined but never used            no-unused-vars
+  Line 396:11:  'imgs' is assigned a value but never used             no-unused-vars
+  Line 407:9:   'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductten.jsx
+  Line 296:8:   'subfc8r' is defined but never used        no-unused-vars
+  Line 346:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductthirteen.jsx
+  Line 273:8:   'subfc8r' is defined but never used        no-unused-vars
+  Line 323:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproductthree.jsx
+  Line 347:8:   'fc8rImg' is defined but never used                   no-unused-vars
+  Line 350:8:   'AccordionTable' is defined but never used            no-unused-vars
+  Line 399:11:  'imgs' is assigned a value but never used             no-unused-vars
+  Line 410:9:   'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproducttwelve.jsx
+  Line 262:8:   'subfc8r' is defined but never used        no-unused-vars
+  Line 312:11:  'imgs' is assigned a value but never used  no-unused-vars
+
+src\features\products\optronix_pon\components\Optronixponproducttwo.jsx
+  Line 349:8:   'fc8rImg' is defined but never used                   no-unused-vars
+  Line 352:8:   'AccordionTable' is defined but never used            no-unused-vars
+  Line 400:11:  'imgs' is assigned a value but never used             no-unused-vars
+  Line 411:9:   'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\sumitomo\components\Sumitomoproduct.jsx
+  Line 851:19:  No duplicate props allowed  react/jsx-no-duplicate-props
+
+src\features\products\sumitomo\components\sumitomopro.jsx
+  Line 1:8:  'React' is defined but never used           no-unused-vars
+  Line 3:8:  'sumitomologo' is defined but never used    no-unused-vars
+  Line 4:8:  'sumitomoBanner' is defined but never used  no-unused-vars
+
+src\features\products\sumitomo\pages\Sumitomoproducteleven.jsx
+  Line 485:9:  'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\features\products\sumitomo\pages\Sumitomoproductten.jsx
+  Line 355:8:  'sfcsPdf' is defined but never used                   no-unused-vars
+  Line 507:9:  'accessoriesData' is assigned a value but never used  no-unused-vars
+
+src\pages\AboutPage.jsx
+  Line 232:8:  'PublicationPage' is defined but never used  no-unused-vars
+
+src\pages\BranchGalleryPage.jsx
+  Line 120:9:  The 'images' conditional could make the dependencies of useEffect Hook (at line 160) change on every render. To fix this, wrap the initialization of 'images' in its own useMemo() Hook  react-hooks/exhaustive-deps
+
+src\pages\Educational\Educational.jsx
+  Line 23:10:  'canLeft' is assigned a value but never used          no-unused-vars
+  Line 24:10:  'canRight' is assigned a value but never used         no-unused-vars
+  Line 61:9:   'scrollByOneCard' is assigned a value but never used  no-unused-vars
+  Line 73:9:   'showArrows' is assigned a value but never used       no-unused-vars
+
+src\pages\Educational\educationalpage.jsx
+  Line 378:7:   'Header' is assigned a value but never used                                                                   no-unused-vars
+  Line 433:11:  The attribute aria-expanded is not supported by the role textbox. This role is implicit on the element input  jsx-a11y/role-supports-aria-props
+  Line 944:18:  'setIsOpen' is assigned a value but never used                                                                no-unused-vars
+
+src\pages\Gallery.jsx
+  Line 27:8:  'kochi3' is defined but never used   no-unused-vars
+  Line 28:8:  'kochi4' is defined but never used   no-unused-vars
+  Line 31:8:  'kochi7' is defined but never used   no-unused-vars
+  Line 36:8:  'kochi12' is defined but never used  no-unused-vars
+  Line 38:8:  'kochi14' is defined but never used  no-unused-vars
+  Line 40:8:  'kochi16' is defined but never used  no-unused-vars
+  Line 43:8:  'kochi19' is defined but never used  no-unused-vars
+  Line 47:8:  'kochi23' is defined but never used  no-unused-vars
+  Line 50:8:  'kochi26' is defined but never used  no-unused-vars
+
+src\pages\HomePage.jsx
+  Line 1:1:  Unexpected Unicode BOM (Byte Order Mark)  unicode-bom
+
+src\pages\TutorialsPage.jsx
+  Line 22:7:   'FAST_FORWARD_RATE' is assigned a value but never used                                                                                                                                                                           no-unused-vars
+  Line 39:9:   The 'machineData' array makes the dependencies of useEffect Hook (at line 112) change on every render. Move it inside the useEffect callback. Alternatively, wrap the initialization of 'machineData' in its own useMemo() Hook  react-hooks/exhaustive-deps
+  Line 49:25:  'setActiveSegment' is assigned a value but never used                                                                                                                                                                            no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  96.07 kB  build\static\js\main.ef9f25ff.js
+  52.94 kB  build\static\js\5839.d80735b1.chunk.js
+  41.39 kB  build\static\css\main.1e7391d4.css
+  21.36 kB  build\static\js\9679.84b81485.chunk.js
+  20.17 kB  build\static\css\5116.13c57f17.chunk.css
+  19.81 kB  build\static\js\5454.d3ae0a4c.chunk.js
+  8.81 kB   build\static\css\4248.6a5ad545.chunk.css
+  8.59 kB   build\static\css\9790.0ccddc56.chunk.css
+  8.18 kB   build\static\css\4769.69a777d3.chunk.css
+  6.72 kB   build\static\css\5012.e16f06d9.chunk.css
+  6.6 kB    build\static\css\8632.f91f47e1.chunk.css
+  5.64 kB   build\static\js\9826.1892373f.chunk.js
+  5.58 kB   build\static\css\6779.8f7b2dde.chunk.css
+  5.57 kB   build\static\js\4769.c50b5776.chunk.js
+  5.54 kB   build\static\js\1232.01a4ae52.chunk.js
+  5.12 kB   build\static\js\8356.405d12f1.chunk.js
+  5.06 kB   build\static\js\7852.0bce0439.chunk.js
+  5.04 kB   build\static\js\3116.a08e814d.chunk.js
+  5 kB      build\static\js\742.fa280f36.chunk.js
+  4.99 kB   build\static\js\8718.d2c0d2af.chunk.js
+  4.81 kB   build\static\js\9790.3252f193.chunk.js
+  4.74 kB   build\static\js\2918.5243fb90.chunk.js
+  4.74 kB   build\static\js\5408.96724328.chunk.js
+  4.51 kB   build\static\js\9997.23c2434d.chunk.js
+  4.5 kB    build\static\js\7074.0e685e0c.chunk.js
+  4.44 kB   build\static\js\2232.c170013f.chunk.js
+  4.3 kB    build\static\js\6773.b0e2ec91.chunk.js
+  4.27 kB   build\static\css\5309.b5516ab5.chunk.css
+  4.22 kB   build\static\js\2378.92c069da.chunk.js
+  4.19 kB   build\static\js\2871.36ba76f5.chunk.js
+  4.17 kB   build\static\js\9371.b76a1923.chunk.js
+  4.15 kB   build\static\js\7797.394e46ae.chunk.js
+  4.08 kB   build\static\js\8763.d55565ab.chunk.js
+  3.97 kB   build\static\js\4661.da296173.chunk.js
+  3.94 kB   build\static\js\6153.fca63438.chunk.js
+  3.92 kB   build\static\js\506.4f81402c.chunk.js
+  3.88 kB   build\static\js\5978.664e1afb.chunk.js
+  3.87 kB   build\static\js\6779.f9ecde91.chunk.js
+  3.83 kB   build\static\js\3928.94c81e49.chunk.js
+  3.72 kB   build\static\js\9581.01131627.chunk.js
+  3.7 kB    build\static\js\5504.8791b78f.chunk.js
+  3.66 kB   build\static\js\7161.b4eb1367.chunk.js
+  3.65 kB   build\static\js\5864.109026c1.chunk.js
+  3.64 kB   build\static\js\7350.b5e5d1c2.chunk.js
+  3.53 kB   build\static\js\8001.9a3af0d4.chunk.js
+  3.5 kB    build\static\js\7206.e66160f0.chunk.js
+  3.48 kB   build\static\js\1259.1b4a9fc8.chunk.js
+  3.4 kB    build\static\css\9378.07666886.chunk.css
+  3.38 kB   build\static\js\5012.31745393.chunk.js
+  3.36 kB   build\static\js\3567.62263bcb.chunk.js
+  3.33 kB   build\static\js\1838.6c40b19d.chunk.js
+  3.32 kB   build\static\js\7157.a290ea62.chunk.js
+  3.31 kB   build\static\js\9201.400c38b7.chunk.js
+  3.28 kB   build\static\js\9717.90b9f775.chunk.js
+  3.21 kB   build\static\js\6016.27693787.chunk.js
+  3.13 kB   build\static\js\6293.81ecca42.chunk.js
+  3.07 kB   build\static\css\5454.25846a7a.chunk.css
+  3.07 kB   build\static\css\8071.25846a7a.chunk.css
+  2.96 kB   build\static\css\480.29171aa7.chunk.css
+  2.93 kB   build\static\js\8071.56822a0c.chunk.js
+  2.71 kB   build\static\js\9378.2de73935.chunk.js
+  2.7 kB    build\static\css\5978.11a745de.chunk.css
+  2.7 kB    build\static\css\9997.11a745de.chunk.css
+  2.7 kB    build\static\css\2232.11a745de.chunk.css
+  2.7 kB    build\static\css\2378.11a745de.chunk.css
+  2.7 kB    build\static\css\2871.11a745de.chunk.css
+  2.7 kB    build\static\css\2918.11a745de.chunk.css
+  2.7 kB    build\static\css\3928.11a745de.chunk.css
+  2.7 kB    build\static\css\8356.11a745de.chunk.css
+  2.7 kB    build\static\css\506.11a745de.chunk.css
+  2.69 kB   build\static\css\3856.62b1b7af.chunk.css
+  2.69 kB   build\static\css\4050.62b1b7af.chunk.css
+  2.69 kB   build\static\css\4610.62b1b7af.chunk.css
+  2.69 kB   build\static\css\5048.62b1b7af.chunk.css
+  2.69 kB   build\static\css\5547.62b1b7af.chunk.css
+  2.69 kB   build\static\css\9688.62b1b7af.chunk.css
+  2.69 kB   build\static\js\4100.b2f121de.chunk.js
+  2.68 kB   build\static\js\5636.5649f94a.chunk.js
+  2.68 kB   build\static\js\5178.7d670e6d.chunk.js
+  2.68 kB   build\static\js\6133.e307eb84.chunk.js
+  2.68 kB   build\static\js\6324.76bcfa2e.chunk.js
+  2.68 kB   build\static\js\4973.c166ed49.chunk.js
+  2.67 kB   build\static\js\7009.82cce3fe.chunk.js
+  2.66 kB   build\static\css\8722.ac598bac.chunk.css
+  2.65 kB   build\static\js\9896.376dc4aa.chunk.js
+  2.65 kB   build\static\js\7637.402a0b84.chunk.js
+  2.65 kB   build\static\js\2661.51790e67.chunk.js
+  2.64 kB   build\static\js\1965.0c757c3c.chunk.js
+  2.64 kB   build\static\js\1154.27ff8d37.chunk.js
+  2.64 kB   build\static\js\433.32d0a687.chunk.js
+  2.64 kB   build\static\js\594.f0847fbe.chunk.js
+  2.64 kB   build\static\js\631.fdc7b1a9.chunk.js
+  2.6 kB    build\static\js\9658.01dc6397.chunk.js
+  2.51 kB   build\static\js\2905.23ae2178.chunk.js
+  2.25 kB   build\static\css\8504.4af95bc5.chunk.css
+  2.24 kB   build\static\js\6978.e7b73bf4.chunk.js
+  2.23 kB   build\static\js\9725.03c4ec06.chunk.js
+  2.07 kB   build\static\js\8654.32df0feb.chunk.js
+  2.03 kB   build\static\js\8722.2486bf11.chunk.js
+  1.85 kB   build\static\js\8504.52dff735.chunk.js
+  1.83 kB   build\static\css\8654.a473ff85.chunk.css
+  1.83 kB   build\static\css\7538.0f953be5.chunk.css
+  1.76 kB   build\static\js\6453.cce668ff.chunk.js
+  1.73 kB   build\static\js\2433.bde780da.chunk.js
+  1.69 kB   build\static\js\8537.c2bc1312.chunk.js
+  1.57 kB   build\static\js\9231.85cbeda1.chunk.js
+  1.51 kB   build\static\js\7538.607a79c6.chunk.js
+  1.4 kB    build\static\js\5309.8b80bedc.chunk.js
+  1.36 kB   build\static\css\9658.d443584e.chunk.css
+  1.3 kB    build\static\css\2433.fb30a274.chunk.css
+  1.26 kB   build\static\js\2907.c37de9e3.chunk.js
+  1.17 kB   build\static\css\9231.cf530e89.chunk.css
+  1.16 kB   build\static\js\480.d0ba0d27.chunk.js
+  1.13 kB   build\static\js\6961.1cd1e682.chunk.js
+  1.04 kB   build\static\js\4403.52a079e4.chunk.js
+  953 B     build\static\css\4403.5c35cf26.chunk.css
+  953 B     build\static\css\9725.5c35cf26.chunk.css
+  938 B     build\static\js\3856.266fa18a.chunk.js
+  936 B     build\static\js\9688.f3065e88.chunk.js
+  934 B     build\static\js\5048.f9eec3ad.chunk.js
+  932 B     build\static\js\4050.4756cd11.chunk.js
+  932 B     build\static\js\5547.d5a7640d.chunk.js
+  931 B     build\static\js\4610.492e8d81.chunk.js
+  902 B     build\static\js\1633.6e78ca8f.chunk.js
+  775 B     build\static\css\2907.98ab209f.chunk.css
+  639 B     build\static\css\6978.adc9a0cb.chunk.css
+  276 B     build\static\js\5584.3dc419cc.chunk.js
+  227 B     build\static\js\1514.e712e2cc.chunk.js
+  164 B     build\static\js\8483.e582cee3.chunk.js
+  162 B     build\static\js\6957.fce09d63.chunk.js
+  161 B     build\static\js\1320.13fec421.chunk.js
+  158 B     build\static\js\5726.415a72ce.chunk.js
+  158 B     build\static\js\1745.f4a26bd9.chunk.js
+  157 B     build\static\js\3447.5fb81401.chunk.js
+  157 B     build\static\js\544.31dd3a2e.chunk.js
+  157 B     build\static\js\1215.d5058af3.chunk.js
+  156 B     build\static\js\528.a68add39.chunk.js
+  154 B     build\static\js\1475.756082ae.chunk.js
+  153 B     build\static\js\452.08b796df.chunk.js
+  151 B     build\static\js\5898.d6badba0.chunk.js
+  82 B      build\static\js\5142.8220a7e7.chunk.js
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+

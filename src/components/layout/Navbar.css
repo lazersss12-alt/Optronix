@@ -1,0 +1,3283 @@
+body {
+  margin: 0;
+}
+
+/* Base Navbar */
+.main-nav {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  /* Add solid background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  /* Optional: add subtle shadow */
+}
+
+.full-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ✅ center content horizontally */
+  gap: 40px;
+  /* spacing between logo, menu, button */
+  height: 80px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.nav-logo {
+  margin-right: 80px;
+  /* ✅ push menu slightly away from logo */
+}
+
+/* Remove auto-margin pushing nav-button to edge */
+.nav-button {
+  margin-left: 80px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  user-select: none;
+}
+
+.dropdown-toggle .dropdown-arrow {
+  transition: transform 0.2s ease;
+}
+
+.dropdown-toggle.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Desktop Dropdown Menu */
+.dropdown {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu2,
+.dropdown-menu3 {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  opacity: 0;
+  visibility: hidden;
+  background: white;
+  min-width: 220px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1001;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  pointer-events: none !important;
+  transform-origin: top center;
+}
+
+/* Active state for desktop dropdowns */
+.dropdown.active .dropdown-menu2,
+.dropdown.active .dropdown-menu3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdown-menu2 a,
+.dropdown-menu3 a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu2 a:hover,
+.dropdown-menu3 a:hover {
+  background-color: #f8f9fa;
+  color: #1a73e8;
+  padding-left: 25px;
+}
+
+.dropdown-menu2 li+li,
+.dropdown-menu3 li+li {
+  margin-top: 4px;
+}
+
+/* .dropdown:hover .dropdown-menu2,
+.dropdown:hover .dropdown-menu3 {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+} */
+
+.hamburger {
+  position: relative;
+  margin-left: 10px;
+  z-index: 2000;
+  display: none;
+  cursor: pointer;
+}
+
+/* Desktop View */
+@media (min-width: 1148px) {
+  .hamburger {
+    display: none;
+    /* hide hamburger */
+  }
+
+  .nav-logo {
+    margin-right: 40px;
+    /* push nav away from logo */
+  }
+
+  .nav-button {
+    margin-left: 40px;
+    /* push button away from nav links */
+  }
+
+  .nav-menu {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    /* always visible inline on desktop */
+  }
+}
+
+/* Mobile / Tablet ≤1147px */
+@media (max-width: 1147px) {
+  .full-nav {
+    justify-content: space-between;
+    /* logo left, hamburger right */
+    padding: 0 15px;
+    /* tighter padding */
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-button {
+    position: absolute;
+    right: 80px;
+    /* ✅ keeps space between button and hamburger */
+    top: 18px;
+    transform: scale(0.85);
+    /* shrink button slightly for tablet */
+  }
+
+  .enquire_button {
+    font-size: 0.85rem;
+    /* smaller text */
+    padding: 6px 14px;
+    /* reduce padding */
+    border-radius: 4px;
+    margin-left: 400px;
+    /* slightly smaller radius */
+  }
+
+  .enquire_button p {
+    margin: 0;
+    /* prevent text from creating extra space */
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 80px);
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    display: none;
+    padding: 15px 0;
+    z-index: 1500;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+    margin: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    list-style: none;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    text-align: left;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .nav-menu a:hover,
+  .dropdown-toggle:hover {
+    background: #f8f8f8;
+    color: #A7402D;
+  }
+
+  /* Mobile submenus expand inline */
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 0;
+    transition: max-height 0.3s ease;
+    background: #f9f9f9;
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    list-style: none;
+  }
+
+  .mobile-submenu li {
+    padding: 8px 0;
+    padding-left: 24px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobile-submenu li:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-submenu a {
+    display: block;
+    padding: 8px 0;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  .mobile-submenu a:hover {
+    color: #A7402D;
+    padding-left: 8px;
+  }
+
+  .mobile-submenu.active {
+    max-height: 500px;
+    padding: 4px 0 12px;
+    border-top: 1px solid #eee;
+    transition: max-height 0.5s ease-in-out;
+  }
+}
+
+
+/* Small devices */
+@media (max-width: 761px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    z-index: 2000;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    /* hidden until active */
+    position: absolute;
+    /* top: calc(100% + 12px);     drop below navbar/hamburger */
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    /* full width for phone usability */
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    padding: 4px 0;
+    z-index: 1500;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    /* ✅ now shows */
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    display: block;
+    padding: 6px 12px;
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Override bad !important rules */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    /* hidden on default */
+    position: relative;
+    background: #fff;
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .dropdown.active .dropdown-menu2,
+  .dropdown.active .dropdown-menu3 {
+    display: block;
+    /* ✅ show on click */
+  }
+}
+
+@media (max-width: 1147px) and (min-width: 762px) {
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    /* drop just below navbar */
+    right: 15px;
+    /* align under hamburger */
+    width: 220px;
+    /* compact width */
+    height: auto;
+    /* auto size, not full screen */
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    display: none;
+    padding: 6px 0;
+    z-index: 1500;
+    transition: all 0.25s ease;
+
+
+
+  }
+
+  .nav-menu.active {
+    display: flex;
+    margin-left: 550px;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    padding: 8px 14px;
+    /* tighter spacing */
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+body {
+  margin: 0;
+}
+
+/* Base Navbar */
+.main-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.full-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 80px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.nav-logo {
+  margin-right: 80px;
+}
+
+.nav-button {
+  margin-left: 80px;
+}
+
+/* Dropdown basics */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+}
+
+.dropdown-toggle .dropdown-arrow {
+  transition: transform 0.2s ease;
+}
+
+.dropdown-toggle.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Desktop dropdown menus */
+.dropdown-menu2,
+.dropdown-menu3 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  background: white;
+  min-width: 200px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  z-index: 1001;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown.active .dropdown-menu2,
+.dropdown.active .dropdown-menu3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu2 a,
+.dropdown-menu3 a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown-menu2 a:hover,
+.dropdown-menu3 a:hover {
+  background-color: #f8f9fa;
+  color: #1a73e8;
+  padding-left: 25px;
+}
+
+/* Hamburger (hidden by default) */
+.hamburger {
+  position: relative;
+  /* top: 28px; */
+  /* right: 20px; */
+  z-index: 2000;
+  display: none;
+  /* only shown ≤1147px */
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* ================== Desktop Only (≥1148px) ================== */
+@media (min-width: 1148px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-logo {
+    margin-right: 40px;
+  }
+
+  .nav-button {
+    margin-left: 40px;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+    padding: 0;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+  }
+}
+
+/* ================== Tablet & Mobile (≤1147px) ================== */
+/* Collapsed/Tablet/Mobile + specific devices */
+@media only screen and (max-width: 1147px),
+
+/* iPad Pro 12.9" (1024×1366) both orientations */
+only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (device-width: 1366px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+
+/* iPad Pro 11" (834×1194) both orientations */
+only screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (device-width: 1194px) and (device-height: 834px) and (-webkit-min-device-pixel-ratio: 2),
+
+/* Nest Hub (1024×600) landscape */
+only screen and (width: 1024px) and (height: 600px) and (orientation: landscape),
+
+/* Nest Hub Max (1280×800) landscape */
+only screen and (width: 1280px) and (height: 800px) and (orientation: landscape) {
+  .full-nav {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-button {
+    position: absolute;
+    right: 80px;
+    top: 18px;
+    transform: scale(0.85);
+  }
+
+  .enquire_button {
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 4px;
+  }
+
+  /* Collapsed Nav Menu (slides in/out) */
+  .nav-menu {
+    position: relative;
+    top: 240px;
+    /* just under navbar */
+    right: 15px;
+    /* tuck under hamburger */
+    width: auto;
+    /* shrink to fit items instead of fixed 250px/100% */
+    min-width: 220px;
+    /* keep it readable */
+    max-width: 320px;
+    /* avoid taking full tablet width */
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    display: none;
+    padding: 6px 0;
+    z-index: 1500;
+    transition: all 0.25s ease;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    margin: 0;
+    transform: translateX(0);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    list-style: none;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    text-align: left;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .nav-menu a:hover,
+  .dropdown-toggle:hover {
+    background: #f8f8f8;
+    color: #A7402D;
+  }
+
+  /* Submenus expand inline on mobile */
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f9f9f9;
+    list-style: none;
+  }
+
+  .mobile-submenu li {
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .mobile-submenu li:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-submenu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+  }
+
+  .mobile-submenu a:hover {
+    color: #A7402D;
+  }
+
+  .mobile-submenu.active {
+    max-height: 500px;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+  }
+}
+
+/* ================== Phones ≤761px (full width dropdown) ================== */
+@media (max-width: 761px) {
+  .nav-menu {
+    width: 100%;
+    /* full-width slide-down menu */
+    left: 0;
+    right: 0;
+    height: auto;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-menu.active {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .nav-menu {
+    margin-top: 50px !important;
+    /* 👈 adjust as needed */
+  }
+
+  .nav-menu ul {
+    margin-top: 80px;
+  }
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+}
+
+
+@media only screen and (hover: none) and (pointer: coarse) and (-webkit-min-device-pixel-ratio: 2) and (device-width: 1024px) and (device-height: 1366px),
+only screen and (hover: none) and (pointer: coarse) and (-webkit-min-device-pixel-ratio: 2) and (device-width: 1366px) and (device-height: 1024px) {
+
+  .full-nav {
+    justify-content: space-between !important;
+    padding: 0 15px !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-button {
+    position: absolute !important;
+    right: 80px !important;
+    top: 18px !important;
+    transform: scale(0.85) !important;
+  }
+
+  .enquire_button {
+    font-size: 0.85rem !important;
+    padding: 6px 14px !important;
+    border-radius: 4px !important;
+  }
+
+  .nav-menu {
+    position: relative !important;
+    top: 140px !important;
+    right: 15px !important;
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: 320px !important;
+    background: #fff !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    flex-direction: column !important;
+    display: none !important;
+    padding: 6px 0 !important;
+    z-index: 1500 !important;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    margin: 0 !important;
+    transform: translateX(0) !important;
+  }
+
+  .nav-menu ul {
+    flex-direction: column !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-menu li {
+    list-style: none !important;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 8px 14px !important;
+    text-align: left !important;
+    width: 100% !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* Desktop-style dropdowns: add extra top offset for this device */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+
+  .mobile-submenu {
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height .3s ease !important;
+    background: #f9f9f9 !important;
+  }
+
+  .mobile-submenu.active {
+    max-height: 500px !important;
+    padding: 8px 0 !important;
+    border-top: 1px solid #eee !important;
+  }
+}
+
+/* ===== iPad Pro 11" (834×1194) — both orientations ===== */
+@media only screen and (hover: none) and (pointer: coarse) and (-webkit-min-device-pixel-ratio: 2) and (device-width: 834px) and (device-height: 1194px),
+only screen and (hover: none) and (pointer: coarse) and (-webkit-min-device-pixel-ratio: 2) and (device-width: 1194px) and (device-height: 834px) {
+
+  .full-nav {
+    justify-content: space-between !important;
+    padding: 0 15px !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-button {
+    position: absolute !important;
+    right: 80px !important;
+    top: 18px !important;
+    transform: scale(0.85) !important;
+  }
+
+  .enquire_button {
+    font-size: 0.85rem !important;
+    padding: 6px 14px !important;
+    border-radius: 4px !important;
+  }
+
+  .nav-menu {
+    position: relative !important;
+    top: 140px !important;
+    right: 15px !important;
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: 320px !important;
+    background: #fff !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    flex-direction: column !important;
+    display: none !important;
+    padding: 6px 0 !important;
+    z-index: 1500 !important;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    margin: 0 !important;
+    transform: translateX(0) !important;
+  }
+
+  .nav-menu ul {
+    flex-direction: column !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-menu li {
+    list-style: none !important;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 8px 14px !important;
+    text-align: left !important;
+    width: 100% !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+  }
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+
+  .mobile-submenu {
+    max-height: 0 !important;
+    overflow: hidden !important;
+    transition: max-height .3s ease !important;
+    background: #f9f9f9 !important;
+  }
+
+  .mobile-submenu.active {
+    max-height: 500px !important;
+    padding: 8px 0 !important;
+    border-top: 1px solid #eee !important;
+  }
+}
+
+/* ===== Nest Hub (1024×600) — landscape ===== */
+@media only screen and (width: 1024px) and (height: 600px) and (orientation: landscape) {
+  .full-nav {
+    justify-content: space-between !important;
+    padding: 0 15px !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-button {
+    position: absolute !important;
+    right: 80px !important;
+    top: 18px !important;
+    transform: scale(0.85) !important;
+  }
+
+  .enquire_button {
+    font-size: 0.85rem !important;
+    padding: 6px 14px !important;
+    border-radius: 4px !important;
+  }
+
+  .nav-menu {
+    position: relative !important;
+    top: 140px !important;
+    right: 15px !important;
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: 320px !important;
+    background: #fff !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    flex-direction: column !important;
+    display: none !important;
+    padding: 6px 0 !important;
+    z-index: 1500 !important;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    margin: 0 !important;
+    transform: translateX(0) !important;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    padding: 8px 14px !important;
+    font-size: .9rem !important;
+    white-space: nowrap !important;
+  }
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+}
+
+/* ===== Nest Hub Max (1280×800) — landscape ===== */
+@media only screen and (width: 1280px) and (height: 800px) and (orientation: landscape) {
+  .full-nav {
+    justify-content: space-between !important;
+    padding: 0 15px !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-button {
+    position: absolute !important;
+    right: 80px !important;
+    top: 18px !important;
+    transform: scale(0.85) !important;
+  }
+
+  .enquire_button {
+    font-size: 0.85rem !important;
+    padding: 6px 14px !important;
+    border-radius: 4px !important;
+  }
+
+  .nav-menu {
+    position: relative !important;
+    top: 130px !important;
+    right: 15px !important;
+    width: auto !important;
+    min-width: 220px !important;
+    max-width: 320px !important;
+    background: #fff !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    flex-direction: column !important;
+    display: none !important;
+    padding: 6px 0 !important;
+    z-index: 1500 !important;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    margin: 0 !important;
+    transform: translateX(0) !important;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    padding: 8px 14px !important;
+    font-size: .9rem !important;
+    white-space: nowrap !important;
+  }
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(0) !important;
+  }
+}
+
+
+
+/* Always center dropdown under its toggle, no horizontal jump */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu2,
+.dropdown-menu3 {
+  position: absolute !important;
+  top: calc(100% + 8px) !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, 8px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: transform .2s ease, opacity .2s ease, visibility 0s linear .2s !important;
+  will-change: transform !important;
+  margin-left: 0 !important;
+}
+
+/* Desktop/hover devices: show on hover only (click does nothing) */
+@media (hover: hover) and (pointer: fine) {
+  /* .dropdown:hover .dropdown-menu2,
+  .dropdown:hover .dropdown-menu3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(-50%, 0) !important;
+    pointer-events: auto !important;
+    transition: transform .2s ease, opacity .2s ease, visibility 0s linear 0s !important;
+  } */
+
+  /* Neutralize any .active state from JS on desktop */
+  .dropdown.active .dropdown-menu2,
+  .dropdown.active .dropdown-menu3 {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translate(-50%, 8px) !important;
+    pointer-events: none !important;
+  }
+}
+
+/* Touch devices: keep click-to-open via .active */
+@media (hover: none),
+(pointer: coarse) {
+
+  .dropdown.active .dropdown-menu2,
+  .dropdown.active .dropdown-menu3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(-50%, 0) !important;
+    pointer-events: auto !important;
+    transition: transform .2s ease, opacity .2s ease, visibility 0s linear 0s !important;
+  }
+}
+
+/* Phones: inline dropdowns (full-width inside panel) */
+@media (max-width: 761px) {
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+
+.dropdown {
+  position: relative !important;
+  /* ✅ IMPORTANT — contains absolute dropdown */
+}
+
+.dropdown-toggle {
+  cursor: pointer !important;
+  /* ✅ IMPORTANT — visual feedback for clickability */
+  display: flex !important;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+  position: relative;
+  z-index: 2 !important;
+  /* ✅ IMPORTANT — ensures toggle is above other elements */
+}
+
+.dropdown-toggle .dropdown-arrow {
+  transition: transform 0.2s ease !important;
+  /* ✅ IMPORTANT — enables smooth arrow rotation */
+}
+
+.dropdown.active .dropdown-toggle .dropdown-arrow {
+  transform: rotate(180deg) !important;
+  /* ✅ IMPORTANT — visual indicator for open state */
+}
+
+
+/* === DESKTOP DROPDOWNS (≥1148px) === */
+@media (min-width: 1148px) {
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    position: absolute !important;
+    /* ✅ IMPORTANT — positions menu relative to .dropdown */
+    top: calc(100% + 8px) !important;
+    /* ✅ IMPORTANT — small gap below toggle */
+    left: 50% !important;
+    /* ✅ IMPORTANT — centers under parent */
+    transform: translateX(-50%) translateY(8px) !important;
+    /* ✅ IMPORTANT — keeps centered + slide-down effect */
+    min-width: 220px !important;
+
+    opacity: 0 !important;
+    /* ✅ IMPORTANT — hides menu visually */
+    visibility: hidden !important;
+    /* ✅ IMPORTANT — prevents interaction & improves accessibility */
+    pointer-events: none !important;
+    /* ✅ IMPORTANT — blocks clicks when closed */
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    /* ✅ IMPORTANT — smooth fade+slide */
+
+    background: white !important;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    z-index: 1001;
+    /* ✅ IMPORTANT — appears above other content */
+  }
+
+  .dropdown.active .dropdown-menu2,
+  .dropdown.active .dropdown-menu3 {
+    opacity: 1 !important;
+    /* ✅ IMPORTANT — makes visible on click */
+    visibility: visible !important;
+    /* ✅ IMPORTANT — allows interaction */
+    transform: translateX(-50%) translateY(0) !important;
+    /* ✅ IMPORTANT — final position */
+    pointer-events: auto !important;
+    /* ✅ IMPORTANT — enables clicking links inside */
+  }
+
+  .dropdown-menu2 a,
+  .dropdown-menu3 a {
+    display: block !important;
+    padding: 10px 20px !important;
+    color: #333 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .dropdown-menu2 a:hover,
+  .dropdown-menu3 a:hover {
+    background-color: #f8f9fa !important;
+    color: #A7402D !important;
+    padding-left: 25px !important;
+  }
+
+  .dropdown-menu2 li+li,
+  .dropdown-menu3 li+li {
+    margin-top: 4px !important;
+  }
+}
+
+
+
+:root {
+  --nav-height: 80px;
+}
+
+/* Mobile/Tablet: right-aligned dropdown under the hamburger, with X on open */
+@media (max-width: 1147px) {
+
+  /* Anchor absolute menu to the bar */
+  .full-nav {
+    position: relative !important;
+  }
+
+  /* Hamburger: keep it top-right and turn into an X with pure CSS */
+  .hamburger {
+    display: block !important;
+    position: relative !important;
+    margin-left: 10px !important;
+    z-index: 2000 !important;
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+  }
+
+  /* Hide the React SVG icon and draw our own via CSS */
+  .hamburger svg {
+    display: none !important;
+  }
+
+  .hamburger::before {
+    content: "\2630";
+    /* ☰ */
+    display: block;
+    font-size: 2rem;
+    color: #A7402D;
+  }
+
+  /* When the menu is open, show X */
+  .nav-menu.active~.hamburger::before {
+    content: "\2715";
+    /* ✕ */
+  }
+
+  /* Right-aligned dropdown panel under the hamburger */
+  .nav-menu {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    /* just below the navbar */
+    right: 16px !important;
+    /* align with hamburger */
+    left: auto !important;
+
+    width: min(92vw, 320px) !important;
+    /* compact panel */
+    height: auto !important;
+    max-height: calc(100dvh - var(--nav-height) - 24px) !important;
+    /* scroll within */
+    overflow-y: auto !important;
+
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12) !important;
+
+    display: none !important;
+    /* hidden until active */
+    transform: none !important;
+    /* prevent upward jumps */
+    margin: 0 !important;
+    padding: 6px 0 !important;
+    z-index: 1500 !important;
+    opacity: 1 !important;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-left: 0 !important;
+    /* cancel previous offsets */
+  }
+
+  /* Ensure only mobile submenus are used in this mode */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    display: none !important;
+  }
+
+  .mobile-submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+    background: #f9f9f9;
+    list-style: none;
+    padding: 0 20px;
+    margin: 6px 0 0;
+    border-top: 1px solid #eee;
+  }
+
+  .mobile-submenu.active {
+    max-height: 500px;
+    padding: 8px 20px 16px;
+  }
+}
+
+/* Phones ≤761px: keep the same right-aligned dropdown (override older rules) */
+@media (max-width: 761px) {
+  .nav-menu {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    right: 16px !important;
+    left: auto !important;
+    width: min(92vw, 320px) !important;
+    transform: none !important;
+    /* no translateY */
+  }
+
+  .nav-menu.active {
+    margin-left: 0 !important;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1800px) {
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    max-width: 18rem;
+    /* limit dropdown width */
+    min-width: 12rem;
+    /* keep a decent minimum */
+    background: #fff;
+    /* ensure background matches nav design */
+    border: 1px solid #ddd;
+    /* subtle separation */
+    border-radius: 4px;
+    /* smooth corners for polish */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    /* prevent “flat” stretched look */
+  }
+
+  .dropdown-menu2 ul,
+  .dropdown-menu3 ul {
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    align-items: flex-start;
+    /* align links neatly to the left */
+    padding: 0.5rem 0.75rem;
+  }
+
+  .dropdown-menu2 ul li,
+  .dropdown-menu3 ul li {
+    width: 100%;
+    /* each link takes full dropdown width */
+    margin: 0.25rem 0;
+  }
+
+  .dropdown-menu2 ul li a,
+  .dropdown-menu3 ul li a {
+    white-space: normal;
+    /* allow wrapping at high zoom-out */
+    font-size: 0.95rem;
+    /* slightly smaller font */
+    line-height: 1.4;
+    /* readable vertical rhythm */
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .dropdown-menu2 ul,
+  .dropdown-menu3 ul {
+    display: flex;
+    flex-direction: column;
+    /* force stack early on extra-narrow screens */
+  }
+}
+
+
+
+/* === Animated Hamburger === */
+.burger {
+  position: relative;
+  width: 28px;
+  /* ✅ smaller (was 40px) */
+  height: 22px;
+  /* ✅ smaller height (was 30px) */
+  background: transparent;
+  cursor: pointer;
+  display: none;
+  /* ✅ hide by default (desktop) */
+  z-index: 9999;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  /* thinner line (was 4px) */
+  width: 100%;
+  background: #A7402D;
+  /* brand color */
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+/* === When menu is active (cross animation) === */
+.burger input:checked~span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 4px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 20px;
+  left: 4px;
+}
+
+/* ✅ Show only on mobile and tablets */
+@media (max-width: 1300px) {
+  .burger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    display: none;
+    /* Hide menu by default (closed) */
+    position: absolute;
+    top: 70px;
+    /* Opens BELOW hamburger */
+    left: 700px;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  /* When active (isOpen=true) → menu slides down */
+  .nav-menu.active {
+    display: flex;
+    animation: dropdownFade 0.3s ease-in-out;
+  }
+}
+
+/* Smooth dropdown animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+}
+
+
+
+/* Tablet-only: stack nav items vertically and reveal one-by-one (no side-by-side columns) */
+@media (min-width: 768px) and (max-width: 1147px) {
+  .nav-menu.active ul {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    column-gap: 0 !important;
+    row-gap: 6px !important;
+    align-items: stretch !important;
+  }
+
+  .nav-menu.active ul>li {
+    width: 100% !important;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: nav-stagger 0.35s ease forwards;
+  }
+
+  /* Staggered reveal */
+  .nav-menu.active ul>li:nth-child(1) {
+    animation-delay: 0ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(2) {
+    animation-delay: 60ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(3) {
+    animation-delay: 120ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(4) {
+    animation-delay: 180ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(5) {
+    animation-delay: 240ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(6) {
+    animation-delay: 300ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(7) {
+    animation-delay: 360ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(8) {
+    animation-delay: 420ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(9) {
+    animation-delay: 480ms;
+  }
+
+  .nav-menu.active ul>li:nth-child(10) {
+    animation-delay: 540ms;
+  }
+}
+
+@keyframes nav-stagger {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* If any older tablet styles used columns, flatten them here */
+@media (min-width: 768px) and (max-width: 1147px) {
+  .nav-menu ul {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
+/* Nest Hub Max (1280×800) — stack nav items one per row */
+@media only screen and (width: 1280px) and (height: 800px) and (orientation: landscape) {
+
+  /* Anchor panel to the navbar so we can drop it right under the hamburger */
+  .full-nav {
+    position: relative !important;
+  }
+
+  /* Ensure the hamburger is top-right */
+  .hamburger {
+    display: block !important;
+    position: relative !important;
+    z-index: 2000 !important;
+    margin-left: 10px !important;
+  }
+
+  /* Dropdown panel: right-aligned under the hamburger */
+  .nav-menu {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    /* just below the bar */
+    right: 16px !important;
+    /* align with hamburger */
+    left: auto !important;
+
+    width: min(92vw, 320px) !important;
+    max-height: calc(100dvh - 80px - 24px) !important;
+    /* scroll inside if long */
+    overflow-y: auto !important;
+
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12) !important;
+
+    display: none !important;
+    /* hidden until active */
+    flex-direction: column !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+    z-index: 2500 !important;
+    transform: none !important;
+    /* prevent off-screen translate */
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+  }
+
+  /* Stack links one-by-one */
+  .nav-menu ul {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-menu li {
+    list-style: none !important;
+    width: 100% !important;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 14px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Hide desktop-style flyout menus in this mode */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    display: none !important;
+  }
+}
+
+
+/* Fix only for viewport 1150x717 */
+@media screen and (width: 1150px) and (height: 717px) {
+
+  /* Treat as desktop at this size */
+  .burger {
+    display: none !important;
+  }
+
+  .nav-menu {
+    position: static !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: 0 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+  }
+
+  .nav-menu ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 24px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Ensure mobile inline submenus don't interfere */
+  .mobile-submenu {
+    display: none !important;
+    max-height: 0 !important;
+  }
+
+  /* Dropdowns: hidden by default */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    min-width: 220px !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+    padding: 8px 0 !important;
+  }
+
+  /* Stack dropdown items vertically (fixes “single line”) */
+  .dropdown-menu2 ul,
+  .dropdown-menu3 ul {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .dropdown-menu2 li,
+  .dropdown-menu3 li {
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  .dropdown-menu2 a,
+  .dropdown-menu3 a {
+    white-space: normal !important;
+  }
+
+  /* Show on hover or when JS toggles .active */
+  .dropdown:hover .dropdown-menu2,
+  .dropdown:hover .dropdown-menu3,
+  .dropdown.active .dropdown-menu2,
+  .dropdown.active .dropdown-menu3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+
+
+/* 1) Use the burger you actually render; animate via .is-open */
+.burger {
+  position: relative;
+  /* Removed absolute to stay in flex flow */
+  margin-left: 10px;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+  /* shown ≤1147px */
+  z-index: 2000;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  background: #A7402D;
+  border-radius: 4px;
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform: translateY(-100%);
+  transform-origin: left center;
+}
+
+.burger.is-open span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0;
+  left: 4px;
+}
+
+.burger.is-open span:nth-of-type(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.burger.is-open span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 20px;
+  left: 4px;
+}
+
+/* 2) Desktop vs mobile visibility for menu */
+@media (min-width: 1148px) {
+  .burger {
+    display: none !important;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Only the top-level UL is horizontal on desktop */
+  .nav-menu>ul {
+    display: flex !important;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu>ul>li {
+    list-style: none;
+  }
+}
+
+/* 3) Mobile/tablet: menu is CLOSED by default; opens only when .active */
+@media (max-width: 1147px) {
+  .burger {
+    display: block !important;
+  }
+
+  .nav-menu {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    right: 16px !important;
+    left: auto !important;
+
+    width: min(92vw, 320px) !important;
+    max-height: calc(100dvh - 80px - 24px) !important;
+    overflow-y: auto !important;
+
+    display: none !important;
+    /* closed by default */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12) !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    flex-direction: column !important;
+  }
+
+  /* Ensure mobile items stack and wrap nicely */
+  .nav-menu ul {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-menu a,
+  .dropdown-toggle {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  /* Hide desktop flyouts on mobile; use mobile-submenu instead */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
+/* 4) Desktop dropdowns: show when .dropdown has .active (click) */
+.dropdown-menu2,
+.dropdown-menu3 {
+  min-width: 220px !important;
+  max-width: min(90vw, 320px) !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+}
+
+/* Make sure dropdown lists are vertical (fixes "single row" overflow) */
+.dropdown-menu2 ul,
+.dropdown-menu3 ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+  margin: 0 !important;
+  padding: 6px 0 !important;
+}
+
+.dropdown-menu2 li,
+.dropdown-menu3 li {
+  display: block !important;
+}
+
+.dropdown-menu2 a,
+.dropdown-menu3 a {
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  line-height: 1.35 !important;
+}
+
+/* Let JS active state actually show the dropdown on desktop */
+@media (hover: hover) and (pointer: fine) {
+
+  .dropdown.active .dropdown-menu2,
+  .dropdown.active .dropdown-menu3 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translate(-50%, 0) !important;
+    pointer-events: auto !important;
+  }
+}
+
+
+/* Force collapsed nav when JS adds html.nav-collapsed */
+html.nav-collapsed .burger {
+  display: block !important;
+  position: relative !important;
+  margin-left: 10px !important;
+  z-index: 2200 !important;
+}
+
+/* Neutralize desktop inline menu and show panel */
+@media (min-width: 1148px) {
+  html.nav-collapsed .nav-menu {
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    /* below the bar (.full-nav is relative) */
+    right: 16px !important;
+    left: auto !important;
+
+    width: min(92vw, 320px) !important;
+    max-height: calc(100dvh - 80px - 24px) !important;
+    overflow-y: auto !important;
+
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12) !important;
+
+    display: none !important;
+    /* closed by default */
+    opacity: 1 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    flex-direction: column !important;
+    padding: 6px 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+
+  html.nav-collapsed .nav-menu.active {
+    display: flex !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  html.nav-collapsed .nav-menu>ul {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Hide desktop flyouts in collapsed mode */
+  html.nav-collapsed .dropdown-menu2,
+  html.nav-collapsed .dropdown-menu3 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
+/* Optional: keep Enquire button clear of burger when collapsed on desktop */
+html.nav-collapsed .nav-button {
+  position: absolute !important;
+  right: 64px !important;
+  top: 18px !important;
+  transform: scale(0.95);
+}
+
+
+
+
+/* Normalize item order/alignment in the COLLAPSED menu (mobile/tablet and forced collapsed) */
+@media (max-width: 1147px) {
+  .nav-menu>ul {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav-menu>ul>li {
+    list-style: none !important;
+    width: 100% !important;
+  }
+
+  /* All top-level anchors: left aligned */
+  .nav-menu>ul>li>a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    /* left align text */
+    text-align: left !important;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 0 !important;
+  }
+
+  /* Dropdown toggles: keep arrow to the right */
+  .nav-menu>ul>li>.dropdown-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    /* label left, arrow right */
+    text-align: left !important;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 0 !important;
+  }
+
+  /* Remove any centering coming from other styles */
+  .nav-menu a,
+  .nav-menu .active-link {
+    text-align: left !important;
+    margin: 0 !important;
+  }
+}
+
+/* Do the same when you force collapsed mode on desktop (html.nav-collapsed) */
+html.nav-collapsed .nav-menu>ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html.nav-collapsed .nav-menu>ul>li {
+  list-style: none !important;
+  width: 100% !important;
+}
+
+html.nav-collapsed .nav-menu>ul>li>a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 0 !important;
+}
+
+html.nav-collapsed .nav-menu>ul>li>.dropdown-toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  text-align: left !important;
+  width: 100% !important;
+  padding: 12px 20px !important;
+  margin: 0 !important;
+}
+
+html.nav-collapsed .nav-menu a,
+html.nav-collapsed .nav-menu .active-link {
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+
+
+/* Ensure the bar uses flex and spaces items */
+.main-nav .full-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Keep logo at far left in all modes */
+.nav-logo {
+  position: static !important;
+  transform: none !important;
+  margin-right: auto;
+  /* pushes the rest to the right */
+  flex: 0 0 auto;
+}
+
+/* In collapsed mode, hide menu but keep layout clean */
+html.nav-collapsed .nav-menu {
+  display: none;
+}
+
+/* Order/right-align the action and burger */
+.nav-button {
+  order: 2;
+  margin-left: 16px;
+}
+
+.burger {
+  order: 3;
+  margin-left: 12px;
+}
+
+
+/* Desktop: let the Products dropdown grow to fit its content */
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2 {
+  width: max-content;
+  /* expand to the longest item */
+  min-width: 18rem;
+  /* optional baseline, tweak as needed */
+  max-width: none;
+  /* ensure it isn't clamped elsewhere */
+}
+
+/* Keep each item on a single line */
+html:not(.nav-collapsed) #dropdown-products a {
+  display: block;
+  white-space: nowrap;
+  /* no wrapping at spaces */
+  overflow-wrap: normal;
+  /* don't force breaks */
+  word-break: normal;
+  /* don't break words */
+}
+
+/* Prevent width jump on hover (if your hover makes text bolder) */
+html:not(.nav-collapsed) #dropdown-products a,
+html:not(.nav-collapsed) #dropdown-products a:hover {
+  font-weight: 600;
+  /* use the same weight for normal and hover */
+}
+
+/* Desktop only */
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2 {
+  width: max-content !important;
+  /* expand to longest item */
+  min-width: 18rem;
+  /* optional baseline */
+  max-width: none !important;
+}
+
+/* Ensure inner list can expand too */
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2>ul {
+  width: max-content !important;
+  max-width: none !important;
+}
+
+/* No wrapping, ever */
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2 a {
+  display: block;
+  white-space: nowrap !important;
+  overflow-wrap: normal !important;
+  word-break: keep-all !important;
+}
+
+/* Prevent width change on hover (keep same weight) */
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2 a,
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2 a:hover {
+  font-weight: 600;
+  /* set to your normal weight (e.g., 500/400) in both lines */
+}
+
+/* Optional: your hover style without changing width */
+html:not(.nav-collapsed) #dropdown-products.dropdown-menu2 a:hover {
+  background: #f4f4f4;
+  color: #b54a3a;
+}
+
+
+
+
+
+
+/* Smooth click-to-open animation for the Products dropdown */
+
+/* Tunables */
+:root {
+  --drop-dur: 260ms;
+  --item-dur: 220ms;
+  --drop-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Ensure dropdown parent is a positioning context */
+.dropdown {
+  position: relative;
+}
+
+/* DESKTOP: absolute flyout (click to open) */
+@media (min-width: 1148px) {
+
+  /* Base (closed) state */
+  .dropdown>#dropdown-products.dropdown-menu2 {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    /* Fade + slide + scale from top */
+    transform: translate(-50%, 6px) scaleY(0.96);
+    transform-origin: top center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    min-width: 240px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+    z-index: 1001;
+    overflow: hidden;
+    /* allows a subtle 'reveal' feel */
+
+    will-change: opacity, transform;
+    transition:
+      opacity var(--drop-dur) ease,
+      transform var(--drop-dur) var(--drop-ease),
+      visibility 0s linear var(--drop-dur);
+  }
+
+  /* Open state (when li.dropdown has .active) */
+  .dropdown.active>#dropdown-products.dropdown-menu2 {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, 0) scaleY(1);
+    transition:
+      opacity var(--drop-dur) ease,
+      transform var(--drop-dur) var(--drop-ease),
+      visibility 0s;
+  }
+
+  /* List + staggered items */
+  #dropdown-products.dropdown-menu2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  #dropdown-products.dropdown-menu2 ul>li {
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      transform var(--item-dur) var(--drop-ease),
+      opacity var(--item-dur) ease;
+  }
+
+  .dropdown.active>#dropdown-products.dropdown-menu2 ul>li {
+    opacity: 1;
+    transform: none;
+  }
+
+  .dropdown.active>#dropdown-products.dropdown-menu2 ul>li:nth-child(1) {
+    transition-delay: 30ms;
+  }
+
+  .dropdown.active>#dropdown-products.dropdown-menu2 ul>li:nth-child(2) {
+    transition-delay: 60ms;
+  }
+
+  .dropdown.active>#dropdown-products.dropdown-menu2 ul>li:nth-child(3) {
+    transition-delay: 90ms;
+  }
+
+  .dropdown.active>#dropdown-products.dropdown-menu2 ul>li:nth-child(4) {
+    transition-delay: 120ms;
+  }
+
+  .dropdown.active>#dropdown-products.dropdown-menu2 ul>li:nth-child(5) {
+    transition-delay: 150ms;
+  }
+
+  /* Links */
+  #dropdown-products.dropdown-menu2 a {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: color 160ms ease, background-color 160ms ease, padding-left 160ms ease;
+    white-space: nowrap;
+  }
+
+  #dropdown-products.dropdown-menu2 a:hover {
+    background: #f8f9fa;
+    color: #A7402D;
+    padding-left: 20px;
+  }
+
+  /* Arrow rotation only when actually open */
+  .dropdown-toggle .dropdown-arrow {
+    transition: transform var(--drop-dur) var(--drop-ease);
+  }
+
+  .dropdown.active .dropdown-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+
+  /* Ensure hover does NOT auto-open; click only */
+  .dropdown:hover>#dropdown-products.dropdown-menu2 {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translate(-50%, 6px) scaleY(0.96);
+  }
+}
+
+/* MOBILE/TABLET: inline collapsible submenu (expands down) */
+@media (max-width: 1147px) {
+
+  /* Hide desktop flyout in mobile */
+  #dropdown-products.dropdown-menu2 {
+    display: none !important;
+  }
+
+  /* Collapsible list */
+  #dropdown-products.mobile-submenu {
+    list-style: none;
+    margin: 6px 0 0;
+    padding: 0 20px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-4px);
+    will-change: max-height, opacity, transform;
+    transition:
+      max-height 320ms var(--drop-ease),
+      opacity 220ms ease,
+      transform 260ms var(--drop-ease);
+  }
+
+  #dropdown-products.mobile-submenu.active {
+    max-height: 600px;
+    /* large enough to fit items */
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #dropdown-products.mobile-submenu li {
+    opacity: 0;
+    transform: translateY(6px);
+    transition:
+      transform var(--item-dur) var(--drop-ease),
+      opacity var(--item-dur) ease;
+  }
+
+  #dropdown-products.mobile-submenu.active li {
+    opacity: 1;
+    transform: none;
+  }
+
+  #dropdown-products.mobile-submenu.active li:nth-child(1) {
+    transition-delay: 30ms;
+  }
+
+  #dropdown-products.mobile-submenu.active li:nth-child(2) {
+    transition-delay: 60ms;
+  }
+
+  #dropdown-products.mobile-submenu.active li:nth-child(3) {
+    transition-delay: 90ms;
+  }
+
+  #dropdown-products.mobile-submenu.active li:nth-child(4) {
+    transition-delay: 120ms;
+  }
+
+  #dropdown-products.mobile-submenu.active li:nth-child(5) {
+    transition-delay: 150ms;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+  #dropdown-products,
+  #dropdown-products * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* container for both action controls */
+.nav-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-left: 16px;
+}
+
+/* Download button (icon + label) */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(181, 91, 68, 0.18);
+  background: rgba(255, 255, 255, 0.95);
+  color: #b55b44;
+  /* accent color to match site */
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(181, 91, 68, 0.06);
+  transition: transform .12s ease, box-shadow .12s ease;
+  white-space: nowrap;
+}
+
+/* Icon styling */
+.download-icon {
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Slight hover effect */
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(181, 91, 68, 0.12);
+}
+
+/* Make the download text hide on very small screens, leaving icon only */
+@media (max-width: 740px) {
+  .download-text {
+    display: none;
+  }
+
+  .download-btn {
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+  }
+}
+
+/* keep enquire button same but ensure spacing */
+.nav-button {
+  display: flex;
+  align-items: center;
+}
+
+/* if you use .enquire_button in other places, this keeps visual parity */
+.enquire_button {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #bf4f36, #9a3a2a);
+  box-shadow: 0 8px 24px rgba(154, 58, 42, 0.12);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+}
+
+/* Tooltip box */
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -42px;
+  /* distance above button */
+  right: 0;
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  z-index: 99;
+}
+
+/* Triangle arrow */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 18px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  z-index: 99;
+}
+
+/* On hover - show tooltip */
+.tooltip:hover::after,
+.tooltip:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(181, 91, 68, 0.22);
+  background: rgba(255, 255, 255, 0.95);
+  color: #b55b44;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(181, 91, 68, 0.06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+/* Icon size */
+.download-icon {
+  font-size: 18px;
+}
+
+/* hover effect */
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(181, 91, 68, 0.12);
+}
+
+/* ---------------------------
+  Fix overlap when hamburger shows
+  Paste at end of Navbar.css
+   --------------------------- */
+
+/* 1) Use the same breakpoint as your shouldCollapse() logic.
+   You used 1147px in JS; adjust if you want a different breakpoint. */
+@media (max-width: 1147px) {
+
+  /* hide the right-side actions (Download / Enquire) in the header
+     when nav is collapsed so they don't overlap the burger */
+  html.nav-collapsed .nav-actions,
+  /* defensive: also hide if screen is small even if nav-collapsed not present */
+  .nav-actions {
+    display: none !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    transform: translateY(0) !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
+  /* ensure the burger button is above all and positioned nicely on right */
+  .burger {
+    z-index: 3000 !important;
+    /* sit on top */
+    right: 12px !important;
+    /* nudge inward if it was too close to edge */
+    margin: 0 !important;
+  }
+
+  /* ensure header has enough right padding so burger doesn't overlap content */
+  .full-nav {
+    padding-right: 64px !important;
+    /* leave room for the burger; tweak if needed */
+  }
+
+  /* ensure the mobile menu list download item is visible (you added .mobile-download earlier) */
+  .mobile-download {
+    display: block !important;
+  }
+
+  /* keep the burger accessible (visible focus ring) */
+  .burger:focus-visible {
+    outline: 3px solid rgba(38, 192, 255, 0.18);
+    outline-offset: 2px;
+  }
+}
+
+/* 2) Extra small phones: stack and center the actions if you still show them */
+@media (max-width: 420px) {
+
+  /* In case you ever show actions in header on tiny screens, force a stacked layout */
+  .nav-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.4rem !important;
+    position: static !important;
+    width: 100% !important;
+    padding: 0.25rem 12px !important;
+  }
+
+  /* keep header padding smaller on tiny phones so layout doesn't break */
+  .full-nav {
+    padding-right: 12px !important;
+  }
+}
+
+/* 3) Fallback: if you use a smaller collapse breakpoint (like 720px), also hide actions */
+@media (max-width: 720px) {
+
+  html.nav-collapsed .nav-actions,
+  .nav-actions {
+    display: none !important;
+  }
+
+  .mobile-download {
+    display: block !important;
+  }
+}
+
+/* 4) Make sure tooltip/content from hidden controls doesn't appear above hamburger */
+html.nav-collapsed .tooltip::after,
+.nav-actions[style*="display: none"] .tooltip::after {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Navbar.css - add at end */
+@media only screen and (width: 1400px) and (height: 1024px) {
+  /* hide the burger (circular overlap icon) */
+
+
+  /* if the tiny circular icon is not .burger, try hiding the nav-actions icon(s) too */
+  .nav-actions .download-btn,
+  .nav-actions .enquire_button {
+    display: none !important;
+  }
+}
+
+/* Hide Download Catalog button at viewport width around 1347px */
+/* Hide Download Catalog button from 1200px to 1380px */
+@media screen and (max-width: 1380px) and (min-width: 1200px) {
+  .nav-actions .download-btn {
+    display: none !important;
+  }
+}
+
+/* -------------------------
+   Fix for mid/large tablet & desktop around 1000-1300px
+   Prevent nav items & dropdown contents from becoming a single line
+   ------------------------- */
+@media (min-width: 1000px) and (max-width: 1300px) {
+
+  /* Let top-level nav wrap instead of overflowing horizontally */
+  .nav-menu,
+  .nav-menu>ul {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    /* allow wrapping */
+    gap: 18px !important;
+    /* spacing between items */
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Each top-level item should take its natural width and wrap to next row when needed */
+  .nav-menu>ul>li {
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+
+  /* Prevent .nav-menu.active from shifting horizontally */
+  .nav-menu.active {
+    margin-left: 0 !important;
+    transform: none !important;
+  }
+
+  /* Force desktop-style dropdown lists to stack vertically and limit their max width */
+  .dropdown-menu2,
+  .dropdown-menu3,
+  .dropdown-menu2 ul,
+  .dropdown-menu3 ul {
+    display: block !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: calc(100% + 8px) !important;
+    max-width: 320px !important;
+    /* keeps dropdowns compact */
+    width: auto !important;
+    box-sizing: border-box !important;
+    padding: 8px 0 !important;
+    white-space: normal !important;
+    /* allow wrapping within items */
+  }
+
+  /* stack dropdown items */
+  .dropdown-menu2 ul,
+  .dropdown-menu3 ul {
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+
+  /* Ensure each dropdown <a> wraps if long */
+  .dropdown-menu2 a,
+  .dropdown-menu3 a {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+    padding: 10px 16px !important;
+    display: block !important;
+    min-width: 0 !important;
+  }
+
+  /* Ensure mobile inline-submenus don't accidentally show as full width panels here */
+  .mobile-submenu {
+    display: none !important;
+  }
+
+  /* If the logo or action buttons push too much, reduce gap slightly */
+  .full-nav {
+    gap: 12px !important;
+    padding: 0 12px !important;
+  }
+
+  /* Keep hamburger hidden in this range (desktop layout) unless you intentionally force collapses */
+  .hamburger {
+    display: none !important;
+  }
+}
+
+/* Extra safety: whenever nav is collapsed (html.nav-collapsed) ensure the nav panel
+   becomes a vertical column and doesn't try to render inline items */
+@media (min-width: 1000px) and (max-width: 1300px) {
+  html.nav-collapsed .nav-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: min(92vw, 360px) !important;
+    max-width: 360px !important;
+    margin-left: 0 !important;
+    right: 16px !important;
+    left: auto !important;
+  }
+}
+
+/* ========================================= */
+/* FORCED STICKY NAVBAR FIX */
+/* ========================================= */
+.main-nav {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1100 !important;
+  width: 100% !important;
+}
+
+
+/* ========================================= */
+/* MOBILE MENU ACTION BUTTONS                */
+/* ========================================= */
+.mobile-download,
+.mobile-enquire {
+  display: flex;
+  justify-content: center;
+  padding: 10px 16px !important;
+  border-bottom: none !important;
+}
+
+.mobile-action-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 18px !important;
+  border-radius: 999px !important;
+  background: linear-gradient(180deg, #bf4f36, #9a3a2a) !important;
+  box-shadow: 0 8px 24px rgba(154, 58, 42, 0.18) !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  border: none;
+}
+
+.mobile-action-btn:hover {
+  opacity: 0.88;
+  transform: scale(0.98);
+  color: #fff !important;
+}
+
+/* =============================================
+   Navbar Search Bar
+   ============================================= */
+
+/* Wrapper — positions the dropdown relative to it */
+.nav-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Icon-only toggle button */
+.nav-search-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 50%;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-search-toggle:hover {
+  background: rgba(167, 64, 45, 0.08);
+  color: #A7402D;
+}
+
+/* Expanded search form */
+.nav-search-form {
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border: 1.5px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  gap: 6px;
+  transition: border-color 0.2s;
+  min-width: 220px;
+}
+
+.nav-search-form:focus-within {
+  border-color: #A7402D;
+  background: #fff;
+}
+
+.nav-search-icon {
+  color: #A7402D;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.nav-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13.5px;
+  color: #222;
+  min-width: 0;
+}
+
+.nav-search-input::placeholder {
+  color: #999;
+}
+
+.nav-search-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 18px;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.nav-search-close:hover {
+  color: #A7402D;
+}
+
+/* Dropdown list */
+.nav-search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16);
+  min-width: 280px;
+  max-width: 340px;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  z-index: 10001;
+  animation: navSearchFade 0.15s ease;
+}
+
+@keyframes navSearchFade {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: background 0.12s;
+  gap: 8px;
+}
+
+.nav-search-result-item:hover,
+.nav-search-result-active {
+  background: #fef5f3;
+}
+
+.nav-result-name {
+  font-size: 13.5px;
+  color: #1a1a1a;
+  font-weight: 500;
+  flex: 1;
+}
+
+.nav-result-cat {
+  font-size: 11px;
+  color: #A7402D;
+  font-weight: 600;
+  background: #fce9e5;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.nav-search-no-result {
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #666;
+}
+
+.nav-search-no-result span {
+  color: #A7402D;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .nav-search-form {
+    min-width: 160px;
+  }
+
+  .nav-search-dropdown {
+    /* On small screens, anchor to the left so it doesn't overflow */
+    left: auto;
+    right: -10px;
+    min-width: 260px;
+  }
+}
+
+/* ── Always-visible search wrapper (sibling of burger button) ── */
+.nav-search-always {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* On mobile, sit to the left of the burger with a small gap */
+  margin-right: 8px;
+  z-index: 2001;
+}
+
+/* ── Refinement: Mobile Only Search & Centered Row ── */
+
+/* 1. Hide in Desktop (Header already has a search bar) */
+@media (min-width: 1148px) {
+  .nav-search-always {
+    display: none !important;
+  }
+}
+
+/* 2. Mobile Alignment Layout (Logo Left, Search & Burger Right) */
+@media (max-width: 761px) {
+  .full-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    gap: 15px !important;
+    height: 70px !important;
+  }
+
+  .nav-logo {
+    margin-right: auto !important;
+    flex-shrink: 0;
+    order: 1;
+  }
+
+  .nav-logo img {
+    max-width: 140px;
+    height: auto;
+  }
+
+  /* Search toggle and close button positioning */
+  .nav-search-always {
+    margin: 0 !important;
+    display: flex !important;
+    order: 2;
+    flex-shrink: 0;
+    z-index: 2200 !important;
+    position: relative !important;
+  }
+
+  .nav-search-toggle {
+    margin-right: 0 !important;
+    padding: 8px;
+    font-size: 24px;
+    color: #A7402D;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-search-close-circle {
+    background: #A7402D;
+    background: linear-gradient(135deg, #c65543, #a7402d);
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(167, 64, 45, 0.4);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .nav-search-close-circle svg {
+    font-size: 22px;
+  }
+
+  /* Floating Search Card */
+  .nav-search-overlay-mobile {
+    position: absolute;
+    top: 75px;
+    left: 15px;
+    right: 15px;
+    z-index: 9999 !important;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .nav-search-card {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    animation: slideInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    pointer-events: auto;
+  }
+
+  .nav-search-card-header {
+    display: flex;
+    align-items: center;
+    padding: 18px 22px;
+    gap: 15px;
+    border-bottom: 1px solid #f0f4f8;
+  }
+
+  .nav-search-icon {
+    font-size: 22px;
+    color: #A7402D;
+    flex-shrink: 0;
+  }
+
+  .nav-search-form-inner {
+    flex: 1;
+  }
+
+  .nav-search-input {
+    font-size: 17px;
+    padding: 0;
+    font-weight: 500;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    color: #333;
+  }
+
+  .nav-search-empty-state {
+    padding: 40px 25px;
+    text-align: center;
+    color: #718096;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #fff;
+  }
+
+  .nav-search-empty-state p {
+    margin: 0;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .nav-search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 350px;
+    overflow-y: auto;
+    background: #fff;
+  }
+
+  .nav-search-result-item {
+    padding: 15px 22px;
+    border-bottom: 1px solid #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .nav-result-name {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 15px;
+  }
+
+  .nav-result-cat {
+    font-size: 12px;
+    color: #a0aec0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-search-result-item:hover,
+  .nav-search-result-active {
+    background: #f7fafc;
+  }
+
+  .nav-search-no-result {
+    padding: 30px 22px;
+    text-align: center;
+    color: #718096;
+  }
+
+  .burger {
+    position: relative !important;
+    display: block !important;
+    margin: 0 !important;
+    order: 3;
+    flex-shrink: 0;
+    z-index: 2200 !important;
+    padding: 5px;
+    width: 28px;
+    height: 22px;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1147px) {
+  .nav-actions {
+    display: none !important;
+  }
+}
+
+/* FINAL OVERRIDE TO FIX ICON OVERLAP */
+@media (max-width: 1147px) {
+  .full-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 0 15px !important;
+    overflow: visible !important;
+  }
+
+  .nav-logo {
+    margin-right: auto !important;
+    flex: 0 0 auto !important;
+    order: 1 !important;
+  }
+
+  .nav-search-always {
+    position: relative !important;
+    order: 2 !important;
+    margin: 0 !important;
+    display: flex !important;
+    z-index: 2201 !important;
+  }
+
+  .burger {
+    order: 3 !important;
+    margin: 0 !important;
+  }
+}

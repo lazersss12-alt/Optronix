@@ -1,0 +1,2333 @@
+﻿.footer-margin {
+  margin-top: 50px;
+}
+
+
+
+.footer-info {
+  grid-column: 2/3;
+  color: white;
+  padding-right: 10px;
+}
+
+.footer-info h4 {
+  font-family: 'Calibri', sans-serif;
+}
+
+.footer-branch {
+  grid-column: 3/4;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-branch h2 {
+  margin-bottom: 15px;
+}
+
+
+
+.branch-details {
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.branch-details p {
+  margin: 8px 0;
+}
+
+.footer-quick {
+  grid-column: 4/5;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-popular {
+  grid-column: 5/6;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+
+.footer-branch ul {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.footer-branch ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-branch ul li {
+  padding: 3.5px 2px;
+}
+
+.footer-quick ul {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.footer-quick ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-quick ul li {
+  padding: 3.5px 2px;
+}
+
+.footer-popular ul {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.footer-popular ul li {
+  padding: 3.5px 2px;
+}
+
+.footer-popular ul li a {
+  text-decoration: none;
+  color: white;
+
+}
+
+@media screen and (max-width: 1030px) {
+  .main-footer {
+    width: 100%;
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: 6.25rem 1fr 6.25rem;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    background-color: #A7402D;
+  }
+
+  .footer-info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer-branch {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 25px;
+  }
+
+  .footer-quick {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 25px;
+  }
+
+  .footer-popular {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: 25px;
+  }
+
+  .footer-branch {
+    display: flex;
+    justify-content: start;
+  }
+
+  .footer-quick {
+    display: flex;
+    justify-content: start;
+  }
+
+  .footer-popular {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+
+
+@media screen and (max-width: 1030px) {
+  .main-footer {
+    width: 100%;
+    display: grid;
+    padding: 20px 0;
+    grid-template-columns: .8rem 1fr .8rem;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    background-color: #A7402D;
+  }
+
+  .footer-info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer-branch {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 25px;
+  }
+
+  .footer-quick {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 25px;
+  }
+
+  .footer-popular {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: 25px;
+  }
+
+  .footer-branch {
+    display: flex;
+    justify-content: start;
+  }
+
+  .footer-quick {
+    display: flex;
+    justify-content: start;
+  }
+
+  .footer-popular {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  /* Content for small phones if needed */
+}
+
+.footer-copywrite {
+  background-color: #862D1D;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copywrite p {
+  color: white;
+}
+
+/* Dialog Box Styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dialog-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.dialog-box h3 {
+  margin: 0 0 10px 0;
+}
+
+.dialog-box p {
+  margin-bottom: 20px;
+}
+
+.closee-btn {
+  background-color: #A7402D;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.closee-btn:hover {
+  background-color: #a24536;
+}
+
+.branch-link {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.branch-link:hover {
+  color: #ffcccb;
+}
+
+
+
+
+/*social media Handle*/
+
+
+
+
+
+.social-media ul {
+
+
+  right: 10px;
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media ul li {
+  list-style: none;
+  margin: 3px 0;
+}
+
+.socialmedia {
+  position: relative;
+  width: 40px;
+  /* Smaller size */
+  height: 40px;
+  /* Smaller size */
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(58, 53, 53, 0.726);
+  background: #ffffff;
+  /* New background color */
+  transition: 0.5s;
+}
+
+.social-media ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.social-media ul li a .fab {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: none;
+  /* Remove background for icons */
+  border-radius: 50%;
+  line-height: calc(40px - 10px);
+  /* Adjust for smaller size */
+  font-size: 16px;
+  /* Smaller icon size */
+  color: #912b2c;
+  /* White icon color */
+  transition: 0.5s;
+}
+
+.social-media ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+.social-media ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+.social-media ul li:nth-child(3) a:hover .fab {
+  color: #0072b1;
+}
+
+.social-media ul li:nth-child(4) a:hover .fab {
+  color: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);
+  ;
+}
+
+.social-media ul li:nth-child(5) a:hover .fab {
+  color: #25D366;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General tightening */
+.main-footer {
+  padding: 28px 0;
+  row-gap: 24px;
+}
+
+.main-footer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main-footer h4 {
+  font-size: 15px;
+}
+
+.footer-branch ul,
+.footer-quick ul,
+.footer-popular ul {
+  padding-left: 16px;
+  padding-top: 6px;
+}
+
+.footer-branch ul li,
+.footer-quick ul li,
+.footer-popular ul li {
+  padding: 2.5px 0;
+  line-height: 1.4;
+}
+
+/* Tablet (2x2 layout to cut height) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-footer {
+    grid-template-columns: .8rem 1fr 1fr .8rem;
+    /* | info | branch | next row: quick | popular | */
+    row-gap: 24px;
+  }
+
+  .footer-info {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .footer-branch {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 0;
+  }
+
+  .footer-quick {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 0;
+  }
+
+  .footer-popular {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-top: 0;
+  }
+
+  .footer-info iframe {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  .branch-details {
+    font-size: 12.5px;
+  }
+
+  .social-media ul {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .landing-page-about-heading h1 {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* Mobile (stacked, smaller fonts, tighter spacing) */
+@media (max-width: 767px) {
+  .main-footer {
+    grid-template-columns: .8rem 1fr .8rem;
+    padding: 20px 0;
+    row-gap: 16px;
+  }
+
+  .footer-info,
+  .footer-branch,
+  .footer-quick,
+  .footer-popular {
+    margin-top: 0;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footer-info h2,
+  .footer-branch h2,
+  .footer-quick h2,
+  .footer-popular h2 {
+    text-align: left;
+  }
+
+  .footer-info h2 {
+    font-size: 18px;
+  }
+
+  .footer-branch h2,
+  .footer-quick h2,
+  .footer-popular h2 {
+    font-size: 17px;
+  }
+
+  .footer-info h4 {
+    font-size: 13px;
+    padding: 6px 0;
+    text-align: left;
+  }
+
+  .branch-details {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* Make map responsive and shorter */
+  .footer-info iframe {
+    width: 100% !important;
+    height: 120px !important;
+  }
+
+  /* Link lists: 2 columns, left aligned */
+  .footer-quick ul,
+  .footer-popular ul {
+    columns: 2;
+    column-gap: 12px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .footer-quick ul li,
+  .footer-popular ul li {
+    break-inside: avoid;
+    padding: 3px 0;
+    text-align: left;
+  }
+
+  /* Smaller social icons */
+  .socialmedia {
+    width: 34px;
+    height: 34px;
+  }
+
+  .social-media ul {
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-start;
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+
+  .footer-info h2,
+  .footer-branch h2,
+  .footer-quick h2,
+  .footer-popular h2 {
+    font-size: 16px;
+  }
+
+  .footer-quick ul,
+  .footer-popular ul {
+    columns: 2;
+    column-gap: 10px;
+  }
+
+  .socialmedia {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-copywrite p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+/* Keep dropdown centered under its toggle without changing its width */
+.dropdown {
+  position: relative !important;
+}
+
+/* Hidden/base state: center horizontally, animate only Y */
+.dropdown-menu2,
+.dropdown-menu3 {
+  position: absolute !important;
+  top: calc(100% + 8px) !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, 8px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+
+  transition: transform .2s ease, opacity .2s ease, visibility 0s linear .2s !important;
+  will-change: transform !important;
+  margin-left: 0 !important;
+
+  /* ðŸ‘‡ ADD DEFAULT STYLING HERE (background, shadow, etc) */
+  background: white;
+  min-width: 220px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+  z-index: 1001;
+  /* kill any legacy offset */
+}
+
+/* Visible state: same X transform, only Y changes */
+.dropdown.active .dropdown-menu2,
+.dropdown.active .dropdown-menu3 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translate(-50%, 0) !important;
+  pointer-events: auto !important;
+  transition: transform .2s ease, opacity .2s ease, visibility 0s linear 0s !important;
+}
+
+/* Optional: prevent tiny nudge from link hover padding without changing width */
+.dropdown-menu2 a,
+.dropdown-menu3 a {
+  width: 100% !important;
+  /* box model is stable */
+  box-sizing: border-box !important;
+}
+
+/* Phones: inline, full-width dropdowns (no absolute positioning) */
+@media (max-width: 761px) {
+
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    /* no width override here either */
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+
+
+@media (min-width: 2000px) {
+  .product-header {
+    position: relative;
+    z-index: 0;
+    max-width: 1400px;
+    width: 100%;
+    margin-inline: auto;
+    justify-self: center;
+    padding-inline: 16px;
+    box-sizing: border-box;
+  }
+
+  .product-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background: #f9f9f9;
+    z-index: -1;
+  }
+
+  .product-header-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .product-header {
+    position: relative;
+    z-index: 0;
+    padding-inline: 8px;
+    box-sizing: border-box;
+    justify-self: center;
+  }
+
+  .product-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    background: #f9f9f9;
+    z-index: -1;
+  }
+
+  .product-header-image img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+
+
+
+
+
+/* iPad Air layout fix (portrait 820px, landscape 1180px)
+   - keep phone + email on one line
+   - keep icon with its text (no split)
+   - keep social + search tidy
+*/
+@media (min-width: 810px) and (max-width: 1180px) {
+  .main-main-header .header-mob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    /* prevent wrapping onto two lines */
+    width: 100%;
+  }
+
+  .main-main-header .header-mob a {
+    display: inline-flex;
+    /* keep icon and text together */
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    /* prevent email breaking */
+    line-height: 1;
+  }
+
+  .main-main-header .header-mob svg {
+    flex: 0 0 auto;
+  }
+
+  .main-main-header .header-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .main-main-header .social-mediah ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .main-main-header .header-search {
+    flex: 0 0 240px;
+    /* stable width so it doesn't crowd contact info */
+  }
+
+  .main-main-header .search-input {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-branch {
+    margin-top: 10px;
+  }
+
+  .footer-branch h2 {
+    margin-bottom: 12px;
+  }
+
+  .footer-quick,
+  .footer-popular {
+    margin-top: 14px;
+  }
+
+  .footer-quick ul,
+  .footer-popular ul {
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
+
+  .social-media {
+    margin-top: 14px;
+  }
+
+  .social-media ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .socialmedia {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    line-height: 1;
+  }
+
+  .socialmedia .fab {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .socialmedia svg {
+    width: 18px;
+    height: 18px;
+    color: #912b2c;
+  }
+
+  .socialmedia[aria-label="indiamart"] img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .footer-branch {
+    margin-top: 8px;
+  }
+
+  .footer-branch h2 {
+    margin-bottom: 10px;
+  }
+
+  .footer-quick,
+  .footer-popular {
+    margin-top: 16px;
+  }
+
+  .footer-quick ul,
+  .footer-popular ul {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+
+
+  .footer-info iframe {
+    width: 100% !important;
+    height: 120px !important;
+  }
+
+
+  .social-media {
+    margin-top: 14px;
+  }
+
+  .social-media ul {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .socialmedia {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    line-height: 1;
+
+  }
+
+  .socialmedia .fab {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .socialmedia svg {
+    width: 16px;
+    height: 16px;
+    color: #912b2c;
+  }
+
+  .socialmedia img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .footer-dropdown {
+    position: relative;
+    z-index: 2001;
+  }
+
+  .footer-dropdown .footer-dropdown-menu {
+    z-index: 2002 !important;
+  }
+
+  .social-media {
+    margin-top: 14px;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-media ul li {
+    margin: 0;
+    list-style: none;
+  }
+
+  .socialmedia {
+    margin: 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .socialmedia[aria-label="indiamart"] {
+    margin: 0 !important;
+  }
+
+  .socialmedia .fab {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .socialmedia svg {
+    width: 16px;
+    height: 16px;
+    color: #912b2c;
+  }
+
+  .socialmedia img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+.social-media {
+  margin-top: 12px;
+}
+
+.social-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* wrap if absolutely needed so no horizontal scrollbar */
+  gap: 5px;
+  /* reduced gap so all icons fit in one row on typical widths */
+}
+
+.social-media li {
+  margin: 0;
+}
+
+.socialmedia {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  /* circle stays white */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #A7402D;
+  /* default icon color */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Lift effect only; background & color unchanged */
+.socialmedia:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+.socialmedia i {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.socialmedia svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.socialmedia img {
+  width: 26px;
+  height: 22px;
+  display: block;
+  object-fit: contain;
+}
+
+/* ICON-ONLY HOVERS (background stays white) */
+.social-media a[aria-label="Facebook"]:hover i,
+.social-media a[href*="facebook.com"]:hover i,
+.social-media a[aria-label="Facebook"]:hover svg,
+.social-media a[href*="facebook.com"]:hover svg {
+  color: #1877F2 !important;
+}
+
+/* .social-media a[aria-label="Twitter"]:hover i,
+    .social-media a[href*="twitter.com"]:hover i,
+    .social-media a[aria-label="Twitter"]:hover svg,
+    .social-media a[href*="twitter.com"]:hover svg {
+      color: #1DA1F2 !important;
+    } */
+
+.social-media a[aria-label="LinkedIn"]:hover i,
+.social-media a[href*="linkedin.com"]:hover i,
+.social-media a[aria-label="LinkedIn"]:hover svg,
+.social-media a[href*="linkedin.com"]:hover svg {
+  color: #0A66C2 !important;
+}
+
+.social-media a[aria-label="Instagram"]:hover i,
+.social-media a[href*="instagram.com"]:hover i,
+.social-media a[aria-label="Instagram"]:hover svg,
+.social-media a[href*="instagram.com"]:hover svg {
+  color: #E4405F !important;
+  /* Instagram brand color on icon only */
+}
+
+/* Threads: icon-only hover to black */
+/* Base state (default maroon for all icons via .socialmedia already) */
+.social-media a[aria-label="Twitter"]:not(:hover) i,
+.social-media a[aria-label="Twitter"]:not(:hover) .ri-twitter-x-line {
+  color: #912b2c !important;
+  font-size: 20px;
+  /* Match other icon sizes */
+  line-height: 1;
+  display: inline-block;
+}
+
+.social-media a[aria-label="Threads"]:not(:hover) i,
+.social-media a[aria-label="Threads"]:not(:hover) svg {
+  color: #A7402D;
+  /* Optronix maroon default */
+}
+
+.social-media a[aria-label="Twitter"]:hover i,
+.social-media a[aria-label="Twitter"]:hover .ri-twitter-x-line,
+.social-media a[href*="twitter.com"]:hover i,
+.social-media a[href*="x.com"]:hover .ri-twitter-x-line {
+  color: #000000 !important;
+  /* Black on hover */
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+/* Hover effect for Twitter(X) */
+.social-media a[aria-label="Twitter"]:hover i,
+.social-media a[href*="twitter.com"]:hover i {
+  color: #000000 !important;
+  /* X logo is black */
+}
+
+/* Hover effect for Threads */
+.social-media a[aria-label="Threads"]:hover i,
+.social-media a[aria-label="Threads"]:hover svg,
+.social-media a[href*="threads"]:hover svg {
+  color: #000000 !important;
+  /* Threads logo is black */
+}
+
+.social-media a[aria-label="Whatsapp"]:hover i,
+.social-media a[href*="wa.me"]:hover i,
+.social-media a[href*="whatsapp"]:hover i,
+.social-media a[aria-label="Whatsapp"]:hover svg,
+.social-media a[href*="wa.me"]:hover svg,
+.social-media a[href*="whatsapp"]:hover svg {
+  color: #25D366 !important;
+}
+
+.social-media a[aria-label="YouTube"]:hover i,
+.social-media a[href*="youtube.com"]:hover i,
+.social-media a[aria-label="YouTube"]:hover svg,
+.social-media a[href*="youtube.com"]:hover svg {
+  color: #FF0000 !important;
+}
+
+/* IndiaMART: stay pure white + lift only */
+.social-media a[aria-label="IndiaMART"]:hover,
+.social-media a[href="indiamart.com"]:hover {
+  background: #ffffff;
+  color: inherit;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+/* Optional: Threads/IndiaMART tweaks */
+.brand--threads {
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.brand--threads:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.brand--indiamart img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.brand--indiamart,
+.brand--indiamart:hover {
+  background: #ffffff !important;
+  /* stay white always */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4px;
+}
+
+
+/* --- Button Text Handling --- */
+/* Base styles */
+.card-btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Desktop text - visible on larger screens */
+.desktop-text {
+  display: inline !important;
+  white-space: nowrap !important;
+}
+
+/* Mobile text elements - hidden by default */
+.top-text,
+.bottom-text {
+  display: none;
+  white-space: nowrap;
+}
+
+/* Media query for desktop */
+@media screen and (min-width: 769px) {
+  .card-btn-secondary {
+    flex-direction: row;
+  }
+
+  .desktop-text {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .top-text,
+  .bottom-text {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .card-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 6px !important;
+    width: 100% !important;
+  }
+
+  .card-btn-secondary {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 40px !important;
+    padding: 6px 4px !important;
+  }
+
+  .desktop-text {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  .top-text,
+  .bottom-text {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+  }
+}
+
+
+
+
+/* --- LandingAbout fluid overrides (append to end) --- */
+
+.landing-page-about {
+  gap: clamp(12px, 2vw, 24px);
+  padding-block: clamp(8px, 1.6vw, 24px);
+}
+
+/* Keep heading visually similar at desktop, scale down gracefully */
+.landing-page-about-heading {
+  margin-top: clamp(6px, 1.2vw, 12px);
+}
+
+/* .landing-page-about-heading h1 {
+  font-size: clamp(1.25rem, 2.5vw, 2rem) !important;
+  line-height: 1.2;
+  word-break: break-word;
+} */
+
+/* Buttons: retain max 110px left offset, collapse to 0 on smaller widths */
+.landing-page-about-buttons {
+  margin-left: clamp(0px, 7vw, 110px) !important;
+  gap: clamp(8px, 1.2vw, 12px) !important;
+}
+
+/* Button hit area and type scale smoothly */
+.about-btn {
+  font-size: clamp(0.9rem, 1vw, 1rem) !important;
+  padding: clamp(6px, 0.8vw, 10px) clamp(12px, 1.5vw, 24px) !important;
+}
+
+/* Content text: fluid size and spacing, wrap long words at tiny widths */
+.landing-page-about-content {
+  margin-top: clamp(4px, 0.8vw, 10px);
+}
+
+.landing-page-about-content p {
+  font-size: clamp(0.9rem, 0.95rem + 0.1vw, 1rem) !important;
+  line-height: 1.65;
+  margin-top: clamp(-41px, -4.5vw, -8px) !important;
+  margin-bottom: clamp(12px, 2vw, 20px) !important;
+  overflow-wrap: anywhere;
+  /* extreme zoom-in + very narrow screens */
+}
+
+/* Ensure no child overflows at extreme zoom */
+.landing-page-about * {
+  min-width: 0;
+}
+
+/* Tablet and down: zero-out left offset so buttons align nicely */
+@media (max-width: 1024px) {
+  .landing-page-about-buttons {
+    margin-left: 0 !important;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 400px) {
+  .about-btn {
+    font-size: clamp(0.85rem, 3.5vw, 0.95rem) !important;
+  }
+}
+
+/* Very wide displays / extreme zoom-out: keep content nicely centered */
+@media (min-width: 1600px) {
+  .landing-page-about {
+    max-width: 1400px;
+    margin-inline: auto;
+  }
+}
+
+
+
+
+
+
+.landing-page-about .landing-page-about-content p,
+.landing-page-about-content p {
+  text-align: justify !important;
+  font-size: clamp(0.9rem, 0.95rem + 0.1vw, 1rem) !important;
+  line-height: 1.65 !important;
+  margin-top: clamp(-41px, -4.5vw, -8px) !important;
+  margin-bottom: clamp(12px, 2vw, 20px) !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* Keep mobile readable but donâ€™t let earlier rules override */
+@media (max-width: 640px) {
+
+  .landing-page-about .landing-page-about-content p,
+  .landing-page-about-content p {
+    font-size: clamp(0.85rem, 3.5vw, 0.95rem) !important;
+    line-height: 1.6 !important;
+  }
+}
+
+/* Neutralize generic p { font-size: 12px } on small screens inside this section */
+@media (max-width: 768px) {
+
+  .landing-page-about .landing-page-about-content p,
+  .landing-page-about-content p {
+    font-size: clamp(0.85rem, 3.5vw, 0.95rem) !important;
+  }
+}
+
+
+
+/* --- Testimonials fluid overrides --- */
+
+/* Keep underline behavior but remove the huge global offset inside this section only */
+.testimonial-slider .heading-underline {
+  margin-left: 0 !important;
+}
+
+/* Section and track safety */
+.testimonial-slider {
+  padding: clamp(16px, 2vw, 32px) 0;
+}
+
+.testimonial-slider .slick-slide>div {
+  height: 100%;
+  min-width: 0;
+}
+
+/* Wrapper spacing should also scale */
+.testimonial-card-wrapper {
+  padding: 0 clamp(8px, 1.2vw, 15px);
+  box-sizing: border-box;
+}
+
+/* Card scales with viewport; respects your existing breakpoints but fills gaps at extremes */
+.testimonial-card {
+  width: clamp(280px, 28vw, 420px);
+  min-height: clamp(220px, 24vw, 320px);
+  padding: clamp(12px, 1.4vw, 24px);
+}
+
+/* Fluid avatar size */
+.testimonial-image {
+  width: clamp(56px, 6vw, 80px);
+  height: clamp(56px, 6vw, 80px);
+}
+
+/* Fluid type */
+.testimonial-name {
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+  margin-bottom: clamp(6px, 0.8vw, 10px);
+}
+
+.testimonial-text {
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* Extra small phones: make card use almost full width */
+/* Prevent overlap: cards fill the slide on tablet/mobile */
+@media (max-width: 1024px) {
+  .testimonial-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+
+}
+
+/* Consistent spacing between slides without changing layout */
+.testimonial-card-wrapper {
+  padding: 0 clamp(8px, 1.6vw, 16px) !important;
+  box-sizing: border-box;
+}
+
+/* Keep the slider list tidy while centerMode handles the peek on mobile */
+@media (max-width: 768px) {
+  .testimonial-slider .slick-list {
+    overflow: hidden !important;
+    /* default, ensures peek is inside the list */
+  }
+}
+
+/* Make avatar and text scale well */
+.testimonial-image {
+  width: clamp(56px, 6vw, 80px);
+  height: clamp(56px, 6vw, 80px);
+}
+
+.testimonial-name {
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.125rem);
+  margin-bottom: clamp(6px, 0.8vw, 10px);
+}
+
+.testimonial-text {
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* Optional: tighten card padding a bit on very small phones */
+@media (max-width: 480px) {
+  .testimonial-card {
+    padding: clamp(12px, 3.5vw, 18px) !important;
+  }
+
+  .heading-underline {
+    display: inline-block;
+    position: relative;
+
+  }
+}
+
+
+
+
+/* ===== Blog slider text overflow fix (extreme zoom-out safe) ===== */
+
+/* Keep content width sane and remove hard vh-based scaling */
+.slider .list .item .content {
+  width: min(1140px, 90vw) !important;
+  max-width: 90vw !important;
+  padding-right: clamp(12px, 5vw, 28%) !important;
+  overflow: hidden !important;
+  /* hide any accidental spill */
+  line-height: 1.35 !important;
+  font-size: initial !important;
+  /* neutralize inherited 4vh */
+}
+
+/* Replace 4vh sizing with clamp for base/type */
+.slider .list .item .content .type {
+  font-size: clamp(14px, 1.1vw, 20px) !important;
+  line-height: 1.25 !important;
+  height: auto !important;
+  /* cancel fixed 60px */
+  margin: 0 0 6px 0 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  hyphens: auto !important;
+}
+
+/* The slide title (e.g., "Annual") â€“ scale + wrap + clamp lines */
+.slider .list .item .content .title {
+  margin-top: clamp(12px, 8vh, 120px) !important;
+  /* replace 200px */
+  font-size: clamp(20px, 2.2vw, 40px) !important;
+  line-height: 1.2 !important;
+  max-width: 60ch !important;
+  white-space: normal !important;
+  text-wrap: balance;
+  overflow-wrap: anywhere !important;
+  word-break: break-word;
+  hyphens: auto;
+  display: -webkit-box;
+  /* clamp to 2 lines to avoid overlap */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+/* Optional: description text â€“ keep it readable and inside bounds */
+.slider .list .item .content .description {
+  padding-right: 0 !important;
+  /* cancel 200px padding */
+  max-width: 65ch !important;
+  font-size: clamp(14px, 1vw, 18px) !important;
+  line-height: 1.5 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+/* Keep the thumbnails and arrows from colliding with text on wide/zoomed-out screens */
+@media (min-width: 1600px) {
+  .thumbnail {
+    bottom: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .nextPrevArrows {
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    transform: none !important;
+    max-width: none !important;
+  }
+}
+
+/* Mobile: center the prev/next arrows */
+@media (max-width: 767px) {
+  .nextPrevArrows {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    justify-content: center !important;
+    bottom: 12px !important;
+    top: auto !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+}
+
+/* General tightening so slider internals donâ€™t overflow in odd cases */
+.slider .list .item .content>* {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Zoom-out only (CSS-only heuristic):
+   - wide windows (>=1600px), OR
+   - reduced pixel ratio (zoomed out) on >=1200px width
+   Tweaks keep slider text from overflowing and avoid overlap with thumbnails/arrows.
+*/
+@media (min-width: 1600px),
+(max-resolution: 0.98dppx) and (min-width: 1200px),
+(max-resolution: 94dpi) and (min-width: 1200px) {
+
+  /* Content container: cap width and cancel aggressive vh font inheritance */
+  .slider .list .item .content {
+    width: min(1140px, 90vw) !important;
+    max-width: 90vw !important;
+    padding-right: clamp(12px, 5vw, 28%) !important;
+    overflow: hidden !important;
+    line-height: 1.35 !important;
+    font-size: initial !important;
+    /* neutralize 4vh */
+  }
+
+  /* Category/type text */
+  .slider .list .item .content .type {
+    font-size: clamp(14px, 1.1vw, 20px) !important;
+    line-height: 1.25 !important;
+    height: auto !important;
+    margin: 0 0 6px 0 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    hyphens: auto !important;
+  }
+
+  /* Main title (e.g., "Annual") */
+  .slider .list .item .content .title {
+    margin-top: clamp(12px, 8vh, 120px) !important;
+    /* replaces big fixed 200px */
+    font-size: clamp(20px, 2.2vw, 40px) !important;
+    line-height: 1.2 !important;
+    max-width: 60ch !important;
+    white-space: normal !important;
+    text-wrap: balance;
+    overflow-wrap: anywhere !important;
+    word-break: break-word;
+    hyphens: auto;
+    display: -webkit-box;
+    /* clamp to 2 lines to avoid overlap */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  /* Optional: slide description */
+  .slider .list .item .content .description {
+    padding-right: 0 !important;
+    /* cancel large padding that crowds text */
+    max-width: 65ch !important;
+    font-size: clamp(14px, 1vw, 18px) !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* Keep thumbnails/arrows clear of text on wide/zoomed-out views */
+  .thumbnail {
+    bottom: 20px !important;
+    right: 20px !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .nextPrevArrows {
+    top: auto !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    transform: none !important;
+    max-width: none !important;
+  }
+
+  /* Safety: ensure children donâ€™t overflow the content block */
+  .slider .list .item .content>* {
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+
+
+
+/* Desktop: align text bottom-left, arrows bottom-left/right */
+@media (min-width: 1024px) {
+
+  /* Ensure slider is the positioning context */
+  .slider {
+    position: relative;
+  }
+
+  /* Text block to bottom-left (leave room for arrows) */
+  .slider .list .item .content {
+    position: absolute !important;
+    left: 24px !important;
+    bottom: 185px !important;
+    /* 40px arrow + spacing */
+    top: auto !important;
+    transform: none !important;
+    max-width: min(60ch, 50vw) !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+    z-index: 2;
+    /* above image, below arrows */
+  }
+
+  /* Neutralize big top offset on title so it sits at bottom-left */
+  .slider .list .item .content .title {
+    margin-top: 0 !important;
+  }
+
+  /* Put the arrows on the bottom edges */
+  .nextPrevArrows {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 16px !important;
+    top: auto !important;
+    width: 100% !important;
+    transform: none !important;
+    display: flex end !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding: 0 16px !important;
+    gap: 0 !important;
+    max-width: none !important;
+    z-index: 3 !important;
+    pointer-events: none;
+    /* container ignores clicks */
+  }
+
+  .nextPrevArrows button {
+    pointer-events: auto;
+    /* buttons stay clickable */
+  }
+
+  /* Keep thumbnails above arrows but out of the text area */
+  .thumbnail {
+    position: absolute !important;
+    right: 16px !important;
+    bottom: 80px !important;
+    /* above arrows */
+    left: auto !important;
+    transform: none !important;
+    z-index: 2 !important;
+  }
+}
+
+
+/* Center social icons on mobile landscape (footer + header groups) */
+@media (max-width: 920px) and (orientation: landscape),
+(max-height: 420px) and (orientation: landscape) {
+
+  /* container spans full row and centers content */
+  .social-media,
+  .social-mediah {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .heading-underline {
+    display: inline-block;
+    position: relative;
+
+  }
+
+  .founder-underline {
+    display: inline-block;
+    position: relative;
+    margin-left: 230px !important;
+  }
+
+  .title {
+    margin-left: 60px;
+    margin-top: 80px;
+  }
+
+
+  /* center the icon row(s); keep wrapping if needed */
+  .social-media ul,
+  .social-mediah ul {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    align-content: center;
+    /* centers multiple wrapped rows */
+    gap: clamp(6px, 2vw, 12px);
+    margin: 0 auto !important;
+    padding: 0;
+  }
+
+  .social-media li,
+  .social-mediah li {
+    margin: 0 !important;
+  }
+
+  /* optional: a bit of breathing room in tight landscape heights */
+  .main-footer .social-media {
+    margin-top: clamp(8px, 1.5vh, 14px);
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+
+
+
+.partners-section {
+  padding: 20px 0;
+  background: transparent !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+.partner-card {
+  border: 1px solid rgba(171, 167, 167, 0.83);
+}
+
+.section-header {
+  margin-bottom: 20px;
+  background: transparent !important;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin: 0;
+  background: transparent !important;
+  padding: 0;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+/* Base grid */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Tablet only (keeps your horizontal scroller) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .partners-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 15px 10px;
+    width: 100%;
+    scrollbar-width: none;
+    /* Firefox */
+    gap: 1px;
+  }
+
+  .partners-grid::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome/Safari */
+  }
+
+  .partners-grid>a {
+    flex: 0 0 auto;
+    min-width: 220px;
+    max-width: 260px;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+}
+
+/* Mobile: exactly 2 cards per row */
+@media (max-width: 767px) {
+  .partners-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: visible;
+  }
+
+  .partners-grid>a {
+    width: 100%;
+    min-width: 0 !important;
+    /* ensure two fit on very small screens */
+    max-width: none !important;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .partners-grid h3 {
+    font-size: 1rem;
+    margin: 8px 0 4px;
+  }
+
+  .partners-grid p {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .partner-logo {
+    height: 50px !important;
+  }
+
+  .partner-logo img {
+    max-height: 40px !important;
+    width: auto !important;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* 1) Social icons: force a single row (scrolls horizontally on small screens) */
+.social-media ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  overflow-x: none;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.social-media ul::-webkit-scrollbar {
+  display: none;
+}
+
+.social-media li {
+  flex: 0 0 auto;
+}
+
+/* 2) Make the section titles a bit larger (Quick/Popular) */
+.footer-quick h2,
+.footer-popular h2 {
+  font-size: 1.25rem;
+  /* tweak to taste */
+  line-height: 1.2;
+}
+
+/* 3) Lower the font size of the lists under Quick/Popular */
+.footer-quick>div>ul a,
+.footer-popular>div>ul a {
+  font-size: 0.95rem;
+  /* slightly smaller than default */
+}
+
+/* Keep Quick/Popular lists single-column on mobile, leave social icons alone */
+@media (max-width: 767px) {
+
+  .footer-quick>div>ul,
+  .footer-popular>div>ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0 0 0 20px;
+    /* Added left padding for bullet points */
+    margin: 0 0 0 10px;
+    /* Added left margin for better spacing */
+    list-style: disc;
+    /* Changed from none to disc for bullet points */
+  }
+
+  .footer-quick>div>ul a,
+  .footer-popular>div>ul a {
+    font-size: 0.9rem;
+    /* a bit smaller on phones */
+  }
+}
+
+/* Center social icons on landscape (mobile) */
+@media (max-width: 767px) and (orientation: landscape) {
+  .social-media {
+    width: 100%;
+  }
+
+  .social-media ul {
+    justify-content: center !important;
+    margin-left: 100px !important;
+    /* center the icons */
+  }
+}
+
+@media(min-width:600px) and (max-width:1209px) {
+
+
+  .heading-underline1::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+
+    margin-top: 8px;
+    width: 22%;
+    height: 5px;
+    background: #a7402d;
+    border-radius: 3px;
+  }
+
+  .slider .list .item .content {
+    margin-left: 70px !important;
+  }
+
+  .founder-underline {
+    margin-left: 260px !important;
+    white-space: nowrap;
+  }
+
+  .heading-underline {
+
+    white-space: nowrap;
+  }
+}
+
+
+
+.about-title {
+  margin-left: -450px;
+  /* only if you truly need this for larger screens */
+}
+
+/* Center the headline between 501px and 601px */
+@media (min-width: 483px) and (max-width: 601px) {
+  .landing-page-about-heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  .landing-page-about-heading h1 {
+    margin-left: -496px !important;
+    text-align: center;
+  }
+}
+
+.executives-img {
+  display: flex;
+  justify-content: center;
+}
+
+.ceo-img {
+  display: block;
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid rgb(82, 81, 81);
+}
+
+/* Fix shrinking between 769px and 983px */
+@media (min-width: 769px) and (max-width: 983px) {
+  .ceo-img {
+    /* Make it bigger but bounded */
+    width: clamp(360px, 45vw, 520px);
+  }
+}
+
+/* If your parent (.executives) is flex and the img still shrinks,
+   give the img container some space */
+@media (min-width: 769px) and (max-width: 1300px) {
+  .executives {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .executives-img {
+    flex: 0 0 50%;
+    margin-left: 200px;
+  }
+
+  /* half width for the image column */
+  .executives-art {
+    flex: 1 1 50%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 770px) {
+  .executives-img {
+    flex: 0 0 50%;
+    margin-left: 200px;
+  }
+
+  /* half width for the image column */
+}
+
+
+
+/* Default: left (desktop and below) */
+.founder-title {
+  color: #A7402D;
+  text-align: left;
+  margin: 0;
+}
+
+/* 380â€“769px: center */
+@media (min-width: 200px) and (max-width: 770px) {
+  .founder-title {
+    text-align: center;
+    white-space: nowrap;
+    margin-left: -1px;
+    overflow-x: hidden;
+  }
+}
+
+@media(min-width:771px) and (max-width:1300px) {
+  .founder-title {
+    text-align: left;
+    white-space: nowrap;
+    margin-left: -1px !important;
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+
+/* --- FIX 1: Keep hamburger menu CLOSED by default (â‰¤1147px), only open on .active --- */
+@media (max-width: 1147px) {
+
+  /* Close by default and anchor panel under the hamburger (top-right) */
+  .nav-menu {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    position: absolute !important;
+    top: calc(100% + 8px) !important;
+    right: 16px !important;
+    left: auto !important;
+
+    width: min(92vw, 320px) !important;
+    max-height: calc(100dvh - var(--nav-height, 80px) - 24px) !important;
+    overflow-y: auto !important;
+
+    transform: none !important;
+    /* cancel slide/translate rules */
+    margin: 0 !important;
+    /* cancel stray margins (e.g., 550px) */
+  }
+
+  .nav-menu.active {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    flex-direction: column !important;
+  }
+
+  /* Use mobile submenus only; hide desktop dropdowns on touch */
+  .dropdown-menu2,
+  .dropdown-menu3 {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  /* Prevent long labels from forcing horizontal overflow */
+  .nav-menu a,
+  .dropdown-toggle {
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+  }
+
+  /* Ensure items stack vertically inside the panel */
+  .nav-menu ul {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+/* --- FIX 2: Dropdown menus stack vertically and wrap (all sizes) --- */
+.dropdown-menu2 ul,
+.dropdown-menu3 ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 4px !important;
+  margin: 0 !important;
+  padding: 4px 0 !important;
+}
+
+.dropdown-menu2 li,
+.dropdown-menu3 li {
+  display: block !important;
+}
+
+.dropdown-menu2 a,
+.dropdown-menu3 a {
+  white-space: normal !important;
+  /* allow wrapping */
+  overflow-wrap: anywhere !important;
+  /* break long words */
+  word-break: break-word !important;
+  line-height: 1.35 !important;
+}
+
+/* Keep dropdown widths reasonable and scroll if tall */
+.dropdown-menu2,
+.dropdown-menu3 {
+  min-width: 220px !important;
+  max-width: min(90vw, 320px) !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+}
+
+
+
+.scroll-edge-toggle {
+  position: fixed;
+  right: clamp(12px, 2vw, 20px);
+  bottom: max(12px, env(safe-area-inset-bottom));
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #A7402D;
+  color: #fff;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 3000;
+  /* above your sticky nav (z=1000) */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.scroll-edge-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+  background: #b95341;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-edge-toggle {
+    transition: none;
+  }
+}
+
+/* Center social icons on mobile (header + footer) */
+@media (max-width: 767px) {
+
+  /* containers centered */
+  .social-media,
+  .social-mediah,
+  .header-social {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    margin-left: 25px !important;
+  }
+
+  /* the icon rows centered */
+  .social-media ul,
+  .social-mediah ul {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    align-content: center;
+    gap: clamp(6px, 2vw, 12px);
+    margin: 0 auto !important;
+    /* cancel any previous offsets */
+    padding: 0;
+  }
+
+  /* cancel legacy offsets that push the row left/right */
+  .social-media ul {
+    margin-left: -32px !important;
+  }
+}
+
+/* Also cancel the landscape offset that was pushing icons off-center */
+@media (max-width: 767px) and (orientation: landscape) {
+  .social-media ul {
+    margin-left: 78px !important;
+  }
+}
+
+
+
+/* Map click-through to Google Maps */
+.footer-map-wrap {
+  position: relative;
+  display: inline-block;
+  /* shrink to iframe size */
+  line-height: 0;
+  /* remove inline-gap */
+  border-radius: 8px;
+  overflow: hidden;
+  /* rounded corners on the map */
+}
+
+.footer-map-wrap iframe {
+  display: block;
+  width: 230px;
+  /* match your iframe width */
+  height: 160px;
+  /* match your iframe height */
+  border: 0;
+  pointer-events: none;
+  /* ensure clicks go to the overlay link */
+}
+
+.footer-map-overlay {
+  position: absolute;
+  inset: 0;
+  /* cover the iframe fully */
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+}
+
+.footer-map-overlay:focus {
+  outline: 3px solid #A7402D;
+  /* visible focus ring for keyboard users */
+  outline-offset: 2px;
+}
+
+.footer-map-placeholder {
+  width: 230px;
+  height: 160px;
+  background: linear-gradient(135deg, #1b1b1b, #2d2d2d);
+  border-radius: 6px;
+}
+
+/* Dropped index.css Footer Styles */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown-arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 5px;
+  left: 0;
+  background-color: #A7402D;
+  border: 1px solid #c44c38;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 5px 0;
+  margin-left: 0;
+  z-index: 100;
+  min-width: 180px;
+}
+
+.dropdown-menu li .branch-link {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-menu li .branch-link:hover {
+  background-color: #c44c38;
+}

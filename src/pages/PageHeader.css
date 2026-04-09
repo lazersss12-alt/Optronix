@@ -1,0 +1,233 @@
+/* Base header styles */
+.header-wrapper {
+  width: 100%;
+  background-color: #000; /* black fills sides behind clamped banner */
+}
+
+.header {
+  width: 100%;
+  background-color: #000 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Banner styles */
+.header-banner {
+  width: 100%;
+  height: var(--header-height, 70vh);
+  color: white;
+  background-size: cover;
+  background-position: center 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative; /* needed for absolute button positioning */
+}
+
+/* For video slides inside header */
+.header-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Navigation dots at bottom */
+.header-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+
+.header-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.header-dot.active {
+  background-color: #fff;
+}
+
+.header-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  z-index: 2; /* stays above video/image but below content */
+  pointer-events: none;
+}
+
+/* Zoom out specific styles */
+.header.zoom-out .header-banner {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Inner content wrapper */
+.header-inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+/* Title styles */
+.header-title {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  margin-top: -180px;
+}
+
+/* Subtitle styles */
+.header-subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  margin: 0 0 2rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styles (anchored to bottom center of the header) */
+.header-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  white-space: nowrap;
+
+  position: absolute; /* stick to bottom of header */
+  left: 50%;
+  bottom: 20px; /* increase to ~60px if dots overlap */
+  transform: translateX(-50%);
+  z-index: 6; /* above gradient/video */
+}
+
+.header-button:hover {
+  transform: translateX(-50%) translateY(-2px); /* keep center when hovering */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header-banner {
+    height: var(--header-height-mobile, 60vh);
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Inner container to align header text with rest of the content */
+.header-inner {
+  width: 100%;
+  padding: 0 20px !important; /* breathing space on sides */
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+/* When zooming OUT, align with content width */
+.header-inner.zoom-out {
+  max-width: 1400px !important; /* matches product/content sections */
+  margin-inline: auto !important; /* center horizontally */
+  text-align: left !important; /* optional: align text with content flow */
+}
+
+/* Extreme Zoom Out (below 50%) */
+@media screen and (max-width: 50em) {
+  .header {
+    padding: 0;
+  }
+
+  .header-banner {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  .header-inner {
+    padding: 0 15px !important;
+  }
+
+  .header-title {
+    font-size: 1.8rem !important;
+  }
+
+  .header-subtitle {
+    font-size: 1rem !important;
+  }
+}
+
+/* Extreme Zoom In (above 200%) */
+@media screen and (min-width: 200em) {
+  .header {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .header-banner {
+    max-width: 1600px;
+  }
+
+  .header-inner {
+    max-width: 1400px !important;
+  }
+
+  .header-title {
+    font-size: 4rem !important;
+  }
+
+  .header-subtitle {
+    font-size: 1.8rem !important;
+    max-width: 1000px;
+  }
+
+  .header-button {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+  }
+}

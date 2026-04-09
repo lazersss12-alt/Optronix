@@ -1,0 +1,90 @@
+.main-header {
+    width: 100%;
+    display: grid;
+    padding: 8px 0;
+    grid-template-columns: 6.25rem 1fr 1fr 6.25rem;
+    background-color: #A7402D;
+}
+
+.header-mob {
+    grid-column: 2 / 3;
+    color: black;
+}
+
+.header-mob a {
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+}
+
+.header-social {
+    display: flex;
+    grid-column: 3 / 4;
+    justify-content: end;
+    color: black;
+    padding-left: 5px;
+}
+
+.header-search {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 157px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        display: none;
+    }
+
+    .header-mob {
+        display: none;
+    }
+}
+
+.social-mediah ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.social-mediah ul li {
+    margin: 0 5px;
+}
+
+.socialmediah,
+.indiamartb {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(58, 53, 53, .7);
+    background: #fff;
+    transition: 0.5s;
+}
+
+.socialmediah .fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    line-height: 30px;
+    font-size: 16px;
+    color: #912b2c;
+    transition: 0.5s;
+}
