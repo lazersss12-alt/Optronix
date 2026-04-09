@@ -1,169 +1,152 @@
+import { mediaUrl } from '../../config/media';
 import React, { useState, useEffect } from 'react';
 import '../../components/index.css';
 import '../../components/sumitomo/Sumitomo.css';
 import { Link } from 'react-router-dom';
-import bannerImage from '../img/Devisorbanner.jpeg';
 import ProductLeadModal from '../common/ProductLeadModal';
-import ae3100 from '../img/ae3100.jpg';
-import ae1001 from '../img/AE1001.png';
-import ae200 from '../img/ae210.png';
-import ep310 from '../img/ep310.png';
-import ep710 from '../img/ep710.png';
-import ls300 from '../img/ls310.png';
-import vf10 from '../img/vfl.png';
-import dmpdf from '../img/ae3100dm.pdf';
-import ae3100pdf from '../img/ae3100.pdf';
-import ae1001pdf from '../img/ae1001.pdf';
-import ae3100dppdf from '../img/ae3100dpone.pdf';
-import ae200pdf from '../img/ae200.pdf';
-import ls300pdf from '../img/ls300.pdf';
-import ep710pdf from '../img/ep710.pdf';
-import ep310pdf from '../img/ep300.pdf';
-import vf10pdf from '../img/vf10.pdf';
-
 const productData = {
   1: [
     {
-      image: ae3100,
+      image: mediaUrl.image("ae3100.jpg"),
       title: "AE3100A~F Series",
       description: "Best OTDR in Segment",
       readMoreLink: "/deviser/AE3100A",
-      catalogLink: ae3100pdf
+      catalogLink: mediaUrl.doc("ae3100.pdf")
     },
     {
-      image: ae1001,
+      image: mediaUrl.image("AE1001.png"),
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
-      catalogLink: ae1001pdf
+      catalogLink: mediaUrl.doc("ae1001.pdf")
     },
     {
-      image: ae3100,
+      image: mediaUrl.image("ae3100.jpg"),
       title: "AE3100DM",
       description: "Best Multimode OTDR",
       readMoreLink: "/deviser/AE3100DM",
-      catalogLink: dmpdf
+      catalogLink: mediaUrl.doc("ae3100dm.pdf")
     },
     {
-      image: ae3100,
+      image: mediaUrl.image("ae3100.jpg"),
       title: "AE3100 Live Series",
       description: "One of the best Live OTDR",
       readMoreLink: "/deviser/AE3100Live",
-      catalogLink: ae3100dppdf
+      catalogLink: mediaUrl.doc("ae3100dpone.pdf")
     },
     {
-      image: ae200,
+      image: mediaUrl.image("ae210.png"),
       title: "AE210 Series",
       description: "Best Optical Power Meter",
       readMoreLink: "/deviser/AE210",
-      catalogLink: ae200pdf
+      catalogLink: mediaUrl.doc("ae200.pdf")
     },
     {
-      image: ep310,
+      image: mediaUrl.image("ep310.png"),
       title: "EP-310 ",
       description: "PON Power Meter",
       readMoreLink: "/deviser/EP310",
-      catalogLink: ep310pdf
+      catalogLink: mediaUrl.doc("ep300.pdf")
     },
     {
-      image: ls300,
+      image: mediaUrl.image("ls310.png"),
       title: "LS310 Series",
       description: "Optical Laser Source Meter",
       readMoreLink: "/deviser/LS310",
-      catalogLink: ls300pdf
+      catalogLink: mediaUrl.doc("ls300.pdf")
     },
     {
-      image: ep710,
+      image: mediaUrl.image("ep710.png"),
       title: " EP710 Series",
       description: "Multimeter",
       readMoreLink: "/deviser/EP710",
-      catalogLink: ep710pdf
+      catalogLink: mediaUrl.doc("ep710.pdf")
     },
     {
-      image: vf10,
+      image: mediaUrl.image("vfl.png"),
       title: "VF-10",
       description: "Visual Fault Locator",
       readMoreLink: "/deviser/VF10",
-      catalogLink: vf10pdf
+      catalogLink: mediaUrl.doc("vf10.pdf")
     }
   ],
   2: [
     {
-      image: ae3100,
+      image: mediaUrl.image("ae3100.jpg"),
       title: "AE3100A~F Series",
       description: "Best OTDR in Segment",
       readMoreLink: "/deviser/AE3100A",
-      catalogLink: ae3100pdf
+      catalogLink: mediaUrl.doc("ae3100.pdf")
     },
     {
-      image: ae1001,
+      image: mediaUrl.image("AE1001.png"),
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
-      catalogLink: ae1001pdf
+      catalogLink: mediaUrl.doc("ae1001.pdf")
     }
   ],
   3: [
     {
-      image: ae3100,
+      image: mediaUrl.image("ae3100.jpg"),
       title: "AE3100DM",
       description: "Best Multimode OTDR",
       readMoreLink: "/deviser/AE3100DM",
-      catalogLink: dmpdf
+      catalogLink: mediaUrl.doc("ae3100dm.pdf")
     }
   ],
   4: [
     {
-      image: ae3100,
+      image: mediaUrl.image("ae3100.jpg"),
       title: "AE3100 Live Series",
       description: "One of the best Live OTDR",
       readMoreLink: "/deviser/AE3100Live",
-      catalogLink: ae3100dppdf
+      catalogLink: mediaUrl.doc("ae3100dpone.pdf")
     }
   ],
   5: [
     {
-      image: ae200,
+      image: mediaUrl.image("ae210.png"),
       title: "AE210 Series",
       description: "Best Optical Power Meter",
       readMoreLink: "/deviser/AE210",
-      catalogLink: ae200pdf
+      catalogLink: mediaUrl.doc("ae200.pdf")
     }
   ],
   6: [
     {
-      image: ep310,
+      image: mediaUrl.image("ep310.png"),
       title: "EP-310 Series ",
       description: "PON Power Meter",
       readMoreLink: "/deviser/EP310",
-      catalogLink: ep310pdf
+      catalogLink: mediaUrl.doc("ep300.pdf")
     }
   ],
   7: [
     {
-      image: ls300,
+      image: mediaUrl.image("ls310.png"),
       title: "LS300 Series",
       description: "Optical Laser Source Meter",
       readMoreLink: "/deviser/LS310",
-      catalogLink: ls300pdf
+      catalogLink: mediaUrl.doc("ls300.pdf")
     }
   ],
   8: [
     {
-      image: ep710,
+      image: mediaUrl.image("ep710.png"),
       title: " EP710 Series",
       description: "Multimeter",
       readMoreLink: "/deviser/EP710",
-      catalogLink: ep710pdf
+      catalogLink: mediaUrl.doc("ep710.pdf")
     }
   ],
   9: [
     {
-      image: vf10,
+      image: mediaUrl.image("vfl.png"),
       title: "VF-10",
       description: "Visual Fault Locator",
       readMoreLink: "/deviser/VF10",
-      catalogLink: vf10pdf
+      catalogLink: mediaUrl.doc("vf10.pdf")
     }
   ]
 };
@@ -215,7 +198,7 @@ const Deviserproduct = () => {
     <div className="deviserproduct-page-main">
       {/* Banner Section */}
       <div className="deviser-page-banner">
-        <img src={bannerImage} fetchpriority="high" alt="Deviser Products" className="banner-image" />
+        <img src={mediaUrl.image("Devisorbanner.jpeg")} fetchpriority="high" alt="Deviser Products" className="banner-image" />
       </div>
       <div className="deviserproduct-page-upperline"></div>
       <div className="product-page">

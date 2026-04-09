@@ -1,7 +1,6 @@
+import { mediaUrl } from '../../../../config/media';
 import React, { useEffect } from 'react';
 import './Sumitomo.css';
-import sumitomologo from "../../../../assets/images/SUMITOMOupdated.png";
-import sumitomoBanner from "../../../../assets/images/sumitomo-banner.jpeg";
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 function SumitomoPro() {
@@ -14,14 +13,14 @@ function SumitomoPro() {
   //   <section className="sumitomo-page">
   //     <div
   //       className="sumitomo-hero"
-  //       style={{ backgroundImage: `url(${sumitomoBanner})` }}
+  //       style={{ backgroundImage: `url(${mediaUrl.image("sumitomo-banner.jpeg")})` }}
   //     >
   //       <div className="sumitomo-hero__overlay" />
   //       <div className="sumitomo-hero__content">
   //         <h1 className="sumitomo-page-pro-name">
   //           <img
   //             className="sumitomo-logo"
-  //             src={sumitomologo}
+  //             src={mediaUrl.image("SUMITOMOupdated.png")}
   //             alt="Sumitomo Electric"
   //           />
   //         </h1>

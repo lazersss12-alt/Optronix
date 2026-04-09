@@ -1,3 +1,4 @@
+import { mediaUrl } from '../config/media';
 import React, { useState } from 'react';
 import './index.css';
 import './Header.css';
@@ -6,7 +7,6 @@ import { FaYoutube } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiInstagramFill, RiWhatsappFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
-import indiamartImage from '../assets/images/indiamart.webp';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -42,7 +42,7 @@ const Header = () => {
                     rel="noopener noreferrer"
                     style={{ display: 'flex', alignItems: 'center' }}
                   >
-                    <img src={indiamartImage} loading="lazy" alt="Indiamart" width="20" style={{ marginTop: '3px' }} />
+                    <img src={mediaUrl.image("indiamart.webp")} loading="lazy" alt="Indiamart" width="20" style={{ marginTop: '3px' }} />
                   </Link>
                 </li>
                 <li>

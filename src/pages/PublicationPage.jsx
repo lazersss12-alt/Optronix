@@ -1,26 +1,15 @@
+import { mediaUrl } from '../config/media';
 import React, { useEffect, useState, useRef } from 'react';
 import './PublicationPage.css';
 
 // Local images for static events
-import imag2 from '../components/img/freeservicecamp1.jpeg';
-import imag3 from '../components/img/annualday1.jpeg';
-import imag4 from "../components/img/annualday2.jpeg";
-import imag5 from "../components/img/annualday3.jpeg";
-import imag6 from '../components/img/annualday4.jpeg';
-import imag7 from "../components/img/freeservicecamp3.jpeg";
-import imag8 from '../components/img/freeservicecapm2.jpeg';
-import imag9 from '../components/img/img11.jpg';
-import imag10 from '../components/img/img12.jpg';
-import imag11 from '../components/img/img13.jpg';
-import imag12 from '../components/img/img14.jpg';
-
 // Static events
 const staticEvents = [
   {
     id: 3,
     title: "2nd Annual Day Celebration",
     date: "2025-02-02",
-    images: [imag3, imag4, imag5, imag6],
+    images: [mediaUrl.image("annualday1.jpeg"), mediaUrl.image("annualday2.jpeg"), mediaUrl.image("annualday3.jpeg"), mediaUrl.image("annualday4.jpeg")],
     content:
       "A proud moment captured – The Candid Optronix Family! From teamwork to triumphs, and challenges to achievements, we stand stronger together! As we celebrate our 2nd Annual Day, we honor the dedication, hard work, and unity that make this company an incredible place to be. A heartfelt thank you to our inspiring leaders and exceptional team for making this journey unforgettable. Here’s to many more milestones ahead!",
     link: ""
@@ -29,7 +18,7 @@ const staticEvents = [
     id: 2,
     title: "Free Service Camp - Technical Support",
     date: "2025-01-18",
-    images: [imag2, imag7, imag8],
+    images: [mediaUrl.image("freeservicecamp1.jpeg"), mediaUrl.image("freeservicecamp3.jpeg"), mediaUrl.image("freeservicecapm2.jpeg")],
     content:
       "We’re proud to announce the successful completion of our Free Service Camp organized by Candid Optronix Pvt. Ltd., where we offered free diagnostics, maintenance, and expert technical support for fiber optic professionals. The event covered key equipment such as Sumitomo Fusion Splicers, Deviser OTDRs and meters, Optronix PON products (OLT, ONU, XPON), and EDFA amplifiers. Thank you to everyone who participated and made the event a success.",
     link: ""
@@ -38,7 +27,7 @@ const staticEvents = [
     id: 1,
     title: "Cable TV Show India",
     date: "2017-01-01",
-    images: [imag9, imag10, imag11, imag12],
+    images: [mediaUrl.image("img11.jpg"), mediaUrl.image("img12.jpg"), mediaUrl.image("img13.jpg"), mediaUrl.image("img14.jpg")],
     content: `Candid Optronix Pvt. Ltd. participated in the Cable TV Show India 2017 held in Kolkata, where we showcased our latest innovations and solutions in the field of fiber optics and digital cable technology. The event provided an excellent opportunity to connect with industry professionals and demonstrate our commitment to advancing network infrastructure across India.`,
     link: ""
   }

@@ -1,21 +1,10 @@
+import { mediaUrl } from '../../config/media';
 import React, { useState, useEffect } from 'react';
 import './smt.css';
 import '../../pages/PageHeader.css';  // Importing PageHeader styles
   // ✅ Unified stylesheet
 
 // Assets
-import ProductionLineImage from '../img/Opticalplant.png';
-
-import RodentResistantIcon from '../img/f4.png';
-import StandardLengthIcon from '../img/f2.png';
-import ExternalUseIcon from '../img/f3.png';
-import FireRetardantIcon from '../img/final png 1.png';
-import PremiumQualityIcon from '../img/png5.png';
-import InternalUseIcon from '../img/fr.png';
-import WaterResistantIcon from '../img/png7.png';
-import RapidDeploymentIcon from '../img/png8.png';
-import TelecomIcon from '../img/png6.png';
-
 const SMT = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -28,15 +17,15 @@ const SMT = () => {
   
 
   const featuresData = [
-    { icon: RodentResistantIcon, title: 'Rodent Resistant', description: 'Rodent-resistant sheathing for durability.' },
-    { icon: StandardLengthIcon, title: 'Standard Length', description: 'Standard lengths for fast installation.' },
-    { icon: ExternalUseIcon, title: 'External Use', description: 'Weather-resistant jackets for outdoor use.' },
-    { icon: RapidDeploymentIcon, title: 'Rapid Deployment', description: 'Quick and efficient installation.', hideOnMobile: true },
-    { icon: FireRetardantIcon, title: 'Fire Retardant', description: 'Flame-retardant materials enhance safety.' },
-    { icon: PremiumQualityIcon, title: 'Premium Quality', description: 'Superior performance and reliability.' },
-    { icon: InternalUseIcon, title: 'Internal Use', description: 'Low-smoke & fire-safe for indoor cabling.' },
-    { icon: WaterResistantIcon, title: 'Water Resistant', description: 'Moisture-blocking design to prevent ingress.' },
-    { icon: TelecomIcon, title: 'Telecommunications', description: 'High-speed fiber for telecom networks.' }
+    { icon: mediaUrl.image("f4.png"), title: 'Rodent Resistant', description: 'Rodent-resistant sheathing for durability.' },
+    { icon: mediaUrl.image("f2.png"), title: 'Standard Length', description: 'Standard lengths for fast installation.' },
+    { icon: mediaUrl.image("f3.png"), title: 'External Use', description: 'Weather-resistant jackets for outdoor use.' },
+    { icon: mediaUrl.image("png8.png"), title: 'Rapid Deployment', description: 'Quick and efficient installation.', hideOnMobile: true },
+    { icon: mediaUrl.image("final png 1.png"), title: 'Fire Retardant', description: 'Flame-retardant materials enhance safety.' },
+    { icon: mediaUrl.image("png5.png"), title: 'Premium Quality', description: 'Superior performance and reliability.' },
+    { icon: mediaUrl.image("fr.png"), title: 'Internal Use', description: 'Low-smoke & fire-safe for indoor cabling.' },
+    { icon: mediaUrl.image("png7.png"), title: 'Water Resistant', description: 'Moisture-blocking design to prevent ingress.' },
+    { icon: mediaUrl.image("png6.png"), title: 'Telecommunications', description: 'High-speed fiber for telecom networks.' }
   ];
 
   return (
@@ -52,7 +41,7 @@ const SMT = () => {
               backgroundImage: `
               linear-gradient(rgba(0, 0, 0, 0.3)),
                 
-                url(${ProductionLineImage})
+                url(${mediaUrl.image("Opticalplant.png")})
               `,
             }}
           >

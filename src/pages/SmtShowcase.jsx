@@ -1,3 +1,4 @@
+import { mediaUrl } from '../config/media';
 // src/pages/SmtShowcase.jsx
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -7,24 +8,6 @@ import MIheader from './MIheader';
 import { Helmet } from 'react-helmet-async';
 
 // --- Import your images & videos ---
-import Machine1 from '../components/img/WS1.webp';
-import Machine2 from '../components/img/WS12.mp4';
-import Machine3 from '../components/img/WS2.webp';
-import Machine4 from '../components/img/Testing2.webp';
-import Machine5 from '../components/img/TU1.mp4';
-import Machine6 from '../components/img/ONU Testing.webp';
-import Machine7 from '../components/img/onttesting1.mp4';
-import Machine8 from '../components/img/coldstorage1.webp';
-import Machine9 from '../components/img/coldstorage2.mp4';
-import Machine10 from '../components/img/ESDcontrol1.webp';
-import Machine11 from '../components/img/ESDcontrol.mp4';
-import Machine12 from '../components/img/Preform1.mp4';
-import Machine13 from '../components/img/Preform2.mp4';
-import Machine14 from '../components/img/Reeltray1.webp';
-import Machine15 from '../components/img/Reeltray2.mp4';
-import Machine16 from '../components/img/VacuumSealing1.webp';
-import Machine17 from '../components/img/Reelcounter.mp4';
-
 // Helper: force all likely scroll containers to top
 function forceScrollToTop() {
   // Stop browser from restoring previous scroll
@@ -145,7 +128,7 @@ const SmtShowcase = () => {
     {
       id: 1,
       title: 'LEAD FREE WAVE SOLDERING M/C (JT-WS-350)',
-      images: [Machine2, Machine1, Machine3],
+      images: [mediaUrl.video("WS12.mp4"), mediaUrl.image("WS1.webp"), mediaUrl.image("WS2.webp")],
       features: [
         'Features a robust PC + PLC control system for maximum reliability',
         'PID + SSR control loop with stable heating up to 300°C',
@@ -157,7 +140,7 @@ const SmtShowcase = () => {
     {
       id: 2,
       title: 'TOUCHUP & TESTING LINE',
-      images: [Machine5, Machine4],
+      images: [mediaUrl.video("TU1.mp4"), mediaUrl.image("Testing2.webp")],
       features: [
         'Meticulous Touch-ups',
         'Thorough Testing',
@@ -170,7 +153,7 @@ const SmtShowcase = () => {
     {
       id: 3,
       title: 'ONU/ONT TESTING LINE',
-      images: [Machine7, Machine6],
+      images: [mediaUrl.video("onttesting1.mp4"), mediaUrl.image("ONU Testing.webp")],
       features: [
         'Expert-Led Testing',
         'Precision ONU/OLT Validation',
@@ -182,7 +165,7 @@ const SmtShowcase = () => {
     {
       id: 4,
       title: 'Utility',
-      images: [Machine9, Machine8, Machine10, Machine11, Machine12, Machine13, Machine14, Machine15, Machine16, Machine17],
+      images: [mediaUrl.video("coldstorage2.mp4"), mediaUrl.image("coldstorage1.webp"), mediaUrl.image("ESDcontrol1.webp"), mediaUrl.video("ESDcontrol.mp4"), mediaUrl.video("Preform1.mp4"), mediaUrl.video("Preform2.mp4"), mediaUrl.image("Reeltray1.webp"), mediaUrl.video("Reeltray2.mp4"), mediaUrl.image("VacuumSealing1.webp"), mediaUrl.video("Reelcounter.mp4")],
       features: ['Cold storage', 'ESD Control System', 'Preform', 'Reeltray', 'Vacuum Sealing Machine', 'Reel Counter'],
     },
   ];

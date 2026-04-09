@@ -1,9 +1,8 @@
+import { mediaUrl } from '../../../config/media';
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "../../../components/index.css"; // Make sure this CSS file has the dropdown styles
 import { FaAt } from 'react-icons/fa';
-import indiamartimg from '../../../assets/images/indiamart.webp';
-
 const ContactPageele = () => {
   // Set page title and meta description
   useEffect(() => {
@@ -179,7 +178,7 @@ const ContactPageele = () => {
                 <li><a className="socialmedia" href="https://www.youtube.com/@CandidOptronix" aria-label="Whatsapp" target='_blank' rel="noreferrer"><i className="fab fa-youtube" aria-hidden="true"></i></a></li>
               </ul>
               <ul>
-                <li><Link className="indiamartb" to="https://www.indiamart.com/candidoptronix/" aria-label="indiamart" target='_blank' rel="noreferrer"><img src={indiamartimg} loading="lazy" alt="Indiamart" width="30" /></Link></li>
+                <li><Link className="indiamartb" to="https://www.indiamart.com/candidoptronix/" aria-label="indiamart" target='_blank' rel="noreferrer"><img src={mediaUrl.image("indiamart.webp")} loading="lazy" alt="Indiamart" width="30" /></Link></li>
               </ul>
             </div>
           </div>

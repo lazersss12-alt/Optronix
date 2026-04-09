@@ -1,21 +1,22 @@
+import { mediaUrl } from '../config/media';
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './MaincomPro.css';
 
 
 const videoList = [
-  { load: () => import('../components/img/solderpasteinsption.mp4'), label: 'Solder Paste Inspection', path: '/surface-mounting' },
-  { load: () => import('../components/img/pickandplace.mp4'), label: 'Pick and Place', path: '/surface-mounting' },
-  { load: () => import('../components/img/3DAOI.mp4'), label: '3D AOI', path: '/surface-mounting' },
-  { load: () => import('../components/img/miline.mp4'), label: 'Manual Insertion', path: '/mi' },
-  { load: () => import('../components/img/wavesoldering.mp4'), label: 'Wave Soldering', path: '/mi' },
-  { load: () => import('../components/img/ELAtestingpackaging.mp4'), label: 'Testing and Packing', path: '/ofcpage' },
-  { load: () => import('../components/img/colouringline.mp4'), label: 'Fiber Coloring', path: '/ofcpage' },
-  { load: () => import('../components/img/shating.mp4'), label: 'Fiber Sheathing', path: '/ofcpage' },
-  { load: () => import('../components/img/buffeering.mp4'), label: 'Fiber Buffering', path: '/ofcpage' },
-  { load: () => import('../components/img/ftth.mp4'), label: 'FTTH Cable', path: '/ofcpage' },
-  { load: () => import('../components/img/ofctestingpackaging.mp4'), label: 'Fiber Testing and Packing', path: '/ofcpage' },
-  { load: () => import('../components/img/Utilityvideo.mp4'), label: 'Utility', path: '/mi' }
+  { load: () => Promise.resolve(mediaUrl.video("solderpasteinsption.mp4")), label: 'Solder Paste Inspection', path: '/surface-mounting' },
+  { load: () => Promise.resolve(mediaUrl.video("pickandplace.mp4")), label: 'Pick and Place', path: '/surface-mounting' },
+  { load: () => Promise.resolve(mediaUrl.video("3DAOI.mp4")), label: '3D AOI', path: '/surface-mounting' },
+  { load: () => Promise.resolve(mediaUrl.video("miline.mp4")), label: 'Manual Insertion', path: '/mi' },
+  { load: () => Promise.resolve(mediaUrl.video("wavesoldering.mp4")), label: 'Wave Soldering', path: '/mi' },
+  { load: () => Promise.resolve(mediaUrl.video("ELAtestingpackaging.mp4")), label: 'Testing and Packing', path: '/ofcpage' },
+  { load: () => Promise.resolve(mediaUrl.video("colouringline.mp4")), label: 'Fiber Coloring', path: '/ofcpage' },
+  { load: () => Promise.resolve(mediaUrl.video("shating.mp4")), label: 'Fiber Sheathing', path: '/ofcpage' },
+  { load: () => Promise.resolve(mediaUrl.video("buffeering.mp4")), label: 'Fiber Buffering', path: '/ofcpage' },
+  { load: () => Promise.resolve(mediaUrl.video("ftth.mp4")), label: 'FTTH Cable', path: '/ofcpage' },
+  { load: () => Promise.resolve(mediaUrl.video("ofctestingpackaging.mp4")), label: 'Fiber Testing and Packing', path: '/ofcpage' },
+  { load: () => Promise.resolve(mediaUrl.video("Utilityvideo.mp4")), label: 'Utility', path: '/mi' }
 ];
 
 const VideoItem = ({ video, onClick }) => {

@@ -1,29 +1,9 @@
+import { mediaUrl } from '../../config/media';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './SurfaceMountingShowcase.css';
 
 // Import all your images
-import Machine1 from '../../assets/images/smt machine 2.jpg';
-import Machine2 from '../../assets/images/smt machine 2 up.png';
-import Machine3 from '../../assets/images/smt machine 3.png';
-import Machine4 from '../../assets/images/smtvideo2.mp4';
-import Machine5 from '../../assets/images/smt machine 5 up2.png';
-import Machine6 from '../../assets/images/machine1video2.mp4';
-import Machine7 from '../../assets/images/chipmounter.mp4';
-import Machine8 from '../../assets/images/smt machine 8 updated.png';
-import Machine9 from '../../assets/images/smt machine 9 updated.png';
-
-import Machine11 from '../../assets/images/smt machine 11.png';
-import Machine12 from '../../assets/images/smt machine 12 up.png';
-import Machine13 from '../../assets/images/smt machine 13 up.png';
-import Machine14 from '../../assets/images/smt machine 14.png';
-import Machine15 from '../../assets/images/smt machine 15 up.jpg';
-import Machine16 from '../../assets/images/smtvideo5.mp4';
-import Machine17 from '../../assets/images/pcboven.mp4';
-import Machine18 from '../../assets/images/X ray inspection machine.png';
-import Machine19 from '../../assets/images/stencils1.mp4';
-
-
 // Reusable Showcase Section
 const ShowcaseSection = ({ title, features, layout, images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -101,7 +81,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 1,
       title: 'SOLDER PASTE PRINTER- GKG (G – TITAN)',
-      images: [Machine6, Machine1, Machine2, Machine3],
+      images: [mediaUrl.video("machine1video2.mp4"), mediaUrl.image("smt machine 2.jpg"), mediaUrl.image("smt machine 2 up.png"), mediaUrl.image("smt machine 3.png")],
       features: [
         'Board Size: 50×50mm to 510×510mm',
         'PCB Thickness: 0.4–6mm',
@@ -114,7 +94,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 2,
       title: 'SOLDER PASTE INSPECTION SPI KOH YOUNG (Ky8080)',
-      images: [Machine4, Machine15],
+      images: [mediaUrl.video("smtvideo2.mp4"), mediaUrl.image("smt machine 15 up.jpg")],
       features: [
         'Inspects: Volume, Area, Height, Offset & more',
         'Camera: 2M Pix',
@@ -127,7 +107,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 3,
       title: 'CHIP MOUNTER NPM –D3 –A (PANASONIC)',
-      images: [Machine7, Machine8, Machine9],
+      images: [mediaUrl.video("chipmounter.mp4"), mediaUrl.image("smt machine 8 updated.png"), mediaUrl.image("smt machine 9 updated.png")],
       features: [
         'Dual Line Mode: up to 510×300mm',
         'Ultra-High Speed: 400,000 CPH',
@@ -139,7 +119,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 4,
       title: 'REFLOW OVEN (JT RS- 1000 II - N2)',
-      images: [Machine11, Machine12, Machine13],
+      images: [mediaUrl.image("smt machine 11.png"), mediaUrl.image("smt machine 12 up.png"), mediaUrl.image("smt machine 13 up.png")],
       features: [
         'Heating Zones: 10 Top / 10 Bottom',
         'Cooling Methods: Air Oven & Forced Air',
@@ -150,7 +130,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 5,
       title: '3D AUTOMATIC OPTICAL INSPECTION (AOI) KOH YOUNG ZENIT',
-      images: [Machine16, Machine5, Machine14],
+      images: [mediaUrl.video("smtvideo5.mp4"), mediaUrl.image("smt machine 5 up2.png"), mediaUrl.image("smt machine 14.png")],
       features: [
         'Min. Component Size: 01005',
         'Max. PCB Size: 490×510mm',
@@ -163,7 +143,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 6,
       title: 'X-RAY INSPECTION MACHINE',
-      images: [Machine18],
+      images: [mediaUrl.image("X ray inspection machine.png")],
       features: [
         'High-resolution X-ray imaging for BGA, QFN, and other hidden joints',
         'Automatic defect detection and classification',
@@ -176,7 +156,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 7,
       title: 'PCB BAKING OVEN',
-      images: [Machine17],
+      images: [mediaUrl.video("pcboven.mp4")],
       features: [
         'Temperature range: Ambient to 200°C',
         'Uniform temperature distribution',
@@ -189,7 +169,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 8,
       title: 'STENCIL CLEANING MACHINE',
-      images: [Machine19],
+      images: [mediaUrl.video("stencils1.mp4")],
       features: [
         'Automated cleaning process',
         'Quick and efficient cleaning',

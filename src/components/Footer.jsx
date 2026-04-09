@@ -1,11 +1,10 @@
+import { mediaUrl } from '../config/media';
 ﻿import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import "./Footer.css";
 import { FaAt } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
-import indiamartimg from './img/india.webp';
-
 /* Dropdown menu that can open up or down based on available space */
 const DropdownMenu = styled.ul`
   list-style: none;
@@ -641,7 +640,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src={indiamartimg}
+                      src={mediaUrl.image("india.webp")}
                       loading="lazy"
                       alt="Indiamart"
                       width="30"

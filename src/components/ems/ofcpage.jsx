@@ -1,3 +1,4 @@
+import { mediaUrl } from '../../config/media';
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import '../ems/SurfaceMountingShowcase.css'; // Responsive CSS
 import SMT from './smt';
@@ -6,28 +7,6 @@ import { Helmet } from 'react-helmet-async';
 
 // Import media
 // Import media
-import Machine1 from '../img/colouring11.webp';
-import Machine2 from '../img/colouring22.jpg';
-import Machine3 from '../img/colouring33.mp4';
-import Machine4 from '../img/FTTH 1.png';
-import Machine5 from '../img/FTTH 2.png';
-import machine6 from '../img/chirag.mp4';
-import Machine7 from '../img/Bufferingvideo1.mp4';
-import Machine8 from '../img/Bufferingvideo2.mp4';
-import Machine9 from '../img/Bufferring 3.png';
-import Machine10 from '../img/ofc4.png';
-import Machine11 from '../img/ofc3.png';
-import Machine12 from '../img/Fibertesting.mp4';
-import Machine13 from '../img/ofc2.png';
-import Machine14 from '../img/ofc1.mp4';
-import Machine15 from '../img/ftth.mp4';
-import Machine16 from '../img/HDPEtesting1.webp';
-import Machine17 from '../img/HDPE2.mp4';
-import Machine18 from '../img/HDPE3.mp4';
-import Machine19 from '../img/OFC33.jpg';
-import Machine20 from '../img/OFC22.jpg';
-import Machine21 from '../img/OFC11.mp4';
-
 // Helper: force all likely scroll containers to top
 function forceScrollToTop() {
   if (typeof window === 'undefined') return;
@@ -142,7 +121,7 @@ const Ofcpage = () => {
     {
       id: 1,
       title: 'Colouring Lines',
-      images: [Machine3, Machine1, Machine2],
+      images: [mediaUrl.video("colouring33.mp4"), mediaUrl.image("colouring11.webp"), mediaUrl.image("colouring22.jpg")],
       features: [
         'Precision color accuracy',
         'Durable with excellent adhesion',
@@ -154,7 +133,7 @@ const Ofcpage = () => {
     {
       id: 2,
       title: 'Buffering lines',
-      images: [machine6, Machine7, Machine8, Machine9],
+      images: [mediaUrl.video("chirag.mp4"), mediaUrl.video("Bufferingvideo1.mp4"), mediaUrl.video("Bufferingvideo2.mp4"), mediaUrl.image("Bufferring 3.png")],
       features: [
         'Optimal protection and mechanical strength',
         'Consistent buffer integrity and reliability',
@@ -166,7 +145,7 @@ const Ofcpage = () => {
     {
       id: 3,
       title: 'Fiber Testing',
-      images: [Machine12],
+      images: [mediaUrl.video("Fibertesting.mp4")],
       features: [
         'High precision testing equipment',
         'Ensures performance and durability',
@@ -178,7 +157,7 @@ const Ofcpage = () => {
     {
       id: 4,
       title: 'Sheathing lines',
-      images: [Machine14, Machine11, Machine13, Machine1],
+      images: [mediaUrl.video("ofc1.mp4"), mediaUrl.image("ofc3.png"), mediaUrl.image("ofc2.png"), mediaUrl.image("colouring11.webp")],
       features: [
         'Long-lasting environmental protection',
         'High-quality sheaths with precision',
@@ -190,7 +169,7 @@ const Ofcpage = () => {
     {
       id: 5,
       title: 'Ftth sheathing line',
-      images: [Machine15, Machine5, Machine4],
+      images: [mediaUrl.video("ftth.mp4"), mediaUrl.image("FTTH 2.png"), mediaUrl.image("FTTH 1.png")],
       features: [
         'Fast and reliable data delivery',
         'Easy installation design',
@@ -202,7 +181,7 @@ const Ofcpage = () => {
     {
       id: 6,
       title: 'HDPE Testing',
-      images: [Machine17, Machine16],
+      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("HDPEtesting1.webp")],
       features: [
         'Rigorous HDPE material testing',
         'Ensures durability and quality',
@@ -214,7 +193,7 @@ const Ofcpage = () => {
     {
       id: 7,
       title: 'Packaging',
-      images: [Machine21, Machine20, Machine19],
+      images: [mediaUrl.video("OFC11.mp4"), mediaUrl.image("OFC22.jpg"), mediaUrl.image("OFC33.jpg")],
       features: [
         'Secure and protective packaging',
         'Efficient packing process',

@@ -1,19 +1,13 @@
+import { mediaUrl } from '../../../../config/media';
 import React, { useState } from 'react';
 import '../../../../pages/page.css';
 import { Link } from 'react-router-dom';
-import op08 from "../components/img-s/Z2C.png";
-import featureImg1 from "../../../../assets/images/i6.png";
-import featureImg2 from "../../../../assets/images/i7.png";
-import featureImg3 from "../../../../assets/images/i8.png";
-import featureImg4 from "../../../../assets/images/i9.png";
-import featureImg5 from "../../../../assets/images/i5.png";
-import eponoltf1 from "../../../../assets/images/i10.png";
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 
 
 const Sumitomoproducttwelve = () => {
-  const [productImage, setProductImage] = useState(op08);
+  const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.png"));
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeIcon, setActiveIcon] = useState(null);
 
@@ -45,33 +39,33 @@ const Sumitomoproducttwelve = () => {
             <div className='product_s1v1_h2'>
               <img loading="lazy"
                 className={`product_s1v1_icon1 product_s1v1_icon ${activeIcon === 'icon1' ? 'active' : ''}`}
-                src={featureImg1}
+                src={mediaUrl.image("i6.png")}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(featureImg1, 'icon1')} />
+                onClick={() => handleIconClick(mediaUrl.image("i6.png"), 'icon1')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon2 product_s1v1_icon ${activeIcon === 'icon2' ? 'active' : ''}`}
-                src={featureImg2}
+                src={mediaUrl.image("i7.png")}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(featureImg2, 'icon2')} />
+                onClick={() => handleIconClick(mediaUrl.image("i7.png"), 'icon2')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon3 product_s1v1_icon ${activeIcon === 'icon3' ? 'active' : ''}`}
-                src={featureImg3}
+                src={mediaUrl.image("i8.png")}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(featureImg3, 'icon3')} />
+                onClick={() => handleIconClick(mediaUrl.image("i8.png"), 'icon3')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon4 product_s1v1_icon ${activeIcon === 'icon4' ? 'active' : ''}`}
-                src={featureImg4}
+                src={mediaUrl.image("i9.png")}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(featureImg4, 'icon4')} />
+                onClick={() => handleIconClick(mediaUrl.image("i9.png"), 'icon4')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon5 product_s1v1_icon ${activeIcon === 'icon5' ? 'active' : ''}`}
-                src={featureImg5}
+                src={mediaUrl.image("i5.png")}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(featureImg5, 'icon5')} />
+                onClick={() => handleIconClick(mediaUrl.image("i5.png"), 'icon5')} />
             </div>
           </div>
 
@@ -93,12 +87,12 @@ const Sumitomoproducttwelve = () => {
         </div>
         <div className='product_d_feature_img'>
           
-          {featureImg1 && (
-            <img loading="lazy" src={featureImg1} alt="Feature" style={{ width: "60%", display: "block", margin: "0 auto" }} />
+          {mediaUrl.image("i6.png") && (
+            <img loading="lazy" src={mediaUrl.image("i6.png")} alt="Feature" style={{ width: "60%", display: "block", margin: "0 auto" }} />
           )}
         </div> 
 
-        <img loading="lazy" style={{width: "100%"}} src={eponoltf1} alt=" EPON OLT FEATURE" />
+        <img loading="lazy" style={{width: "100%"}} src={mediaUrl.image("i10.png")} alt=" EPON OLT FEATURE" />
 
       </div>**/}
 
@@ -106,7 +100,7 @@ const Sumitomoproducttwelve = () => {
       <div className='products1v-feature-section-f2'>
 
         <div className='featurez2c-section-f2-a'>
-          <img loading="lazy" style={{ width: "100%" }} src={eponoltf1} alt="EPON OLT FEATURE" />
+          <img loading="lazy" style={{ width: "100%" }} src={mediaUrl.image("i10.png")} alt="EPON OLT FEATURE" />
 
         </div>
         <div className='featurez2c-section-f2-b'>

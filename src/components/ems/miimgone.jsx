@@ -1,11 +1,6 @@
+import { mediaUrl } from '../../config/media';
 import React from "react";
 import "./miimgone.css";
-import ems1 from "../img/mi1.webp";
-import ems2 from "../img/mi2.webp";
-import ems3 from "../img/mi3.webp";
-import ems4 from "../img/mi4.webp";
-import ems5 from "../img/mi5.webp";
-
 const Miimgone = () => {
   return (
     <div className="zigzag-container">
@@ -53,11 +48,11 @@ const Miimgone = () => {
         </div>
 
         <div className="zigzag">
-          <img src={ems1} alt="img1" className="zigzag-img img1" />
-          <img src={ems2} alt="img2" className="zigzag-img img2" />
-          <img src={ems3} alt="img3" className="zigzag-img img3" />
-          <img src={ems4} alt="img4" className="zigzag-img img4" />
-          <img src={ems5} alt="img5" className="zigzag-img img5" />
+          <img src={mediaUrl.image("mi1.webp")} alt="img1" className="zigzag-img img1" />
+          <img src={mediaUrl.image("mi2.webp")} alt="img2" className="zigzag-img img2" />
+          <img src={mediaUrl.image("mi3.webp")} alt="img3" className="zigzag-img img3" />
+          <img src={mediaUrl.image("mi4.webp")} alt="img4" className="zigzag-img img4" />
+          <img src={mediaUrl.image("mi5.webp")} alt="img5" className="zigzag-img img5" />
         </div>
       </div>
     </div>

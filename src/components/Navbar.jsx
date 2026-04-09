@@ -1,3 +1,4 @@
+import { mediaUrl } from '../config/media';
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './index.css';
@@ -6,8 +7,6 @@ import './Navbar.css';
 
 import { IoIosArrowDown } from 'react-icons/io';
 import { FaDownload } from 'react-icons/fa';
-import logo from './img/logo.png';
-
 /* Decide when the nav should be collapsed (burger shown) */
 const shouldCollapse = () => {
   if (typeof window === 'undefined') return false;
@@ -131,9 +130,9 @@ const Navbar = () => {
     <div className="main-nav" ref={navRef}>
       <div className="full-nav">
         {/* Logo */}
-        <div className="nav-logo">
+        <div className="nav-mediaUrl.image("logo.png")">
           <Link to="/" onClick={closeMenu}>
-            <img src={logo} loading="lazy" alt="Optronix Logo" className="logo" />
+            <img src={mediaUrl.image("logo.png")} loading="lazy" alt="Optronix Logo" className="mediaUrl.image("logo.png")" />
           </Link>
         </div>
 

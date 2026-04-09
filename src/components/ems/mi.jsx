@@ -1,8 +1,7 @@
+import { mediaUrl } from '../../config/media';
 
 
 import React, { useEffect, useRef, useState } from 'react';
-import desktopVideo from '../img/mid.mp4';
-import mobileVideo from '../img/mim.mp4';
 import Miimgone from './miimgone';
 
 const videoPoints = [
@@ -82,7 +81,7 @@ const SmtShowcase = () => {
   }, []);
 
   const isMobile = window.innerWidth <= 768;
-  const videoSrc = isMobile ? mobileVideo : desktopVideo;
+  const videoSrc = isMobile ? mediaUrl.video("mim.mp4") : mediaUrl.video("mid.mp4");
 
   const scrollContainerStyle = {
     height: '300vh',

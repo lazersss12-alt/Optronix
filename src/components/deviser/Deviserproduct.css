@@ -768,8 +768,8 @@ sup {
     vertical-align: super;
 }
 
-/* Checkmark styling */
-td:contains("✔") {
+/* Checkmark styling - removed non-standard :contains */
+td.checkmark {
     text-align: center;
 }
 

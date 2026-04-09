@@ -1,16 +1,9 @@
+import { mediaUrl } from '../config/media';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LatestEvent.css'; // We'll create this CSS file next
 
 // Import images/video
-import Rep1 from './img/Republic1.webp';
-import Rep2 from './img/Republic2.webp';
-import Rep3 from './img/Republic3.webp';
-import Rep4 from './img/Republic4.webp';
-import Rep5 from './img/Republic5.webp';
-import Rep6 from './img/Republic6.webp';
-import Rep7 from './img/Republic7.mp4';
-
 const LatestEvent = () => {
     const navigate = useNavigate();
 
@@ -19,8 +12,8 @@ const LatestEvent = () => {
         id: 100,
         title: 'Republic Day',
         subtitle: 'Republic Day Celebration 2025',
-        cover: Rep1,
-        images: [Rep1, Rep2, Rep3, Rep4, Rep5, Rep6, Rep7]
+        cover: mediaUrl.image("Republic1.webp"),
+        images: [mediaUrl.image("Republic1.webp"), mediaUrl.image("Republic2.webp"), mediaUrl.image("Republic3.webp"), mediaUrl.image("Republic4.webp"), mediaUrl.image("Republic5.webp"), mediaUrl.image("Republic6.webp"), mediaUrl.video("Republic7.mp4")]
     };
 
     const handleViewGallery = () => {
@@ -34,7 +27,7 @@ const LatestEvent = () => {
         <div className="latest-event-container">
             <div className="latest-event-content">
                 <div className="latest-event-image-wrapper">
-                    <img src={Rep1} alt="Republic Day Celebration" className="latest-event-main-image" decoding="async" fetchPriority="high" />
+                    <img src={mediaUrl.image("Republic1.webp")} alt="Republic Day Celebration" className="latest-event-main-image" decoding="async" fetchPriority="high" />
                 </div>
                 <div className="latest-event-details">
                     <span className="latest-event-badge">Latest Event</span>

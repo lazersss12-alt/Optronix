@@ -1,10 +1,7 @@
+import { mediaUrl } from '../config/media';
 import React from "react";
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
-import deviserLogo from "./img/deviser.webp";
-import sumitomoLogo from "./img/SUMITOMOupdated.webp";
-import specLogo from "./img/spec.webp";
-import invaslogo from "./img/invas.webp";
 import './partner.css';
 import './index.css';
 
@@ -257,25 +254,25 @@ const BrandSlider = () => {
     {
       name: 'Sumitomo Electric',
       desc: 'Connect with Innovation',
-      logo: sumitomoLogo,
+      logo: mediaUrl.image("SUMITOMOupdated.webp"),
       link: 'https://global-sei.com/'
     },
     {
       name: 'Deviser',
       desc: 'Over 30 Years of Experience',
-      logo: deviserLogo,
+      logo: mediaUrl.image("deviser.webp"),
       link: 'https://deviserinstruments.com/'
     },
     {
       name: 'SPEC Technology',
       desc: 'CATV Product',
-      logo: specLogo,
+      logo: mediaUrl.image("spec.webp"),
       link: 'https://spectechnology.com/'
     },
     {
       name: 'Invas Technologies',
       desc: 'Complete Telecom Solution',
-      logo: invaslogo,
+      logo: mediaUrl.image("invas.webp"),
       link: 'https://invas.in/'
     }
   ];

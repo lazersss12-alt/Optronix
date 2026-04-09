@@ -1,13 +1,14 @@
+import { mediaUrl } from '../../config/media';
 // import React from 'react';
 // import './Optronixponproduct.css';
 // import '../../pages/page.css';
 // import { Link } from 'react-router-dom';
-// import op08 from "../img/OP100P8G-removebg-preview.png"; // Use your actual image path
+// import mediaUrl.image("OP100P16G.jpg") from "../img/OP100P8G-removebg-preview.png"; // Use your actual image path
 // import op08pdf from "../img/OP100P8G.pdf";
-// import z2cImg from "../img/Gepon 8G.png";
-// import c82Img from "../img/gpon4.png";
-// import w1cImg from "../img/op1.png";
-// import fc8rImg from "../img/op2.png";
+// import mediaUrl.image("Gepon 8G.png") from "../img/Gepon 8G.png";
+// import mediaUrl.image("gpon4.png") from "../img/gpon4.png";
+// import mediaUrl.image("op1.png") from "../img/op1.png";
+// import mediaUrl.image("op2.png") from "../img/op2.png";
 
 // const Optronixponproductone = () => {
 //   return (
@@ -43,7 +44,7 @@
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={op08} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("OP100P16G.jpg")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -288,28 +289,28 @@
 //       </div>
 //           <div className='product_s1v1_product'>
 //   <div className='product_s1v1_product1'>
-//     <img className='product_s1v1_img' src={z2cImg} alt="OP-100P8G" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("Gepon 8G.png")} alt="OP-100P8G" />
 //     <h3 className='products1v_name_option'>OP-100P8G</h3>
 //     <Link to="/optronixponproducttwo" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product2'>
-//     <img className='product_s1v1_img' src={c82Img} alt="82C+" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("gpon4.png")} alt="82C+" />
 //     <h3 className='products1v_name_option'>OP-100P4G</h3>
 //     <Link to="/optronixponproductthree" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product3'>
-//     <img className='product_s1v1_img' src={w1cImg} alt="W1C" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("op1.png")} alt="W1C" />
 //     <h3 className='products1v_name_option'>OP100P8</h3>
 //     <Link to="/optronixponproductfour" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product4'>
-//     <img className='product_s1v1_img' src={fc8rImg} alt="FC8R" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("op2.png")} alt="FC8R" />
 //     <h3 className='products1v_name_option'>OP100P4</h3>
 //     <Link to="/optronixponproductfive" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
@@ -332,24 +333,13 @@ import '../index.css';
 import '../../pages/page.css';
 import { Link } from 'react-router-dom';
 
-import op08 from "../img/OP100P16G.jpg";
-import opPdf from "../img/OP100P16G.pdf";
-import subz2c from "../img/AE1001.png";
-import subw1c from "../img/vfl.png";
-import sub82c from "../img/ae210.png";
-import subfc8r from "../img/OP100P4.webp";
-import z2cImg from "../img/Gepon 8G.png";
-import c82Img from "../img/gpon4.png";
-import w1cImg from "../img/op1.png";
-import fc8rImg from "../img/op2.png";
-
 // 🔹 Reusable accordion table component
 import AccordionTable from "../AccordionTable";
 import ProductLeadModal from '../common/ProductLeadModal';
 
 const Optronixponproductone = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(op08);
+  const [productImage] = useState(mediaUrl.image("OP100P16G.jpg"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -396,7 +386,7 @@ const Optronixponproductone = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [subz2c, sub82c, subw1c, subfc8r];
+    const imgs = [mediaUrl.image("AE1001.png"), mediaUrl.image("ae210.png"), mediaUrl.image("vfl.png"), mediaUrl.image("OP100P4.webp")];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -470,7 +460,7 @@ const Optronixponproductone = () => {
                 <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(opPdf, "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("OP100P16G.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -731,7 +721,7 @@ const Optronixponproductone = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={z2cImg} loading="lazy" alt="OP-100P8G" /></div>
+            <div className="s-media"><img src={mediaUrl.image("Gepon 8G.png")} loading="lazy" alt="OP-100P8G" /></div>
             <div className="s-body">
               <h4 className="s-title">OP-100P8G</h4>
               <p className="s-desc">Pizza-box OLT with 8 GPON ports.</p>
@@ -743,7 +733,7 @@ const Optronixponproductone = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={c82Img} loading="lazy" alt="OP-100P4G" /></div>
+            <div className="s-media"><img src={mediaUrl.image("gpon4.png")} loading="lazy" alt="OP-100P4G" /></div>
             <div className="s-body">
               <h4 className="s-title">OP-100P4G</h4>
               <p className="s-desc">4-port GPON OLT for compact deployments.</p>
@@ -755,7 +745,7 @@ const Optronixponproductone = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={w1cImg} loading="lazy" alt="OP100P8" /></div>
+            <div className="s-media"><img src={mediaUrl.image("op1.png")} loading="lazy" alt="OP100P8" /></div>
             <div className="s-body">
               <h4 className="s-title">OP100P8</h4>
               <p className="s-desc">EPON variant with 8 PON ports.</p>
@@ -767,7 +757,7 @@ const Optronixponproductone = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={subfc8r} loading="lazy" alt="OP100P4" /></div>
+            <div className="s-media"><img src={mediaUrl.image("OP100P4.webp")} loading="lazy" alt="OP100P4" /></div>
             <div className="s-body">
               <h4 className="s-title">OP100P4</h4>
               <p className="s-desc">EPON 4-port option for edge sites.</p>

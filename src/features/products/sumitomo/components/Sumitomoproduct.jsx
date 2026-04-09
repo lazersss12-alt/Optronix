@@ -1,203 +1,204 @@
+import { mediaUrl } from '../../../../config/media';
 // import React, { useState } from 'react';  
 // import { Link } from 'react-router-dom';
 // import './Sumitomo.css';
-// import S1v from '../../../../assets/images/s1vp.png';
-// import S1v_ultra from '../../../../assets/images/s1vuf.png';
-// import Z2c from './img-s/Z2C.png';
-// import new82c from './img-s/82C+.png';
-// import n82m2 from './img-s/82M12.png';
-// import w1c from './img-s/w1c.png';
-// import fc8r from './img-s/FC-8R.png';
-// import sfcs from './img-s/SFCS.png';
-// import s1vpdf from '../../../../assets/images/sumitomos1v.pdf';
-// import s1vupdf from '../../../../assets/images/sumitomos1vu.pdf';
-// import z2cpdf from '../../../../assets/images/Sumitomoz2c.pdf';
-// import w1cpdf from '../../../../assets/images/sumitomow1c.pdf';
-// import new82cpdf from '../../../../assets/images/sumitomo82cplus.pdf';
-// import n82m12pdf from '../../../../assets/images/sumitomo82m12.pdf';
-// import fc6s from '../../../../assets/images/FC-6S.png';
-// import fc7ls from '../../../../assets/images/FC7LS.png';
-// import s70 from "../../../../assets/images/S-70.png";
-// import s70pdf from '../../../../assets/images/S-70.pdf';
-// import f7lspdf from '../../../../assets/images/F7LS.pdf';
-// import fc8rpdf from '../../../../assets/images/FC8R.pdf';
-// import cleaver from '../../../../assets/images/cleaver.pdf'
+// import mediaUrl.image("s1vp.png") from '../../../../assets/images/s1vp.png';
+// import mediaUrl.image("s1vuf.png") from '../../../../assets/images/s1vuf.png';
+// import mediaUrl.image("Z2C.png") from './img-s/Z2C.png';
+// import mediaUrl.image("82C+.png") from './img-s/82C+.png';
+// import mediaUrl.image("82M12.png") from './img-s/82M12.png';
+// import mediaUrl.image("w1c.png") from './img-s/mediaUrl.image("w1c.png").png';
+// import mediaUrl.image("img15.jpg") from './img-s/FC-8R.png';
+// import mediaUrl.image("SFCS.png") from './img-s/SFCS.png';
+// import mediaUrl.doc("sumitomos1v.pdf") from '../../../../assets/images/sumitomos1v.pdf';
+// import mediaUrl.doc("sumitomos1vu.pdf") from '../../../../assets/images/sumitomos1vu.pdf';
+// import mediaUrl.doc("Sumitomoz2c.pdf") from '../../../../assets/images/Sumitomoz2c.pdf';
+// import mediaUrl.doc("sumitomow1c.pdf") from '../../../../assets/images/sumitomow1c.pdf';
+// import mediaUrl.doc("sumitomo82cplus.pdf") from '../../../../assets/images/sumitomo82cplus.pdf';
+// import mediaUrl.doc("sumitomo82m12.pdf") from '../../../../assets/images/sumitomo82m12.pdf';
+// import mediaUrl.image("FC-6S.png") from '../../../../assets/images/FC-6S.png';
+// import mediaUrl.image("FC7LS.png") from '../../../../assets/images/FC7LS.png';
+// import mediaUrl.image("S-70.png") from "../../../../assets/images/S-70.png";
+// import mediaUrl.doc("S-70.pdf") from '../../../../assets/images/S-70.pdf';
+// import mediaUrl.doc("F7LS.pdf") from '../../../../assets/images/F7LS.pdf';
+// import mediaUrl.doc("FC8R.pdf") from '../../../../assets/images/FC8R.pdf';
+// import mediaUrl.doc("cleaver.pdf") from '../../../../assets/images/mediaUrl.doc("cleaver.pdf").pdf'
 
 // const productData = {
 //   1: [
 //     { 
-//       image: S1v, 
+//       image: mediaUrl.image("s1vp.png"), 
 //       title: "S1V", 
 //       description: " Active Clad Fusion Splicer", 
 //       readMoreLink: "/sumitomo/S1V",
-//       catalogLink: s1vpdf 
+//       catalogLink: mediaUrl.doc("sumitomos1v.pdf") 
 //     },
 //     { 
-//       image: S1v_ultra, 
+//       image: mediaUrl.image("s1vuf.png"), 
 //       title: "S1V ULTRA", 
 //       description: "Active Clad Fusion Splicer", 
 //       readMoreLink: "/sumitomo/S1VULTRA",
-//       catalogLink: s1vupdf  
+//       catalogLink: mediaUrl.doc("sumitomos1vu.pdf")  
 //     },
 //     { 
-//       image: Z2c, 
+//       image: mediaUrl.image("Z2C.png"), 
 //       title: "Z2C", 
 //       description: "Core Fusion Splicer", 
 //       readMoreLink: "/sumitomo/Z2C",
-//       catalogLink: z2cpdf  
+//       catalogLink: mediaUrl.doc("Sumitomoz2c.pdf")  
 //     },
 //     { 
-//         image: w1c, 
+//         image: mediaUrl.image("w1c.png"), 
 //         title: "W1C", 
 //         description: "Core  Fusion Splicer", 
 //         readMoreLink: "/sumitomo/W1C",
-//         catalogLink: w1cpdf  
+//         catalogLink: mediaUrl.doc("sumitomow1c.pdf")  
 //       },
 //     { 
-//       image: new82c, 
+//       image: mediaUrl.image("82C+.png"), 
 //       title: "82C+", 
 //       description: "Core  Fusion Splicer", 
 //       readMoreLink: "/sumitomo/82CPLUS" ,
-//       catalogLink: new82cpdf 
+//       catalogLink: mediaUrl.doc("sumitomo82cplus.pdf") 
 //     },
 
 //     { 
-//         image: n82m2, 
+//         image: mediaUrl.image("82M12.png"), 
 //         title: "82M12", 
 //         description: "Ribbon Fusion Splicer", 
 //         readMoreLink: "/sumitomo/82M12",
-//         catalogLink: n82m12pdf 
+//         catalogLink: mediaUrl.doc("sumitomo82m12.pdf") 
 //       },
 
 //       { 
-//         image: fc8r, 
+//         image: mediaUrl.image("img15.jpg"), 
 //         title: "FC8R", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "/sumitomo/FC8R",
-//         catalogLink: fc8rpdf 
+//         catalogLink: mediaUrl.doc("FC8R.pdf") 
 //       },
 
 //       { 
-//         image: s70, 
+//         image: mediaUrl.image("S-70.png"), 
 //         title: "S-70", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "/sumitomo/S70",
-//         catalogLink: s70pdf  
+//         catalogLink: mediaUrl.doc("S-70.pdf")  
 //       },
 
 //       { 
-//         image: fc7ls, 
+//         image: mediaUrl.image("FC7LS.png"), 
 //         title: "FC-7LS", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "/sumitomo/FC7LS",
-//         catalogLink: f7lspdf 
+//         catalogLink: mediaUrl.doc("F7LS.pdf") 
 //       },
 
 //       { 
-//         image: sfcs, 
+//         image: mediaUrl.image("SFCS.png"), 
 //         title: "SFCS", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "/sumitomo/SFCS",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       },
 
 //       { 
-//         image: fc6s, 
+//         image: mediaUrl.image("FC-6S.png"), 
 //         title: "FC-6 Series", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "/sumitomo/FC6S",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       }
 //   ],
 //   2: [
 //     { 
-//         image: S1v, 
+//         image: mediaUrl.image("s1vp.png"), 
 //         title: "S1V", 
 //         description: " Active Clad Fusion Splicer", 
 //         readMoreLink: "",
-//         catalogLink: s1vpdf 
+//         catalogLink: mediaUrl.doc("sumitomos1v.pdf") 
 //       },
 //       { 
-//         image: S1v_ultra, 
+//         image: mediaUrl.image("s1vuf.png"), 
 //         title: "S1V ULTRA", 
 //         description: "Active Clad Fusion Splicer", 
 //         readMoreLink: "" ,
-//         catalogLink: s1vupdf 
+//         catalogLink: mediaUrl.doc("sumitomos1vu.pdf") 
 //       }
 //   ],
 //   3: [
 //     { 
-//         image: Z2c, 
+//         image: mediaUrl.image("Z2C.png"), 
 //         title: "Z2C", 
 //         description: "Core Alignment Fusion Splicer", 
 //         readMoreLink: "" ,
-//         catalogLink: z2cpdf 
+//         catalogLink: mediaUrl.doc("Sumitomoz2c.pdf") 
 //       },
 //       { 
-//           image: w1c, 
+//           image: mediaUrl.image("w1c.png"), 
 //           title: "W1C", 
 //           description: "Core Alignment Fusion Splicer", 
 //           readMoreLink: "" ,
-//           catalogLink: w1cpdf 
+//           catalogLink: mediaUrl.doc("sumitomow1c.pdf") 
 //         },
 //       { 
-//         image: new82c, 
+//         image: mediaUrl.image("82C+.png"), 
 //         title: "82C+", 
 //         description: "Core Alignment Fusion Splicer", 
 //         readMoreLink: "",
-//         catalogLink: new82cpdf  
+//         catalogLink: mediaUrl.doc("sumitomo82cplus.pdf")  
 //       }
 //   ],
 //   4: [
 //     { 
-//       image: n82m2, 
+//       image: mediaUrl.image("82M12.png"), 
 //       title: "82M12", 
 //       description: "Ribbon Fusion Splicer", 
 //       readMoreLink: "",
-//       catalogLink: n82m12pdf 
+//       catalogLink: mediaUrl.doc("sumitomo82m12.pdf") 
 //     }
 //   ],
 //   5: [
 //     { 
-//         image: fc8r, 
+//         image: mediaUrl.image("img15.jpg"), 
 //         title: "FC8R", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: fc8rpdf  
+//         catalogLink: mediaUrl.doc("FC8R.pdf")  
 //       },
 
 //       { 
-//         image: s70, 
+//         image: mediaUrl.image("S-70.png"), 
 //         title: "S-70", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: s70pdf  
+//         catalogLink: mediaUrl.doc("S-70.pdf")  
 //       },
 
 //       { 
-//         image: fc7ls, 
+//         image: mediaUrl.image("FC7LS.png"), 
 //         title: "FC-7LS", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: f7lspdf  
+//         catalogLink: mediaUrl.doc("F7LS.pdf")  
 //       }
 //   ],
 
 //   6: [
 //     { 
-//         image: fc8r, 
+//         image: mediaUrl.image("img15.jpg"), 
 //         title: "SFCS", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       },
 
 //       { 
-//         image: fc6s, 
+//         image: mediaUrl.image("FC-6S.png"), 
 //         title: "FC-6 Series", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       }
 //   ]
 // };
@@ -294,203 +295,203 @@
 // import React, { useState } from 'react';  
 // import { Link } from 'react-router-dom';
 // import './Sumitomo.css';
-// import S1v from '../../../../assets/images/s1vp.png';
-// import S1v_ultra from '../../../../assets/images/s1vuf.png';
-// import Z2c from './img-s/Z2C.png';
-// import new82c from './img-s/82C+.png';
-// import n82m2 from './img-s/82M12.png';
-// import w1c from './img-s/w1c.png';
-// import fc8r from './img-s/FC-8R.png';
-// import sfcs from './img-s/SFCS.png';
-// import s1vpdf from '../../../../assets/images/sumitomos1v.pdf';
-// import s1vupdf from '../../../../assets/images/sumitomos1vu.pdf';
-// import z2cpdf from '../../../../assets/images/Sumitomoz2c.pdf';
-// import w1cpdf from '../../../../assets/images/sumitomow1c.pdf';
-// import new82cpdf from '../../../../assets/images/sumitomo82cplus.pdf';
-// import n82m12pdf from '../../../../assets/images/sumitomo82m12.pdf';
-// import fc6s from '../../../../assets/images/FC-6S.png';
-// import fc7ls from '../../../../assets/images/FC7LS.png';
-// import s70 from "../../../../assets/images/S-70.png";
-// import s70pdf from '../../../../assets/images/S-70.pdf';
-// import f7lspdf from '../../../../assets/images/F7LS.pdf';
-// import fc8rpdf from '../../../../assets/images/FC8R.pdf';
-// import cleaver from '../../../../assets/images/cleaver.pdf'
+// import mediaUrl.image("s1vp.png") from '../../../../assets/images/s1vp.png';
+// import mediaUrl.image("s1vuf.png") from '../../../../assets/images/s1vuf.png';
+// import mediaUrl.image("Z2C.png") from './img-s/Z2C.png';
+// import mediaUrl.image("82C+.png") from './img-s/82C+.png';
+// import mediaUrl.image("82M12.png") from './img-s/82M12.png';
+// import mediaUrl.image("w1c.png") from './img-s/mediaUrl.image("w1c.png").png';
+// import mediaUrl.image("img15.jpg") from './img-s/FC-8R.png';
+// import mediaUrl.image("SFCS.png") from './img-s/SFCS.png';
+// import mediaUrl.doc("sumitomos1v.pdf") from '../../../../assets/images/sumitomos1v.pdf';
+// import mediaUrl.doc("sumitomos1vu.pdf") from '../../../../assets/images/sumitomos1vu.pdf';
+// import mediaUrl.doc("Sumitomoz2c.pdf") from '../../../../assets/images/Sumitomoz2c.pdf';
+// import mediaUrl.doc("sumitomow1c.pdf") from '../../../../assets/images/sumitomow1c.pdf';
+// import mediaUrl.doc("sumitomo82cplus.pdf") from '../../../../assets/images/sumitomo82cplus.pdf';
+// import mediaUrl.doc("sumitomo82m12.pdf") from '../../../../assets/images/sumitomo82m12.pdf';
+// import mediaUrl.image("FC-6S.png") from '../../../../assets/images/FC-6S.png';
+// import mediaUrl.image("FC7LS.png") from '../../../../assets/images/FC7LS.png';
+// import mediaUrl.image("S-70.png") from "../../../../assets/images/S-70.png";
+// import mediaUrl.doc("S-70.pdf") from '../../../../assets/images/S-70.pdf';
+// import mediaUrl.doc("F7LS.pdf") from '../../../../assets/images/F7LS.pdf';
+// import mediaUrl.doc("FC8R.pdf") from '../../../../assets/images/FC8R.pdf';
+// import mediaUrl.doc("cleaver.pdf") from '../../../../assets/images/mediaUrl.doc("cleaver.pdf").pdf'
 
 // const productData = {
 //   1: [
 //     { 
-//       image: S1v, 
+//       image: mediaUrl.image("s1vp.png"), 
 //       title: "S1V", 
 //       description: " Active Clad Fusion Splicer", 
 //       readMoreLink: "/sumitomo/S1V",
-//       catalogLink: s1vpdf 
+//       catalogLink: mediaUrl.doc("sumitomos1v.pdf") 
 //     },
 //     { 
-//       image: S1v_ultra, 
+//       image: mediaUrl.image("s1vuf.png"), 
 //       title: "S1V ULTRA", 
 //       description: "Active Clad Fusion Splicer", 
 //       readMoreLink: "/sumitomo/S1VULTRA",
-//       catalogLink: s1vupdf  
+//       catalogLink: mediaUrl.doc("sumitomos1vu.pdf")  
 //     },
 //     { 
-//       image: Z2c, 
+//       image: mediaUrl.image("Z2C.png"), 
 //       title: "Z2C", 
 //       description: "Core Fusion Splicer", 
 //       readMoreLink: "/sumitomo/Z2C",
-//       catalogLink: z2cpdf  
+//       catalogLink: mediaUrl.doc("Sumitomoz2c.pdf")  
 //     },
 //     { 
-//         image: w1c, 
+//         image: mediaUrl.image("w1c.png"), 
 //         title: "W1C", 
 //         description: "Core  Fusion Splicer", 
 //         readMoreLink: "/sumitomo/W1C",
-//         catalogLink: w1cpdf  
+//         catalogLink: mediaUrl.doc("sumitomow1c.pdf")  
 //       },
 //     { 
-//       image: new82c, 
+//       image: mediaUrl.image("82C+.png"), 
 //       title: "82C+", 
 //       description: "Core  Fusion Splicer", 
 //       readMoreLink: "/sumitomo/82CPLUS" ,
-//       catalogLink: new82cpdf 
+//       catalogLink: mediaUrl.doc("sumitomo82cplus.pdf") 
 //     },
 
 //     { 
-//         image: n82m2, 
+//         image: mediaUrl.image("82M12.png"), 
 //         title: "82M12", 
 //         description: "Ribbon Fusion Splicer", 
 //         readMoreLink: "/sumitomo/82M12",
-//         catalogLink: n82m12pdf 
+//         catalogLink: mediaUrl.doc("sumitomo82m12.pdf") 
 //       },
 
 //       { 
-//         image: fc8r, 
+//         image: mediaUrl.image("img15.jpg"), 
 //         title: "FC8R", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "/sumitomo/FC8R",
-//         catalogLink: fc8rpdf 
+//         catalogLink: mediaUrl.doc("FC8R.pdf") 
 //       },
 
 //       { 
-//         image: s70, 
+//         image: mediaUrl.image("S-70.png"), 
 //         title: "S-70", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "/sumitomo/S70",
-//         catalogLink: s70pdf  
+//         catalogLink: mediaUrl.doc("S-70.pdf")  
 //       },
 
 //       { 
-//         image: fc7ls, 
+//         image: mediaUrl.image("FC7LS.png"), 
 //         title: "FC-7LS", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "/sumitomo/FC7LS",
-//         catalogLink: f7lspdf 
+//         catalogLink: mediaUrl.doc("F7LS.pdf") 
 //       },
 
 //       { 
-//         image: sfcs, 
+//         image: mediaUrl.image("SFCS.png"), 
 //         title: "SFCS", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "/sumitomo/SFCS",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       },
 
 //       { 
-//         image: fc6s, 
+//         image: mediaUrl.image("FC-6S.png"), 
 //         title: "FC-6 Series", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "/sumitomo/FC6S",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       }
 //   ],
 //   2: [
 //     { 
-//         image: S1v, 
+//         image: mediaUrl.image("s1vp.png"), 
 //         title: "S1V", 
 //         description: " Active Clad Fusion Splicer", 
 //         readMoreLink: "",
-//         catalogLink: s1vpdf 
+//         catalogLink: mediaUrl.doc("sumitomos1v.pdf") 
 //       },
 //       { 
-//         image: S1v_ultra, 
+//         image: mediaUrl.image("s1vuf.png"), 
 //         title: "S1V ULTRA", 
 //         description: "Active Clad Fusion Splicer", 
 //         readMoreLink: "" ,
-//         catalogLink: s1vupdf 
+//         catalogLink: mediaUrl.doc("sumitomos1vu.pdf") 
 //       }
 //   ],
 //   3: [
 //     { 
-//         image: Z2c, 
+//         image: mediaUrl.image("Z2C.png"), 
 //         title: "Z2C", 
 //         description: "Core Alignment Fusion Splicer", 
 //         readMoreLink: "" ,
-//         catalogLink: z2cpdf 
+//         catalogLink: mediaUrl.doc("Sumitomoz2c.pdf") 
 //       },
 //       { 
-//           image: w1c, 
+//           image: mediaUrl.image("w1c.png"), 
 //           title: "W1C", 
 //           description: "Core Alignment Fusion Splicer", 
 //           readMoreLink: "" ,
-//           catalogLink: w1cpdf 
+//           catalogLink: mediaUrl.doc("sumitomow1c.pdf") 
 //         },
 //       { 
-//         image: new82c, 
+//         image: mediaUrl.image("82C+.png"), 
 //         title: "82C+", 
 //         description: "Core Alignment Fusion Splicer", 
 //         readMoreLink: "",
-//         catalogLink: new82cpdf  
+//         catalogLink: mediaUrl.doc("sumitomo82cplus.pdf")  
 //       }
 //   ],
 //   4: [
 //     { 
-//       image: n82m2, 
+//       image: mediaUrl.image("82M12.png"), 
 //       title: "82M12", 
 //       description: "Ribbon Fusion Splicer", 
 //       readMoreLink: "",
-//       catalogLink: n82m12pdf 
+//       catalogLink: mediaUrl.doc("sumitomo82m12.pdf") 
 //     }
 //   ],
 //   5: [
 //     { 
-//         image: fc8r, 
+//         image: mediaUrl.image("img15.jpg"), 
 //         title: "FC8R", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: fc8rpdf  
+//         catalogLink: mediaUrl.doc("FC8R.pdf")  
 //       },
 
 //       { 
-//         image: s70, 
+//         image: mediaUrl.image("S-70.png"), 
 //         title: "S-70", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: s70pdf  
+//         catalogLink: mediaUrl.doc("S-70.pdf")  
 //       },
 
 //       { 
-//         image: fc7ls, 
+//         image: mediaUrl.image("FC7LS.png"), 
 //         title: "FC-7LS", 
 //         description: "Handheld Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: f7lspdf  
+//         catalogLink: mediaUrl.doc("F7LS.pdf")  
 //       }
 //   ],
 
 //   6: [
 //     { 
-//         image: fc8r, 
+//         image: mediaUrl.image("img15.jpg"), 
 //         title: "SFCS", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       },
 
 //       { 
-//         image: fc6s, 
+//         image: mediaUrl.image("FC-6S.png"), 
 //         title: "FC-6 Series", 
 //         description: "Tabletop Cleaver", 
 //         readMoreLink: "",
-//         catalogLink: cleaver  
+//         catalogLink: mediaUrl.doc("cleaver.pdf")  
 //       }
 //   ]
 // };
@@ -590,195 +591,171 @@ import './Sumitomo.css';
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 
-import S1v from '../../../../assets/images/s1vp.png';
-import S1v_ultra from '../../../../assets/images/s1vuf.png';
-import Z2c from './img-s/Z2C.png';
-import new82c from './img-s/82C+.png';
-import n82m2 from './img-s/82M12.png';
-import w1c from './img-s/w1c.png';
-import fc8r from './img-s/img15.jpg';
-import sfcs from './img-s/SFCS.png';
-import s1vpdf from '../../../../assets/images/sumitomos1v.pdf';
-import s1vupdf from '../../../../assets/images/sumitomos1vu.pdf';
-import z2cpdf from '../../../../assets/images/Sumitomoz2c.pdf';
-import w1cpdf from '../../../../assets/images/sumitomow1c.pdf';
-import new82cpdf from '../../../../assets/images/sumitomo82cplus.pdf';
-import n82m12pdf from '../../../../assets/images/sumitomo82m12.pdf';
-import fc6s from '../../../../assets/images/FC-6S.png';
-import fc7ls from '../../../../assets/images/FC7LS.png';
-import s70 from '../../../../assets/images/S-70.png';
-import s70pdf from '../../../../assets/images/S-70.pdf';
-import f7lspdf from '../../../../assets/images/F7LS.pdf';
-import fc8rpdf from '../../../../assets/images/FC8R.pdf';
-import cleaver from '../../../../assets/images/cleaver.pdf';
-
-import sumitomoBanner from '../../../../assets/images/sumitomoproduct5.jpeg';
-
 const productData = {
   1: [
     {
-      image: S1v,
+      image: mediaUrl.image("s1vp.png"),
       title: 'S1V',
       description: ' Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1V',
-      catalogLink: s1vpdf,
+      catalogLink: mediaUrl.doc("sumitomos1v.pdf"),
     },
     {
-      image: S1v_ultra,
+      image: mediaUrl.image("s1vuf.png"),
       title: 'S1V ULTRA',
       description: 'Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1VULTRA',
-      catalogLink: s1vupdf,
+      catalogLink: mediaUrl.doc("sumitomos1vu.pdf"),
     },
     {
-      image: Z2c,
+      image: mediaUrl.image("Z2C.png"),
       title: 'Z2C',
       description: 'Core Fusion Splicer',
       readMoreLink: '/sumitomo/Z2C',
-      catalogLink: z2cpdf,
+      catalogLink: mediaUrl.doc("Sumitomoz2c.pdf"),
     },
     {
-      image: w1c,
+      image: mediaUrl.image("w1c.png"),
       title: 'W1C',
       description: 'Core  Fusion Splicer',
       readMoreLink: '/sumitomo/W1C',
-      catalogLink: w1cpdf,
+      catalogLink: mediaUrl.doc("sumitomow1c.pdf"),
     },
     {
-      image: new82c,
+      image: mediaUrl.image("82C+.png"),
       title: '82C+',
       description: 'Core  Fusion Splicer',
       readMoreLink: '/sumitomo/82CPLUS',
-      catalogLink: new82cpdf,
+      catalogLink: mediaUrl.doc("sumitomo82cplus.pdf"),
     },
     {
-      image: n82m2,
+      image: mediaUrl.image("82M12.png"),
       title: '82M12',
       description: 'Ribbon Fusion Splicer',
       readMoreLink: '/sumitomo/82M12',
-      catalogLink: n82m12pdf,
+      catalogLink: mediaUrl.doc("sumitomo82m12.pdf"),
     },
     {
-      image: fc8r,
+      image: mediaUrl.image("img15.jpg"),
       title: 'FC8R',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC8R',
-      catalogLink: fc8rpdf,
+      catalogLink: mediaUrl.doc("FC8R.pdf"),
     },
     {
-      image: s70,
+      image: mediaUrl.image("S-70.png"),
       title: 'S-70',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/S70',
-      catalogLink: s70pdf,
+      catalogLink: mediaUrl.doc("S-70.pdf"),
     },
     {
-      image: fc7ls,
+      image: mediaUrl.image("FC7LS.png"),
       title: 'FC-7LS',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC7LS',
-      catalogLink: f7lspdf,
+      catalogLink: mediaUrl.doc("F7LS.pdf"),
     },
     {
-      image: sfcs,
+      image: mediaUrl.image("SFCS.png"),
       title: 'SFCS',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/SFCS',
-      catalogLink: cleaver,
+      catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
     {
-      image: fc6s,
+      image: mediaUrl.image("FC-6S.png"),
       title: 'FC-6 Series',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/FC6S',
-      catalogLink: cleaver,
+      catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
   ],
   2: [
     {
-      image: S1v,
+      image: mediaUrl.image("s1vp.png"),
       title: 'S1V',
       description: ' Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1V',
-      catalogLink: s1vpdf,
+      catalogLink: mediaUrl.doc("sumitomos1v.pdf"),
     },
     {
-      image: S1v_ultra,
+      image: mediaUrl.image("s1vuf.png"),
       title: 'S1V ULTRA',
       description: 'Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1VULTRA',
-      catalogLink: s1vupdf,
+      catalogLink: mediaUrl.doc("sumitomos1vu.pdf"),
     },
   ],
   3: [
     {
-      image: Z2c,
+      image: mediaUrl.image("Z2C.png"),
       title: 'Z2C',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/Z2C',
-      catalogLink: z2cpdf,
+      catalogLink: mediaUrl.doc("Sumitomoz2c.pdf"),
     },
     {
-      image: w1c,
+      image: mediaUrl.image("w1c.png"),
       title: 'W1C',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/W1C',
-      catalogLink: w1cpdf,
+      catalogLink: mediaUrl.doc("sumitomow1c.pdf"),
     },
     {
-      image: new82c,
+      image: mediaUrl.image("82C+.png"),
       title: '82C+',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/82CPLUS',
-      catalogLink: new82cpdf,
+      catalogLink: mediaUrl.doc("sumitomo82cplus.pdf"),
     },
   ],
   4: [
     {
-      image: n82m2,
+      image: mediaUrl.image("82M12.png"),
       title: '82M12',
       description: 'Ribbon Fusion Splicer',
       readMoreLink: '/sumitomo/82M12',
-      catalogLink: n82m12pdf,
+      catalogLink: mediaUrl.doc("sumitomo82m12.pdf"),
     },
   ],
   5: [
     {
-      image: fc8r,
+      image: mediaUrl.image("img15.jpg"),
       title: 'FC8R',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC8R',
-      catalogLink: fc8rpdf,
+      catalogLink: mediaUrl.doc("FC8R.pdf"),
     },
     {
-      image: s70,
+      image: mediaUrl.image("S-70.png"),
       title: 'S-70',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/S70',
-      catalogLink: s70pdf,
+      catalogLink: mediaUrl.doc("S-70.pdf"),
     },
     {
-      image: fc7ls,
+      image: mediaUrl.image("FC7LS.png"),
       title: 'FC-7LS',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC7LS',
-      catalogLink: f7lspdf,
+      catalogLink: mediaUrl.doc("F7LS.pdf"),
     },
   ],
   6: [
     {
-      image: sfcs,
+      image: mediaUrl.image("SFCS.png"),
       title: 'SFCS',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/SFCS',
-      catalogLink: cleaver,
+      catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
     {
-      image: fc6s,
+      image: mediaUrl.image("FC-6S.png"),
       title: 'FC-6 Series',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/FC6S',
-      catalogLink: cleaver,
+      catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
   ],
 };
@@ -818,7 +795,7 @@ const Sumitomoproduct = () => {
     <div className="sumitomoproduct-page-main">
       {/* Banner section */}
       <div className="sumitomo-page-banner">
-        <img src={sumitomoBanner} fetchpriority="high" alt="Sumitomo Splicing Products" />
+        <img src={mediaUrl.image("sumitomoproduct5.jpeg")} fetchpriority="high" alt="Sumitomo Splicing Products" />
       </div>
 
       <div className="product-page">

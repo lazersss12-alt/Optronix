@@ -187,11 +187,11 @@
 }
 
 /* Specific style for C++++ card */
-.product-card:has(.product-title:contains('C++++')) {
+.product-card.c-plus-card {
     padding-bottom: 15px;
 }
 
-.product-card:has(.product-title:contains('C++++')) .product-buttonso {
+.product-card.c-plus-card .product-buttonso {
     margin-top: -10px;
 }
 

@@ -1,9 +1,6 @@
+import { mediaUrl } from '../../../config/media';
 import React from 'react';
 import './partner.css';
-import sumitomologo from '../../../assets/images/sumitomo.webp';
-import deviserlogo from '../../../assets/images/deviser.webp';
-import speclogo from '../../../assets/images/spec.webp';
-import invaslogo from '../../../assets/images/invas.webp';
 import { Helmet } from 'react-helmet-async';
 
 
@@ -11,26 +8,26 @@ const partners = [
   {
     name: 'Sumitomo Electric Industries Ltd.',
     desc: 'Connect with Innovation',
-    logo: sumitomologo,
+    logo: mediaUrl.image("sumitomo.webp"),
     link: 'https://global-sei.com/'
   },
   {
     name: 'Deviser',
     desc: 'Over 30 Years of Proven Field Experience',
-    logo: deviserlogo,
+    logo: mediaUrl.image("deviser.webp"),
     link: 'https://deviserinstruments.com/'
   },
   {
     name: 'SPEC Technology',
     desc: 'CATV Product',
-    logo: speclogo,
+    logo: mediaUrl.image("spec.webp"),
     link: 'https://spectechnology.com/'
   },
 
   {
     name: 'Invas Technologies',
     desc: 'Complete Telecom Solution',
-    logo: invaslogo,
+    logo: mediaUrl.image("invas.webp"),
     link: 'https://invas.in/'
   }
 ];

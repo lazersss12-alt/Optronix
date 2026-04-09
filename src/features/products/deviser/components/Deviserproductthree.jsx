@@ -1,10 +1,11 @@
+import { mediaUrl } from '../../../../config/media';
 // import React, { useState } from 'react';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
-// import op08 from "../../../../assets/images/ae3100_main.jpg";
+// import mediaUrl.image("ae3100.jpg") from "../../../../assets/images/ae3100_main.jpg";
 
 // import ProductBg from "../../../../assets/images/headerbackground.png";
-// import s1vpdf from "../../../../assets/images/ae3100dm.pdf";
+// import mediaUrl.doc("ae3100dm.pdf") from "../../../../assets/images/ae3100dm.pdf";
 // import productImage4 from "../../../../assets/images/devisor4.png";
 // import productImage2 from "../../../../assets/images/devisor2.png";
 // import productImage3 from "../../../../assets/images/devisor3.png";
@@ -23,7 +24,7 @@
 //         Test,Measure & Locate in One Powerful Device!
 //       </>
 //     ),
-//     img: op08
+//     img: mediaUrl.image("ae3100.jpg")
 
 //   },
 //   {
@@ -81,7 +82,7 @@
 //             </button>
 //             <button className='enquire_button'
 
-//               onClick={() => window.open(s1vpdf, "_blank")}  
+//               onClick={() => window.open(mediaUrl.doc("ae3100dm.pdf"), "_blank")}  
 //             >
 //               Download Catalog
 //             </button>
@@ -91,7 +92,7 @@
 //   }
 // ];
 // const Deviserproductthree = () => {
-//   const [productImage] = useState(op08);
+//   const [productImage] = useState(mediaUrl.image("ae3100.jpg"));
   const [enquireOpen, setEnquireOpen] = useState(false);
 
 
@@ -117,7 +118,7 @@
 //         </button>
 //         <button
 //           className="btn-pill btn-outline"
-//           onClick={() => window.open(s1vpdf, "_blank")}
+//           onClick={() => window.open(mediaUrl.doc("ae3100dm.pdf"), "_blank")}
 //         >
 //           Download Catalog
 //         </button>
@@ -127,7 +128,7 @@
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={op08} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ae3100.jpg")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -475,12 +476,6 @@ import '../../../../components/index.css';
 import '../../../../pages/page.css';
 import { Link } from 'react-router-dom';
 import AccordionTable from '../../../../components/ui/AccordionTable';
-import op08 from "../../../../assets/images/ae3100.jpg";
-import s1vpdf from "../../../../assets/images/ae3100dm.pdf";
-import subz2c from "../../../../assets/images/AE1001.png";
-import subw1c from "../../../../assets/images/vfl.png";
-import sub82c from "../../../../assets/images/ae210.png";
-import subfc8r from "../../../../assets/images/ep310.png";
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 
@@ -488,7 +483,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 const Deviserproductthree = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(op08);
+  const [productImage] = useState(mediaUrl.image("ae3100.jpg"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -615,7 +610,7 @@ const Deviserproductthree = () => {
                 <button className="btn btn-primary" onClick={() => setEnquireOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(s1vpdf, "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("ae3100dm.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -804,7 +799,7 @@ const Deviserproductthree = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={subz2c} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={mediaUrl.image("AE1001.png")} loading="lazy" alt="AE1001" /></div>
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>
@@ -816,7 +811,7 @@ const Deviserproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={sub82c} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ae210.png")} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">AE210 Series</h4>
               <p className="s-desc">Portable OPM/OLS series for field testing.</p>
@@ -828,7 +823,7 @@ const Deviserproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={subw1c} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={mediaUrl.image("vfl.png")} loading="lazy" alt="VF-10" /></div>
             <div className="s-body">
               <h4 className="s-title">VF-10</h4>
               <p className="s-desc">Visual fault locator for quick breaks/leaks.</p>
@@ -840,7 +835,7 @@ const Deviserproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={subfc8r} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ep310.png")} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">EP-310 Series</h4>
               <p className="s-desc">PON power meters for GPON/EPON testing.</p>

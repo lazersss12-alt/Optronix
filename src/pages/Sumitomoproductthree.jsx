@@ -1,18 +1,19 @@
+import { mediaUrl } from '../config/media';
 // import React, { useState } from 'react';
 // import './page.css';
 // import '../components/index.css';
 // import { Link } from 'react-router-dom';
-// import op08 from "../components/img/Z2C.png";
+// import mediaUrl.image("Z2C.jpg") from "../components/img/Z2C.png";
 // import ProductBg from "../components/img/headerbackground.png";
 // import productImage4 from "../components/img/82M4.png";
-// import s1vpdf from "../components/img/Sumitomoz2c.pdf";
+// import mediaUrl.doc("Sumitomoz2c.pdf") from "../components/img/Sumitomoz2c.pdf";
 // import productImage2 from "../components/img/Z2C2 (2).png";
 // import productImage3 from "../components/img/Z2C3 (2).png";
 // import eponoltf1 from "../components/img/product3.webp";
 // import subs1vu from "../components/img/s1vuf.png";
-// import subw1c from "../components/img/W1C file.png";
-// import sub82c from "../components/img/82C+ 1Oct 2024.png";
-// import subfc8r from "../components/img/FC8r.png";
+// import mediaUrl.image("W1C file.png") from "../components/img/W1C file.png";
+// import mediaUrl.image("82C+ 1Oct 2024.png") from "../components/img/82C+ 1Oct 2024.png";
+// import mediaUrl.image("FC8r.png") from "../components/img/FC8r.png";
 // const sections = [
 //   {
 
@@ -23,7 +24,7 @@
 
 //       </>
 //     ),
-//     img: op08
+//     img: mediaUrl.image("Z2C.jpg")
 
 //   },
 //   {
@@ -75,7 +76,7 @@
 //             </button>
 //             <button className='enquire_button'
 
-//               onClick={() => window.open(s1vpdf, "_blank")}  
+//               onClick={() => window.open(mediaUrl.doc("Sumitomoz2c.pdf"), "_blank")}  
 //             >
 //               Download Catalog
 //             </button>
@@ -85,7 +86,7 @@
 //   }
 // ];
 // const Sumitomoproductthree = () => {
-//   const [productImage, setProductImage] = useState(op08);
+//   const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.jpg"));
 //   const [activeIcon, setActiveIcon] = useState(null);
 
 //   const handleIconClick = (image, icon) => {
@@ -115,7 +116,7 @@
 //         </button>
 //         <button
 //           className="btn-pill btn-outline"
-//           onClick={() => window.open(s1vpdf, "_blank")}
+//           onClick={() => window.open(mediaUrl.doc("Sumitomoz2c.pdf"), "_blank")}
 //         >
 //           Download Catalog
 //         </button>
@@ -125,7 +126,7 @@
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={op08} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("Z2C.jpg")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -283,21 +284,21 @@
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product2'>
-//           <img className='product_s1v1_img' src={sub82c} alt="82C+" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("82C+ 1Oct 2024.png")} alt="82C+" />
 //           <h3 className='products1v_name_option'>82C+</h3>
 //           <Link to="/sumitomoproductfive" style={{ textDecoration: "none" }}>
 //             <button className='products1v_button_option'>Know More</button>
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product3'>
-//           <img className='product_s1v1_img' src={subw1c} alt="W1C" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("W1C file.png")} alt="W1C" />
 //           <h3 className='products1v_name_option'>W1C</h3>
 //           <Link to="/sumitomoproductfour" style={{ textDecoration: "none" }}>
 //             <button className='products1v_button_option'>Know More</button>
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product4'>
-//           <img className='product_s1v1_img' src={subfc8r} alt="FC8R" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("FC8r.png")} alt="FC8R" />
 //           <h3 className='productz2c_name_option'>FC8R</h3>
 //           <Link to="/sumitomoproductseven" style={{ textDecoration: "none" }}>
 //             <button className='products1v_button_option'>Know More</button>
@@ -323,16 +324,9 @@ import '../components/index.css';
 import { Link } from 'react-router-dom';
 import ProductLeadModal from '../components/common/ProductLeadModal';
 
-import op08 from "../components/img/Z2C.jpg";
-import s1vpdf from "../components/img/Sumitomoz2c.pdf";
-import subz2c from "../components/img/Backup_of_Z2C 2june.png";
-import subw1c from "../components/img/W1C file.png";
-import sub82c from "../components/img/82C+ 1Oct 2024.png";
-import subfc8r from "../components/img/FC8r.png";
-
 const Sumitomoproductthree = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(op08);
+  const [productImage] = useState(mediaUrl.image("Z2C.jpg"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state
@@ -378,7 +372,7 @@ const Sumitomoproductthree = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [subz2c, sub82c, subw1c, subfc8r];
+    const imgs = [mediaUrl.image("Backup_of_Z2C 2june.png"), mediaUrl.image("82C+ 1Oct 2024.png"), mediaUrl.image("W1C file.png"), mediaUrl.image("FC8r.png")];
     return {
       backgroundImage:
         `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -551,7 +545,7 @@ const Sumitomoproductthree = () => {
                 <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(s1vpdf, "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("Sumitomoz2c.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -757,7 +751,7 @@ const Sumitomoproductthree = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={subz2c} loading="lazy" alt="Z2C" /></div>
+            <div className="s-media"><img src={mediaUrl.image("Backup_of_Z2C 2june.png")} loading="lazy" alt="Z2C" /></div>
             <div className="s-body">
               <h4 className="s-title">Z2C</h4>
               <p className="s-desc">Core alignment fusion splicer for heavy-duty projects.</p>
@@ -769,7 +763,7 @@ const Sumitomoproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={sub82c} loading="lazy" alt="82C+" /></div>
+            <div className="s-media"><img src={mediaUrl.image("82C+ 1Oct 2024.png")} loading="lazy" alt="82C+" /></div>
             <div className="s-body">
               <h4 className="s-title">82C+</h4>
               <p className="s-desc">High-speed splicer with advanced automation.</p>
@@ -781,7 +775,7 @@ const Sumitomoproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={subw1c} loading="lazy" alt="W1C" /></div>
+            <div className="s-media"><img src={mediaUrl.image("W1C file.png")} loading="lazy" alt="W1C" /></div>
             <div className="s-body">
               <h4 className="s-title">W1C</h4>
               <p className="s-desc">Compact splicer optimized for FTTH deployments.</p>
@@ -793,7 +787,7 @@ const Sumitomoproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={subfc8r} loading="lazy" alt="FC8R" /></div>
+            <div className="s-media"><img src={mediaUrl.image("FC8r.png")} loading="lazy" alt="FC8R" /></div>
             <div className="s-body">
               <h4 className="s-title">FC8R</h4>
               <p className="s-desc">Precision cleaver for stable fiber preparation.</p>

@@ -1,6 +1,7 @@
+import { mediaUrl } from '../config/media';
 // import React from 'react';
 // import '../components/Aboutpage.css';
-// import aboutpageimage from '../components/img/About Page.png';
+// import mediaUrl.image("Banner11.jpeg") from '../components/img/About Page.png';
 // import PublicationPage from './PublicationPage';
 
 // const AboutPage = () => {
@@ -27,7 +28,7 @@
 //           </p>
 //         </div>
 //         <div className='about-page-container-image'>
-//           <img className='about-image' src={aboutpageimage} alt="aboutimage" />
+//           <img className='about-image' src={mediaUrl.image("Banner11.jpeg")} alt="aboutimage" />
 //         </div>
 //       </div>
 
@@ -100,7 +101,7 @@
 
 // import React from 'react';
 // import '../components/Aboutpage.css';
-// import aboutpageimage from '../components/img/About Page.png';
+// import mediaUrl.image("Banner11.jpeg") from '../components/img/About Page.png';
 // import PublicationPage from './PublicationPage';
 
 // // Constants
@@ -119,7 +120,7 @@
 //       collaborative environment that encourages teamwork, creativity, and
 //       innovation, driving continuous improvement in our products and services.`,
 //     image: {
-//       src: aboutpageimage,
+//       src: mediaUrl.image("Banner11.jpeg"),
 //       alt: 'About Optronix - Innovation in Network Solutions'
 //     }
 //   },
@@ -228,7 +229,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import '../components/Aboutpage.css';
-import aboutpageimage from '../components/img/Banner11.jpeg';
 import PublicationPage from './PublicationPage';
 
 // Constants
@@ -247,7 +247,7 @@ const ABOUT_CONTENT = {
       collaborative environment that encourages teamwork, creativity, and
       innovation, driving continuous improvement in our products and services.`,
     image: {
-      src: aboutpageimage,
+      src: mediaUrl.image("Banner11.jpeg"),
       alt: 'About Optronix - Innovation in Network Solutions'
     }
   },

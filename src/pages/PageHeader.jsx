@@ -1,10 +1,8 @@
+import { mediaUrl } from '../config/media';
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import './PageHeader.css';
 
-import ProductionLineImage from '../components/img/smtheader2.jpg';
 import VideoModal from '../components/ems/VideoModal';
-import tutorialVideo from '../components/img/Updated 3.mp4';
-
 // Detect browser zoom (in/out) without affecting normal breakpoints
 function useZoom({ inThreshold = 1.15, outThreshold = 0.9 } = {}) {
   const baseDPR = useRef(typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1);
@@ -69,7 +67,7 @@ const PageHeader = () => {
     rgba(0, 0, 0, 2) 0%,
     rgba(0, 0, 0, 0) 30%
   ),
-      url(${ProductionLineImage})
+      url(${mediaUrl.image("smtheader2.jpg")})
     `,
   };
 
@@ -91,7 +89,7 @@ const PageHeader = () => {
     <VideoModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        videoUrl={tutorialVideo}
+        videoUrl={mediaUrl.video("Updated 3.mp4")}
       />
   </div>
 </div>

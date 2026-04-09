@@ -1,0 +1,1 @@
+var e=``,t={image:t=>`${e}/media/images/${t}`,video:t=>`${e}/media/videos/${t}`,doc:t=>`${e}/media/docs/${t}`};export{t};

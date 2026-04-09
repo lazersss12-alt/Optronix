@@ -1,14 +1,8 @@
+import { mediaUrl } from '../config/media';
 // EventCarousel.withNavigate.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './event-showcase.css';
-
-import Rep1 from './img/Republic1.webp';
-import Rep2 from './img/Republic2.webp';
-import Rep3 from './img/Republic3.webp';
-import Rep4 from './img/Republic4.webp';
-import Rep5 from './img/Republic5.webp';
-import Rep6 from './img/Republic6.webp';
 
 const ArrowIcon = ({ direction = 'next' }) => (
   <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false">
@@ -28,7 +22,7 @@ const EventCarousel = () => {
   const eventData = [
     {
       id: 100,
-      images: [Rep1, Rep2, Rep3, Rep4, Rep5, Rep6],
+      images: [mediaUrl.image("Republic1.webp"), mediaUrl.image("Republic2.webp"), mediaUrl.image("Republic3.webp"), mediaUrl.image("Republic4.webp"), mediaUrl.image("Republic5.webp"), mediaUrl.image("Republic6.webp")],
       title: 'Republic Day Ceremony | Kotdwar Plant',
       subtitle: 'A proud moment captured – The Candid Optronix Family!',
       description:

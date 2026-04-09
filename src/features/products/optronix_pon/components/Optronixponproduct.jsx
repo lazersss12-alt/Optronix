@@ -1,82 +1,58 @@
+import { mediaUrl } from '../../../../config/media';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../../../../components/index.css';
 import '../../sumitomo/components/Sumitomo.css';
 import '../../../../components/layout/Footer.css';
-import bannerImage from '../../../../assets/images/Optronix PON.jpeg'; // You'll need to add this image
+// You'll need to add this image
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
-
-import op01 from "../../../../assets/images/OP1008P.png";
-import op02 from "../../../../assets/images/op2.png";
-import gpon8g from "../../../../assets/images/ponimg2.png";
-import gpon16 from "../../../../assets/images/gpon16.png";
-import gpon4 from "../../../../assets/images/gpon4.png"
-import px20 from "../../../../assets/images/px20++.png";
-import cccc from "../../../../assets/images/c++.png";
-import op101x from '../../../../assets/images/OP-101Xp.png';
-import op801g from '../../../../assets/images/OP801.png';
-import op821gwv from '../../../../assets/images/Op821GWV.png';
-import op821gwvd from '../../../../assets/images/fem router-01.png';
-import op821gwvd1 from '../../../../assets/images/OP821GWV-D.png';
-import op821gwvdgb from '../../../../assets/images/wifi8-removebg-preview.png';
-
-import op100p16gpdf from '../../../../assets/images/OP100P16G.pdf';
-import op100p8gpdf from '../../../../assets/images/OP100P8G.pdf';
-import op100p8pdf from '../../../../assets/images/OP100P8.pdf';
-import op100p4pdf from '../../../../assets/images/OP100P4.pdf';
-import op100p4gpdf from '../../../../assets/images/OP-100P4G.pdf';
-import op101xpdf from '../../../../assets/images/op101x.pdf';
-
-import op821gwvdpdf from '../../../../assets/images/OP821GWV-D with FEM.pdf';
-import op821gwvpdf from '../../../../assets/images/op821gwv.pdf';
-import op801gwpdf from '../../../../assets/images/op801gw.pdf';
 
 const productData = {
   1: [
     {
-      image: gpon16,
+      image: mediaUrl.image("gpon16.png"),
       title: "OP-100P16G",
       description: "GPON 16 PORT OLT",
       readMoreLink: "/optronix-pon/OP-100P16G",
-      catalogLink: op100p16gpdf
+      catalogLink: mediaUrl.doc("OP100P16G.pdf")
     },
     {
-      image: gpon8g,
+      image: mediaUrl.image("ponimg2.png"),
       title: "OP-100P8G",
       description: "GPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8G",
-      catalogLink: op100p8gpdf
+      catalogLink: mediaUrl.doc("OP100P8G.pdf")
     },
     {
-      image: gpon4,
+      image: mediaUrl.image("gpon4.png"),
       title: "OP-100P4G",
       description: "GPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4G",
-      catalogLink: op100p4gpdf
+      catalogLink: mediaUrl.doc("OP-100P4G.pdf")
     },
     {
-      image: op01,
+      image: mediaUrl.image("OP1008P.png"),
       title: "OP100P8",
       description: "EPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8",
-      catalogLink: op100p8pdf
+      catalogLink: mediaUrl.doc("OP100P8.pdf")
     },
     {
-      image: op02,
+      image: mediaUrl.image("op2.png"),
       title: "OP100P4",
       description: "EPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4",
-      catalogLink: op100p4pdf
+      catalogLink: mediaUrl.doc("OP100P4.pdf")
     },
     {
-      image: px20,
+      image: mediaUrl.image("px20++.png"),
       title: "PX20++++",
       description: "EPON SFP +9dBm",
 
     },
     {
-      image: cccc,
+      image: mediaUrl.image("c++.png"),
       title: "C++++",
       description: "GPON SFP +9dBm",
 
@@ -84,89 +60,89 @@ const productData = {
 
 
     {
-      image: op821gwvd,
+      image: mediaUrl.image("fem router-01.png"),
       title: "OP821GWV-D FEM",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVDGB",
-      catalogLink: op821gwvdpdf
+      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
     },
     {
-      image: op821gwvd1,
+      image: mediaUrl.image("OP821GWV-D.png"),
       title: "OP821GW-D",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVD",
-      catalogLink: op821gwvdpdf
+      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
     },
     {
-      image: op821gwv,
+      image: mediaUrl.image("Op821GWV.png"),
       title: "OP821GWV",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP821GWV",
-      catalogLink: op821gwvpdf
+      catalogLink: mediaUrl.doc("op821gwv.pdf")
     },
     {
-      image: op801g,
+      image: mediaUrl.image("OP801.png"),
       title: "OP801GW",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP801GW",
-      catalogLink: op801gwpdf
+      catalogLink: mediaUrl.doc("op801gw.pdf")
     },
     {
-      image: op101x,
+      image: mediaUrl.image("OP-101Xp.png"),
       title: "OP-101X",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP101X",
-      catalogLink: op101xpdf
+      catalogLink: mediaUrl.doc("op101x.pdf")
     }
   ],
   2: [
     {
-      image: gpon16,
+      image: mediaUrl.image("gpon16.png"),
       title: "OP-100P16G",
       description: "GPON 16 PORT OLT",
       readMoreLink: "/optronix-pon/OP-100P16G",
-      catalogLink: op100p16gpdf
+      catalogLink: mediaUrl.doc("OP100P16G.pdf")
     },
     {
-      image: op01,
+      image: mediaUrl.image("OP1008P.png"),
       title: "OP-100P8G",
       description: "GPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8G",
-      catalogLink: op100p8gpdf
+      catalogLink: mediaUrl.doc("OP100P8G.pdf")
     },
     {
-      image: op01,
+      image: mediaUrl.image("OP1008P.png"),
       title: "OP-100P4G",
       description: "GPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4G",
-      catalogLink: op100p4pdf
+      catalogLink: mediaUrl.doc("OP100P4.pdf")
     }
   ],
   3: [
     {
-      image: op01,
+      image: mediaUrl.image("OP1008P.png"),
       title: "OP100P8",
       description: "EPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8",
-      catalogLink: op100p8pdf
+      catalogLink: mediaUrl.doc("OP100P8.pdf")
     },
     {
-      image: gpon16,
+      image: mediaUrl.image("gpon16.png"),
       title: "OP100P4",
       description: "EPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4",
-      catalogLink: op100p4pdf
+      catalogLink: mediaUrl.doc("OP100P4.pdf")
     }
   ],
   4: [
     {
-      image: px20,
+      image: mediaUrl.image("px20++.png"),
       title: "EPON PX20++++",
       description: "High-power EPON PX20++ module.",
 
     },
     {
-      image: cccc,
+      image: mediaUrl.image("c++.png"),
       title: "GPON C++++",
       description: "Reliable GPON C++++ SFP module.",
 
@@ -176,39 +152,39 @@ const productData = {
 
 
     {
-      image: op821gwvd,
+      image: mediaUrl.image("fem router-01.png"),
       title: "OP821GWV-D FEM",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVDGB",
-      catalogLink: op821gwvdpdf
+      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
     },
     {
-      image: op821gwvd,
+      image: mediaUrl.image("fem router-01.png"),
       title: "OP821GW-D",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVD",
-      catalogLink: op821gwvdpdf
+      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
     },
     {
-      image: op821gwv,
+      image: mediaUrl.image("Op821GWV.png"),
       title: "OP821GWV",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP821GWV",
-      catalogLink: op821gwvpdf
+      catalogLink: mediaUrl.doc("op821gwv.pdf")
     },
     {
-      image: op801g,
+      image: mediaUrl.image("OP801.png"),
       title: "OP801GW",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP801GW",
-      catalogLink: op801gwpdf
+      catalogLink: mediaUrl.doc("op801gw.pdf")
     },
     {
-      image: op101x,
+      image: mediaUrl.image("OP-101Xp.png"),
       title: "OP-101X",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP101X",
-      catalogLink: op101xpdf
+      catalogLink: mediaUrl.doc("op101x.pdf")
     }
   ]
 };
@@ -248,7 +224,7 @@ const Optronixponproduct = () => {
     <div className="optronixponproduct-page-main">
       {/* Banner Section */}
       <div className="optronixpon-page-banner">
-        <img src={bannerImage} fetchpriority="high" alt="Optronix PON Products" className="banner-image" />
+        <img src={mediaUrl.image("Optronix PON.jpeg")} fetchpriority="high" alt="Optronix PON Products" className="banner-image" />
       </div>
       <div className="optronixponproduct-page-upperline"></div>
       <div className="product-page">
@@ -272,7 +248,7 @@ const Optronixponproduct = () => {
           {productData[activeButton]?.map((product, index) => (
             <div
               key={index}
-              className={`card ${product.title === 'C++++' ? 'c-plus-card' : ''} ${product.title === 'PX20++++' ? 'px20-card' : ''}`}
+              className={`card ${product.title === 'C++++' ? 'c-plus-card' : ''} ${product.title === 'PX20++++' ? 'mediaUrl.image("px20++.png")-card' : ''}`}
               onClick={() => product.readMoreLink && (window.location.href = product.readMoreLink)}
               style={{ cursor: product.readMoreLink ? 'pointer' : 'default' }}
             >

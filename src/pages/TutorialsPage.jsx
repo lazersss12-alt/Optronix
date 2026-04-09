@@ -1,3 +1,4 @@
+import { mediaUrl } from '../config/media';
 // src/pages/TutorialsPage.jsx
 
 // src/pages/TutorialsPage.jsx
@@ -16,8 +17,6 @@
 // This version includes the 0.5-second auto-play delay after rewinding.
 
 import React, { useState, useRef, useEffect } from 'react';
-import surfaceMountingVideo from '../components/img/Updated Video.mp4';
-
 // --- LOGIC CONSTANTS ---
 const FAST_FORWARD_RATE = 8;
 
@@ -117,7 +116,7 @@ const TutorialsPage = () => {
       <div style={videoContainerStyle}>
         <video
           ref={videoRef}
-          src={surfaceMountingVideo}
+          src={mediaUrl.video("Updated Video.mp4")}
           muted
           autoPlay
           playsInline
