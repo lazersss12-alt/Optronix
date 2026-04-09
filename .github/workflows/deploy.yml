@@ -1,0 +1,96 @@
+name: 🚀 Build & Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main        # Deploy on push to main branch
+      - master      # Also support 'master' branch
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+# Cancel any in-progress deployment if a new push arrives
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    name: Build React App & Deploy via FTP
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ─── Step 1: Checkout your code ───────────────────────────────────────
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      # ─── Step 2: Setup Node.js ────────────────────────────────────────────
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'           # Use Node 20 LTS
+          cache: 'npm'                 # Cache node_modules for speed
+
+      # ─── Step 3: Install dependencies ─────────────────────────────────────
+      - name: 📦 Install Dependencies
+        run: npm ci                    # 'ci' is faster & more reliable than 'install'
+
+      # ─── Step 4: Build the React app ──────────────────────────────────────
+      - name: 🏗️ Build React App
+        run: npm run build
+        env:
+          # Inject environment variables from GitHub Secrets
+          # Add your own as needed — these become available in your React app
+          # as process.env.REACT_APP_* or import.meta.env.VITE_* (Vite projects)
+          REACT_APP_MEDIA_BASE_URL: ${{ secrets.MEDIA_BASE_URL }}
+          VITE_MEDIA_BASE_URL: ${{ secrets.MEDIA_BASE_URL }}
+          CI: false                    # Prevents treating warnings as errors
+
+      # ─── Step 5: Deploy build output to Hostinger via FTP ─────────────────
+      - name: 📡 Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}           # e.g., ftp.yourdomain.com
+          username: ${{ secrets.FTP_USERNAME }}       # Your FTP username
+          password: ${{ secrets.FTP_PASSWORD }}       # Your FTP password
+          port: 21                                    # Default FTP port (use 22 for SFTP)
+          protocol: ftp                               # Use 'ftps' for explicit TLS (recommended)
+          local-dir: ./dist/                         # React build output folder
+          # ↑ For Vite projects, change to: ./dist/
+          server-dir: /public_html/                   # Hostinger root directory
+          
+          # ── Smart sync — only uploads CHANGED files ──────────────────────
+          # This is what makes it FAST for small updates
+          state-name: .ftp-deploy-sync-state.json     # Tracks which files changed
+          
+          # ── Exclude files/folders from upload ────────────────────────────
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.env
+            .ftp-deploy-sync-state.json
+          
+          # ── Danger zone: set to true to delete remote files not in build ─
+          # WARNING: Only enable this AFTER you have media on a CDN/subfolder
+          # that won't be touched. Keep false if media lives in public_html.
+          dangerous-clean-slate: false
+          
+          log-level: standard   # Use 'verbose' to debug connection issues
+
+      # ─── Step 6: Notify on success ────────────────────────────────────────
+      - name: ✅ Deployment Successful
+        if: success()
+        run: |
+          echo "🎉 Deployment completed successfully!"
+          echo "🌐 Site is live at your domain."
+          echo "⏱️ Deployed at: $(date -u)"
+
+      # ─── Step 7: Notify on failure ────────────────────────────────────────
+      - name: ❌ Deployment Failed
+        if: failure()
+        run: |
+          echo "💥 Deployment FAILED. Check logs above for details."
+          echo "Common causes:"
+          echo "  - Wrong FTP credentials in GitHub Secrets"
+          echo "  - Build error in React app"
+          echo "  - FTP server connection timeout"
