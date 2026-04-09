@@ -49,7 +49,7 @@ jobs:
       - name: 📡 Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp://82.25.120.160           # e.g., ftp.yourdomain.com
+          server: 82.25.120.160           # e.g., ftp.yourdomain.com
           username: u503250669       # Your FTP username
           password: Optronix@123       # Your FTP password
           port: 21                                    # Default FTP port (use 22 for SFTP)
