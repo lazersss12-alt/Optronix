@@ -3,10 +3,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import './educational.css';
 import { Link } from 'react-router-dom';
 const videos = [
-  { id: 1, youtubeId: 'igbZ724SVU8', title: 'Splicer',            description: 'How to turn on splicer.',   thumbnail: mediaUrl.image("thumbnail1.webp") },
-  { id: 2, youtubeId: 'k9IPmX17K6k', title: 'WLAN Setup',         description: 'How to setup WLAN?',         thumbnail: mediaUrl.image("thumbnail2.webp") },
-  { id: 3, youtubeId: 'CR4LOEIRhbY', title: 'V-Groove Cleaning',  description: 'How to clean v-groove?',     thumbnail: mediaUrl.image("thumbnail3.webp") },
-  { id: 4, youtubeId: 'v1gISCwq-Xg', title: 'Electrode',          description: 'How to change electrode?',    thumbnail: mediaUrl.image("thumbnail4.webp") },
+  { id: 1, youtubeId: 'igbZ724SVU8', title: 'Splicer', description: 'How to turn on splicer.', thumbnail: mediaUrl.image("thumbnail1.jpeg") },
+  { id: 2, youtubeId: 'k9IPmX17K6k', title: 'WLAN Setup', description: 'How to setup WLAN?', thumbnail: mediaUrl.image("thumbnail2.jpeg") },
+  { id: 3, youtubeId: 'CR4LOEIRhbY', title: 'V-Groove Cleaning', description: 'How to clean v-groove?', thumbnail: mediaUrl.image("thumbnail3.jpeg") },
+  { id: 4, youtubeId: 'v1gISCwq-Xg', title: 'Electrode', description: 'How to change electrode?', thumbnail: mediaUrl.image("thumbnail4.jpeg") },
 ];
 
 const Educational = () => {
@@ -79,19 +79,19 @@ const Educational = () => {
           {videos.map((video) => (
             <div className="video-card slide-in" key={video.id}>
               <div
-  className="video-wrapper"
-  onClick={() => setModalVideo(video.youtubeId)}
-  role="button"
-  tabIndex="0"
->
-  <img
-    src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
-    alt={video.title}
-    loading="lazy"
-    decoding="async"
-    className="video-thumbnail"
-  />
-</div>
+                className="video-wrapper"
+                onClick={() => setModalVideo(video.youtubeId)}
+                role="button"
+                tabIndex="0"
+              >
+                <img
+                  src={video.thumbnail || `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
+                  alt={video.title}
+                  loading="lazy"
+                  decoding="async"
+                  className="video-thumbnail"
+                />
+              </div>
               <div className="video-info">
                 <h4>{video.title}</h4>
                 <p>{video.description}</p>
@@ -132,30 +132,30 @@ const Educational = () => {
         </div>
       </div>
 
-     {modalVideo && (
-  <div className="modal-overlay" onClick={() => setModalVideo(null)}>
-    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-      
-      {/* Close Button */}
-      <button
-        className="modal-close-btn"
-        onClick={() => setModalVideo(null)}
-      >
-        ×
-      </button>
+      {modalVideo && (
+        <div className="modal-overlay" onClick={() => setModalVideo(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
 
-      <iframe
-        width="100%"
-        height="450"
-        src={`https://www.youtube.com/embed/${modalVideo}`}
-        title="YouTube video"
-        frameBorder="0"
-        allow="encrypted-media"
-        allowFullScreen
-      />
-    </div>
-  </div>
-)}
+            {/* Close Button */}
+            <button
+              className="modal-close-btn"
+              onClick={() => setModalVideo(null)}
+            >
+              ×
+            </button>
+
+            <iframe
+              width="100%"
+              height="450"
+              src={`https://www.youtube.com/embed/${modalVideo}`}
+              title="YouTube video"
+              frameBorder="0"
+              allow="encrypted-media"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
 
     </>
   );

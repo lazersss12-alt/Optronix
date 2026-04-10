@@ -3,7 +3,7 @@ import { mediaUrl } from '../../../../config/media';
 // import './Optronixponproduct.css';
 // import '../../../../pages/page.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("OP821GWV-D.webp") from "../../../../assets/images/OP821GWV-D-removebg-preview.png";
+// import mediaUrl.image("OP821GWV-D.png") from "../../../../assets/images/OP821GWV-D-removebg-preview.png";
 // import optronixDiagram821GWV from "../../../../assets/images/Application Chart.png";
 
 // import mediaUrl.image("op821GwV-Dp.png") from '../../../../assets/images/op821GwV-Dp.png';
@@ -45,7 +45,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("OP821GWV-D.webp")} 
+//         src={mediaUrl.image("OP821GWV-D.png")} 
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -295,7 +295,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 const Optronixponproductten = () => {
   const [activeTab, setActiveTab] = useState('overview');
   const [enquireOpen, setEnquireOpen] = useState(false);
-  const [productImage] = useState(mediaUrl.image("OP821GWV-D.webp"));
+  const [productImage] = useState(mediaUrl.image("OP821GWV-D.png"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);

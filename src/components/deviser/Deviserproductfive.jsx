@@ -3,7 +3,7 @@ import { mediaUrl } from '../../config/media';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("ae210.webp") from "../img/ae210.png";
+// import mediaUrl.image("ae210.png") from "../img/ae210.png";
 // import ProductBg from "../img/headerbackground.png";
 // import productImage4 from "../img/AE210-4.png";
 // import mediaUrl.doc("ae200.pdf") from "../img/ae200.pdf";
@@ -26,7 +26,7 @@ import { mediaUrl } from '../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("ae210.webp")
+//     img: mediaUrl.image("ae210.png")
 
 //   },
 //   {
@@ -96,7 +96,7 @@ import { mediaUrl } from '../../config/media';
 //   }
 // ];
 // const Deviserproductfive = () => {
-//   const [productImage] = useState(mediaUrl.image("ae210.webp"));
+//   const [productImage] = useState(mediaUrl.image("ae210.png"));
 
 //   // Removed unused handleIconClick function
 
@@ -135,7 +135,7 @@ import { mediaUrl } from '../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("ae210.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ae210.png")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -274,7 +274,7 @@ import AccordionTable from '../AccordionTable';
 import ProductLeadModal from '../common/ProductLeadModal';
 const Deviserproductfive = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("ae210.webp"));
+  const [productImage] = useState(mediaUrl.image("ae210.png"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state

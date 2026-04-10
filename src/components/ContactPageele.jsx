@@ -178,7 +178,7 @@ const ContactPageele = () => {
                 <li><a className="socialmedia" href="https://www.youtube.com/@CandidOptronix" aria-label="Whatsapp" target='_blank' rel="noreferrer"><i className="fab fa-youtube" aria-hidden="true"></i></a></li>
               </ul>
               <ul>
-                <li><Link className="indiamartb" to="https://www.indiamart.com/candidoptronix/" aria-label="indiamart" target='_blank' rel="noreferrer"><img src={mediaUrl.image("indiamart.webp")} loading="lazy" alt="Indiamart" width="30" /></Link></li>
+                <li><Link className="indiamartb" to="https://www.indiamart.com/candidoptronix/" aria-label="indiamart" target='_blank' rel="noreferrer"><img src={mediaUrl.image("indiamart.png")} loading="lazy" alt="Indiamart" width="30" /></Link></li>
               </ul>
             </div>
           </div>

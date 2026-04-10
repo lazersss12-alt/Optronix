@@ -4,7 +4,7 @@ import { mediaUrl } from '../../config/media';
 // import '../index.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("vfl.webp") from "../img/vfl.png";
+// import mediaUrl.image("vfl.png") from "../img/vfl.png";
 // import ProductBg from "../img/headerbackground.png";
 // import productImage4 from "../img/VF10-4.png";
 // import mediaUrl.doc("vf10.pdf") from "../img/vf10.pdf";
@@ -27,7 +27,7 @@ import { mediaUrl } from '../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("vfl.webp")
+//     img: mediaUrl.image("vfl.png")
 
 //   },
 //   {
@@ -99,7 +99,7 @@ import { mediaUrl } from '../../config/media';
 // ];
 
 // const Deviserproductnine = () => {
-// const [productImage] = useState(mediaUrl.image("vfl.webp"));
+// const [productImage] = useState(mediaUrl.image("vfl.png"));
 
 //   return (
 //     <div>
@@ -136,7 +136,7 @@ import { mediaUrl } from '../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("vfl.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("vfl.png")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -264,7 +264,7 @@ import AccordionTable from '../AccordionTable';
 import ProductLeadModal from '../common/ProductLeadModal';
 const Deviserproducteight = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("vfl.webp"));
+  const [productImage] = useState(mediaUrl.image("vfl.png"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state

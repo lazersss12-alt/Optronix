@@ -38,8 +38,8 @@ const productData = {
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("MC04.webp"),
-      title: 'mediaUrl.image("MC04.webp")',
+      image: mediaUrl.image("MC04.png"),
+      title: 'mediaUrl.image("MC04.png")',
       description: 'MINI 16.5x4',
       readMoreLink: '',
       catalogLink: ''
@@ -167,7 +167,7 @@ const productData = {
     },
     {
       image: mediaUrl.image("CE0416M.png"),
-      title: 'mediaUrl.image("MC04.webp")',
+      title: 'mediaUrl.image("MC04.png")',
       description: 'MINI 16.5x4',
       readMoreLink: '',
       catalogLink: ''

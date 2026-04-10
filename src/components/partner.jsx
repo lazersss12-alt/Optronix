@@ -8,26 +8,26 @@ const partners = [
   {
     name: 'Sumitomo Electric Industries Ltd.',
     desc: 'Connect with Innovation',
-    logo: mediaUrl.image("sumitomo.webp"),
+    logo: mediaUrl.image("sumitomo.png"),
     link: 'https://global-sei.com/'
   },
   {
     name: 'Deviser',
     desc: 'Over 30 Years of Proven Field Experience',
-    logo: mediaUrl.image("deviser.webp"),
+    logo: mediaUrl.image("deviser.png"),
     link: 'https://deviserinstruments.com/'
   },
   {
     name: 'SPEC Technology',
     desc: 'CATV Product',
-    logo: mediaUrl.image("spec.webp"),
+    logo: mediaUrl.image("spec.png"),
     link: 'https://spectechnology.com/'
   },
 
   {
     name: 'Invas Technologies',
     desc: 'Complete Telecom Solution',
-    logo: mediaUrl.image("invas.webp"),
+    logo: mediaUrl.image("invas.png"),
     link: 'https://invas.in/'
   }
 ];

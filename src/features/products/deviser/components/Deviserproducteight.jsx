@@ -3,7 +3,7 @@ import { mediaUrl } from '../../../../config/media';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("ep710.webp") from "../../../../assets/images/ep710.png";
+// import mediaUrl.image("ep710.png") from "../../../../assets/images/ep710.png";
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/EP310-4.png";
 // import mediaUrl.doc("ep710.pdf") from "../../../../assets/images/ls300.pdf";
@@ -30,7 +30,7 @@ import { mediaUrl } from '../../../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("ep710.webp")
+//     img: mediaUrl.image("ep710.png")
 
 //   },
 //   {
@@ -102,7 +102,7 @@ import { mediaUrl } from '../../../../config/media';
 //   }
 // ];
 // const Deviserproducteight = () => {
-// const [productImage] = useState(mediaUrl.image("ep710.webp"));
+// const [productImage] = useState(mediaUrl.image("ep710.png"));
   const [enquireOpen, setEnquireOpen] = useState(false);
 
 // // Removed unused handleIconClick function
@@ -142,7 +142,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("ep710.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ep710.png")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -325,7 +325,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 const Deviserproducteight = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("ep710.webp"));
+  const [productImage] = useState(mediaUrl.image("ep710.png"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);

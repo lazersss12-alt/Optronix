@@ -121,7 +121,7 @@ const Ofcpage = () => {
     {
       id: 1,
       title: 'Colouring Lines',
-      images: [mediaUrl.video("colouring33.mp4"), mediaUrl.image("colouring11.webp"), mediaUrl.image("colouring22.jpg")],
+      images: [mediaUrl.video("colouring33.mp4"), mediaUrl.image("colouring11.jpg"), mediaUrl.image("colouring22.jpg")],
       features: [
         'Precision color accuracy',
         'Durable with excellent adhesion',
@@ -157,7 +157,7 @@ const Ofcpage = () => {
     {
       id: 4,
       title: 'Sheathing lines',
-      images: [mediaUrl.video("ofc1.mp4"), mediaUrl.image("ofc3.png"), mediaUrl.image("ofc2.png"), mediaUrl.image("colouring11.webp")],
+      images: [mediaUrl.video("ofc1.mp4"), mediaUrl.image("ofc3.png"), mediaUrl.image("ofc2.png"), mediaUrl.image("colouring11.jpg")],
       features: [
         'Long-lasting environmental protection',
         'High-quality sheaths with precision',
@@ -181,7 +181,7 @@ const Ofcpage = () => {
     {
       id: 6,
       title: 'HDPE Testing',
-      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("HDPEtesting1.webp")],
+      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("HDPEtesting1.jpg")],
       features: [
         'Rigorous HDPE material testing',
         'Ensures durability and quality',

@@ -640,7 +640,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src={mediaUrl.image("india.webp")}
+                      src={mediaUrl.image("india.png")}
                       loading="lazy"
                       alt="Indiamart"
                       width="30"

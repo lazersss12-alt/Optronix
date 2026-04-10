@@ -4,7 +4,7 @@ import { mediaUrl } from '../../../../config/media';
 // import '../../../../components/index.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("vfl.webp") from "../../../../assets/images/vfl.png";
+// import mediaUrl.image("vfl.png") from "../../../../assets/images/vfl.png";
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/VF10-4.png";
 // import mediaUrl.doc("vf10.pdf") from "../../../../assets/images/vf10.pdf";
@@ -27,7 +27,7 @@ import { mediaUrl } from '../../../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("vfl.webp")
+//     img: mediaUrl.image("vfl.png")
 
 //   },
 //   {
@@ -99,7 +99,7 @@ import { mediaUrl } from '../../../../config/media';
 // ];
 
 // const Deviserproductnine = () => {
-// const [productImage] = useState(mediaUrl.image("vfl.webp"));
+// const [productImage] = useState(mediaUrl.image("vfl.png"));
   const [enquireOpen, setEnquireOpen] = useState(false);
 
 //   return (
@@ -137,7 +137,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("vfl.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("vfl.png")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -269,7 +269,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 const Deviserproducteight = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("vfl.webp"));
+  const [productImage] = useState(mediaUrl.image("vfl.png"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);

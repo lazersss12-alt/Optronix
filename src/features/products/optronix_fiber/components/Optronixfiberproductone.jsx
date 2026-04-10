@@ -3,7 +3,7 @@ import { mediaUrl } from '../../../../config/media';
 // import './Optronixfiberproduct.css';
 // import '../../../../pages/page.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("Drop cable .webp") from "../../../../assets/images/Drop cable .webp";
+// import mediaUrl.image("Drop cable .png") from "../../../../assets/images/Drop cable .webp";
 // import mediaUrl.image("flat cable .webp") from "../../../../assets/images/flat cable .webp";
 // import mediaUrl.doc("flat cable 24-05-25.pdf") from "../../../../assets/images/sumitomow1c.pdf";
 // import mediaUrl.image("fiber cable.png") from "../../../../assets/images/fiber cable.png";
@@ -15,7 +15,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 // import { useState } from 'react';
 
 // const Optronixfiberproductone = () => {
-//   const [productImage, setProductImage] = useState(mediaUrl.image("Drop cable .webp"));
+//   const [productImage, setProductImage] = useState(mediaUrl.image("Drop cable .png"));
   const [enquireOpen, setEnquireOpen] = useState(false);
 //   return (
 
@@ -33,7 +33,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //   //       </div>
 //   //     </div>
 //   //     <div className="product-image" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px' }}>
-//   //       <img src={mediaUrl.image("Drop cable .webp")} alt="Drop Cable Schematic" loading="lazy" style={{ width: '95%', maxWidth: '350px', display: 'block' }} />
+//   //       <img src={mediaUrl.image("Drop cable .png")} alt="Drop Cable Schematic" loading="lazy" style={{ width: '95%', maxWidth: '350px', display: 'block' }} />
 //   //     </div>
 //   //   </div>
 
@@ -264,7 +264,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("Drop cable .webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("Drop cable .png")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -485,7 +485,7 @@ import { Link } from 'react-router-dom';
 
 const Optronixfiberproductone = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("Drop cable .webp"));
+  const [productImage] = useState(mediaUrl.image("Drop cable .png"));
 
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
