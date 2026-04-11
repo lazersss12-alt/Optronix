@@ -90,103 +90,30 @@
   
   }
   
-  @media  screen and (max-width: 1030px){
-      .main-footer{
-          width: 100%;
-          display: grid;
-          padding: 20px 0;
-          grid-template-columns: 10px 1fr 10px;
-          grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-          background-color: #A7402D;}
-  
-      .footer-info{
-          grid-column: 2/3;
-          grid-row: 1/2;
-      }
-  
-      .footer-branch{
-          grid-column: 2/3;
-          grid-row: 2/3;
-          margin-top: 25px;
-      }
-  
-      .footer-quick{
-          grid-column: 2/3;
-          grid-row: 3/4;
-          margin-top: 25px;
-      }
-  
-      .footer-popular{
-          grid-column: 2/3;
-          grid-row: 4/5;
-          margin-top: 25px;
-      }
-  
-      .footer-branch{
-          display: flex;
-          justify-content: start;
-      }
-  
-      .footer-quick{
-          display: flex;
-          justify-content: start;
-      }
-  
-      .footer-popular{
-          display: flex;
-          justify-content: start;
-      }
+  @media screen and (max-width: 1030px) {
+    .main-footer {
+      width: 100%;
+      display: grid;
+      padding: 20px 0;
+      grid-template-columns: 20px 1fr 20px;
+      grid-template-rows: auto auto auto auto;
+      background-color: #A7402D;
+    }
+
+    .footer-info, .footer-branch, .footer-quick, .footer-popular {
+      grid-column: 2/3;
+      margin-top: 25px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .footer-info { grid-row: 1/2; margin-top: 0; }
+    .footer-branch { grid-row: 2/3; }
+    .footer-quick { grid-row: 3/4; }
+    .footer-popular { grid-row: 4/5; }
   }
-
-
-
-  @media  screen and (max-width: 1030px){
-    .main-footer{
-        width: 100%;
-        display: grid;
-        padding: 20px 0;
-        grid-template-columns: 20px 1fr 20px;
-        grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-        background-color: #A7402D;}
-
-    .footer-info{
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .footer-branch{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        margin-top: 25px;
-    }
-
-    .footer-quick{
-        grid-column: 2/3;
-        grid-row: 3/4;
-        margin-top: 25px;
-    }
-
-    .footer-popular{
-        grid-column: 2/3;
-        grid-row: 4/5;
-        margin-top: 25px;
-    }
-
-    .footer-branch{
-        display: flex;
-        justify-content: start;
-    }
-
-    .footer-quick{
-        display: flex;
-        justify-content: start;
-    }
-
-    .footer-popular{
-        display: flex;
-        justify-content: start;
-    }
-}
   
   @media  screen and (max-width: 768px){
   
@@ -310,36 +237,46 @@
   text-decoration: none;
 }
 
-.social-media ul li a .fab {
+.social-media ul li a .fa-brands,
+.social-media ul li a .ri-twitter-x-line,
+.social-media ul li a svg {
   width: 100%;
   height: 100%;
-  display: block;
-  background: none; /* Remove background for icons */
-  border-radius: 50%;
-  line-height: calc(40px - 10px); /* Adjust for smaller size */
-  font-size: 16px; /* Smaller icon size */
-  color: #912b2c; /* White icon color */
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  font-size: 18px;
+  color: #912b2c;
   transition: 0.5s;
 }
 
-.social-media ul li:nth-child(1) a:hover .fab {
+.social-media ul li:nth-child(1) a:hover .fa-brands {
   color: #3b5998;
 }
 
-.social-media ul li:nth-child(2) a:hover .fab {
-  color: #00aced;
+.social-media ul li:nth-child(2) a:hover .ri-twitter-x-line {
+  color: #000000;
 }
 
-.social-media ul li:nth-child(3) a:hover .fab {
+.social-media ul li:nth-child(3) a:hover .fa-brands {
   color: #0072b1;
 }
 
-.social-media ul li:nth-child(4) a:hover .fab {
-  color: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);;
+.social-media ul li:nth-child(4) a:hover .fa-brands {
+  color: #ee2a7b;
 }
 
-.social-media ul li:nth-child(5) a:hover .fab {
+.social-media ul li:nth-child(5) a:hover svg {
+  color: #1DA1F2;
+}
+
+.social-media ul li:nth-child(6) a:hover .fa-brands {
   color: #25D366;
+}
+
+.social-media ul li:nth-child(7) a:hover .fa-brands {
+  color: #FF0000;
 }
 
 

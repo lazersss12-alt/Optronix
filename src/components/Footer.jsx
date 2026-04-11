@@ -548,7 +548,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <i
-                      className="fab fa-facebook"
+                      className="fa-brands fa-facebook"
                       aria-hidden="true"
                     ></i>
                   </a>
@@ -573,7 +573,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <i
-                      className="fab fa-linkedin"
+                      className="fa-brands fa-linkedin"
                       aria-hidden="true"
                     ></i>
                   </a>
@@ -587,7 +587,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <i
-                      className="fab fa-instagram"
+                      className="fa-brands fa-instagram"
                       aria-hidden="true"
                     ></i>
                   </a>
@@ -612,7 +612,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <i
-                      className="fab fa-whatsapp"
+                      className="fa-brands fa-whatsapp"
                       aria-hidden="true"
                     ></i>
                   </a>
@@ -626,7 +626,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <i
-                      className="fab fa-youtube"
+                      className="fa-brands fa-youtube"
                       aria-hidden="true"
                     ></i>
                   </a>
