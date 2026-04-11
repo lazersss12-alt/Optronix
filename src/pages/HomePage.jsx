@@ -1,4 +1,4 @@
-﻿import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy } from 'react';
 
 import LazySection from '../components/LazySection';
 import Imageslider from '../components/ImageSlider';
@@ -12,6 +12,22 @@ const Executives = lazy(() => import('../components/Executives'));
 const Testimonials = lazy(() => import('../components/Testimonials'));
 
 const HomePage = () => {
+  React.useEffect(() => {
+    document.title = 'Optronix | Advanced Network Solutions & Optical Fiber Products';
+    
+    let metaDescription = document.querySelector('meta[name="description"]');
+    const description = 'Optronix is a leading provider of advanced network solutions, including GPON OLTs, high-performance optical fiber cables, and CATV equipment. Explore our innovative technology and carrier-grade products.';
+    
+    if (metaDescription) {
+      metaDescription.setAttribute('content', description);
+    } else {
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      metaDescription.content = description;
+      document.head.appendChild(metaDescription);
+    }
+  }, []);
+
   return (
     <div>
       <Imageslider />

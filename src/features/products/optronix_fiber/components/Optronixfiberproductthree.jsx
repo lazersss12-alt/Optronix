@@ -2,19 +2,19 @@ import { mediaUrl } from '../../../../config/media';
 // import React from 'react';
 // import './Optronixfiberproduct.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("NEO Series Fiber.png") from "../../../../assets/images/NEO Series Fiber.png"; // Replace with actual image if needed
-// import mediaUrl.image("Neo fiber Technical Sheet.png") from "../../../../assets/images/Neo fiber Technical Sheet.png"; // Replace with actual schematic image
+// import mediaUrl.image("NEO Series Fiber.webp") from "../../../../assets/images/NEO Series Fiber.png"; // Replace with actual image if needed
+// import mediaUrl.image("Neo fiber Technical Sheet.webp") from "../../../../assets/images/Neo fiber Technical Sheet.png"; // Replace with actual schematic image
 
-// import mediaUrl.image("fiber cable.png") from "../../../../assets/images/fiber cable.png";
-// import mediaUrl.image("Drop cable .png") from "../../../../assets/images/Drop cable .png";
-// import mediaUrl.image("NEO Series Fiber.png") from "../../../../assets/images/NEO Series Fiber.png";
-// import mediaUrl.image("Gold series fiber .png") from "../../../../assets/images/Gold series fiber .png";
+// import mediaUrl.image("fiber cable.webp") from "../../../../assets/images/fiber cable.png";
+// import mediaUrl.image("Drop cable .webp") from "../../../../assets/images/Drop cable .png";
+// import mediaUrl.image("NEO Series Fiber.webp") from "../../../../assets/images/NEO Series Fiber.png";
+// import mediaUrl.image("Gold series fiber .webp") from "../../../../assets/images/Gold series fiber .png";
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 // import { useState } from 'react';
-// import mediaUrl.doc("NEO fiber Technical Sheet.pdf") from "../../../../assets/images/sumitomow1c.pdf";
+// import mediaUrl.doc("NEOFIBER.pdf") from "../../../../assets/images/NEOFIBER.pdf";
 // const Optronixfiberproductthree = () => {
-//   const [productImage, setProductImage] = useState(mediaUrl.image("NEO Series Fiber.png"));
-  const [enquireOpen, setEnquireOpen] = useState(false);
+//   const [productImage, setProductImage] = useState(mediaUrl.image("NEO Series Fiber.webp"));
+//   const [enquireOpen, setEnquireOpen] = useState(false);
 //   return (
 //     <div>
 //        <div className="hero-split">
@@ -35,7 +35,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //         </button>
 //         <button
 //           className="btn-pill btn-outline"
-//           onClick={() => window.open(mediaUrl.image("Neo fiber Technical Sheet.png"), "_blank")}
+//           onClick={() => window.open(mediaUrl.image("Neo fiber Technical Sheet.webp"), "_blank")}
 //         >
 //           Download Catalog
 //         </button>
@@ -45,7 +45,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("NEO Series Fiber.png")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("NEO Series Fiber.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -115,7 +115,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //       <div className="table-z2c-">
 //         <div className="table-container">
 //           <h3 className="section-heading">Schematic Diagram (Not to Scale)</h3>
-//           <img loading="lazy" src={mediaUrl.image("Neo fiber Technical Sheet.png")} alt="Drop Cable Schematic Diagram" className="diagram-image" style={{ width: '820px', maxWidth: '100%', height: 'auto', margin: '0 auto', display: 'block' }} />
+//           <img loading="lazy" src={mediaUrl.image("Neo fiber Technical Sheet.webp")} alt="Drop Cable Schematic Diagram" className="diagram-image" style={{ width: '820px', maxWidth: '100%', height: 'auto', margin: '0 auto', display: 'block' }} />
 //         </div>
 //       </div>
 
@@ -249,28 +249,28 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //       </div>
 //      <div className='product_s1v1_product'>
 //   <div className='product_s1v1_product1'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("fiber cable.png")} alt="OP-100P8G" />
+//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("fiber cable.webp")} alt="OP-100P8G" />
 //     <h3 className='product_s1v1_name_option'>Optronix Platinum</h3>
 //     <Link to="/optronixfiberproductfive" style={{ textDecoration: "none" }}>
 //       <button className='productz2c_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product2'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("Drop cable .png")} alt="82C+" />
+//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("Drop cable .webp")} alt="82C+" />
 //     <h3 className='product_s1v1_name_option'>Optronix Drop Cable</h3>
 //     <Link to="/optronixfiberproducttwo" style={{ textDecoration: "none" }}>
 //       <button className='productz2c_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product3'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("NEO Series Fiber.png")} alt="W1C" />
+//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("NEO Series Fiber.webp")} alt="W1C" />
 //     <h3 className='product_s1v1_name_option'>Optronix NEO</h3>
 //     <Link to="/optronixfiberproductthree" style={{ textDecoration: "none" }}>
 //       <button className='productz2c_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product4'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("Gold series fiber .png")} alt="FC8R" />
+//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("Gold series fiber .webp")} alt="FC8R" />
 //     <h3 className='product_s1v1_name_option'>Optronix Gold</h3>
 //     <Link to="/optronixfiberproductfour" style={{ textDecoration: "none" }}>
 //       <button className='productz2c_button_option'>Know More</button>
@@ -294,7 +294,8 @@ import { Link } from 'react-router-dom';
 
 const Optronixfiberproductthree = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("NEO Series Fiber.png"));
+  const [productImage] = useState(mediaUrl.image("NEO Series Fiber.webp"));
+  const [enquireOpen, setEnquireOpen] = useState(false);
 
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -339,7 +340,7 @@ const Optronixfiberproductthree = () => {
 
   // Light mosaic background using your images
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("fiber cable.png"), mediaUrl.image("Drop cable .png"), mediaUrl.image("NEO Series Fiber.png"), mediaUrl.image("Gold series fiber .png")];
+    const imgs = [mediaUrl.image("fiber cable.webp"), mediaUrl.image("Drop cable .webp"), mediaUrl.image("NEO Series Fiber.webp"), mediaUrl.image("Gold series fiber .webp")];
     return {
       backgroundSize: 'cover, 50% 50%, 50% 50%, 50% 50%, 50% 50%',
       backgroundPosition: 'center, left top, right top, left bottom, right bottom',
@@ -372,7 +373,7 @@ const Optronixfiberproductthree = () => {
                 <button className="btn btn-primary" onClick={() => setEnquireOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("NEO fiber Technical Sheet.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("NEOFIBER.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -430,7 +431,7 @@ const Optronixfiberproductthree = () => {
 
               <div className="diagram-wrapper">
                 <img loading="lazy"
-                  src={mediaUrl.image("Neo fiber Technical Sheet.png")}
+                  src={mediaUrl.image("Neo fiber Technical Sheet.webp")}
                   alt="Flat Cable Schematic Diagram"
                   className="diagram-image"
                 />
@@ -609,7 +610,7 @@ const Optronixfiberproductthree = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("fiber cable.png")} loading="lazy" alt="Optronix Platinum" /></div>
+            <div className="s-media"><img src={mediaUrl.image("fiber cable.webp")} loading="lazy" alt="Optronix Platinum" /></div>
             <div className="s-body">
               <h4 className="s-title">Optronix Platinum</h4>
               <p className="s-desc">Premium outdoor optical cable series.</p>
@@ -621,7 +622,7 @@ const Optronixfiberproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("Drop cable .png")} loading="lazy" alt="Optronix Drop Cable" /></div>
+            <div className="s-media"><img src={mediaUrl.image("Drop cable .webp")} loading="lazy" alt="Optronix Drop Cable" /></div>
             <div className="s-body">
               <h4 className="s-title">Optronix Drop Cable</h4>
               <p className="s-desc">FTTH drop cable options.</p>
@@ -633,7 +634,7 @@ const Optronixfiberproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("NEO Series Fiber.png")} loading="lazy" alt="Optronix NEO" /></div>
+            <div className="s-media"><img src={mediaUrl.image("NEO Series Fiber.webp")} loading="lazy" alt="Optronix NEO" /></div>
             <div className="s-body">
               <h4 className="s-title">Optronix NEO</h4>
               <p className="s-desc">High-density NEO series fiber.</p>
@@ -645,7 +646,7 @@ const Optronixfiberproductthree = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("Gold series fiber .png")} loading="lazy" alt="Optronix Gold" /></div>
+            <div className="s-media"><img src={mediaUrl.image("Gold series fiber .webp")} loading="lazy" alt="Optronix Gold" /></div>
             <div className="s-body">
               <h4 className="s-title">Optronix Gold</h4>
               <p className="s-desc">Ruggedized cable for harsh environments.</p>

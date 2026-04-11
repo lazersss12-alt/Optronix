@@ -30,7 +30,7 @@ const Executives = () => {
       <div className="founders-container">
         <div className="founders-image-container">
           <div className="image-frame">
-            <img src={mediaUrl.image("ceoo.jpg")} loading="lazy" alt="Mr. Awnish Gautam - Founder and CEO" />
+            <img src={mediaUrl.image("ceoo.webp")} loading="lazy" alt="Mr. Awnish Gautam - Founder and CEO" />
           </div>
         </div>
         

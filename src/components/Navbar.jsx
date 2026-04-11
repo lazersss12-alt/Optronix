@@ -130,9 +130,9 @@ const Navbar = () => {
     <div className="main-nav" ref={navRef}>
       <div className="full-nav">
         {/* Logo */}
-        <div className="nav-mediaUrl.image("logo.png")">
+        <div className="nav-logo">
           <Link to="/" onClick={closeMenu}>
-            <img src={mediaUrl.image("logo.png")} loading="lazy" alt="Optronix Logo" className="mediaUrl.image("logo.png")" />
+            <img src={mediaUrl.image("logo.webp")} loading="lazy" alt="Optronix Logo" className="logo" />
           </Link>
         </div>
 
@@ -256,7 +256,7 @@ const Navbar = () => {
             {isMobile && (
               <li className="mobile-download">
                 <a
-                  href="/Optronix_Catalogue.pdf"
+                  href={mediaUrl.root("Optronix_Catalogue.pdf")}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMenu}
@@ -295,7 +295,7 @@ const Navbar = () => {
           <span
             className="download-btn tooltip"
             data-tooltip="Download E-Catalog"
-            onClick={() => window.open("/Optronix_Catalogue.pdf", "_blank")}
+            onClick={() => window.open(mediaUrl.root("Optronix_Catalogue.pdf"), "_blank")}
 
 
             aria-label="Download Catalog"

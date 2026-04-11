@@ -10,35 +10,35 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 const productData = {
   1: [
     {
-      image: mediaUrl.image("DC.png"),
+      image: mediaUrl.image("DC.webp"),
       title: "Optronix Flat Cable",
       description: "2F",
       readMoreLink: "/optronix-fiber/optronix-flat-cable",
-      catalogLink: mediaUrl.doc("dropcablef.pdf"),
+      catalogLink: mediaUrl.doc("flat cable 24-05-25.pdf"),
     },
     {
-      image: mediaUrl.image("DC.png"),
+      image: mediaUrl.image("DC.webp"),
       title: "Optronix Drop Cable",
       description: "2F",
       readMoreLink: "/optronix-fiber/optronix-drop-cable",
-      catalogLink: mediaUrl.doc("dropcablef.pdf"),
+      catalogLink: mediaUrl.doc("Drop Cable Data Sheet 2.pdf"),
     },
     {
-      image: mediaUrl.image("OptronixNeo.png"),
+      image: mediaUrl.image("OptronixNeo.webp"),
       title: "Optronix NEO",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-neo",
       catalogLink: mediaUrl.doc("NEOFIBER.pdf"),
     },
     {
-      image: mediaUrl.image("Optronixgold.png"),
+      image: mediaUrl.image("Optronixgold.webp"),
       title: "Optronix Gold",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-gold",
       catalogLink: mediaUrl.doc("GOLDFIBER.pdf"),
     },
     {
-      image: mediaUrl.image("Optronixgold (2).png"),
+      image: mediaUrl.image("Optronixgold (2).webp"),
       title: "Optronix Platinum",
       description: "2F, 4F, 6F, 12F, 24F",
       readMoreLink: "/optronix-fiber/optronix-platinum",
@@ -47,25 +47,25 @@ const productData = {
   ],
   2: [
     {
-      image: mediaUrl.image("DC.png"),
+      image: mediaUrl.image("DC.webp"),
       title: "Optronix Dropcable",
       description: "Flat Cable",
       readMoreLink: "/optronix-fiber/optronix-flat-cable",
-      catalogLink: mediaUrl.doc("dropcablef.pdf"),
+      catalogLink: mediaUrl.doc("flat cable 24-05-25.pdf"),
     },
   ],
   3: [
     {
-      image: mediaUrl.image("DC.png"),
+      image: mediaUrl.image("DC.webp"),
       title: "Optronix Drop Cable",
       description: "2F",
       readMoreLink: "/optronix-fiber/optronix-drop-cable",
-      catalogLink: mediaUrl.doc("dropcablef.pdf"),
+      catalogLink: mediaUrl.doc("Drop Cable Data Sheet 2.pdf"),
     }
   ],
   4: [
     {
-      image: mediaUrl.image("OptronixNeo.png"),
+      image: mediaUrl.image("OptronixNeo.webp"),
       title: "Optronix NEO",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-neo",
@@ -74,7 +74,7 @@ const productData = {
   ],
   5: [
     {
-      image: mediaUrl.image("Optronixgold.png"),
+      image: mediaUrl.image("Optronixgold.webp"),
       title: "Optronix Gold",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-gold",
@@ -83,7 +83,7 @@ const productData = {
   ],
   6: [
     {
-      image: mediaUrl.image("Optronixgold (2).png"),
+      image: mediaUrl.image("Optronixgold (2).webp"),
       title: "Optronix Platinum",
       description: "2F, 4F, 6F, 12F, 24F",
       readMoreLink: "/optronix-fiber/optronix-platinum",
@@ -128,7 +128,7 @@ const Optronixfiberproduct = () => {
     <div className="optronixfiberproduct-page-main">
       {/* Banner Section */}
       <div className="optronixfiber-page-banner">
-        <img src={mediaUrl.image("Fbanner.jpeg")} alt="Optronix Fiber Products" fetchpriority="high" className="banner-image" />
+        <img src={mediaUrl.image("Fbanner.webp")} alt="Optronix Fiber Products" fetchpriority="high" className="banner-image" />
       </div>
       <div className="optronixfiberproduct-page-upperline"></div>
       <div className="product-page">
@@ -148,7 +148,6 @@ const Optronixfiberproduct = () => {
           ))}
         </div>
 
-        {/* Products */}
         <div className="product-grid">
           {productData[activeButton]?.map((product, index) => (
             <div
@@ -169,8 +168,8 @@ const Optronixfiberproduct = () => {
               <h2 className="card-title">{product.title}</h2>
               <p className="card-description">{product.description}</p>
 
-              <button 
-                className="fbtn_product1" 
+              <button
+                className="card-btn-main"
                 onClick={(e) => {
                   e.stopPropagation();
                   setEnquireModal(product.title);
@@ -179,14 +178,12 @@ const Optronixfiberproduct = () => {
                 Enquire Now
               </button>
 
-
               <div className="card-links" onClick={(e) => e.stopPropagation()}>
                 {product.readMoreLink && (
                   <Link to={product.readMoreLink} className="card-text-link">
                     <span>Read More</span>
                   </Link>
                 )}
-                {/* Catalog download left commented intentionally */}
               </div>
             </div>
           ))}

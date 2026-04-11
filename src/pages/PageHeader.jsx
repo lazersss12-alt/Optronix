@@ -67,34 +67,34 @@ const PageHeader = () => {
     rgba(0, 0, 0, 2) 0%,
     rgba(0, 0, 0, 0) 30%
   ),
-      url(${mediaUrl.image("smtheader2.jpg")})
+      url(${mediaUrl.image("smtheader2.webp")})
     `,
   };
 
   return (
     <div className="header-wrapper">
-  <div className={`header ${isZoomOut ? 'zoom-out' : ''}`}>
-    <div className="header-banner" style={bannerStyle}>
-      <div className="header-inner">
-        <h1 className="header-title">Surface Mounting Technology</h1>
-        <p className="header-subtitle">Explore Our Advanced SMT Equipment Line</p>
+      <div className={`header ${isZoomOut ? 'zoom-out' : ''}`}>
+        <div className="header-banner" style={bannerStyle}>
+          <div className="header-inner">
+            <h1 className="header-title">Surface Mounting Technology</h1>
+            <p className="header-subtitle">Explore Our Advanced SMT Equipment Line</p>
+          </div>
+
+          {/* Button anchored at the bottom of the header */}
+          <button className="header-button" onClick={openModal}>
+            Watch Video Tour
+          </button>
+        </div>
+
+        <VideoModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          videoUrl={mediaUrl.video("Updated 3.mp4")}
+        />
       </div>
-
-      {/* Button anchored at the bottom of the header */}
-      <button className="header-button" onClick={openModal}>
-        Watch Video Tour
-      </button>
     </div>
-    
-    <VideoModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        videoUrl={mediaUrl.video("Updated 3.mp4")}
-      />
-  </div>
-</div>
 
-   
+
   );
 };
 

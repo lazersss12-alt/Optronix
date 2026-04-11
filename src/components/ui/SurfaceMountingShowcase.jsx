@@ -81,7 +81,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 1,
       title: 'SOLDER PASTE PRINTER- GKG (G – TITAN)',
-      images: [mediaUrl.video("machine1video2.mp4"), mediaUrl.image("smt machine 2.jpg"), mediaUrl.image("smt machine 2 up.png"), mediaUrl.image("smt machine 3.png")],
+      images: [mediaUrl.video("machine1video2.mp4"), mediaUrl.image("smt machine 2.webp"), mediaUrl.image("smt machine 2 up.webp"), mediaUrl.image("smt machine 3.webp")],
       features: [
         'Board Size: 50×50mm to 510×510mm',
         'PCB Thickness: 0.4–6mm',
@@ -94,7 +94,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 2,
       title: 'SOLDER PASTE INSPECTION SPI KOH YOUNG (Ky8080)',
-      images: [mediaUrl.video("smtvideo2.mp4"), mediaUrl.image("smt machine 15 up.jpg")],
+      images: [mediaUrl.video("smtvideo2.mp4"), mediaUrl.image("smt machine 15 up.webp")],
       features: [
         'Inspects: Volume, Area, Height, Offset & more',
         'Camera: 2M Pix',
@@ -107,7 +107,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 3,
       title: 'CHIP MOUNTER NPM –D3 –A (PANASONIC)',
-      images: [mediaUrl.video("chipmounter.mp4"), mediaUrl.image("smt machine 8 updated.png"), mediaUrl.image("smt machine 9 updated.png")],
+      images: [mediaUrl.video("chipmounter.mp4"), mediaUrl.image("smt machine 8 updated.webp"), mediaUrl.image("smt machine 9 updated.webp")],
       features: [
         'Dual Line Mode: up to 510×300mm',
         'Ultra-High Speed: 400,000 CPH',
@@ -119,7 +119,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 4,
       title: 'REFLOW OVEN (JT RS- 1000 II - N2)',
-      images: [mediaUrl.image("smt machine 11.png"), mediaUrl.image("smt machine 12 up.png"), mediaUrl.image("smt machine 13 up.png")],
+      images: [mediaUrl.image("smt machine 11.webp"), mediaUrl.image("smt machine 12 up.webp"), mediaUrl.image("smt machine 13 up.webp")],
       features: [
         'Heating Zones: 10 Top / 10 Bottom',
         'Cooling Methods: Air Oven & Forced Air',
@@ -130,7 +130,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 5,
       title: '3D AUTOMATIC OPTICAL INSPECTION (AOI) KOH YOUNG ZENIT',
-      images: [mediaUrl.video("smtvideo5.mp4"), mediaUrl.image("smt machine 5 up2.png"), mediaUrl.image("smt machine 14.png")],
+      images: [mediaUrl.video("smtvideo5.mp4"), mediaUrl.image("smt machine 5 up2.webp"), mediaUrl.image("smt machine 14.webp")],
       features: [
         'Min. Component Size: 01005',
         'Max. PCB Size: 490×510mm',
@@ -143,7 +143,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 6,
       title: 'X-RAY INSPECTION MACHINE',
-      images: [mediaUrl.image("X ray inspection machine.png")],
+      images: [mediaUrl.image("X ray inspection machine.webp")],
       features: [
         'High-resolution X-ray imaging for BGA, QFN, and other hidden joints',
         'Automatic defect detection and classification',

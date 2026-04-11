@@ -11,7 +11,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 const Optronixedfaproductfive = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("PE0819M.png"));
+  const [productImage] = useState(mediaUrl.image("PE0819M.webp"));
   const [enquireOpen, setEnquireOpen] = useState(false);
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -36,7 +36,7 @@ const Optronixedfaproductfive = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("CE0416M.png"), mediaUrl.image("CE0419M.png"), mediaUrl.image("PE0819M.png"), mediaUrl.image("PE1619M.png")];
+    const imgs = [mediaUrl.image("CE0416M.webp"), mediaUrl.image("CE0419M.webp"), mediaUrl.image("PE0819M.webp"), mediaUrl.image("PE1619M.webp")];
     return {
       backgroundSize: 'cover, 50% 50%, 50% 50%, 50% 50%, 50% 50%',
       backgroundPosition: 'center, left top, right top, left bottom, right bottom',
@@ -212,7 +212,7 @@ const Optronixedfaproductfive = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img loading="lazy" src={mediaUrl.image("CE0416M.png")} alt="CE0416M" /></div>
+            <div className="s-media"><img loading="lazy" src={mediaUrl.image("CE0416M.webp")} alt="CE0416M" /></div>
             <div className="s-body">
               <h4 className="s-title">CE0416M</h4>
               <p className="s-desc">CATV 4x16.5 dBm EDFA.</p>
@@ -224,7 +224,7 @@ const Optronixedfaproductfive = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img loading="lazy" src={mediaUrl.image("CE0419M.png")} alt="CE0419M" /></div>
+            <div className="s-media"><img loading="lazy" src={mediaUrl.image("CE0419M.webp")} alt="CE0419M" /></div>
             <div className="s-body">
               <h4 className="s-title">CE0419M</h4>
               <p className="s-desc">High stability 4‑port model.</p>
@@ -235,7 +235,7 @@ const Optronixedfaproductfive = () => {
           </div>
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img loading="lazy" src={mediaUrl.image("PE0819M.png")} alt="PE0819M" /></div>
+            <div className="s-media"><img loading="lazy" src={mediaUrl.image("PE0819M.webp")} alt="PE0819M" /></div>
             <div className="s-body">
               <h4 className="s-title">PE0819M</h4>
               <p className="s-desc">8‑port PON EDFA.</p>
@@ -246,7 +246,7 @@ const Optronixedfaproductfive = () => {
           </div>
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img loading="lazy" src={mediaUrl.image("PE1619M.png")} alt="PE1619M" /></div>
+            <div className="s-media"><img loading="lazy" src={mediaUrl.image("PE1619M.webp")} alt="PE1619M" /></div>
             <div className="s-body">
               <h4 className="s-title">PE1619M</h4>
               <p className="s-desc">16‑port EDFA for large networks.</p>

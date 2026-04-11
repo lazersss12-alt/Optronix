@@ -3,7 +3,7 @@ import { mediaUrl } from '../../../../config/media';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("ae210.png") from "../../../../assets/images/ae210.png";
+// import mediaUrl.image("ae210.webp") from "../../../../assets/images/ae210.png";
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/AE210-4.png";
 // import mediaUrl.doc("ae200.pdf") from "../../../../assets/images/ae200.pdf";
@@ -26,7 +26,7 @@ import { mediaUrl } from '../../../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("ae210.png")
+//     img: mediaUrl.image("ae210.webp")
 
 //   },
 //   {
@@ -96,8 +96,8 @@ import { mediaUrl } from '../../../../config/media';
 //   }
 // ];
 // const Deviserproductfive = () => {
-//   const [productImage] = useState(mediaUrl.image("ae210.png"));
-  const [enquireOpen, setEnquireOpen] = useState(false);
+//   const [productImage] = useState(mediaUrl.image("ae210.webp"));
+//   const [enquireOpen, setEnquireOpen] = useState(false);
 
 //   // Removed unused handleIconClick function
 
@@ -136,7 +136,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("ae210.png")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ae210.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -278,8 +278,9 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 
 const Deviserproductfive = () => {
+  const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("ae210.png"));
+  const [productImage] = useState(mediaUrl.image("ae210.webp"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -621,7 +622,7 @@ const Deviserproductfive = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("AE1001.png")} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={mediaUrl.image("AE1001.webp")} loading="lazy" alt="AE1001" /></div>
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>
@@ -633,7 +634,7 @@ const Deviserproductfive = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ae210.png")} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ae210.webp")} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">AE210 Series</h4>
               <p className="s-desc">Portable OPM/OLS series for field testing.</p>
@@ -645,7 +646,7 @@ const Deviserproductfive = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("vfl.png")} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={mediaUrl.image("vfl.webp")} loading="lazy" alt="VF-10" /></div>
             <div className="s-body">
               <h4 className="s-title">VF-10</h4>
               <p className="s-desc">Visual fault locator for quick breaks/leaks.</p>
@@ -657,7 +658,7 @@ const Deviserproductfive = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ep310.png")} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ep310.webp")} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">EP-310 Series</h4>
               <p className="s-desc">PON power meters for GPON/EPON testing.</p>

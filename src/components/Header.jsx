@@ -42,7 +42,7 @@ const Header = () => {
                     rel="noopener noreferrer"
                     style={{ display: 'flex', alignItems: 'center' }}
                   >
-                    <img src={mediaUrl.image("indiamart.png")} loading="lazy" alt="Indiamart" width="20" style={{ marginTop: '3px' }} />
+                    <img src={mediaUrl.image("indiamart.webp")} loading="lazy" alt="Indiamart" width="20" style={{ marginTop: '3px' }} />
                   </Link>
                 </li>
                 <li>

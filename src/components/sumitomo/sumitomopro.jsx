@@ -11,14 +11,14 @@ function SumitomoPro() {
   //   <section className="sumitomo-page">
   //     <div
   //       className="sumitomo-hero"
-  //       style={{ backgroundImage: `url(${mediaUrl.image("sumitomo-banner.jpeg")})` }}
+  //       style={{ backgroundImage: `url(${mediaUrl.image("sumitomo-banner.webp")})` }}
   //     >
   //       <div className="sumitomo-hero__overlay" />
   //       <div className="sumitomo-hero__content">
   //         <h1 className="sumitomo-page-pro-name">
   //           <img
   //             className="sumitomo-logo"
-  //             src={mediaUrl.image("SUMITOMOupdated.png")}
+  //             src={mediaUrl.image("SUMITOMOupdated.webp")}
   //             alt="Sumitomo Electric"
   //           />
   //         </h1>

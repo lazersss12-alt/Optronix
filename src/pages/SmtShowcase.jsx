@@ -15,6 +15,7 @@ function forceScrollToTop() {
     window.history.scrollRestoration = 'manual';
   }
 
+
   const html = document.documentElement;
   const prevBehavior = html.style.scrollBehavior;
   html.style.scrollBehavior = 'auto'; // ensure instant

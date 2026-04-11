@@ -22,70 +22,70 @@ const Optronixedfa = React.lazy(() => import("./pages/optronixedfa"));
 const OptronixPON = React.lazy(() => import("./pages/OptronixPON"));
 const SpecCATV = React.lazy(() => import("./pages/SpecCATV"));
 
-const Sumitomoproductone = React.lazy(() => import("./pages/Sumitomoproductone"));
-const Sumitomoproducttwo = React.lazy(() => import('./pages/Sumitomoproducttwo'));
-const Sumitomoproductthree = React.lazy(() => import('./pages/Sumitomoproductthree'));
-const Sumitomoproductfour = React.lazy(() => import('./pages/Sumitomoproductfour'));
-const Sumitomoproductfive = React.lazy(() => import('./pages/Sumitomoproductfive'));
-const Sumitomoproductsix = React.lazy(() => import('./pages/Sumitomoproductsix'));
-const Sumitomoproductseven = React.lazy(() => import('./pages/Sumitomoproductseven'));
-const Sumitomoproducteight = React.lazy(() => import('./pages/Sumitomoproducteight'));
-const Sumitomoproductnine = React.lazy(() => import('./pages/Sumitomoproductnine'));
-const Sumitomoproductten = React.lazy(() => import('./pages/Sumitomoproductten'));
-const Sumitomoproducteleven = React.lazy(() => import('./pages/Sumitomoproducteleven'));
-const Sumitomoproducttwelve = React.lazy(() => import('./pages/Sumitmoproducttwelve'));
+const Sumitomoproductone = React.lazy(() => import("./features/products/sumitomo/pages/Sumitomoproductone"));
+const Sumitomoproducttwo = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproducttwo'));
+const Sumitomoproductthree = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductthree'));
+const Sumitomoproductfour = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductfour'));
+const Sumitomoproductfive = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductfive'));
+const Sumitomoproductsix = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductsix'));
+const Sumitomoproductseven = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductseven'));
+const Sumitomoproducteight = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproducteight'));
+const Sumitomoproductnine = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductnine'));
+const Sumitomoproductten = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproductten'));
+const Sumitomoproducteleven = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproducteleven'));
+const Sumitomoproducttwelve = React.lazy(() => import('./features/products/sumitomo/pages/Sumitomoproducttwelve'));
 
-const Deviserproductone = React.lazy(() => import('./components/deviser/Deviserproductone'));
-const Deviserproducttwo = React.lazy(() => import('./components/deviser/Deviserproducttwo'));
-const Deviserproductthree = React.lazy(() => import('./components/deviser/Deviserproductthree'));
-const Deviserproductfour = React.lazy(() => import('./components/deviser/Deviserproductfour'));
-const Deviserproductfive = React.lazy(() => import('./components/deviser/Deviserproductfive'));
-const Deviserproductsix = React.lazy(() => import('./components/deviser/Deviserproductsix'));
-const Deviserproductseven = React.lazy(() => import('./components/deviser/Devsierproductseven'));
-const Deviserproducteight = React.lazy(() => import('./components/deviser/Deviserproducteight'));
-const Deviserproductnine = React.lazy(() => import('./components/deviser/Deviserproductnine'));
+const Deviserproductone = React.lazy(() => import('./features/products/deviser/components/Deviserproductone'));
+const Deviserproducttwo = React.lazy(() => import('./features/products/deviser/components/Deviserproducttwo'));
+const Deviserproductthree = React.lazy(() => import('./features/products/deviser/components/Deviserproductthree'));
+const Deviserproductfour = React.lazy(() => import('./features/products/deviser/components/Deviserproductfour'));
+const Deviserproductfive = React.lazy(() => import('./features/products/deviser/components/Deviserproductfive'));
+const Deviserproductsix = React.lazy(() => import('./features/products/deviser/components/Deviserproductsix'));
+const Deviserproductseven = React.lazy(() => import('./features/products/deviser/components/Devsierproductseven'));
+const Deviserproducteight = React.lazy(() => import('./features/products/deviser/components/Deviserproducteight'));
+const Deviserproductnine = React.lazy(() => import('./features/products/deviser/components/Deviserproductnine'));
 
-const Optronixponproductone = React.lazy(() => import('./components/optronixpon/Optronixponproductone'));
-const Optronixponproducttwo = React.lazy(() => import('./components/optronixpon/Optronixponproducttwo'));
-const Optronixponproductthree = React.lazy(() => import('./components/optronixpon/Optronixponproductthree'));
-const Optronixponproductfour = React.lazy(() => import('./components/optronixpon/Optronixponproductfour'));
-const Optronixponproductfive = React.lazy(() => import('./components/optronixpon/Optronixponproductfive'));
+const Optronixponproductone = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductone'));
+const Optronixponproducttwo = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproducttwo'));
+const Optronixponproductthree = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductthree'));
+const Optronixponproductfour = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductfour'));
+const Optronixponproductfive = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductfive'));
 
-const Optronixponproducteight = React.lazy(() => import('./components/optronixpon/Optronixponproducteight'));
-const Optronixponproductnine = React.lazy(() => import('./components/optronixpon/Optronixponproductnine'));
-const Optronixponproductten = React.lazy(() => import('./components/optronixpon/Optronixponproductten'));
-const Optronixponproducteleven = React.lazy(() => import('./components/optronixpon/Optronixponproducteleven'));
-const Optronixponproducttwelve = React.lazy(() => import('./components/optronixpon/Optronixponproducttwelve'));
-const Optronixponproductthirteen = React.lazy(() => import('./components/optronixpon/Optronixponproductthirteen'));
+const Optronixponproducteight = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproducteight'));
+const Optronixponproductnine = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductnine'));
+const Optronixponproductten = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductten'));
+const Optronixponproducteleven = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproducteleven'));
+const Optronixponproducttwelve = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproducttwelve'));
+const Optronixponproductthirteen = React.lazy(() => import('./features/products/optronix_pon/components/Optronixponproductthirteen'));
 
-const Optronixfiberproductone = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductone'));
-const Optronixfiberproducttwo = React.lazy(() => import('./components/optronixfiber/Optronixfiberproducttwo'));
-const Optronixfiberproductthree = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductthree'));
-const Optronixfiberproductfour = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductfour'));
-const Optronixfiberproductfive = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductfive'));
+const Optronixfiberproductone = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductone'));
+const Optronixfiberproducttwo = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproducttwo'));
+const Optronixfiberproductthree = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductthree'));
+const Optronixfiberproductfour = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductfour'));
+const Optronixfiberproductfive = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductfive'));
 
-const Optronixfiberproductseven = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductseven'));
-const Optronixfiberproducteight = React.lazy(() => import('./components/optronixfiber/Optronixfiberproducteight'));
-const Optronixfiberproductnine = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductnine'));
-const Optronixfiberproductten = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductten'));
-const Optronixfiberproducteleven = React.lazy(() => import('./components/optronixfiber/Optronixfiberproducteleven'));
-const Optronixfiberproducttwelve = React.lazy(() => import('./components/optronixfiber/Optronixfiberproducttwelve'));
-const Optronixfiberproductthirteen = React.lazy(() => import('./components/optronixfiber/Optronixfiberproductthirteen'));
+const Optronixfiberproductseven = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductseven'));
+const Optronixfiberproducteight = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproducteight'));
+const Optronixfiberproductnine = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductnine'));
+const Optronixfiberproductten = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductten'));
+const Optronixfiberproducteleven = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproducteleven'));
+const Optronixfiberproducttwelve = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproducttwelve'));
+const Optronixfiberproductthirteen = React.lazy(() => import('./features/products/optronix_fiber/components/Optronixfiberproductthirteen'));
 
-const Optronixedfaproductone = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductone'));
-const Optronixedfaproducttwo = React.lazy(() => import('./components/optronixedfa/Optronixedfaproducttwo'));
-const Optronixedfaproductthree = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductthree'));
-const Optronixedfaproductfour = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductfour'));
-const Optronixedfaproductfive = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductfive'));
-const Optronixedfaproductsix = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductsix'));
-const Optronixedfaproductseven = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductseven'));
-const Optronixedfaproducteight = React.lazy(() => import('./components/optronixedfa/Optronixedfaproducteight'));
-const Optronixedfaproductnine = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductnine'));
-const Optronixedfaproductten = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductten'));
-const Optronixedfaproducteleven = React.lazy(() => import('./components/optronixedfa/Optronixedfaproducteleven'));
-const Optronixedfaproducttwelve = React.lazy(() => import('./components/optronixedfa/Optronixedfaproducttwelve'));
-const Optronixedfaproductthirteen = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductthirteen'));
-const Optronixedfaproductfourteen = React.lazy(() => import('./components/optronixedfa/Optronixedfaproductfourteen'));
+const Optronixedfaproductone = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductone'));
+const Optronixedfaproducttwo = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproducttwo'));
+const Optronixedfaproductthree = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductthree'));
+const Optronixedfaproductfour = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductfour'));
+const Optronixedfaproductfive = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductfive'));
+const Optronixedfaproductsix = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductsix'));
+const Optronixedfaproductseven = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductseven'));
+const Optronixedfaproducteight = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproducteight'));
+const Optronixedfaproductnine = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductnine'));
+const Optronixedfaproductten = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductten'));
+const Optronixedfaproducteleven = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproducteleven'));
+const Optronixedfaproducttwelve = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproducttwelve'));
+const Optronixedfaproductthirteen = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductthirteen'));
+const Optronixedfaproductfourteen = React.lazy(() => import('./features/products/optronix_edfa/components/Optronixedfaproductfourteen'));
 
 const GalleryPage = React.lazy(() => import('./pages/Gallery'));
 const BranchGalleryPage = React.lazy(() => import('./pages/BranchGalleryPage'));
@@ -156,13 +156,13 @@ function App() {
             <Route path="/optronix-pon/OP801GW" element={<Optronixponproducttwelve />} />
             <Route path="/optronix-pon/OP101X" element={<Optronixponproductthirteen />} />
             <Route path="/optronix-pon/OP801GWV" element={<Optronixponproductthirteen />} />
-            <Route path="/optronix-pon/OP101X" element={<Optronixponproductthirteen />} />
             <Route path="/optronix-fiber/optronix-flat-cable" element={<Optronixfiberproductone />} />
             <Route path="/optronix-fiber/optronix-drop-cable" element={<Optronixfiberproducttwo />} />
             <Route path="/optronix-fiber/optronix-neo" element={<Optronixfiberproductthree />} />
             <Route path="/optronix-fiber/optronix-gold" element={<Optronixfiberproductfour />} />
             <Route path="/optronix-fiber/optronix-platinum" element={<Optronixfiberproductfive />} />
 
+{/* 
             <Route path="/optronixfiberproductseven" element={<Optronixfiberproductseven />} />
             <Route path="/optronixfiberproducteight" element={<Optronixfiberproducteight />} />
             <Route path="/optronixfiberproductnine" element={<Optronixfiberproductnine />} />
@@ -170,6 +170,7 @@ function App() {
             <Route path="/optronixfiberproducteleven" element={<Optronixfiberproducteleven />} />
             <Route path="/optronixfiberproducttwelve" element={<Optronixfiberproducttwelve />} />
             <Route path="/optronixfiberproductthirteen" element={<Optronixfiberproductthirteen />} />
+*/}
             <Route path="/optronixedfa" element={<Optronixedfa />} />
             <Route path="/optronix-edfa/CE0416M" element={<Optronixedfaproductone />} />
             <Route path="/optronix-edfa/CE0419M" element={<Optronixedfaproducttwo />} />

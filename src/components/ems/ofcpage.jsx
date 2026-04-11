@@ -121,7 +121,7 @@ const Ofcpage = () => {
     {
       id: 1,
       title: 'Colouring Lines',
-      images: [mediaUrl.video("colouring33.mp4"), mediaUrl.image("colouring11.jpg"), mediaUrl.image("colouring22.jpg")],
+      images: [mediaUrl.video("colouring33.mp4"), mediaUrl.image("colouring11.webp"), mediaUrl.image("colouring22.webp")],
       features: [
         'Precision color accuracy',
         'Durable with excellent adhesion',
@@ -133,7 +133,7 @@ const Ofcpage = () => {
     {
       id: 2,
       title: 'Buffering lines',
-      images: [mediaUrl.video("chirag.mp4"), mediaUrl.video("Bufferingvideo1.mp4"), mediaUrl.video("Bufferingvideo2.mp4"), mediaUrl.image("Bufferring 3.png")],
+      images: [mediaUrl.video("chirag.mp4"), mediaUrl.video("Bufferingvideo1.mp4"), mediaUrl.video("Bufferingvideo2.mp4"), mediaUrl.image("Bufferring 3.webp")],
       features: [
         'Optimal protection and mechanical strength',
         'Consistent buffer integrity and reliability',
@@ -157,7 +157,7 @@ const Ofcpage = () => {
     {
       id: 4,
       title: 'Sheathing lines',
-      images: [mediaUrl.video("ofc1.mp4"), mediaUrl.image("ofc3.png"), mediaUrl.image("ofc2.png"), mediaUrl.image("colouring11.jpg")],
+      images: [mediaUrl.video("ofc1.mp4"), mediaUrl.image("ofc3.webp"), mediaUrl.image("ofc2.webp"), mediaUrl.image("colouring11.webp")],
       features: [
         'Long-lasting environmental protection',
         'High-quality sheaths with precision',
@@ -169,7 +169,7 @@ const Ofcpage = () => {
     {
       id: 5,
       title: 'Ftth sheathing line',
-      images: [mediaUrl.video("ftth.mp4"), mediaUrl.image("FTTH 2.png"), mediaUrl.image("FTTH 1.png")],
+      images: [mediaUrl.video("ftth.mp4"), mediaUrl.image("FTTH 2.webp"), mediaUrl.image("FTTH 1.webp")],
       features: [
         'Fast and reliable data delivery',
         'Easy installation design',
@@ -181,7 +181,7 @@ const Ofcpage = () => {
     {
       id: 6,
       title: 'HDPE Testing',
-      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("HDPEtesting1.jpg")],
+      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("HDPEtesting1.webp")],
       features: [
         'Rigorous HDPE material testing',
         'Ensures durability and quality',
@@ -193,7 +193,7 @@ const Ofcpage = () => {
     {
       id: 7,
       title: 'Packaging',
-      images: [mediaUrl.video("OFC11.mp4"), mediaUrl.image("OFC22.jpg"), mediaUrl.image("OFC33.jpg")],
+      images: [mediaUrl.video("OFC11.mp4"), mediaUrl.image("OFC22.webp"), mediaUrl.image("OFC33.webp")],
       features: [
         'Secure and protective packaging',
         'Efficient packing process',

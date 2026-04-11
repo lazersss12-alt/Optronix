@@ -2,10 +2,10 @@ import { mediaUrl } from '../../config/media';
 // import React, { useState } from 'react';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("ep310.png") from "../img/ep310.png";
+// import mediaUrl.image("ep310.webp") from "../img/ep310.png";
 // import ProductBg from "../img/headerbackground.png";
 // import productImage4 from "../img/EP310-4.png";
-// import mediaUrl.doc("ep300.pdf") from "../img/ae200.pdf";
+// import mediaUrl.doc("ae200.pdf") from "../img/ae200.pdf";
 // import productImage2 from "../img/EP310-2.png";
 // import productImage3 from "../img/AE210-3.png";
 // import z2cImg from "../img/ae3100_main.jpg";
@@ -24,7 +24,7 @@ import { mediaUrl } from '../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("ep310.png")
+//     img: mediaUrl.image("ep310.webp")
 
 //   },
 //   {
@@ -84,7 +84,7 @@ import { mediaUrl } from '../../config/media';
 //             </button>
 //             <button className='enquire_button'
 
-//               onClick={() => window.open(mediaUrl.doc("ep300.pdf"), "_blank")}  
+//               onClick={() => window.open(mediaUrl.doc("ae200.pdf"), "_blank")}  
 //             >
 //               Download Catalog
 //             </button>
@@ -94,7 +94,7 @@ import { mediaUrl } from '../../config/media';
 //   }
 // ];
 // const Deviserproductsix = () => {
-//   const [productImage] = useState(mediaUrl.image("ep310.png"));
+//   const [productImage] = useState(mediaUrl.image("ep310.webp"));
 
 //   return (
 //     <div>
@@ -121,7 +121,7 @@ import { mediaUrl } from '../../config/media';
 //         </button>
 //         <button
 //           className="btn-pill btn-outline"
-//           onClick={() => window.open(mediaUrl.doc("ep300.pdf"), "_blank")}
+//           onClick={() => window.open(mediaUrl.doc("ae200.pdf"), "_blank")}
 //         >
 //           Download Catalog
 //         </button>
@@ -131,7 +131,7 @@ import { mediaUrl } from '../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("ep310.png")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ep310.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -306,7 +306,7 @@ import AccordionTable from '../AccordionTable';
 import ProductLeadModal from '../common/ProductLeadModal';
 const Deviserproductsix = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("ep310.png"));
+  const [productImage] = useState(mediaUrl.image("ep310.webp"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state
@@ -429,7 +429,7 @@ const Deviserproductsix = () => {
                 <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("ep300.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("ae200.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -719,7 +719,7 @@ const Deviserproductsix = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("AE1001.png")} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={mediaUrl.image("AE1001.webp")} loading="lazy" alt="AE1001" /></div>
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>
@@ -731,7 +731,7 @@ const Deviserproductsix = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ae210.png")} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ae210.webp")} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">AE210 Series</h4>
               <p className="s-desc">Portable OPM/OLS series for field testing.</p>
@@ -743,7 +743,7 @@ const Deviserproductsix = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("vfl.png")} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={mediaUrl.image("vfl.webp")} loading="lazy" alt="VF-10" /></div>
             <div className="s-body">
               <h4 className="s-title">VF-10</h4>
               <p className="s-desc">Visual fault locator for quick breaks/leaks.</p>
@@ -755,7 +755,7 @@ const Deviserproductsix = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ep310.png")} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ep310.webp")} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">EP-310 Series</h4>
               <p className="s-desc">PON power meters for GPON/EPON testing.</p>

@@ -3,10 +3,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import './educational.css';
 import { Link } from 'react-router-dom';
 const videos = [
-  { id: 1, youtubeId: 'igbZ724SVU8', title: 'Splicer', description: 'How to turn on splicer.', thumbnail: mediaUrl.image("thumbnail1.jpeg") },
-  { id: 2, youtubeId: 'k9IPmX17K6k', title: 'WLAN Setup', description: 'How to setup WLAN?', thumbnail: mediaUrl.image("thumbnail2.jpeg") },
-  { id: 3, youtubeId: 'CR4LOEIRhbY', title: 'V-Groove Cleaning', description: 'How to clean v-groove?', thumbnail: mediaUrl.image("thumbnail3.jpeg") },
-  { id: 4, youtubeId: 'v1gISCwq-Xg', title: 'Electrode', description: 'How to change electrode?', thumbnail: mediaUrl.image("thumbnail4.jpeg") },
+  { id: 1, youtubeId: 'igbZ724SVU8', title: 'Splicer', description: 'How to turn on splicer.', thumbnail: mediaUrl.image("thumbnail1.webp") },
+  { id: 2, youtubeId: 'k9IPmX17K6k', title: 'WLAN Setup', description: 'How to setup WLAN?', thumbnail: mediaUrl.image("thumbnail2.webp") },
+  { id: 3, youtubeId: 'CR4LOEIRhbY', title: 'V-Groove Cleaning', description: 'How to clean v-groove?', thumbnail: mediaUrl.image("thumbnail3.webp") },
+  { id: 4, youtubeId: 'v1gISCwq-Xg', title: 'Electrode', description: 'How to change electrode?', thumbnail: mediaUrl.image("thumbnail4.webp") },
 ];
 
 const Educational = () => {

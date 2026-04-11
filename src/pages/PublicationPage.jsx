@@ -9,7 +9,7 @@ const staticEvents = [
     id: 3,
     title: "2nd Annual Day Celebration",
     date: "2025-02-02",
-    images: [mediaUrl.image("annualday1.jpeg"), mediaUrl.image("annualday2.jpeg"), mediaUrl.image("annualday3.jpeg"), mediaUrl.image("annualday4.jpeg")],
+    images: [mediaUrl.image("annualday1.webp"), mediaUrl.image("annualday2.webp"), mediaUrl.image("annualday3.webp"), mediaUrl.image("annualday4.webp")],
     content:
       "A proud moment captured – The Candid Optronix Family! From teamwork to triumphs, and challenges to achievements, we stand stronger together! As we celebrate our 2nd Annual Day, we honor the dedication, hard work, and unity that make this company an incredible place to be. A heartfelt thank you to our inspiring leaders and exceptional team for making this journey unforgettable. Here’s to many more milestones ahead!",
     link: ""
@@ -18,7 +18,7 @@ const staticEvents = [
     id: 2,
     title: "Free Service Camp - Technical Support",
     date: "2025-01-18",
-    images: [mediaUrl.image("freeservicecamp1.jpeg"), mediaUrl.image("freeservicecamp3.jpeg"), mediaUrl.image("freeservicecapm2.jpeg")],
+    images: [mediaUrl.image("freeservicecamp1.webp"), mediaUrl.image("freeservicecamp3.webp"), mediaUrl.image("freeservicecapm2.webp")],
     content:
       "We’re proud to announce the successful completion of our Free Service Camp organized by Candid Optronix Pvt. Ltd., where we offered free diagnostics, maintenance, and expert technical support for fiber optic professionals. The event covered key equipment such as Sumitomo Fusion Splicers, Deviser OTDRs and meters, Optronix PON products (OLT, ONU, XPON), and EDFA amplifiers. Thank you to everyone who participated and made the event a success.",
     link: ""
@@ -27,7 +27,7 @@ const staticEvents = [
     id: 1,
     title: "Cable TV Show India",
     date: "2017-01-01",
-    images: [mediaUrl.image("img11.jpg"), mediaUrl.image("img12.jpg"), mediaUrl.image("img13.jpg"), mediaUrl.image("img14.jpg")],
+    images: [mediaUrl.image("img11.webp"), mediaUrl.image("img12.webp"), mediaUrl.image("img13.webp"), mediaUrl.image("img14.webp")],
     content: `Candid Optronix Pvt. Ltd. participated in the Cable TV Show India 2017 held in Kolkata, where we showcased our latest innovations and solutions in the field of fiber optics and digital cable technology. The event provided an excellent opportunity to connect with industry professionals and demonstrate our commitment to advancing network infrastructure across India.`,
     link: ""
   }

@@ -2,7 +2,7 @@ import { mediaUrl } from '../../config/media';
 // import React, { useState } from 'react';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("AE1001.png") from "../img/devisor3.png";
+// import mediaUrl.image("devisor3.webp") from "../img/devisor3.png";
 // import ProductBg from "../img/headerbackground.png";
 // import mediaUrl.doc("ae1001.pdf") from "../img/ae1001.pdf";
 // import productImage4 from "../img/devisor4.png";
@@ -23,7 +23,7 @@ import { mediaUrl } from '../../config/media';
 //         Test,Measure & Locate in One Powerful Device!
 //       </>
 //     ),
-//     img: mediaUrl.image("AE1001.png")
+//     img: mediaUrl.image("devisor3.webp")
 
 //   },
 //   {
@@ -91,7 +91,7 @@ import { mediaUrl } from '../../config/media';
 //   }
 // ];
 // const Deviserproducttwo = () => {
-//   const [productImage] = useState(mediaUrl.image("AE1001.png"));
+//   const [productImage] = useState(mediaUrl.image("devisor3.webp"));
 
 
 //   return (
@@ -126,7 +126,7 @@ import { mediaUrl } from '../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("AE1001.png")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("devisor3.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -566,7 +566,7 @@ import AccordionTable from '../AccordionTable';
 import ProductLeadModal from '../common/ProductLeadModal';
 const Deviserproducttwo = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("AE1001.png"));
+  const [productImage] = useState(mediaUrl.image("devisor3.webp"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state
@@ -883,28 +883,28 @@ const Deviserproducttwo = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("AE1001.png")} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={mediaUrl.image("devisor3.webp")} loading="lazy" alt="AE1001" /></div>
             <div className="s-body"><h4 className="s-title">AE1001</h4><p className="s-desc">Handheld OTDR & OPM</p></div>
             <Link to="/deviser/AE1001" className="s-cta"><span>Know more</span><span className="s-cta-end">↗</span></Link>
           </div>
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ae210.png")} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ae210.webp")} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body"><h4 className="s-title">AE210 Series</h4><p className="s-desc">Portable OPM/OLS</p></div>
             <Link to="/deviser/AE210" className="s-cta"><span>Know more</span><span className="s-cta-end">↗</span></Link>
           </div>
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("vfl.png")} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={mediaUrl.image("vfl.webp")} loading="lazy" alt="VF-10" /></div>
             <div className="s-body"><h4 className="s-title">VF-10</h4><p className="s-desc">Visual Fault Locator</p></div>
             <Link to="/deviser/VF10" className="s-cta"><span>Know more</span><span className="s-cta-end">↗</span></Link>
           </div>
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ep310.png")} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ep310.webp")} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body"><h4 className="s-title">EP-310 Series</h4><p className="s-desc">PON power meters</p></div>
             <Link to="/deviser/EP310" className="s-cta"><span>Know more</span><span className="s-cta-end">↗</span></Link>
           </div>

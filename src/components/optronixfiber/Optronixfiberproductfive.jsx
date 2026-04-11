@@ -8,7 +8,7 @@ import ProductLeadModal from '../common/ProductLeadModal';
 
 const Optronixfiberproductfive = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("fiber cable.png"));
+  const [productImage] = useState(mediaUrl.image("fiber cable.webp"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state
@@ -54,7 +54,7 @@ const Optronixfiberproductfive = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("fiber cable.png"), mediaUrl.image("Drop cable .png"), mediaUrl.image("NEO Series Fiber.png"), mediaUrl.image("Gold series fiber .png")];
+    const imgs = [mediaUrl.image("fiber cable.webp"), mediaUrl.image("Drop cable .webp"), mediaUrl.image("NEO Series Fiber.webp"), mediaUrl.image("Gold series fiber .webp")];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -145,7 +145,7 @@ const Optronixfiberproductfive = () => {
 
               <div className="diagram-wrapper">
                 <img
-                  src={mediaUrl.image("GoldFibrediagram.png")}
+                  src={mediaUrl.image("GoldFibrediagram.webp")}
                   alt="Flat Cable Schematic Diagram"
                   className="diagram-image"
                 />
@@ -286,7 +286,7 @@ const Optronixfiberproductfive = () => {
           <div className="s-grid">
             <div className="s-card">
               <span className="s-brand">OPTRONIX</span>
-              <div className="s-media"><img src={mediaUrl.image("fiber cable.png")} loading="lazy" alt="Optronix Platinum" /></div>
+              <div className="s-media"><img src={mediaUrl.image("fiber cable.webp")} loading="lazy" alt="Optronix Platinum" /></div>
               <div className="s-body">
                 <h4 className="s-title">Optronix Platinum</h4>
                 <p className="s-desc">Premium outdoor optical cable series.</p>
@@ -298,7 +298,7 @@ const Optronixfiberproductfive = () => {
 
             <div className="s-card">
               <span className="s-brand">OPTRONIX</span>
-              <div className="s-media"><img src={mediaUrl.image("Drop cable .png")} loading="lazy" alt="Optronix Drop Cable" /></div>
+              <div className="s-media"><img src={mediaUrl.image("Drop cable .webp")} loading="lazy" alt="Optronix Drop Cable" /></div>
               <div className="s-body">
                 <h4 className="s-title">Optronix Drop Cable</h4>
                 <p className="s-desc">FTTH drop cable options.</p>
@@ -310,7 +310,7 @@ const Optronixfiberproductfive = () => {
 
             <div className="s-card">
               <span className="s-brand">OPTRONIX</span>
-              <div className="s-media"><img src={mediaUrl.image("NEO Series Fiber.png")} loading="lazy" alt="Optronix NEO" /></div>
+              <div className="s-media"><img src={mediaUrl.image("NEO Series Fiber.webp")} loading="lazy" alt="Optronix NEO" /></div>
               <div className="s-body">
                 <h4 className="s-title">Optronix NEO</h4>
                 <p className="s-desc">High‑density NEO series fiber.</p>
@@ -322,7 +322,7 @@ const Optronixfiberproductfive = () => {
 
             <div className="s-card">
               <span className="s-brand">OPTRONIX</span>
-              <div className="s-media"><img src={mediaUrl.image("Gold series fiber .png")} loading="lazy" alt="Optronix Gold" /></div>
+              <div className="s-media"><img src={mediaUrl.image("Gold series fiber .webp")} loading="lazy" alt="Optronix Gold" /></div>
               <div className="s-body">
                 <h4 className="s-title">Optronix Gold</h4>
                 <p className="s-desc">Ruggedized cable for harsh environments.</p>

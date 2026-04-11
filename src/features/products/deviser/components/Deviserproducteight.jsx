@@ -3,10 +3,10 @@ import { mediaUrl } from '../../../../config/media';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("ep710.png") from "../../../../assets/images/ep710.png";
+// import mediaUrl.image("ls300.webp") from "../../../../assets/images/ep710.png";
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/EP310-4.png";
-// import mediaUrl.doc("ep710.pdf") from "../../../../assets/images/ls300.pdf";
+// import mediaUrl.doc("ls300.pdf") from "../../../../assets/images/ls300.pdf";
 // import productImage2 from "../../../../assets/images/EP710-2.png";
 // import productImage3 from "../../../../assets/images/LS310-3.png";
 // // import eponoltf1 from "../../../../assets/images/eight.jpg";
@@ -30,7 +30,7 @@ import { mediaUrl } from '../../../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("ep710.png")
+//     img: mediaUrl.image("ls300.webp")
 
 //   },
 //   {
@@ -92,7 +92,7 @@ import { mediaUrl } from '../../../../config/media';
 //             </button>
 //             <button className='enquire_button'
 
-//               onClick={() => window.open(mediaUrl.doc("ep710.pdf"), "_blank")}  
+//               onClick={() => window.open(mediaUrl.doc("ls300.pdf"), "_blank")}  
 //             >
 //               Download Catalog
 //             </button>
@@ -102,8 +102,8 @@ import { mediaUrl } from '../../../../config/media';
 //   }
 // ];
 // const Deviserproducteight = () => {
-// const [productImage] = useState(mediaUrl.image("ep710.png"));
-  const [enquireOpen, setEnquireOpen] = useState(false);
+// const [productImage] = useState(mediaUrl.image("ls300.webp"));
+//   const [enquireOpen, setEnquireOpen] = useState(false);
 
 // // Removed unused handleIconClick function
 
@@ -132,7 +132,7 @@ import { mediaUrl } from '../../../../config/media';
 //         </button>
 //         <button
 //           className="btn-pill btn-outline"
-//           onClick={() => window.open(mediaUrl.doc("ep710.pdf"), "_blank")}
+//           onClick={() => window.open(mediaUrl.doc("ls300.pdf"), "_blank")}
 //         >
 //           Download Catalog
 //         </button>
@@ -142,7 +142,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("ep710.png")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ls300.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -324,8 +324,9 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 
 const Deviserproducteight = () => {
+  const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("ep710.png"));
+  const [productImage] = useState(mediaUrl.image("ep710.webp"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -369,7 +370,7 @@ const Deviserproducteight = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("AE1001.png"), mediaUrl.image("ae210.png"), mediaUrl.image("vfl.png"), mediaUrl.image("ep310.png")];
+    const imgs = [mediaUrl.image("AE1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("ep310.webp")];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -451,7 +452,7 @@ const Deviserproducteight = () => {
                 <button className="btn btn-primary" onClick={() => setEnquireOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("ep710.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("ls300.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -807,7 +808,7 @@ const Deviserproducteight = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("AE1001.png")} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={mediaUrl.image("AE1001.webp")} loading="lazy" alt="AE1001" /></div>
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>
@@ -819,7 +820,7 @@ const Deviserproducteight = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ae210.png")} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ae210.webp")} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">AE210 Series</h4>
               <p className="s-desc">Portable OPM/OLS series for field testing.</p>
@@ -831,7 +832,7 @@ const Deviserproducteight = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("vfl.png")} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={mediaUrl.image("vfl.webp")} loading="lazy" alt="VF-10" /></div>
             <div className="s-body">
               <h4 className="s-title">VF-10</h4>
               <p className="s-desc">Visual fault locator for quick breaks/leaks.</p>
@@ -843,7 +844,7 @@ const Deviserproducteight = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ep310.png")} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ep310.webp")} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">EP-310 Series</h4>
               <p className="s-desc">PON power meters for GPON/EPON testing.</p>

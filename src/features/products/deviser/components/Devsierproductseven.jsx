@@ -3,7 +3,7 @@ import { mediaUrl } from '../../../../config/media';
 // import './Deviserproduct.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("ls-310.webp") from "../../../../assets/images/ls310.png";
+// import mediaUrl.image("ls310.webp") from "../../../../assets/images/ls310.png";
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/EP310-4.png";
 // import mediaUrl.doc("ls300.pdf") from "../../../../assets/images/ls300.pdf";
@@ -27,7 +27,7 @@ import { mediaUrl } from '../../../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("ls-310.webp")
+//     img: mediaUrl.image("ls310.webp")
 
 //   },
 //   {
@@ -92,18 +92,6 @@ import { mediaUrl } from '../../../../config/media';
 //               Download Catalog
 //             </button>
 //           </>
-//     )
-
-//   }
-// ];
-// const Deviserproductseven = () => {
-// const [productImage] = useState(mediaUrl.image("ls-310.webp"));
-  const [enquireOpen, setEnquireOpen] = useState(false);
-//   // Removed unused handleIconClick function
-
-//   return (
-//     <div>
-//       {/* Header */}
 //       <div className="extreme-zoom-container center-col">
 // <div className="hero-split">
 //   <div className="hero-split__container">
@@ -136,7 +124,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("ls-310.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("ls310.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -291,8 +279,9 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 
 const Deviserproductseven = () => {
+  const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("ls-310.webp"));
+  const [productImage] = useState(mediaUrl.image("ls310.webp"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -337,7 +326,7 @@ const Deviserproductseven = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("AE1001.png"), mediaUrl.image("ae210.png"), mediaUrl.image("vfl.png"), mediaUrl.image("ep310.png")];
+    const imgs = [mediaUrl.image("AE1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("ep310.webp")];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -693,7 +682,7 @@ const Deviserproductseven = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("AE1001.png")} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={mediaUrl.image("AE1001.webp")} loading="lazy" alt="AE1001" /></div>
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>
@@ -705,7 +694,7 @@ const Deviserproductseven = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ae210.png")} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ae210.webp")} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">AE210 Series</h4>
               <p className="s-desc">Portable OPM/OLS series for field testing.</p>
@@ -717,7 +706,7 @@ const Deviserproductseven = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("vfl.png")} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={mediaUrl.image("vfl.webp")} loading="lazy" alt="VF-10" /></div>
             <div className="s-body">
               <h4 className="s-title">VF-10</h4>
               <p className="s-desc">Visual fault locator for quick breaks/leaks.</p>
@@ -729,7 +718,7 @@ const Deviserproductseven = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ep310.png")} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={mediaUrl.image("ep310.webp")} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">EP-310 Series</h4>
               <p className="s-desc">PON power meters for GPON/EPON testing.</p>

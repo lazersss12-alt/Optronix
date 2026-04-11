@@ -10,126 +10,126 @@ import ProductLeadModal from '../common/ProductLeadModal';
 const productData = {
   1: [
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'CE0416M',
       description: 'CATV 16.5x4 Single Input',
       readMoreLink: '/optronix-edfa/CE0416M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0419M.png"),
+      image: mediaUrl.image("CE0419M.webp"),
       title: 'CE0419M',
       description: 'CATV 19.5x4 Single Input',
       readMoreLink: '/optronix-edfa/CE0419M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0816M.png"),
+      image: mediaUrl.image("CE0816M.webp"),
       title: 'CE0819M',
       description: 'CATV 19.5x8 Single Input',
       readMoreLink: '/optronix-edfa/CE0819M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE1 619M.png"),
+      image: mediaUrl.image("CE1 619M.webp"),
       title: 'CE1619M',
       description: 'CATV 19.5x16 Single Input',
       readMoreLink: '/optronix-edfa/CE1619M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("MC04.png"),
-      title: 'mediaUrl.image("MC04.png")',
+      image: mediaUrl.image("MC04.webp"),
+      title: 'mediaUrl.image("MC04.webp")',
       description: 'MINI 16.5x4',
       readMoreLink: '',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'MCE0123',
       description: 'MINI 23.5x1',
       readMoreLink: '',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'CE0416M+OSW',
       description: 'CATV 16.5x4 Dual Input',
       readMoreLink: '/optronix-edfa/CE0416M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0419M.png"),
+      image: mediaUrl.image("CE0419M.webp"),
       title: 'CE0419M+OSW',
       description: 'CATV 19.5x4 Dual Input',
       readMoreLink: '/optronix-edfa/CE0419M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0816M.png"),
+      image: mediaUrl.image("CE0816M.webp"),
       title: 'CE0819M+OSW',
       description: 'CATV 19.5x8 Dual Input',
       readMoreLink: '/optronix-edfa/CE0819M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'CE0423M+OSW',
       description: 'CATV 23.5x4 Dual Input',
       readMoreLink: '/optronix-edfa/CE0419M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0816M.png"),
+      image: mediaUrl.image("CE0816M.webp"),
       title: 'CE0823M+OSW',
       description: 'CATV 23.5x8 Dual Input',
       readMoreLink: '/optronix-edfa/CE0819M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE1 619M.png"),
+      image: mediaUrl.image("CE1 619M.webp"),
       title: 'CE1619M+OSW',
       description: 'CATV 19.5x16 Dual Input',
       readMoreLink: '/optronix-edfa/CE1619M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE0819M.png"),
+      image: mediaUrl.image("PE0819M.webp"),
       title: 'PE0819M',
       description: 'WDM 19.5x8 Single Input',
       readMoreLink: '/optronix-edfa/PE0819M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE1619M.png"),
+      image: mediaUrl.image("PE1619M.webp"),
       title: 'PE1619M',
       description: 'WDM 19.5x16 Single Input',
       readMoreLink: '/optronix-edfa/PE1619M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE3219M.png"),
+      image: mediaUrl.image("PE3219M.webp"),
       title: 'PE3219M',
       description: 'WDM 19.5x32 Single Input',
       readMoreLink: '/optronix-edfa/PE3219M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE0819M.png"),
+      image: mediaUrl.image("PE0819M.webp"),
       title: 'PE0819M+OSW',
       description: 'WDM 19.5x8 Dual Input',
       readMoreLink: '/optronix-edfa/PE0819M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE1619M.png"),
+      image: mediaUrl.image("PE1619M.webp"),
       title: 'PE1619M+OSW',
       description: 'WDM 19.5x16 Dual Input',
       readMoreLink: '/optronix-edfa/PE1619M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE3219M.png"),
+      image: mediaUrl.image("PE3219M.webp"),
       title: 'PE3219M+OSW',
       description: 'WDM 19.5x32 Dual Input',
       readMoreLink: '/optronix-edfa/PE3219M-OSW',
@@ -138,42 +138,42 @@ const productData = {
   ],
   2: [
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'CE0416M',
       description: 'CATV 16.5x4 Single Input',
       readMoreLink: '/optronix-edfa/CE0416M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0419M.png"),
+      image: mediaUrl.image("CE0419M.webp"),
       title: 'CE0419M',
       description: 'CATV 19.5x4 Single Input',
       readMoreLink: '/optronix-edfa/CE0419M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0816M.png"),
+      image: mediaUrl.image("CE0816M.webp"),
       title: 'CE0819M',
       description: 'CATV 19.5x8 Single Input',
       readMoreLink: '/optronix-edfa/CE0819M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE1 619M.png"),
+      image: mediaUrl.image("CE1 619M.webp"),
       title: 'CE1619M',
       description: 'CATV 19.5x16 Single Input',
       readMoreLink: '/optronix-edfa/CE1619M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0416M.png"),
-      title: 'mediaUrl.image("MC04.png")',
+      image: mediaUrl.image("CE0416M.webp"),
+      title: 'mediaUrl.image("MC04.webp")',
       description: 'MINI 16.5x4',
       readMoreLink: '',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'MCE0123',
       description: 'MINI 23.5x1',
       readMoreLink: '',
@@ -182,42 +182,42 @@ const productData = {
   ],
   3: [
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'CE0416M+OSW',
       description: 'CATV 16.5x4 Dual Input',
       readMoreLink: '/optronix-edfa/CE0416M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0419M.png"),
+      image: mediaUrl.image("CE0419M.webp"),
       title: 'CE0419M+OSW',
       description: 'CATV 19.5x4 Dual Input',
       readMoreLink: '/optronix-edfa/CE0419M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0816M.png"),
+      image: mediaUrl.image("CE0816M.webp"),
       title: 'CE0819M+OSW',
       description: 'CATV 19.5x8 Dual Input',
       readMoreLink: '/optronix-edfa/CE0819M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0416M.png"),
+      image: mediaUrl.image("CE0416M.webp"),
       title: 'CE0423M+OSW',
       description: 'CATV 23.5x4 Dual Input',
       readMoreLink: '/optronix-edfa/CE0419M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE0816M.png"),
+      image: mediaUrl.image("CE0816M.webp"),
       title: 'CE0823M+OSW',
       description: 'CE0823M+OSW',
       readMoreLink: '/optronix-edfa/CE0819M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("CE1 619M.png"),
+      image: mediaUrl.image("CE1 619M.webp"),
       title: 'CE1619M+OSW',
       description: 'CATV 19.5x16 Dual Input',
       readMoreLink: '/optronix-edfa/CE1619M-OSW',
@@ -226,21 +226,21 @@ const productData = {
   ],
   4: [
     {
-      image: mediaUrl.image("PE0819M.png"),
+      image: mediaUrl.image("PE0819M.webp"),
       title: 'PE0819M',
       description: 'WDM 19.5x8 Single Input',
       readMoreLink: '/optronix-edfa/PE0819M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE1619M.png"),
+      image: mediaUrl.image("PE1619M.webp"),
       title: 'PE1619M',
       description: 'WDM 19.5x16 Single Input',
       readMoreLink: '/optronix-edfa/PE1619M',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE3219M.png"),
+      image: mediaUrl.image("PE3219M.webp"),
       title: 'PE3219M',
       description: 'WDM 19.5x32 Single Input',
       readMoreLink: '/optronix-edfa/PE3219M',
@@ -249,21 +249,21 @@ const productData = {
   ],
   5: [
     {
-      image: mediaUrl.image("PE0819M.png"),
+      image: mediaUrl.image("PE0819M.webp"),
       title: 'PE0819M+OSW',
       description: 'WDM 19.5x8 Dual Input',
       readMoreLink: '/optronix-edfa/PE0819M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE1619M.png"),
+      image: mediaUrl.image("PE1619M.webp"),
       title: 'PE1619M+OSW',
       description: 'WDM 19.5x16 Dual Input',
       readMoreLink: '/optronix-edfa/PE1619M-OSW',
       catalogLink: ''
     },
     {
-      image: mediaUrl.image("PE3219M.png"),
+      image: mediaUrl.image("PE3219M.webp"),
       title: 'PE3219M+OSW',
       description: 'WDM 19.5x32 Dual Input',
       readMoreLink: '/optronix-edfa/PE3219M-OSW',
@@ -314,7 +314,7 @@ const Optronixedfaproduct = () => {
     <div className="optronixedfaproduct-page-main">
       {/* Banner Section */}
       <div className="optronixedfa-page-banner">
-        <img src={mediaUrl.image("EDFABanner.jpeg")} alt="Optronix EDFA Products" className="banner-image" />
+        <img src={mediaUrl.image("EDFABanner.webp")} alt="Optronix EDFA Products" className="banner-image" />
       </div>
       <div className="optronixedfaproduct-page-upperline"></div>
       <div className="product-page">

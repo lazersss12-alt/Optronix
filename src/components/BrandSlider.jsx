@@ -254,25 +254,25 @@ const BrandSlider = () => {
     {
       name: 'Sumitomo Electric',
       desc: 'Connect with Innovation',
-      logo: mediaUrl.image("SUMITOMOupdated.png"),
+      logo: mediaUrl.image("SUMITOMOupdated.webp"),
       link: 'https://global-sei.com/'
     },
     {
       name: 'Deviser',
       desc: 'Over 30 Years of Experience',
-      logo: mediaUrl.image("deviser.png"),
+      logo: mediaUrl.image("deviser.webp"),
       link: 'https://deviserinstruments.com/'
     },
     {
       name: 'SPEC Technology',
       desc: 'CATV Product',
-      logo: mediaUrl.image("spec.png"),
+      logo: mediaUrl.image("spec.webp"),
       link: 'https://spectechnology.com/'
     },
     {
       name: 'Invas Technologies',
       desc: 'Complete Telecom Solution',
-      logo: mediaUrl.image("invas.png"),
+      logo: mediaUrl.image("invas.webp"),
       link: 'https://invas.in/'
     }
   ];

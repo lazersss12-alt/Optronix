@@ -12,8 +12,8 @@ const LatestEvent = () => {
         id: 100,
         title: 'Republic Day',
         subtitle: 'Republic Day Celebration 2025',
-        cover: mediaUrl.image("Republic1.jpeg"),
-        images: [mediaUrl.image("Republic1.png"), mediaUrl.image("Republic2.jpeg"), mediaUrl.image("Republic3.jpeg"), mediaUrl.image("Republic4.jpeg"), mediaUrl.image("Republic5.jpeg"), mediaUrl.image("Republic6.jpeg"), mediaUrl.video("Republic7.mp4")]
+        cover: mediaUrl.image("Republic1.webp"),
+        images: [mediaUrl.image("Republic1.webp"), mediaUrl.image("Republic2.webp"), mediaUrl.image("Republic3.webp"), mediaUrl.image("Republic4.webp"), mediaUrl.image("Republic5.webp"), mediaUrl.image("Republic6.webp"), mediaUrl.video("Republic7.mp4")]
     };
 
     const handleViewGallery = () => {
@@ -27,7 +27,7 @@ const LatestEvent = () => {
         <div className="latest-event-container">
             <div className="latest-event-content">
                 <div className="latest-event-image-wrapper">
-                    <img src={mediaUrl.image("Republic1.jpeg")} alt="Republic Day Celebration" className="latest-event-main-image" decoding="async" fetchPriority="high" />
+                    <img src={mediaUrl.image("Republic1.webp")} alt="Republic Day Celebration" className="latest-event-main-image" decoding="async" fetchPriority="high" />
                 </div>
                 <div className="latest-event-details">
                     <span className="latest-event-badge">Latest Event</span>

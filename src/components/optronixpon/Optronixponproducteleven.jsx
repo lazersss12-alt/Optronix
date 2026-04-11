@@ -3,12 +3,12 @@ import { mediaUrl } from '../../config/media';
 // import './Optronixponproduct.css';
 // import '../../pages/page.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("Op821GWV.png") from '../img/Op821GWV.png'; // Replace with your actual image path
+// import mediaUrl.image("Op821GWV.webp") from '../img/Op821GWV.png'; // Replace with your actual image path
 // import optronixDiagram821GWV from '../img/product 11 diagram.png'; // Replace with your actual image path
-// import mediaUrl.image("op821GwV-Dp.png") from '../img/op821GwV-Dp.png';
-// import mediaUrl.image("OP821GWV-D-removebg-preview.png") from '../img/OP821GWV-D-removebg-preview.png';
-// import mediaUrl.image("Op821GWV.png") from '../img/Op821GWV.png';
-// import mediaUrl.image("OP821GW.png") from '../img/OP821GW.png';
+// import mediaUrl.image("op821GwV-Dp.webp") from '../img/op821GwV-Dp.png';
+// import mediaUrl.image("OP821GWV-D-removebg-preview.webp") from '../img/OP821GWV-D-removebg-preview.png';
+// import mediaUrl.image("Op821GWV.webp") from '../img/Op821GWV.png';
+// import mediaUrl.image("OP821GW.webp") from '../img/OP821GW.png';
 // import op08pdf from "../img/OP100P8G.pdf";
 // const Optronixponproducteleven = () => {
 //   return (
@@ -44,7 +44,7 @@ import { mediaUrl } from '../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("Op821GWV.png")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("Op821GWV.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -228,28 +228,28 @@ import { mediaUrl } from '../../config/media';
 
 //          <div className='product_s1v1_product'>
 //   <div className='product_s1v1_product1'>
-//     <img className='product_s1v1_img' src={mediaUrl.image("op821GwV-Dp.png")} alt="Z2C" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("op821GwV-Dp.webp")} alt="Z2C" />
 //     <h3 className='products1v_name_option'>OP821GWV-DGB</h3>
 //     <Link to="/optronix-pon/OP821GWVDGB" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product2'>
-//     <img className='product_s1v1_img' src={mediaUrl.image("OP821GWV-D-removebg-preview.png")} alt="82C+" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("OP821GWV-D-removebg-preview.webp")} alt="82C+" />
 //     <h3 className='products1v_name_option'>OP821GWV-D</h3>
 //     <Link to="/optronix-pon/OP821GWVD" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product3'>
-//     <img className='product_s1v1_img' src={mediaUrl.image("Op821GWV.png")} alt="W1C" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("Op821GWV.webp")} alt="W1C" />
 //     <h3 className='products1v_name_option'>OP821GWV</h3>
 //     <Link to="/optronix-pon/OP821GWV" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product4'>
-//     <img className='product_s1v1_img' src={mediaUrl.image("OP821GW.png")} alt="FC8R" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("OP821GW.webp")} alt="FC8R" />
 //     <h3 className='products1v_name_option'>OP801GW</h3>
 //     <Link to="/optronix-pon/OP801GW" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
@@ -281,7 +281,7 @@ import ProductLeadModal from '../common/ProductLeadModal';
 // remove subz2c, subw1c, sub82c, mediaUrl.image("OP100P4.webp") imports
 const Optronixponproducteleven = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("Op821GWV.png"));
+  const [productImage] = useState(mediaUrl.image("Op821GWV.webp"));
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -326,7 +326,7 @@ const Optronixponproducteleven = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("op821GwV-Dp.png"), mediaUrl.image("OP821GWV-D-removebg-preview.png"), mediaUrl.image("Op821GWV.png"), mediaUrl.image("OP821GW.png")];
+    const imgs = [mediaUrl.image("op821GwV-Dp.webp"), mediaUrl.image("OP821GWV-D-removebg-preview.webp"), mediaUrl.image("Op821GWV.webp"), mediaUrl.image("OP821GW.webp")];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -603,7 +603,7 @@ const Optronixponproducteleven = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("op821GwV-Dp.png")} loading="lazy" alt="OP821GWV-DGB" /></div>
+            <div className="s-media"><img src={mediaUrl.image("op821GwV-Dp.webp")} loading="lazy" alt="OP821GWV-DGB" /></div>
             <div className="s-body">
               <h4 className="s-title">OP821GWV-DGB</h4>
               <p className="s-desc">XPON ONU with dual-band WiFi.</p>
@@ -615,7 +615,7 @@ const Optronixponproducteleven = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("OP821GWV-D-removebg-preview.png")} loading="lazy" alt="OP821GWV-D" /></div>
+            <div className="s-media"><img src={mediaUrl.image("OP821GWV-D-removebg-preview.webp")} loading="lazy" alt="OP821GWV-D" /></div>
             <div className="s-body">
               <h4 className="s-title">OP821GWV-D</h4>
               <p className="s-desc">ONU with POTS and WiFi.</p>
@@ -627,7 +627,7 @@ const Optronixponproducteleven = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("Op821GWV.png")} loading="lazy" alt="OP821GWV" /></div>
+            <div className="s-media"><img src={mediaUrl.image("Op821GWV.webp")} loading="lazy" alt="OP821GWV" /></div>
             <div className="s-body">
               <h4 className="s-title">OP821GWV</h4>
               <p className="s-desc">HGU with 4GE and single‑band WiFi.</p>
@@ -639,7 +639,7 @@ const Optronixponproducteleven = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("OP821GW.png")} loading="lazy" alt="OP801GW" /></div>
+            <div className="s-media"><img src={mediaUrl.image("OP821GW.webp")} loading="lazy" alt="OP801GW" /></div>
             <div className="s-body">
               <h4 className="s-title">OP801GW</h4>
               <p className="s-desc">Entry‑level Gigabit WiFi ONU.</p>

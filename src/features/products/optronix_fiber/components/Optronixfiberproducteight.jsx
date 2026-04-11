@@ -81,11 +81,11 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //         </div>
 
 //     
-      <ProductLeadModal
-        isOpen={enquireOpen}
-        onClose={() => setEnquireOpen(false)}
-        pageName="Optronix Product"
-      /></div>
+//       <ProductLeadModal
+//         isOpen={enquireOpen}
+//         onClose={() => setEnquireOpen(false)}
+//         pageName="Optronix Product"
+//       /></div>
 //   )
 // }
 
