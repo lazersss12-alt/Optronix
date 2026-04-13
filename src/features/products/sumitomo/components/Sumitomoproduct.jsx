@@ -608,14 +608,14 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomos1vu.pdf"),
     },
     {
-      image: mediaUrl.image("Z2C.webp"),
+      image: mediaUrl.image("Z2C.jpg"),
       title: 'Z2C',
       description: 'Core Fusion Splicer',
       readMoreLink: '/sumitomo/Z2C',
       catalogLink: mediaUrl.doc("Sumitomoz2c.pdf"),
     },
     {
-      image: mediaUrl.image("W1C MACHINE.webp"),
+      image: mediaUrl.image("w1c-machine.png"),
       title: 'W1C',
       description: 'Core  Fusion Splicer',
       readMoreLink: '/sumitomo/W1C',
@@ -629,7 +629,7 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomo82cplus.pdf"),
     },
     {
-      image: mediaUrl.image("82M11.webp"),
+      image: mediaUrl.image("82m12.png"),
       title: '82M12',
       description: 'Ribbon Fusion Splicer',
       readMoreLink: '/sumitomo/82M12',

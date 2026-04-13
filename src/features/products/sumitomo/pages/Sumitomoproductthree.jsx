@@ -372,7 +372,7 @@ const Sumitomoproductthree = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("Backup_of_Z2C 2june.png"), mediaUrl.image("82C+ 1Oct 2024.png"), mediaUrl.image("W1C file.png"), mediaUrl.image("FC8r.png")];
+    const imgs = [mediaUrl.image("Z2C.jpg"), mediaUrl.image("82C+ 1Oct 2024.png"), mediaUrl.image("W1C file.png"), mediaUrl.image("FC8r.png")];
     return {
       backgroundImage:
         `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -808,7 +808,7 @@ const Sumitomoproductthree = () => {
           </div>
         </div>
       )}
-    
+
       <ProductLeadModal
         isOpen={enquireOpen}
         onClose={() => setEnquireOpen(false)}
