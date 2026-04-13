@@ -744,7 +744,7 @@ import { Link } from 'react-router-dom';
 const Sumitomoproductsix = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("82m12-01.png"));
+  const [productImage] = useState(mediaUrl.image("82m12.png"));
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
