@@ -46,20 +46,18 @@ jobs:
           CI: false                    # Prevents treating warnings as errors
 
       # ─── Step 5: Deploy build output to Hostinger via FTP ─────────────────
-      - name: 📡 Deploy to Hostinger via FTP
+      - name: 📡 Deploy to Hostinger via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 82.25.120.160           # e.g., ftp.yourdomain.com
           username: u503250669       # Your FTP username
           password: Optronix@123       # Your FTP password
           port: 21                                    # Default FTP port (use 22 for SFTP)
-          protocol: ftp                               # Use 'ftps' for explicit TLS (recommended)
+          protocol: ftps                              # Use 'ftps' for explicit TLS (solves timeout issues on Hostinger)
           local-dir: ./dist/                         # React build output folder
-          # ↑ For Vite projects, change to: ./dist/
           server-dir: /public_html/                   # Hostinger root directory
           
           # ── Smart sync — only uploads CHANGED files ──────────────────────
-          # This is what makes it FAST for small updates
           state-name: .ftp-deploy-sync-state.json     # Tracks which files changed
           
           # ── Exclude files/folders from upload ────────────────────────────
@@ -70,12 +68,13 @@ jobs:
             **/.env
             .ftp-deploy-sync-state.json
           
+          # Disable strict SSL to bypass common self-signed cert disconnects 
+          security: loose
+          
           # ── Danger zone: set to true to delete remote files not in build ─
-          # WARNING: Only enable this AFTER you have media on a CDN/subfolder
-          # that won't be touched. Keep false if media lives in public_html.
           dangerous-clean-slate: false
           
-          log-level: standard   # Use 'verbose' to debug connection issues
+          log-level: verbose   # Keep verbose to debug any future connection issues
 
       # ─── Step 6: Notify on success ────────────────────────────────────────
       - name: ✅ Deployment Successful
