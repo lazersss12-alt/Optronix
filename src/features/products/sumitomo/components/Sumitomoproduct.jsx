@@ -594,14 +594,14 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 const productData = {
   1: [
     {
-      image: mediaUrl.image("s1vp.webp"),
+      image: mediaUrl.image("s1vp.png"),
       title: 'S1V',
       description: ' Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1V',
       catalogLink: mediaUrl.doc("sumitomos1v.pdf"),
     },
     {
-      image: mediaUrl.image("s1vuf.webp"),
+      image: mediaUrl.image("s1vuf.png"),
       title: 'S1V ULTRA',
       description: 'Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1VULTRA',
@@ -622,7 +622,7 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomow1c.pdf"),
     },
     {
-      image: mediaUrl.image("82C+.webp"),
+      image: mediaUrl.image("82C+.png"),
       title: '82C+',
       description: 'Core  Fusion Splicer',
       readMoreLink: '/sumitomo/82CPLUS',
@@ -636,35 +636,35 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomo82m12.pdf"),
     },
     {
-      image: mediaUrl.image("FC8r.webp"),
+      image: mediaUrl.image("FC8r.png"),
       title: 'FC8R',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC8R',
       catalogLink: mediaUrl.doc("FC8R.pdf"),
     },
     {
-      image: mediaUrl.image("S-70.webp"),
+      image: mediaUrl.image("S-70.png"),
       title: 'S-70',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/S70',
       catalogLink: mediaUrl.doc("S-70.pdf"),
     },
     {
-      image: mediaUrl.image("FC7LS.webp"),
+      image: mediaUrl.image("FC7LS.png"),
       title: 'FC-7LS',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC7LS',
       catalogLink: mediaUrl.doc("F7LS.pdf"),
     },
     {
-      image: mediaUrl.image("SFCS.webp"),
+      image: mediaUrl.image("SFCS.png"),
       title: 'SFCS',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/SFCS',
       catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
     {
-      image: mediaUrl.image("FC-6S.webp"),
+      image: mediaUrl.image("FC-6S.png"),
       title: 'FC-6 Series',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/FC6S',
@@ -673,14 +673,14 @@ const productData = {
   ],
   2: [
     {
-      image: mediaUrl.image("s1vp.webp"),
+      image: mediaUrl.image("s1vp.png"),
       title: 'S1V',
       description: ' Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1V',
       catalogLink: mediaUrl.doc("sumitomos1v.pdf"),
     },
     {
-      image: mediaUrl.image("s1vuf.webp"),
+      image: mediaUrl.image("s1vuf.png"),
       title: 'S1V ULTRA',
       description: 'Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1VULTRA',
@@ -689,21 +689,21 @@ const productData = {
   ],
   3: [
     {
-      image: mediaUrl.image("Z2C.webp"),
+      image: mediaUrl.image("Z2C.jpg"),
       title: 'Z2C',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/Z2C',
       catalogLink: mediaUrl.doc("Sumitomoz2c.pdf"),
     },
     {
-      image: mediaUrl.image("w1c.webp"),
+      image: mediaUrl.image("w1c-machine.png"),
       title: 'W1C',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/W1C',
       catalogLink: mediaUrl.doc("sumitomow1c.pdf"),
     },
     {
-      image: mediaUrl.image("82C+.webp"),
+      image: mediaUrl.image("82C+.png"),
       title: '82C+',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/82CPLUS',
@@ -712,7 +712,7 @@ const productData = {
   ],
   4: [
     {
-      image: mediaUrl.image("82M12.webp"),
+      image: mediaUrl.image("82m12.png"),
       title: '82M12',
       description: 'Ribbon Fusion Splicer',
       readMoreLink: '/sumitomo/82M12',
@@ -721,21 +721,21 @@ const productData = {
   ],
   5: [
     {
-      image: mediaUrl.image("FC-8R.webp"),
+      image: mediaUrl.image("FC8r.png"),
       title: 'FC8R',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC8R',
       catalogLink: mediaUrl.doc("FC8R.pdf"),
     },
     {
-      image: mediaUrl.image("S-70.webp"),
+      image: mediaUrl.image("S-70.png"),
       title: 'S-70',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/S70',
       catalogLink: mediaUrl.doc("S-70.pdf"),
     },
     {
-      image: mediaUrl.image("FC7LS.webp"),
+      image: mediaUrl.image("FC7LS.png"),
       title: 'FC-7LS',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC7LS',
@@ -744,14 +744,14 @@ const productData = {
   ],
   6: [
     {
-      image: mediaUrl.image("SFCS.webp"),
+      image: mediaUrl.image("SFCS.png"),
       title: 'SFCS',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/SFCS',
       catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
     {
-      image: mediaUrl.image("FC-6S.webp"),
+      image: mediaUrl.image("FC-6S.png"),
       title: 'FC-6 Series',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/FC6S',
