@@ -71,6 +71,9 @@ jobs:
           # Disable strict SSL to bypass common self-signed cert disconnects 
           security: loose
           
+          # Increase timeout to 5 minutes for stable connection on Hostinger
+          timeout: 300000
+          
           # ── Danger zone: set to true to delete remote files not in build ─
           dangerous-clean-slate: false
           
