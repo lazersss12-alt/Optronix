@@ -324,11 +324,13 @@ import React, { useState, useEffect } from 'react';
 import '../../../../pages/page.css';
 import '../../../../components/index.css';
 import { Link } from 'react-router-dom';
+import z2cImg from '../components/img-s/Z2C.png';
+import w1cImg from '../components/img-s/w1c.png';
 
 const Sumitomoproductthree = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("Z2C.jpg"));
+  const [productImage] = useState(z2cImg);
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -372,7 +374,7 @@ const Sumitomoproductthree = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("Z2C.jpg"), mediaUrl.image("82C+ 1Oct 2024.png"), mediaUrl.image("W1C file.png"), mediaUrl.image("FC8r.png")];
+    const imgs = [z2cImg, mediaUrl.image("82C+ 1Oct 2024.png"), w1cImg, mediaUrl.image("FC8r.png")];
     return {
       backgroundImage:
         `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +

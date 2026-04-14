@@ -589,6 +589,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Sumitomo.css';
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
+import w1cImg from './img-s/w1c.png';
+import m12Img from './img-s/82M12.png';
+import z2cImg from './img-s/Z2C.png';
 
 
 const productData = {
@@ -608,14 +611,14 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomos1vu.pdf"),
     },
     {
-      image: mediaUrl.image("Z2C.jpg"),
+      image: z2cImg,
       title: 'Z2C',
       description: 'Core Fusion Splicer',
       readMoreLink: '/sumitomo/Z2C',
       catalogLink: mediaUrl.doc("Sumitomoz2c.pdf"),
     },
     {
-      image: mediaUrl.image("w1c-machine.png"),
+      image: w1cImg,
       title: 'W1C',
       description: 'Core  Fusion Splicer',
       readMoreLink: '/sumitomo/W1C',
@@ -629,7 +632,7 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomo82cplus.pdf"),
     },
     {
-      image: mediaUrl.image("82m12.png"),
+      image: m12Img,
       title: '82M12',
       description: 'Ribbon Fusion Splicer',
       readMoreLink: '/sumitomo/82M12',
@@ -712,7 +715,7 @@ const productData = {
   ],
   4: [
     {
-      image: mediaUrl.image("82m12.png"),
+      image: m12Img,
       title: '82M12',
       description: 'Ribbon Fusion Splicer',
       readMoreLink: '/sumitomo/82M12',
