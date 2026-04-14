@@ -129,7 +129,7 @@ const SmtShowcase = () => {
     {
       id: 1,
       title: 'LEAD FREE WAVE SOLDERING M/C (JT-WS-350)',
-      images: [mediaUrl.video("WS12.mp4"), mediaUrl.image("WS1.webp"), mediaUrl.image("WS2.webp")],
+      images: [mediaUrl.video("WS12.mp4"), mediaUrl.image("ws1.webp"), mediaUrl.image("ws2.webp")],
       features: [
         'Features a robust PC + PLC control system for maximum reliability',
         'PID + SSR control loop with stable heating up to 300°C',
@@ -141,7 +141,7 @@ const SmtShowcase = () => {
     {
       id: 2,
       title: 'TOUCHUP & TESTING LINE',
-      images: [mediaUrl.video("TU1.mp4"), mediaUrl.image("Testing2.webp")],
+      images: [mediaUrl.video("TU1.mp4"), mediaUrl.image("testing2.webp")],
       features: [
         'Meticulous Touch-ups',
         'Thorough Testing',
@@ -154,7 +154,7 @@ const SmtShowcase = () => {
     {
       id: 3,
       title: 'ONU/ONT TESTING LINE',
-      images: [mediaUrl.video("onttesting1.mp4"), mediaUrl.image("ONU Testing.webp")],
+      images: [mediaUrl.video("onttesting1.mp4"), mediaUrl.image("onu testing.webp")],
       features: [
         'Expert-Led Testing',
         'Precision ONU/OLT Validation',
@@ -166,7 +166,7 @@ const SmtShowcase = () => {
     {
       id: 4,
       title: 'Utility',
-      images: [mediaUrl.video("coldstorage2.mp4"), mediaUrl.image("coldstorage1.webp"), mediaUrl.image("ESDcontrol1.webp"), mediaUrl.video("ESDcontrol.mp4"), mediaUrl.video("Preform1.mp4"), mediaUrl.video("Preform2.mp4"), mediaUrl.image("Reeltray1.webp"), mediaUrl.video("Reeltray2.mp4"), mediaUrl.image("VacuumSealing1.webp"), mediaUrl.video("Reelcounter.mp4")],
+      images: [mediaUrl.video("coldstorage2.mp4"), mediaUrl.image("coldstorage1.webp"), mediaUrl.image("esdcontrol1.webp"), mediaUrl.video("ESDcontrol.mp4"), mediaUrl.video("Preform1.mp4"), mediaUrl.video("Preform2.mp4"), mediaUrl.image("reeltray1.webp"), mediaUrl.video("Reeltray2.mp4"), mediaUrl.image("vacuumsealing1.webp"), mediaUrl.video("Reelcounter.mp4")],
       features: ['Cold storage', 'ESD Control System', 'Preform', 'Reeltray', 'Vacuum Sealing Machine', 'Reel Counter'],
     },
   ];

@@ -22,7 +22,7 @@ const EventCarousel = () => {
   const eventData = [
     {
       id: 100,
-      images: [mediaUrl.image("Republic1.webp"), mediaUrl.image("Republic2.webp"), mediaUrl.image("Republic3.webp"), mediaUrl.image("Republic4.webp"), mediaUrl.image("Republic5.webp"), mediaUrl.image("Republic6.webp")],
+      images: [mediaUrl.image("republic1.webp"), mediaUrl.image("republic2.webp"), mediaUrl.image("republic3.webp"), mediaUrl.image("republic4.webp"), mediaUrl.image("republic5.webp"), mediaUrl.image("republic6.webp")],
       title: 'Republic Day Ceremony | Kotdwar Plant',
       subtitle: 'A proud moment captured – The Candid Optronix Family!',
       description:

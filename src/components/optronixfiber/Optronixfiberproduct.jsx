@@ -9,44 +9,44 @@ import ProductLeadModal from '../common/ProductLeadModal';
 const productData = {
   1: [
     {
-      image: mediaUrl.image("DC.webp"),
+      image: mediaUrl.image("dc.webp"),
       title: "Optronix Flat Cable",
       description: "2F",
       readMoreLink: "/optronix-fiber/optronix-flat-cable",
       catalogLink: mediaUrl.doc("dropcablef.pdf"),
     },
     {
-      image: mediaUrl.image("DC.webp"),
+      image: mediaUrl.image("dc.webp"),
       title: "Optronix Drop Cable",
       description: "2F",
       readMoreLink: "/optronix-fiber/optronix-drop-cable",
       catalogLink: mediaUrl.doc("dropcablef.pdf"),
     },
     {
-      image: mediaUrl.image("OptronixNeo.webp"),
+      image: mediaUrl.image("optronixneo.webp"),
       title: "Optronix NEO",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-neo",
-      catalogLink: mediaUrl.doc("NEOFIBER.pdf"),
+      catalogLink: mediaUrl.doc("neofiber.pdf"),
     },
     {
-      image: mediaUrl.image("Optronixgold.webp"),
+      image: mediaUrl.image("optronixgold.webp"),
       title: "Optronix Gold",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-gold",
-      catalogLink: mediaUrl.doc("GOLDFIBER.pdf"),
+      catalogLink: mediaUrl.doc("goldfiber.pdf"),
     },
     {
-      image: mediaUrl.image("Optronixgold (2).webp"),
+      image: mediaUrl.image("optronixgold (2).webp"),
       title: "Optronix Platinum",
       description: "2F, 4F, 6F, 12F, 24F",
       readMoreLink: "/optronix-fiber/optronix-platinum",
-      catalogLink: mediaUrl.doc("PLATINUMFIBER.pdf"),
+      catalogLink: mediaUrl.doc("platinumfiber.pdf"),
     },
   ],
   2: [
     {
-      image: mediaUrl.image("DC.webp"),
+      image: mediaUrl.image("dc.webp"),
       title: "Optronix Dropcable",
       description: "Flat Cable",
       readMoreLink: "/optronix-fiber/optronix-flat-cable",
@@ -55,7 +55,7 @@ const productData = {
   ],
   3: [
     {
-      image: mediaUrl.image("DC.webp"),
+      image: mediaUrl.image("dc.webp"),
       title: "Optronix Drop Cable",
       description: "2F",
       readMoreLink: "/optronix-fiber/optronix-drop-cable",
@@ -64,29 +64,29 @@ const productData = {
   ],
   4: [
     {
-      image: mediaUrl.image("OptronixNeo.webp"),
+      image: mediaUrl.image("optronixneo.webp"),
       title: "Optronix NEO",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-neo",
-      catalogLink: mediaUrl.doc("NEOFIBER.pdf"),
+      catalogLink: mediaUrl.doc("neofiber.pdf"),
     },
   ],
   5: [
     {
-      image: mediaUrl.image("Optronixgold.webp"),
+      image: mediaUrl.image("optronixgold.webp"),
       title: "Optronix Gold",
       description: "2F, 4F, 6F, 12F",
       readMoreLink: "/optronix-fiber/optronix-gold",
-      catalogLink: mediaUrl.doc("GOLDFIBER.pdf"),
+      catalogLink: mediaUrl.doc("goldfiber.pdf"),
     },
   ],
   6: [
     {
-      image: mediaUrl.image("Optronixgold (2).webp"),
+      image: mediaUrl.image("optronixgold (2).webp"),
       title: "Optronix Platinum",
       description: "2F, 4F, 6F, 12F, 24F",
       readMoreLink: "/optronix-fiber/optronix-platinum",
-      catalogLink: mediaUrl.doc("PLATINUMFIBER.pdf"),
+      catalogLink: mediaUrl.doc("platinumfiber.pdf"),
     },
   ]
 };
@@ -134,7 +134,7 @@ const Optronixfiberproduct = () => {
     <div className="optronixfiberproduct-page-main">
       {/* Banner Section */}
       <div className="optronixfiber-page-banner">
-        <img src={mediaUrl.image("Fbanner.webp")} alt="Optronix Fiber Products" fetchpriority="high" className="banner-image" />
+        <img src={mediaUrl.image("fbanner.webp")} alt="Optronix Fiber Products" fetchpriority="high" className="banner-image" />
       </div>
       <div className="optronixfiberproduct-page-upperline"></div>
       <div className="product-page">

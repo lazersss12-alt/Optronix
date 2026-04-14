@@ -3,17 +3,17 @@ import { mediaUrl } from '../config/media';
 // import './page.css';
 // import '../components/index.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("Z2C.webp") from "../components/img/W1C MACHINE.png";
+// import mediaUrl.image("z2c.webp") from "../components/img/W1C MACHINE.png";
 // import ProductBg from "../components/img/headerbackground.png";
 // import s1vpdf from "../components/img/sumitomow1c.pdf";
 // import productImage4 from "../components/img/w1c4.png";
 // import productImage2 from "../components/img/w1c2.png";
 // import productImage3 from "../components/img/w1c3.png";
 // import eponoltf1 from "../components/img/product4.webp";
-// import mediaUrl.image("Z2C.webp") from "../components/img/Z2C.png";
+// import mediaUrl.image("z2c.webp") from "../components/img/Z2C.png";
 // import subs1v from "../components/img/s1vp.png";
-// import mediaUrl.image("82C+ 1Oct 2024.webp") from "../components/img/82C+ 1Oct 2024.png";
-// import mediaUrl.image("FC8r.webp") from "../components/img/FC8r.png";
+// import mediaUrl.image("82c+ 1oct 2024.webp") from "../components/img/82C+ 1Oct 2024.png";
+// import mediaUrl.image("fc8r.webp") from "../components/img/FC8r.png";
 // const sections = [
 //   {
 
@@ -24,7 +24,7 @@ import { mediaUrl } from '../config/media';
 //          Fusion Splicer
 //       </>
 //     ),
-//     img: mediaUrl.image("Z2C.webp")
+//     img: mediaUrl.image("z2c.webp")
 
 //   },
 //   {
@@ -90,7 +90,7 @@ import { mediaUrl } from '../config/media';
 //   }
 // ];
 // const Sumitomoproductfour = () => {
-//   const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.webp"));
+//   const [productImage, setProductImage] = useState(mediaUrl.image("z2c.webp"));
 //   const [activeIcon, setActiveIcon] = useState(null);
 
 //   const handleIconClick = (image, icon) => {
@@ -133,7 +133,7 @@ import { mediaUrl } from '../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("Z2C.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("z2c.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -247,14 +247,14 @@ import { mediaUrl } from '../config/media';
 //       </div>
 //       <div className='product_s1v1_product'>
 //         <div className='product_s1v1_product1'>
-//           <img className='product_s1v1_img' src={mediaUrl.image("Z2C.webp")} alt="Z2C" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("z2c.webp")} alt="Z2C" />
 //           <h3 className='products1v_name_option'>Z2C</h3>
 //           <Link to="/sumitomoproductthree">
 //             <button className='products1v_button_option'>Know More</button>
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product2'>
-//           <img className='product_s1v1_img' src={mediaUrl.image("82C+ 1Oct 2024.webp")} alt="82C+" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("82c+ 1oct 2024.webp")} alt="82C+" />
 //           <h3 className='products1v_name_option'>82C+</h3>
 //           <Link to="/sumitomoproductfive">
 //             <button className='products1v_button_option'>Know More</button>
@@ -268,7 +268,7 @@ import { mediaUrl } from '../config/media';
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product4'>
-//           <img className='product_s1v1_img' src={mediaUrl.image("FC8r.webp")} alt="FC8R" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("fc8r.webp")} alt="FC8R" />
 //           <h3 className='productz2c_name_option'>FC8R</h3>
 //           <Link to="/sumitomoproductseven">
 //             <button className='products1v_button_option'>Know More</button>
@@ -289,7 +289,7 @@ import { mediaUrl } from '../config/media';
 // import './page.css';
 // import '../components/index.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("Z2C.webp") from "../components/img/Z2C.png";
+// import mediaUrl.image("z2c.webp") from "../components/img/Z2C.png";
 // import ProductBg from "../components/img/headerbackground.png";
 // import productImage4 from "../components/img/82M4.png";
 // import s1vpdf from "../components/img/Sumitomoz2c.pdf";
@@ -297,9 +297,9 @@ import { mediaUrl } from '../config/media';
 // import productImage3 from "../components/img/Z2C3 (2).png";
 // import eponoltf1 from "../components/img/product3.webp";
 // import subs1vu from "../components/img/s1vuf.png";
-// import mediaUrl.image("W1C file.webp") from "../components/img/W1C file.png";
-// import mediaUrl.image("82C+ 1Oct 2024.webp") from "../components/img/82C+ 1Oct 2024.png";
-// import mediaUrl.image("FC8r.webp") from "../components/img/FC8r.png";
+// import mediaUrl.image("w1c file.webp") from "../components/img/W1C file.png";
+// import mediaUrl.image("82c+ 1oct 2024.webp") from "../components/img/82C+ 1Oct 2024.png";
+// import mediaUrl.image("fc8r.webp") from "../components/img/FC8r.png";
 // const sections = [
 //   {
 
@@ -310,7 +310,7 @@ import { mediaUrl } from '../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("Z2C.webp")
+//     img: mediaUrl.image("z2c.webp")
 
 //   },
 //   {
@@ -372,7 +372,7 @@ import { mediaUrl } from '../config/media';
 //   }
 // ];
 // const Sumitomoproductthree = () => {
-//   const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.webp"));
+//   const [productImage, setProductImage] = useState(mediaUrl.image("z2c.webp"));
 //   const [activeIcon, setActiveIcon] = useState(null);
 
 //   const handleIconClick = (image, icon) => {
@@ -412,7 +412,7 @@ import { mediaUrl } from '../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("Z2C.webp")} /* or use any of your images like productImage2 */
+//         src={mediaUrl.image("z2c.webp")} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -570,21 +570,21 @@ import { mediaUrl } from '../config/media';
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product2'>
-//           <img className='product_s1v1_img' src={mediaUrl.image("82C+ 1Oct 2024.webp")} alt="82C+" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("82c+ 1oct 2024.webp")} alt="82C+" />
 //           <h3 className='products1v_name_option'>82C+</h3>
 //           <Link to="/sumitomoproductfive" style={{ textDecoration: "none" }}>
 //             <button className='products1v_button_option'>Know More</button>
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product3'>
-//           <img className='product_s1v1_img' src={mediaUrl.image("W1C file.webp")} alt="W1C" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("w1c file.webp")} alt="W1C" />
 //           <h3 className='products1v_name_option'>W1C</h3>
 //           <Link to="/sumitomoproductfour" style={{ textDecoration: "none" }}>
 //             <button className='products1v_button_option'>Know More</button>
 //           </Link>
 //         </div>
 //         <div className='product_s1v1_product4'>
-//           <img className='product_s1v1_img' src={mediaUrl.image("FC8r.webp")} alt="FC8R" />
+//           <img className='product_s1v1_img' src={mediaUrl.image("fc8r.webp")} alt="FC8R" />
 //           <h3 className='productz2c_name_option'>FC8R</h3>
 //           <Link to="/sumitomoproductseven" style={{ textDecoration: "none" }}>
 //             <button className='products1v_button_option'>Know More</button>
@@ -612,7 +612,7 @@ import ProductLeadModal from '../components/common/ProductLeadModal';
 
 const Sumitomoproductfour = () => {
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("Z2C.webp"));
+  const [productImage] = useState(mediaUrl.image("z2c.webp"));
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
   // Lightbox state
@@ -659,7 +659,7 @@ const Sumitomoproductfour = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("Z2C.webp"), mediaUrl.image("82C+ 1Oct 2024.webp"), mediaUrl.image("W1C file.webp"), mediaUrl.image("FC8r.webp")];
+    const imgs = [mediaUrl.image("z2c.webp"), mediaUrl.image("82c+ 1oct 2024.webp"), mediaUrl.image("w1c file.webp"), mediaUrl.image("fc8r.webp")];
     return {
       backgroundImage:
         `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -837,7 +837,7 @@ const Sumitomoproductfour = () => {
                 <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("W1C.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("w1c.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -1062,7 +1062,7 @@ const Sumitomoproductfour = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={mediaUrl.image("Z2C.webp")} loading="lazy" alt="Z2C" /></div>
+            <div className="s-media"><img src={mediaUrl.image("z2c.webp")} loading="lazy" alt="Z2C" /></div>
             <div className="s-body">
               <h4 className="s-title">Z2C</h4>
               <p className="s-desc">Core alignment fusion splicer for heavy-duty projects.</p>
@@ -1074,7 +1074,7 @@ const Sumitomoproductfour = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={mediaUrl.image("82C+ 1Oct 2024.webp")} loading="lazy" alt="82C+" /></div>
+            <div className="s-media"><img src={mediaUrl.image("82c+ 1oct 2024.webp")} loading="lazy" alt="82C+" /></div>
             <div className="s-body">
               <h4 className="s-title">82C+</h4>
               <p className="s-desc">High-speed splicer with advanced automation.</p>
@@ -1086,7 +1086,7 @@ const Sumitomoproductfour = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={mediaUrl.image("W1C file.webp")} loading="lazy" alt="W1C" /></div>
+            <div className="s-media"><img src={mediaUrl.image("w1c file.webp")} loading="lazy" alt="W1C" /></div>
             <div className="s-body">
               <h4 className="s-title">W1C</h4>
               <p className="s-desc">Compact splicer optimized for FTTH deployments.</p>
@@ -1098,7 +1098,7 @@ const Sumitomoproductfour = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-            <div className="s-media"><img src={mediaUrl.image("FC8r.webp")} loading="lazy" alt="FC8R" /></div>
+            <div className="s-media"><img src={mediaUrl.image("fc8r.webp")} loading="lazy" alt="FC8R" /></div>
             <div className="s-body">
               <h4 className="s-title">FC8R</h4>
               <p className="s-desc">Precision cleaver for stable fiber preparation.</p>

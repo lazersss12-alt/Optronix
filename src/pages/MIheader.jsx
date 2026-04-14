@@ -209,7 +209,7 @@ import './PageHeader.css';   // ✅ reuse same CSS classes as PageHeader
 
 // Media
 import { mediaUrl } from "../config/media";
-const ProductionLineImage = mediaUrl.image("ProductionLine.JPG");
+const ProductionLineImage = mediaUrl.image("productionline.jpg");
 
 // Detect browser zoom (same hook as in PageHeader)
 function useZoom({ inThreshold = 1.15, outThreshold = 0.9 } = {}) {

@@ -11,7 +11,7 @@ import { mediaUrl } from '../../config/media';
 // // import featureImg5 from "../img/33.jpg";
 // // import eponoltf1 from "../img/epon olt.jpeg";
 // // import eponoltf2 from "../img/eponolt1.jpeg";
-// import mediaUrl.image("Gepon 8G.webp") from "../img/Gepon 8G.png";
+// import mediaUrl.image("gepon 8g.webp") from "../img/Gepon 8G.png";
 // import mediaUrl.image("gpon4.webp") from "../img/gpon4.png";
 // import mediaUrl.image("op1.webp") from "../img/op1.png";
 // import mediaUrl.image("op2.webp") from "../img/op2.png";
@@ -293,7 +293,7 @@ import { mediaUrl } from '../../config/media';
 
 //        <div className='product_s1v1_product'>
 //   <div className='product_s1v1_product1'>
-//     <img className='product_s1v1_img' src={mediaUrl.image("Gepon 8G.webp")} alt="OP-100P8G" />
+//     <img className='product_s1v1_img' src={mediaUrl.image("gepon 8g.webp")} alt="OP-100P8G" />
 //     <h3 className='products1v_name_option'>OP-100P8G</h3>
 //     <Link to="/optronixponproducttwo" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
@@ -389,7 +389,7 @@ const Optronixponproductfour = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("AE1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("OP100P4.webp")];
+    const imgs = [mediaUrl.image("ae1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("op100p4.webp")];
     return {
       backgroundSize: 'cover, 50% 50%, 50% 50%, 50% 50%, 50% 50%',
       backgroundPosition: 'center, left top, right top, left bottom, right bottom',
@@ -460,7 +460,7 @@ const Optronixponproductfour = () => {
                 <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("OP100P8.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("op100p8.pdf"), "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -683,7 +683,7 @@ const Optronixponproductfour = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("Gepon 8G.webp")} loading="lazy" alt="OP-100P8G" /></div>
+            <div className="s-media"><img src={mediaUrl.image("gepon 8g.webp")} loading="lazy" alt="OP-100P8G" /></div>
             <div className="s-body">
               <h4 className="s-title">OP-100P8G</h4>
               <p className="s-desc">Pizza-box OLT with 8 GPON ports.</p>
@@ -719,7 +719,7 @@ const Optronixponproductfour = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("OP100P4.webp")} loading="lazy" alt="OP100P4" /></div>
+            <div className="s-media"><img src={mediaUrl.image("op100p4.webp")} loading="lazy" alt="OP100P4" /></div>
             <div className="s-body">
               <h4 className="s-title">OP100P4</h4>
               <p className="s-desc">EPON 4-port option for edge sites.</p>

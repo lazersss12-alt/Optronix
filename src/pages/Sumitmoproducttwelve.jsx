@@ -4,7 +4,7 @@ import './page.css';
 import { Link } from 'react-router-dom';
 import ProductLeadModal from '../components/common/ProductLeadModal';
 const Sumitomoproducttwelve = () => {
-  const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.webp"));
+  const [productImage, setProductImage] = useState(mediaUrl.image("z2c.webp"));
   const [activeIcon, setActiveIcon] = useState(null);
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);

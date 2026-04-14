@@ -15,7 +15,7 @@ const productData = {
       catalogLink: mediaUrl.doc("ae3100.pdf")
     },
     {
-      image: mediaUrl.image("AE1001.webp"),
+      image: mediaUrl.image("ae1001.webp"),
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
@@ -80,7 +80,7 @@ const productData = {
       catalogLink: mediaUrl.doc("ae3100.pdf")
     },
     {
-      image: mediaUrl.image("AE1001.webp"),
+      image: mediaUrl.image("ae1001.webp"),
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
@@ -192,7 +192,7 @@ const Deviserproduct = () => {
     <div className="deviserproduct-page-main">
       {/* Banner Section */}
       <div className="deviser-page-banner">
-        <img src={mediaUrl.image("Devisorbanner.webp")} fetchpriority="high" alt="Deviser Products" className="banner-image" />
+        <img src={mediaUrl.image("devisorbanner.webp")} fetchpriority="high" alt="Deviser Products" className="banner-image" />
       </div>
       <div className="deviserproduct-page-upperline"></div>
       <div className="product-page">

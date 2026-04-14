@@ -15,35 +15,35 @@ const productData = {
       title: "OP-100P16G",
       description: "GPON 16 PORT OLT",
       readMoreLink: "/optronix-pon/OP-100P16G",
-      catalogLink: mediaUrl.doc("OP100P16G.pdf")
+      catalogLink: mediaUrl.doc("op100p16g.pdf")
     },
     {
       image: mediaUrl.image("ponimg2.webp"),
       title: "OP-100P8G",
       description: "GPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8G",
-      catalogLink: mediaUrl.doc("OP100P8G.pdf")
+      catalogLink: mediaUrl.doc("op100p8g.pdf")
     },
     {
       image: mediaUrl.image("gpon4.webp"),
       title: "OP-100P4G",
       description: "GPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4G",
-      catalogLink: mediaUrl.doc("OP-100P4G.pdf")
+      catalogLink: mediaUrl.doc("op-100p4g.pdf")
     },
     {
-      image: mediaUrl.image("OP1008P.webp"),
+      image: mediaUrl.image("op1008p.webp"),
       title: "OP100P8",
       description: "EPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8",
-      catalogLink: mediaUrl.doc("OP100P8.pdf")
+      catalogLink: mediaUrl.doc("op100p8.pdf")
     },
     {
       image: mediaUrl.image("op2.webp"),
       title: "OP100P4",
       description: "EPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4",
-      catalogLink: mediaUrl.doc("OP100P4.pdf")
+      catalogLink: mediaUrl.doc("op100p4.pdf")
     },
     {
       image: mediaUrl.image("px20++.webp"),
@@ -64,31 +64,31 @@ const productData = {
       title: "OP821GWV-D FEM",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVDGB",
-      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
     },
     {
-      image: mediaUrl.image("OP821GWV-D.webp"),
+      image: mediaUrl.image("op821gwv-d.webp"),
       title: "OP821GW-D",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVD",
-      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
     },
     {
-      image: mediaUrl.image("Op821GWV.webp"),
+      image: mediaUrl.image("op821gwv.webp"),
       title: "OP821GWV",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP821GWV",
       catalogLink: mediaUrl.doc("op821gwv.pdf")
     },
     {
-      image: mediaUrl.image("OP801.webp"),
+      image: mediaUrl.image("op801.webp"),
       title: "OP801GW",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP801GW",
       catalogLink: mediaUrl.doc("op801gw.pdf")
     },
     {
-      image: mediaUrl.image("OP-101Xp.webp"),
+      image: mediaUrl.image("op-101xp.webp"),
       title: "OP-101X",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP101X",
@@ -101,37 +101,37 @@ const productData = {
       title: "OP-100P16G",
       description: "GPON 16 PORT OLT",
       readMoreLink: "/optronix-pon/OP-100P16G",
-      catalogLink: mediaUrl.doc("OP100P16G.pdf")
+      catalogLink: mediaUrl.doc("op100p16g.pdf")
     },
     {
-      image: mediaUrl.image("OP1008P.webp"),
+      image: mediaUrl.image("op1008p.webp"),
       title: "OP-100P8G",
       description: "GPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8G",
-      catalogLink: mediaUrl.doc("OP100P8G.pdf")
+      catalogLink: mediaUrl.doc("op100p8g.pdf")
     },
     {
-      image: mediaUrl.image("OP1008P.webp"),
+      image: mediaUrl.image("op1008p.webp"),
       title: "OP-100P4G",
       description: "GPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4G",
-      catalogLink: mediaUrl.doc("OP100P4.pdf")
+      catalogLink: mediaUrl.doc("op100p4.pdf")
     }
   ],
   3: [
     {
-      image: mediaUrl.image("OP1008P.webp"),
+      image: mediaUrl.image("op1008p.webp"),
       title: "OP100P8",
       description: "EPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8",
-      catalogLink: mediaUrl.doc("OP100P8.pdf")
+      catalogLink: mediaUrl.doc("op100p8.pdf")
     },
     {
       image: mediaUrl.image("gpon16.webp"),
       title: "OP100P4",
       description: "EPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4",
-      catalogLink: mediaUrl.doc("OP100P4.pdf")
+      catalogLink: mediaUrl.doc("op100p4.pdf")
     }
   ],
   4: [
@@ -156,31 +156,31 @@ const productData = {
       title: "OP821GWV-D FEM",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVDGB",
-      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
     },
     {
       image: mediaUrl.image("fem router-01.webp"),
       title: "OP821GW-D",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVD",
-      catalogLink: mediaUrl.doc("OP821GWV-D with FEM.pdf")
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
     },
     {
-      image: mediaUrl.image("Op821GWV.webp"),
+      image: mediaUrl.image("op821gwv.webp"),
       title: "OP821GWV",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP821GWV",
       catalogLink: mediaUrl.doc("op821gwv.pdf")
     },
     {
-      image: mediaUrl.image("OP801.webp"),
+      image: mediaUrl.image("op801.webp"),
       title: "OP801GW",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP801GW",
       catalogLink: mediaUrl.doc("op801gw.pdf")
     },
     {
-      image: mediaUrl.image("OP-101Xp.webp"),
+      image: mediaUrl.image("op-101xp.webp"),
       title: "OP-101X",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP101X",
@@ -224,7 +224,7 @@ const Optronixponproduct = () => {
     <div className="optronixponproduct-page-main">
       {/* Banner Section */}
       <div className="optronixpon-page-banner">
-        <img src={mediaUrl.image("Optronix PON.webp")} fetchpriority="high" alt="Optronix PON Products" className="banner-image" />
+        <img src={mediaUrl.image("optronix pon.webp")} fetchpriority="high" alt="Optronix PON Products" className="banner-image" />
       </div>
       <div className="optronixponproduct-page-upperline"></div>
       <div className="product-page">

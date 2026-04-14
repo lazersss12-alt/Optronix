@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 const Sumitomoproducttwelve = () => {
-  const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.jpg"));
+  const [productImage, setProductImage] = useState(mediaUrl.image("z2c.jpg"));
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeIcon, setActiveIcon] = useState(null);
 
@@ -88,28 +88,28 @@ const Sumitomoproducttwelve = () => {
 
       <div className='product_z2c1_product'>
         <div className='product_z2c1_product1'>
-          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("Backup_of_Z2C 2june.png")} alt="Z2C" />
+          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("backup_of_z2c 2june.png")} alt="Z2C" />
           <h3 className='productz2c_name_option'>Z2C</h3>
           <Link to="/sumitomo/Z2C" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>
           </Link>
         </div>
         <div className='product_z2c1_product2'>
-          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("82C+ 1Oct 2024.png")} alt="82C+" />
+          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("82c+ 1oct 2024.png")} alt="82C+" />
           <h3 className='productz2c_name_option'>82C+</h3>
           <Link to="/sumitomo/82CPLUS" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>
           </Link>
         </div>
         <div className='product_z2c1_product3'>
-          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("W1C file.png")} alt="W1C" />
+          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("w1c file.png")} alt="W1C" />
           <h3 className='productz2c_name_option'>W1C</h3>
           <Link to="/sumitomo/W1C" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>
           </Link>
         </div>
         <div className='product_z2c1_product4'>
-          <img className='product_z2c1_img' src={mediaUrl.image("FC8r.png")} fetchpriority="high" alt="FC8R" />
+          <img className='product_z2c1_img' src={mediaUrl.image("fc8r.png")} fetchpriority="high" alt="FC8R" />
           <h3 className='productz2c_name_option'>FC8R</h3>
           <Link to="/sumitomo/FC8R" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>

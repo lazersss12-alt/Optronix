@@ -143,7 +143,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 6,
       title: 'X-RAY INSPECTION MACHINE',
-      images: [mediaUrl.image("X ray inspection machine.webp")],
+      images: [mediaUrl.image("x ray inspection machine.webp")],
       features: [
         'High-resolution X-ray imaging for BGA, QFN, and other hidden joints',
         'Automatic defect detection and classification',
