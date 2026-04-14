@@ -740,9 +740,12 @@ import React, { useState, useEffect } from 'react';
 import '../../../../pages/page.css';
 import '../../../../components/index.css';
 import { Link } from 'react-router-dom';
-import m12Img from '../components/img-s/82M12.png';
+import m12Img from '../components/img-s/82m12.png';
+import m122Img from '../components/img-s/m12_2.png';
+import m123Img from '../components/img-s/m12_3.png';
+import m124Img from '../components/img-s/m12_4.png';
 import w1cImg from '../components/img-s/w1c.png';
-import z2cImg from '../components/img-s/Z2C.png';
+import z2cImg from '../components/img-s/z2c.png';
 
 const Sumitomoproductsix = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
@@ -791,7 +794,7 @@ const Sumitomoproductsix = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [z2cImg, mediaUrl.image("82c+ 1oct 2024.png"), w1cImg, mediaUrl.image("fc8r.png")];
+    const imgs = [m12Img, m122Img, m123Img, m124Img];
     return {
       backgroundImage:
         `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +

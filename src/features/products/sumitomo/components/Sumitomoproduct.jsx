@@ -590,21 +590,29 @@ import { Link } from 'react-router-dom';
 import './Sumitomo.css';
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 import w1cImg from './img-s/w1c.png';
-import m12Img from './img-s/82M12.png';
-import z2cImg from './img-s/Z2C.png';
+import m12Img from './img-s/82m12.png';
+import z2cImg from './img-s/z2c.png';
+import s1vImg from './img-s/s1v.png';
+import s1vUltraImg from './img-s/s1v_ultra.png';
+import cPlusImg from './img-s/82c+.png';
+import fc8rImg from './img-s/fc-8r.png';
+import s70Img from './img-s/s70.png';
+import fc7lsImg from './img-s/fc7ls.png';
+import sfcsImg from './img-s/sfcs.png';
+import fc6sImg from './img-s/fc6s.png';
 
 
 const productData = {
   1: [
     {
-      image: mediaUrl.image("s1vp.png"),
+      image: s1vImg,
       title: 'S1V',
       description: ' Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1V',
       catalogLink: mediaUrl.doc("sumitomos1v.pdf"),
     },
     {
-      image: mediaUrl.image("s1vuf.png"),
+      image: s1vUltraImg,
       title: 'S1V ULTRA',
       description: 'Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1VULTRA',
@@ -625,7 +633,7 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomow1c.pdf"),
     },
     {
-      image: mediaUrl.image("82c+.png"),
+      image: cPlusImg,
       title: '82C+',
       description: 'Core  Fusion Splicer',
       readMoreLink: '/sumitomo/82CPLUS',
@@ -639,35 +647,35 @@ const productData = {
       catalogLink: mediaUrl.doc("sumitomo82m12.pdf"),
     },
     {
-      image: mediaUrl.image("fc8r.png"),
+      image: fc8rImg,
       title: 'FC8R',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC8R',
       catalogLink: mediaUrl.doc("fc8r.pdf"),
     },
     {
-      image: mediaUrl.image("s-70.png"),
+      image: s70Img,
       title: 'S-70',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/S70',
       catalogLink: mediaUrl.doc("s-70.pdf"),
     },
     {
-      image: mediaUrl.image("fc7ls.png"),
+      image: fc7lsImg,
       title: 'FC-7LS',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC7LS',
       catalogLink: mediaUrl.doc("f7ls.pdf"),
     },
     {
-      image: mediaUrl.image("sfcs.png"),
+      image: sfcsImg,
       title: 'SFCS',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/SFCS',
       catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
     {
-      image: mediaUrl.image("fc-6s.png"),
+      image: fc6sImg,
       title: 'FC-6 Series',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/FC6S',
@@ -676,14 +684,14 @@ const productData = {
   ],
   2: [
     {
-      image: mediaUrl.image("s1vp.png"),
+      image: s1vImg,
       title: 'S1V',
       description: ' Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1V',
       catalogLink: mediaUrl.doc("sumitomos1v.pdf"),
     },
     {
-      image: mediaUrl.image("s1vuf.png"),
+      image: s1vUltraImg,
       title: 'S1V ULTRA',
       description: 'Active Clad Fusion Splicer',
       readMoreLink: '/sumitomo/S1VULTRA',
@@ -692,21 +700,21 @@ const productData = {
   ],
   3: [
     {
-      image: mediaUrl.image("z2c.jpg"),
+      image: z2cImg,
       title: 'Z2C',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/Z2C',
       catalogLink: mediaUrl.doc("sumitomoz2c.pdf"),
     },
     {
-      image: mediaUrl.image("w1c-machine.png"),
+      image: w1cImg,
       title: 'W1C',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/W1C',
       catalogLink: mediaUrl.doc("sumitomow1c.pdf"),
     },
     {
-      image: mediaUrl.image("82c+.png"),
+      image: cPlusImg,
       title: '82C+',
       description: 'Core Alignment Fusion Splicer',
       readMoreLink: '/sumitomo/82CPLUS',
@@ -738,7 +746,7 @@ const productData = {
       catalogLink: mediaUrl.doc("s-70.pdf"),
     },
     {
-      image: mediaUrl.image("fc7ls.png"),
+      image: fc7lsImg,
       title: 'FC-7LS',
       description: 'Handheld Cleaver',
       readMoreLink: '/sumitomo/FC7LS',
@@ -747,14 +755,14 @@ const productData = {
   ],
   6: [
     {
-      image: mediaUrl.image("sfcs.png"),
+      image: sfcsImg,
       title: 'SFCS',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/SFCS',
       catalogLink: mediaUrl.doc("cleaver.pdf"),
     },
     {
-      image: mediaUrl.image("fc-6s.png"),
+      image: fc6sImg,
       title: 'FC-6 Series',
       description: 'Tabletop Cleaver',
       readMoreLink: '/sumitomo/FC6S',

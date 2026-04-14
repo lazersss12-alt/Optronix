@@ -324,7 +324,9 @@ import React, { useState, useEffect } from 'react';
 import '../../../../pages/page.css';
 import '../../../../components/index.css';
 import { Link } from 'react-router-dom';
-import z2cImg from '../components/img-s/Z2C.png';
+import z2cImg from '../components/img-s/z2c.png';
+import z2c2Img from '../components/img-s/z2c_2.png';
+import z2c3Img from '../components/img-s/z2c_3.png';
 import w1cImg from '../components/img-s/w1c.png';
 
 const Sumitomoproductthree = () => {
@@ -374,7 +376,7 @@ const Sumitomoproductthree = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [z2cImg, mediaUrl.image("82c+ 1oct 2024.png"), w1cImg, mediaUrl.image("fc8r.png")];
+    const imgs = [z2cImg, z2c2Img, z2c3Img, mediaUrl.image("fc-8r.png")];
     return {
       backgroundImage:
         `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
