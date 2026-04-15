@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-lZ6iXXV-.js";e();var n=t(),r=()=>(0,n.jsx)(`div`,{children:`SpecCATV`});export{r as default};

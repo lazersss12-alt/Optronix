@@ -13,7 +13,11 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 const Sumitomoproductone = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
+<<<<<<< HEAD
   const [productImage] = useState(media_S1V_webp);
+=======
+  const [productImage] = useState(mediaUrl.image("s1v.webp"));
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -56,7 +60,21 @@ const Sumitomoproductone = () => {
   }, [lightboxOpen]);
 
   // Light mosaic background using your images (no S1Vbanner)
+<<<<<<< HEAD
   const mosaicBG = () => ({ backgroundColor: '#ffffff' });
+=======
+  const mosaicBG = (alpha = 0.92) => {
+    const imgs = [mediaUrl.image("backup_of_z2c 2june.png"), mediaUrl.image("82c+ 1oct 2024.png"), mediaUrl.image("w1c file.png"), mediaUrl.image("fc8r.png")];
+    return {
+      backgroundImage:
+        `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
+        `url(${imgs[0]}), url(${imgs[1]}), url(${imgs[2]}), url(${imgs[3]})`,
+      backgroundSize: 'cover, 50% 50%, 50% 50%, 50% 50%, 50% 50%',
+      backgroundPosition: 'center, left top, right top, left bottom, right bottom',
+      backgroundRepeat: 'no-repeat'
+    };
+  };
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 
   // ---- ACCORDION DATA ----
   const specAccordions = [
@@ -419,7 +437,11 @@ const Sumitomoproductone = () => {
           <div className="s-grid">
             <div className="s-card">
               <span className="s-brand">SUMITOMO</span>
+<<<<<<< HEAD
               <div className="s-media"><img src={media_Backup_of_Z2C_2june_png} loading="lazy" alt="Z2C" /></div>
+=======
+              <div className="s-media"><img src={mediaUrl.image("backup_of_z2c 2june.png")} loading="lazy" alt="Z2C" /></div>
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
               <div className="s-body">
                 <h4 className="s-title">Z2C</h4>
                 <p className="s-desc">Core alignment fusion splicer for heavy-duty projects.</p>
@@ -431,7 +453,11 @@ const Sumitomoproductone = () => {
 
             <div className="s-card">
               <span className="s-brand">SUMITOMO</span>
+<<<<<<< HEAD
               <div className="s-media"><img src={media_82C__1Oct_2024_png} loading="lazy" alt="82C+" /></div>
+=======
+              <div className="s-media"><img src={mediaUrl.image("82c+ 1oct 2024.png")} loading="lazy" alt="82C+" /></div>
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
               <div className="s-body">
                 <h4 className="s-title">82C+</h4>
                 <p className="s-desc">High-speed splicer with advanced automation.</p>
@@ -443,7 +469,11 @@ const Sumitomoproductone = () => {
 
             <div className="s-card">
               <span className="s-brand">SUMITOMO</span>
+<<<<<<< HEAD
               <div className="s-media"><img src={media_W1C_file_png} loading="lazy" alt="W1C" /></div>
+=======
+              <div className="s-media"><img src={mediaUrl.image("w1c file.png")} loading="lazy" alt="W1C" /></div>
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
               <div className="s-body">
                 <h4 className="s-title">W1C</h4>
                 <p className="s-desc">Compact splicer optimized for FTTH deployments.</p>
@@ -455,7 +485,11 @@ const Sumitomoproductone = () => {
 
             <div className="s-card">
               <span className="s-brand">SUMITOMO</span>
+<<<<<<< HEAD
               <div className="s-media"><img src={media_FC8r_png} loading="lazy" alt="FC8R" /></div>
+=======
+              <div className="s-media"><img src={mediaUrl.image("fc8r.png")} loading="lazy" alt="FC8R" /></div>
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
               <div className="s-body">
                 <h4 className="s-title">FC8R</h4>
                 <p className="s-desc">Precision cleaver for stable fiber preparation.</p>

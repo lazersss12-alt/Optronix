@@ -151,7 +151,11 @@ const Ofcpage = () => {
     {
       id: 2,
       title: 'Buffering lines',
+<<<<<<< HEAD
       images: [media_chirag_mp4, media_Bufferingvideo1_mp4, media_Bufferingvideo2_mp4, media_Bufferring_3_webp],
+=======
+      images: [mediaUrl.video("chirag.mp4"), mediaUrl.video("Bufferingvideo1.mp4"), mediaUrl.video("Bufferingvideo2.mp4"), mediaUrl.image("bufferring 3.webp")],
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       features: [
         'Optimal protection and mechanical strength',
         'Consistent buffer integrity and reliability',
@@ -187,7 +191,11 @@ const Ofcpage = () => {
     {
       id: 5,
       title: 'Ftth sheathing line',
+<<<<<<< HEAD
       images: [media_ftth_mp4, media_FTTH_2_webp, media_FTTH_1_webp],
+=======
+      images: [mediaUrl.video("ftth.mp4"), mediaUrl.image("ftth 2.webp"), mediaUrl.image("ftth 1.webp")],
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       features: [
         'Fast and reliable data delivery',
         'Easy installation design',
@@ -199,7 +207,11 @@ const Ofcpage = () => {
     {
       id: 6,
       title: 'HDPE Testing',
+<<<<<<< HEAD
       images: [media_HDPE2_mp4, media_HDPEtesting1_webp],
+=======
+      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("hdpetesting1.webp")],
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       features: [
         'Rigorous HDPE material testing',
         'Ensures durability and quality',
@@ -211,7 +223,11 @@ const Ofcpage = () => {
     {
       id: 7,
       title: 'Packaging',
+<<<<<<< HEAD
       images: [media_OFC11_mp4, media_OFC22_webp, media_OFC33_webp],
+=======
+      images: [mediaUrl.video("OFC11.mp4"), mediaUrl.image("ofc22.webp"), mediaUrl.image("ofc33.webp")],
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       features: [
         'Secure and protective packaging',
         'Efficient packing process',

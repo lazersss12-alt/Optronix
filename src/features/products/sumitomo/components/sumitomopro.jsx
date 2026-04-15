@@ -23,7 +23,11 @@ function SumitomoPro() {
           <h1 className="sumitomo-page-pro-name">
             <img
               className="sumitomo-logo"
+<<<<<<< HEAD
               src={media_SUMITOMOupdated_webp}
+=======
+              src={mediaUrl.image("sumitomoupdated.webp")}
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
               alt="Sumitomo Electric"
             />
           </h1>

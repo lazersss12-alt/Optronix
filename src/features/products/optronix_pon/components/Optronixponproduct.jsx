@@ -36,20 +36,29 @@ const productData = {
       title: "OP-100P16G",
       description: "GPON 16 PORT OLT",
       readMoreLink: "/optronix-pon/OP-100P16G",
+<<<<<<< HEAD
       catalogLink: media_OP100P16G_pdf
+=======
+      catalogLink: mediaUrl.doc("op100p16g.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     },
     {
       image: media_ponimg2_webp,
       title: "OP-100P8G",
       description: "GPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8G",
+<<<<<<< HEAD
       catalogLink: media_OP100P8G_pdf
+=======
+      catalogLink: mediaUrl.doc("op100p8g.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     },
     {
       image: media_gpon4_webp,
       title: "OP-100P4G",
       description: "GPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4G",
+<<<<<<< HEAD
       catalogLink: media_OP_100P4G_pdf
     },
     {
@@ -58,13 +67,27 @@ const productData = {
       description: "EPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8",
       catalogLink: media_OP100P8_pdf
+=======
+      catalogLink: mediaUrl.doc("op-100p4g.pdf")
+    },
+    {
+      image: mediaUrl.image("op1008p.webp"),
+      title: "OP100P8",
+      description: "EPON 8 PORT OLT",
+      readMoreLink: "/optronix-pon/OP100P8",
+      catalogLink: mediaUrl.doc("op100p8.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     },
     {
       image: media_op2_webp,
       title: "OP100P4",
       description: "EPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4",
+<<<<<<< HEAD
       catalogLink: media_OP100P4_pdf
+=======
+      catalogLink: mediaUrl.doc("op100p4.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     },
     {
       image: media_px20___webp,
@@ -85,6 +108,7 @@ const productData = {
       title: "OP821GWV-D FEM",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVDGB",
+<<<<<<< HEAD
       catalogLink: media_OP821GWV_D_with_FEM_pdf
     },
     {
@@ -96,20 +120,41 @@ const productData = {
     },
     {
       image: media_Op821GWV_webp,
+=======
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
+    },
+    {
+      image: mediaUrl.image("op821gwv-d.webp"),
+      title: "OP821GW-D",
+      description: "Dual Band ONU",
+      readMoreLink: "/optronix-pon/OP821GWVD",
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
+    },
+    {
+      image: mediaUrl.image("op821gwv.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "OP821GWV",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP821GWV",
       catalogLink: media_op821gwv_pdf
     },
     {
+<<<<<<< HEAD
       image: media_OP801_webp,
+=======
+      image: mediaUrl.image("op801.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "OP801GW",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP801GW",
       catalogLink: media_op801gw_pdf
     },
     {
+<<<<<<< HEAD
       image: media_OP_101Xp_webp,
+=======
+      image: mediaUrl.image("op-101xp.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "OP-101X",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP101X",
@@ -122,6 +167,7 @@ const productData = {
       title: "OP-100P16G",
       description: "GPON 16 PORT OLT",
       readMoreLink: "/optronix-pon/OP-100P16G",
+<<<<<<< HEAD
       catalogLink: media_OP100P16G_pdf
     },
     {
@@ -137,22 +183,51 @@ const productData = {
       description: "GPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4G",
       catalogLink: media_OP100P4_pdf
+=======
+      catalogLink: mediaUrl.doc("op100p16g.pdf")
+    },
+    {
+      image: mediaUrl.image("op1008p.webp"),
+      title: "OP-100P8G",
+      description: "GPON 8 PORT OLT",
+      readMoreLink: "/optronix-pon/OP100P8G",
+      catalogLink: mediaUrl.doc("op100p8g.pdf")
+    },
+    {
+      image: mediaUrl.image("op1008p.webp"),
+      title: "OP-100P4G",
+      description: "GPON 4 PORT OLT",
+      readMoreLink: "/optronix-pon/OP100P4G",
+      catalogLink: mediaUrl.doc("op100p4.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     }
   ],
   3: [
     {
+<<<<<<< HEAD
       image: media_OP1008P_webp,
       title: "OP100P8",
       description: "EPON 8 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P8",
       catalogLink: media_OP100P8_pdf
+=======
+      image: mediaUrl.image("op1008p.webp"),
+      title: "OP100P8",
+      description: "EPON 8 PORT OLT",
+      readMoreLink: "/optronix-pon/OP100P8",
+      catalogLink: mediaUrl.doc("op100p8.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     },
     {
       image: media_gpon16_webp,
       title: "OP100P4",
       description: "EPON 4 PORT OLT",
       readMoreLink: "/optronix-pon/OP100P4",
+<<<<<<< HEAD
       catalogLink: media_OP100P4_pdf
+=======
+      catalogLink: mediaUrl.doc("op100p4.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     }
   ],
   4: [
@@ -177,31 +252,50 @@ const productData = {
       title: "OP821GWV-D FEM",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVDGB",
+<<<<<<< HEAD
       catalogLink: media_OP821GWV_D_with_FEM_pdf
+=======
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     },
     {
       image: media_fem_router_01_webp,
       title: "OP821GW-D",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVD",
+<<<<<<< HEAD
       catalogLink: media_OP821GWV_D_with_FEM_pdf
     },
     {
       image: media_Op821GWV_webp,
+=======
+      catalogLink: mediaUrl.doc("op821gwv-d with fem.pdf")
+    },
+    {
+      image: mediaUrl.image("op821gwv.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "OP821GWV",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP821GWV",
       catalogLink: media_op821gwv_pdf
     },
     {
+<<<<<<< HEAD
       image: media_OP801_webp,
+=======
+      image: mediaUrl.image("op801.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "OP801GW",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP801GW",
       catalogLink: media_op801gw_pdf
     },
     {
+<<<<<<< HEAD
       image: media_OP_101Xp_webp,
+=======
+      image: mediaUrl.image("op-101xp.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "OP-101X",
       description: "Single Band ONU",
       readMoreLink: "/optronix-pon/OP101X",
@@ -245,7 +339,11 @@ const Optronixponproduct = () => {
     <div className="optronixponproduct-page-main">
       {/* Banner Section */}
       <div className="optronixpon-page-banner">
+<<<<<<< HEAD
         <img src={media_Optronix_PON_webp} fetchpriority="high" alt="Optronix PON Products" className="banner-image" />
+=======
+        <img src={mediaUrl.image("optronix pon.webp")} fetchpriority="high" alt="Optronix PON Products" className="banner-image" />
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       </div>
       <div className="optronixponproduct-page-upperline"></div>
       <div className="product-page">

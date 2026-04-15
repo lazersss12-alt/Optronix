@@ -257,7 +257,11 @@ const BrandSlider = () => {
     {
       name: 'Sumitomo Electric',
       desc: 'Connect with Innovation',
+<<<<<<< HEAD
       logo: media_SUMITOMOupdated_webp,
+=======
+      logo: mediaUrl.image("sumitomoupdated.webp"),
+>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       link: 'https://global-sei.com/'
     },
     {

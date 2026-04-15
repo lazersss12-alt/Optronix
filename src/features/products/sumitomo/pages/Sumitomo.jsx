@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Sumitomopro from "../components/sumitomopro";
 import Sumitomoproduct from "../components/Sumitomoproduct";
