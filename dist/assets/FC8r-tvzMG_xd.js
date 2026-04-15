@@ -1,0 +1,1 @@
+var e=`/assets/FC8r-BJr-1K_-.webp`;export{e as t};

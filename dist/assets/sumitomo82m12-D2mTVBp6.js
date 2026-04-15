@@ -1,0 +1,1 @@
+var e=`/assets/sumitomo82m12-oKPET0QY.pdf`;export{e as t};

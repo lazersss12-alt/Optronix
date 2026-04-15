@@ -1,4 +1,8 @@
-import { mediaUrl } from '../../../config/media';
+import media_mi1_webp from '../../../assets/img2/img/mi1.webp';
+import media_mi2_webp from '../../../assets/img2/img/mi2.webp';
+import media_mi3_webp from '../../../assets/img2/img/mi3.webp';
+import media_mi4_webp from '../../../assets/img2/img/mi4.webp';
+import media_mi5_webp from '../../../assets/img2/img/mi5.webp';
 import React from "react";
 import "../styles/miimgone.css";
 const Miimgone = () => {
@@ -48,11 +52,11 @@ const Miimgone = () => {
         </div>
 
         <div className="zigzag">
-          <img loading="lazy" src={mediaUrl.image("mi1.webp")} alt="img1" className="zigzag-img img1" />
-          <img loading="lazy" src={mediaUrl.image("mi2.webp")} alt="img2" className="zigzag-img img2" />
-          <img loading="lazy" src={mediaUrl.image("mi3.webp")} alt="img3" className="zigzag-img img3" />
-          <img loading="lazy" src={mediaUrl.image("mi4.webp")} alt="img4" className="zigzag-img img4" />
-          <img loading="lazy" src={mediaUrl.image("mi5.webp")} alt="img5" className="zigzag-img img5" />
+          <img loading="lazy" src={media_mi1_webp} alt="img1" className="zigzag-img img1" />
+          <img loading="lazy" src={media_mi2_webp} alt="img2" className="zigzag-img img2" />
+          <img loading="lazy" src={media_mi3_webp} alt="img3" className="zigzag-img img3" />
+          <img loading="lazy" src={media_mi4_webp} alt="img4" className="zigzag-img img4" />
+          <img loading="lazy" src={media_mi5_webp} alt="img5" className="zigzag-img img5" />
         </div>
       </div>
     </div>

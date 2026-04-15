@@ -1,5 +1,5 @@
-import { mediaUrl } from '../config/media';
-﻿import React, { useState, useRef, useEffect, useCallback } from "react";
+import media_india_webp from '../assets/img2/img/india.webp';
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import "./Footer.css";
@@ -640,7 +640,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src={mediaUrl.image("india.webp")}
+                      src={media_india_webp}
                       loading="lazy"
                       alt="Indiamart"
                       width="30"

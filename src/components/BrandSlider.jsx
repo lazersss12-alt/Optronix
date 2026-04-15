@@ -1,4 +1,7 @@
-import { mediaUrl } from '../config/media';
+import media_SUMITOMOupdated_webp from '../assets/img2/img/SUMITOMOupdated.webp';
+import media_deviser_webp from '../assets/img2/img/deviser.webp';
+import media_spec_webp from '../assets/img2/img/spec.webp';
+import media_invas_webp from '../assets/img2/img/invas.webp';
 import React from "react";
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
@@ -254,25 +257,25 @@ const BrandSlider = () => {
     {
       name: 'Sumitomo Electric',
       desc: 'Connect with Innovation',
-      logo: mediaUrl.image("SUMITOMOupdated.webp"),
+      logo: media_SUMITOMOupdated_webp,
       link: 'https://global-sei.com/'
     },
     {
       name: 'Deviser',
       desc: 'Over 30 Years of Experience',
-      logo: mediaUrl.image("deviser.webp"),
+      logo: media_deviser_webp,
       link: 'https://deviserinstruments.com/'
     },
     {
       name: 'SPEC Technology',
       desc: 'CATV Product',
-      logo: mediaUrl.image("spec.webp"),
+      logo: media_spec_webp,
       link: 'https://spectechnology.com/'
     },
     {
       name: 'Invas Technologies',
       desc: 'Complete Telecom Solution',
-      logo: mediaUrl.image("invas.webp"),
+      logo: media_invas_webp,
       link: 'https://invas.in/'
     }
   ];

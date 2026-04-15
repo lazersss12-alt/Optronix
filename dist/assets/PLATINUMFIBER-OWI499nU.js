@@ -1,0 +1,1 @@
+var e=`/assets/PLATINUMFIBER-DvLnyUum.pdf`;export{e as t};

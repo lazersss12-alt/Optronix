@@ -1,14 +1,23 @@
-import { mediaUrl } from '../../../../config/media';
+import media_OP100P8G_removebg_preview_webp from '../../../../assets/img2/img/OP100P8G-removebg-preview.webp';
+import media_Gepon_8G_webp from '../../../../assets/img2/img/Gepon 8G.webp';
+import media_gpon4_webp from '../../../../assets/img2/img/gpon4.webp';
+import media_op1_webp from '../../../../assets/img2/img/op1.webp';
+import media_op2_webp from '../../../../assets/img2/img/op2.webp';
+import media_AE1001_webp from '../../../../assets/img2/img/AE1001.webp';
+import media_ae210_webp from '../../../../assets/img2/img/ae210.webp';
+import media_vfl_webp from '../../../../assets/img2/img/vfl.webp';
+import media_OP100P4_webp from '../../../../assets/img2/img/OP100P4.webp';
+import media_OP100P8G_removebg_preview_pdf from '../../../../assets/img2/img/media/images/OP100P8G-removebg-preview.png';
 // import React from 'react';
 // import './Optronixponproduct.css';
 // import '../../../../pages/page.css';
 // import { Link } from 'react-router-dom';
-// import mediaUrl.image("OP100P8G-removebg-preview.webp") from "../../../../assets/images/OP100P8G-removebg-preview.png"; // Use your actual image path
+// import media_OP100P8G_removebg_preview_webp from "../../../../assets/images/OP100P8G-removebg-preview.png"; // Use your actual image path
 // import op08pdf from "../../../../assets/images/OP100P8G.pdf";
-// import mediaUrl.image("Gepon 8G.webp") from "../../../../assets/images/Gepon 8G.png";
-// import mediaUrl.image("gpon4.webp") from "../../../../assets/images/gpon4.png";
-// import mediaUrl.image("op1.webp") from "../../../../assets/images/op1.png";
-// import mediaUrl.image("op2.webp") from "../../../../assets/images/op2.png";
+// import media_Gepon_8G_webp from "../../../../assets/images/Gepon 8G.png";
+// import media_gpon4_webp from "../../../../assets/images/gpon4.png";
+// import media_op1_webp from "../../../../assets/images/op1.png";
+// import media_op2_webp from "../../../../assets/images/op2.png";
 
 // const Optronixponproductone = () => {
 //   return (
@@ -44,7 +53,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("OP100P8G-removebg-preview.webp")} /* or use any of your images like productImage2 */
+//         src={media_OP100P8G_removebg_preview_webp} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -289,28 +298,28 @@ import { mediaUrl } from '../../../../config/media';
 //       </div>
 //           <div className='product_s1v1_product'>
 //   <div className='product_s1v1_product1'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("Gepon 8G.webp")} alt="OP-100P8G" />
+//     <img loading="lazy" className='product_s1v1_img' src={media_Gepon_8G_webp} alt="OP-100P8G" />
 //     <h3 className='products1v_name_option'>OP-100P8G</h3>
 //     <Link to="/optronixponproducttwo" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product2'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("gpon4.webp")} alt="82C+" />
+//     <img loading="lazy" className='product_s1v1_img' src={media_gpon4_webp} alt="82C+" />
 //     <h3 className='products1v_name_option'>OP-100P4G</h3>
 //     <Link to="/optronixponproductthree" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product3'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("op1.webp")} alt="W1C" />
+//     <img loading="lazy" className='product_s1v1_img' src={media_op1_webp} alt="W1C" />
 //     <h3 className='products1v_name_option'>OP100P8</h3>
 //     <Link to="/optronixponproductfour" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
 //     </Link>
 //   </div>
 //   <div className='product_s1v1_product4'>
-//     <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("op2.webp")} alt="FC8R" />
+//     <img loading="lazy" className='product_s1v1_img' src={media_op2_webp} alt="FC8R" />
 //     <h3 className='products1v_name_option'>OP100P4</h3>
 //     <Link to="/optronixponproductfive" style={{ textDecoration: "none" }}>
 //       <button className='products1v_button_option'>Know More</button>
@@ -340,7 +349,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 const Optronixponproductone = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("OP100P8G-removebg-preview.webp"));
+  const [productImage] = useState(media_OP100P8G_removebg_preview_webp);
 
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -385,7 +394,7 @@ const Optronixponproductone = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("AE1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("OP100P4.webp")];
+    const imgs = [media_AE1001_webp, media_ae210_webp, media_vfl_webp, media_OP100P4_webp];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -459,7 +468,7 @@ const Optronixponproductone = () => {
                 <button className="btn btn-primary" onClick={() => setEnquireOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("OP100P8G-removebg-preview.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(media_OP100P8G_removebg_preview_pdf, "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -720,7 +729,7 @@ const Optronixponproductone = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("Gepon 8G.webp")} loading="lazy" alt="OP-100P8G" /></div>
+            <div className="s-media"><img src={media_Gepon_8G_webp} loading="lazy" alt="OP-100P8G" /></div>
             <div className="s-body">
               <h4 className="s-title">OP-100P8G</h4>
               <p className="s-desc">Pizza-box OLT with 8 GPON ports.</p>
@@ -732,7 +741,7 @@ const Optronixponproductone = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("gpon4.webp")} loading="lazy" alt="OP-100P4G" /></div>
+            <div className="s-media"><img src={media_gpon4_webp} loading="lazy" alt="OP-100P4G" /></div>
             <div className="s-body">
               <h4 className="s-title">OP-100P4G</h4>
               <p className="s-desc">4-port GPON OLT for compact deployments.</p>
@@ -744,7 +753,7 @@ const Optronixponproductone = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("op1.webp")} loading="lazy" alt="OP100P8" /></div>
+            <div className="s-media"><img src={media_op1_webp} loading="lazy" alt="OP100P8" /></div>
             <div className="s-body">
               <h4 className="s-title">OP100P8</h4>
               <p className="s-desc">EPON variant with 8 PON ports.</p>
@@ -756,7 +765,7 @@ const Optronixponproductone = () => {
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-            <div className="s-media"><img src={mediaUrl.image("OP100P4.webp")} loading="lazy" alt="OP100P4" /></div>
+            <div className="s-media"><img src={media_OP100P4_webp} loading="lazy" alt="OP100P4" /></div>
             <div className="s-body">
               <h4 className="s-title">OP100P4</h4>
               <p className="s-desc">EPON 4-port option for edge sites.</p>

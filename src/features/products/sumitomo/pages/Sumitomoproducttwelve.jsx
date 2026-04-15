@@ -1,11 +1,21 @@
-import { mediaUrl } from '../../../../config/media';
+import media_Z2C_jpg from '../../../../assets/img2/img/Z2C.jpg';
+import media_i6_png from '../../../../assets/img2/img/media/images/i6.png';
+import media_i7_png from '../../../../assets/img2/img/media/images/i7.png';
+import media_i8_png from '../../../../assets/img2/img/media/images/i8.png';
+import media_i9_png from '../../../../assets/img2/img/media/images/i9.png';
+import media_i5_png from '../../../../assets/img2/img/media/images/i5.png';
+import media_i10_png from '../../../../assets/img2/img/media/images/i10.png';
+import media_Backup_of_Z2C_2june_png from '../../../../assets/img2/img/media/images/backup_of_z2c 2june.png';
+import media_82C__1Oct_2024_png from '../../../../assets/img2/img/media/images/82C+ 1Oct 2024.png';
+import media_W1C_file_png from '../../../../assets/img2/img/W1C file.png';
+import media_FC8r_png from '../../../../assets/img2/img/media/images/fc8r.png';
 import React, { useState } from 'react';
 import '../../../../pages/page.css';
 import { Link } from 'react-router-dom';
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 const Sumitomoproducttwelve = () => {
-  const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.jpg"));
+  const [productImage, setProductImage] = useState(media_Z2C_jpg);
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeIcon, setActiveIcon] = useState(null);
 
@@ -37,33 +47,33 @@ const Sumitomoproducttwelve = () => {
             <div className='product_s1v1_h2'>
               <img loading="lazy"
                 className={`product_s1v1_icon1 product_s1v1_icon ${activeIcon === 'icon1' ? 'active' : ''}`}
-                src={mediaUrl.image("i6.png")}
+                src={media_i6_png}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i6.png"), 'icon1')} />
+                onClick={() => handleIconClick(media_i6_png, 'icon1')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon2 product_s1v1_icon ${activeIcon === 'icon2' ? 'active' : ''}`}
-                src={mediaUrl.image("i7.png")}
+                src={media_i7_png}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i7.png"), 'icon2')} />
+                onClick={() => handleIconClick(media_i7_png, 'icon2')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon3 product_s1v1_icon ${activeIcon === 'icon3' ? 'active' : ''}`}
-                src={mediaUrl.image("i8.png")}
+                src={media_i8_png}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i8.png"), 'icon3')} />
+                onClick={() => handleIconClick(media_i8_png, 'icon3')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon4 product_s1v1_icon ${activeIcon === 'icon4' ? 'active' : ''}`}
-                src={mediaUrl.image("i9.png")}
+                src={media_i9_png}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i9.png"), 'icon4')} />
+                onClick={() => handleIconClick(media_i9_png, 'icon4')} />
 
               <img loading="lazy"
                 className={`product_s1v1_icon5 product_s1v1_icon ${activeIcon === 'icon5' ? 'active' : ''}`}
-                src={mediaUrl.image("i5.png")}
+                src={media_i5_png}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i5.png"), 'icon5')} />
+                onClick={() => handleIconClick(media_i5_png, 'icon5')} />
             </div>
           </div>
 
@@ -77,7 +87,7 @@ const Sumitomoproducttwelve = () => {
 
       <div className='products1v-feature-section-f2'>
         <div className='featurez2c-section-f2-a'>
-          <img loading="lazy" style={{ width: "100%" }} src={mediaUrl.image("i10.png")} alt="EPON OLT FEATURE" />
+          <img loading="lazy" style={{ width: "100%" }} src={media_i10_png} alt="EPON OLT FEATURE" />
         </div>
         <div className='featurez2c-section-f2-b'>
           <p>
@@ -88,28 +98,28 @@ const Sumitomoproducttwelve = () => {
 
       <div className='product_z2c1_product'>
         <div className='product_z2c1_product1'>
-          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("Backup_of_Z2C 2june.png")} alt="Z2C" />
+          <img loading="lazy" className='product_z2c1_img' src={media_Backup_of_Z2C_2june_png} alt="Z2C" />
           <h3 className='productz2c_name_option'>Z2C</h3>
           <Link to="/sumitomo/Z2C" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>
           </Link>
         </div>
         <div className='product_z2c1_product2'>
-          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("82C+ 1Oct 2024.png")} alt="82C+" />
+          <img loading="lazy" className='product_z2c1_img' src={media_82C__1Oct_2024_png} alt="82C+" />
           <h3 className='productz2c_name_option'>82C+</h3>
           <Link to="/sumitomo/82CPLUS" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>
           </Link>
         </div>
         <div className='product_z2c1_product3'>
-          <img loading="lazy" className='product_z2c1_img' src={mediaUrl.image("W1C file.png")} alt="W1C" />
+          <img loading="lazy" className='product_z2c1_img' src={media_W1C_file_png} alt="W1C" />
           <h3 className='productz2c_name_option'>W1C</h3>
           <Link to="/sumitomo/W1C" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>
           </Link>
         </div>
         <div className='product_z2c1_product4'>
-          <img className='product_z2c1_img' src={mediaUrl.image("FC8r.png")} fetchpriority="high" alt="FC8R" />
+          <img className='product_z2c1_img' src={media_FC8r_png} fetchpriority="high" alt="FC8R" />
           <h3 className='productz2c_name_option'>FC8R</h3>
           <Link to="/sumitomo/FC8R" style={{ textDecoration: "none" }}>
             <button className='productz2c_button_option'>Know More</button>

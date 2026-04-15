@@ -1,3 +1,4 @@
+import media_ProductionLine_JPG from '../assets/img2/img/ProductionLine.JPG';
 // import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 // import './PageHeader.css';   // ✅ reuse same CSS classes as PageHeader
 
@@ -208,8 +209,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import './PageHeader.css';   // ✅ reuse same CSS classes as PageHeader
 
 // Media
-import { mediaUrl } from "../config/media";
-const ProductionLineImage = mediaUrl.image("ProductionLine.JPG");
+const ProductionLineImage = media_ProductionLine_JPG;
 
 // Detect browser zoom (same hook as in PageHeader)
 function useZoom({ inThreshold = 1.15, outThreshold = 0.9 } = {}) {

@@ -1,4 +1,4 @@
-import { mediaUrl } from '../config/media';
+import media_ceoo_webp from '../assets/img2/img/ceoo.webp';
 import React, { useEffect, useRef } from "react";
 import "./executives.css";
 const Executives = () => {
@@ -30,7 +30,7 @@ const Executives = () => {
       <div className="founders-container">
         <div className="founders-image-container">
           <div className="image-frame">
-            <img src={mediaUrl.image("ceoo.webp")} loading="lazy" alt="Mr. Awnish Gautam - Founder and CEO" />
+            <img src={media_ceoo_webp} loading="lazy" alt="Mr. Awnish Gautam - Founder and CEO" />
           </div>
         </div>
         

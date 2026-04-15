@@ -1,0 +1,1 @@
+var e=`/assets/SFCS-CGVGXnr0.png`;export{e as t};

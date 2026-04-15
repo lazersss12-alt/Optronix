@@ -1,0 +1,1 @@
+var e=`/assets/flat%20cable%20-D-lCPiK3.webp`;export{e as t};

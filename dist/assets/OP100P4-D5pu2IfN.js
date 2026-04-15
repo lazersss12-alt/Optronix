@@ -1,0 +1,1 @@
+var e=`/assets/OP100P4-BkuUA57E.pdf`;export{e as t};

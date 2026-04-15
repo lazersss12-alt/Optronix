@@ -1,0 +1,1 @@
+var e=`/assets/ftth-BzodNLom.mp4`;export{e as t};

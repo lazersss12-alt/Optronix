@@ -1,0 +1,1 @@
+var e=`/assets/op801gw-DyXBA-eN.pdf`;export{e as t};

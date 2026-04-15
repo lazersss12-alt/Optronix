@@ -1,0 +1,1 @@
+var e=`/assets/sumitomos1v-DoA41IU3.pdf`;export{e as t};

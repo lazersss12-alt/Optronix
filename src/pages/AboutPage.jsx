@@ -1,7 +1,8 @@
-import { mediaUrl } from '../config/media';
+import media_About_Page_webp from '../assets/img2/img/About Page.webp';
+import media_Banner11_webp from '../assets/img2/img/Banner11.webp';
 // import React from 'react';
 // import '../components/Aboutpage.css';
-// import mediaUrl.image("About Page.webp") from '../components/img/About Page.png';
+// import media_About_Page_webp from '../components/img/About Page.png';
 // import PublicationPage from './PublicationPage';
 
 // const AboutPage = () => {
@@ -28,7 +29,7 @@ import { mediaUrl } from '../config/media';
 //           </p>
 //         </div>
 //         <div className='about-page-container-image'>
-//           <img className='about-image' src={mediaUrl.image("About Page.webp")} alt="aboutimage" />
+//           <img className='about-image' src={media_About_Page_webp} alt="aboutimage" />
 //         </div>
 //       </div>
 
@@ -101,7 +102,7 @@ import { mediaUrl } from '../config/media';
 
 // import React from 'react';
 // import '../components/Aboutpage.css';
-// import mediaUrl.image("About Page.webp") from '../components/img/About Page.png';
+// import media_About_Page_webp from '../components/img/About Page.png';
 // import PublicationPage from './PublicationPage';
 
 // // Constants
@@ -120,7 +121,7 @@ import { mediaUrl } from '../config/media';
 //       collaborative environment that encourages teamwork, creativity, and
 //       innovation, driving continuous improvement in our products and services.`,
 //     image: {
-//       src: mediaUrl.image("About Page.webp"),
+//       src: media_About_Page_webp,
 //       alt: 'About Optronix - Innovation in Network Solutions'
 //     }
 //   },
@@ -247,7 +248,7 @@ const ABOUT_CONTENT = {
       collaborative environment that encourages teamwork, creativity, and
       innovation, driving continuous improvement in our products and services.`,
     image: {
-      src: mediaUrl.image("Banner11.webp"),
+      src: media_Banner11_webp,
       alt: 'About Optronix - Innovation in Network Solutions'
     }
   },

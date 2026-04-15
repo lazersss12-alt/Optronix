@@ -1,49 +1,64 @@
-import { mediaUrl } from '../../config/media';
+import media_splicer_mp4 from '../../assets/img2/img/splicer.mp4';
+import media_Pass_Fail_Function_mp4 from '../../assets/img2/img/Pass_Fail Function.mp4';
+import media_Nanotune_mp4 from '../../assets/img2/img/Nanotune.mp4';
+import media_wirelesslanesetup_mp4 from '../../assets/img2/img/wirelesslanesetup.mp4';
+import media_electrodechange_mp4 from '../../assets/img2/img/media/videos/electrodechange.mp4';
+import media_v_groove_mp4 from '../../assets/img2/img/v-groove.mp4';
+import media_cleaning_mp4 from '../../assets/img2/img/media/videos/cleaning.mp4';
+import media_stripping_mp4 from '../../assets/img2/img/stripping.mp4';
+import media_test1_webp from '../../assets/img2/img/test1.webp';
+import media_test2_webp from '../../assets/img2/img/test2.webp';
+import media_test3_webp from '../../assets/img2/img/test3.webp';
+import media_test4_webp from '../../assets/img2/img/test4.webp';
+import media_test5_webp from '../../assets/img2/img/test5.webp';
+import media_test6_webp from '../../assets/img2/img/test6.webp';
+import media_test7_webp from '../../assets/img2/img/test7.webp';
+import media_test8_webp from '../../assets/img2/img/test8.webp';
 // import React from "react";
 // import "./educationalpage.css";
-// import mediaUrl.video("splicer.mp4") from "../../assets/images/splicer.mp4";
-// import mediaUrl.video("Pass_Fail Function.mp4") from "../../assets/images/Pass_Fail Function.mp4";
-// import mediaUrl.video("Nanotune.mp4") from "../../assets/images/Nanotune.mp4";
-// import mediaUrl.video("wirelesslanesetup.mp4") from "../../assets/images/wirelesslanesetup.mp4";
-// import mediaUrl.video("electrodechange.mp4") from "../../assets/images/electrodechange.mp4";
-// import mediaUrl.video("v-groove.mp4") from "../../assets/images/v-groove.mp4";
-// import mediaUrl.video("cleaning.mp4") from "../../assets/images/cleaning.mp4";
-// import mediaUrl.video("stripping.mp4") from "../../assets/images/stripping.mp4";
-// import mediaUrl.video("splicer.mp4") from "../../assets/images/splicer.mp4"; // Use this instead of the image
+// import media_splicer_mp4 from "../../assets/images/splicer.mp4";
+// import media_Pass_Fail_Function_mp4 from "../../assets/images/Pass_Fail Function.mp4";
+// import media_Nanotune_mp4 from "../../assets/images/Nanotune.mp4";
+// import media_wirelesslanesetup_mp4 from "../../assets/images/wirelesslanesetup.mp4";
+// import media_electrodechange_mp4 from "../../assets/images/electrodechange.mp4";
+// import media_v_groove_mp4 from "../../assets/images/v-groove.mp4";
+// import media_cleaning_mp4 from "../../assets/images/cleaning.mp4";
+// import media_stripping_mp4 from "../../assets/images/stripping.mp4";
+// import media_splicer_mp4 from "../../assets/images/splicer.mp4"; // Use this instead of the image
 
 
 // const videos = [
 //   {
 //     title: "How to turn on splicer",
-//     src: mediaUrl.video("splicer.mp4"),
+//     src: media_splicer_mp4,
 //   },
 //   {
 //     title: "Pass Fail Functions ",
-//     src: mediaUrl.video("Pass_Fail Function.mp4"),
+//     src: media_Pass_Fail_Function_mp4,
 //   },
 //   {
 //     title: "what is NanoTune",
-//     src: mediaUrl.video("Nanotune.mp4"),
+//     src: media_Nanotune_mp4,
 //   },
 //   {
 //     title: "how to setup Wireless Lane",
-//     src: mediaUrl.video("wirelesslanesetup.mp4"),
+//     src: media_wirelesslanesetup_mp4,
 //   },
 //   {
 //     title: "How to change electrode",
-//     src: mediaUrl.video("electrodechange.mp4"),
+//     src: media_electrodechange_mp4,
 //   },
 //   {
 //     title: "How to clean v-groove",
-//     src: mediaUrl.video("v-groove.mp4"),
+//     src: media_v_groove_mp4,
 //   },
 //   {
 //     title: "  How to clean",
-//     src: mediaUrl.video("cleaning.mp4"),
+//     src: media_cleaning_mp4,
 //   },
 //   {
 //     title: "How to Stripping the fiber coating",
-//     src: mediaUrl.video("stripping.mp4"),
+//     src: media_stripping_mp4,
 //   },
 // ];
 
@@ -53,7 +68,7 @@ import { mediaUrl } from '../../config/media';
 //       {/* Featured Video Section */}
 //       <div className="ted-featured">
 //         <video
-//           src={mediaUrl.video("splicer.mp4")}
+//           src={media_splicer_mp4}
 //           autoPlay
 //           loop
 //           muted
@@ -116,81 +131,81 @@ const playlists = [
     id: 1,
     title: "How to Turn On Fusion Splicer",
     category: "Fusion Splicer",
-    thumbnail: mediaUrl.image("test1.webp"),
+    thumbnail: media_test1_webp,
     lessons: 5,
     duration: "48 sec",
     skillLevel: "beginner",
-    videoSrc: mediaUrl.video("splicer.mp4")
+    videoSrc: media_splicer_mp4
   },
   {
     id: 2,
     title: "Pass/Fail Function Explained",
     category: "OTDR",
-    thumbnail: mediaUrl.image("test2.webp"),
+    thumbnail: media_test2_webp,
     lessons: 3,
     duration: "57 sec",
     skillLevel: "intermediate",
-    videoSrc: mediaUrl.video("Pass_Fail Function.mp4")
+    videoSrc: media_Pass_Fail_Function_mp4
   },
   {
     id: 3,
     title: "What is NanoTune Technology",
     category: "Advanced Features",
-    thumbnail: mediaUrl.image("test3.webp"),
+    thumbnail: media_test3_webp,
     lessons: 4,
     duration: "41 sec",
     skillLevel: "advanced",
-    videoSrc: mediaUrl.video("Nanotune.mp4")
+    videoSrc: media_Nanotune_mp4
   },
   {
     id: 4,
     title: "Wireless LAN Setup Guide",
     category: "Network Setup",
-    thumbnail: mediaUrl.image("test4.webp"),
+    thumbnail: media_test4_webp,
     lessons: 6,
     duration: "1 min 27 sec",
     skillLevel: "intermediate",
-    videoSrc: mediaUrl.video("wirelesslanesetup.mp4")
+    videoSrc: media_wirelesslanesetup_mp4
   },
   {
     id: 5,
     title: "Electrode Replacement Procedure",
     category: "Maintenance",
-    thumbnail: mediaUrl.image("test5.webp"),
+    thumbnail: media_test5_webp,
     lessons: 2,
     duration: "2 min 6 sec",
     skillLevel: "beginner",
-    videoSrc: mediaUrl.video("electrodechange.mp4")
+    videoSrc: media_electrodechange_mp4
   },
   {
     id: 6,
     title: "V-Groove Cleaning Techniques",
     category: "Maintenance",
-    thumbnail: mediaUrl.image("test6.webp"),
+    thumbnail: media_test6_webp,
     lessons: 3,
     duration: "27 sec",
     skillLevel: "beginner",
-    videoSrc: mediaUrl.video("v-groove.mp4")
+    videoSrc: media_v_groove_mp4
   },
   {
     id: 7,
     title: "Complete Cleaning Guide",
     category: "Maintenance",
-    thumbnail: mediaUrl.image("test7.webp"),
+    thumbnail: media_test7_webp,
     lessons: 5,
     duration: "3 min 13 sec",
     skillLevel: "beginner",
-    videoSrc: mediaUrl.video("cleaning.mp4")
+    videoSrc: media_cleaning_mp4
   },
   {
     id: 8,
     title: "Fiber Coating Stripping Methods",
     category: "Fiber Preparation",
-    thumbnail: mediaUrl.image("test8.webp"),
+    thumbnail: media_test8_webp,
     lessons: 4,
     duration: "44 sec",
     skillLevel: "intermediate",
-    videoSrc: mediaUrl.video("stripping.mp4")
+    videoSrc: media_stripping_mp4
   }
 ];
 
@@ -708,14 +723,14 @@ const FeaturedSection = ({ onPlayVideo }) => {
     <section className="featured-section" aria-labelledby="featured-heading">
       <div
         className="featured-main"
-        onClick={() => onPlayVideo(mediaUrl.video("splicer.mp4"))}
+        onClick={() => onPlayVideo(media_splicer_mp4)}
         role="button"
         tabIndex={0}
-        onKeyDown={(e) => e.key === "Enter" && onPlayVideo(mediaUrl.video("splicer.mp4"))}
+        onKeyDown={(e) => e.key === "Enter" && onPlayVideo(media_splicer_mp4)}
         aria-label="Play featured video: Complete Fusion Splicer Training"
       >
         <video
-          src={mediaUrl.video("splicer.mp4")}
+          src={media_splicer_mp4}
           className="featured-media"
           muted
           loop

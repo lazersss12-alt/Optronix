@@ -1,5 +1,6 @@
-import { mediaUrl } from '../config/media';
-﻿import React, { useEffect, useState } from "react";
+import media_herophone1080_1920_mp4 from '../assets/img2/img/media/videos/herophone1080-1920.mp4';
+import media_herodesktop_mp4 from '../assets/img2/img/media/videos/herodesktop.mp4';
+import React, { useEffect, useState } from "react";
 import "./ImageSlider.css";
 // 9:16 aspect ratio
 const ImageSlider = () => {
@@ -58,7 +59,7 @@ const ImageSlider = () => {
       <div className="slide">
         {shouldLoadVideo ? (
           <video
-            src={isMobile ? mediaUrl.video("herophone1080-1920.mp4") : mediaUrl.video("herodesktop.mp4")}
+            src={isMobile ? media_herophone1080_1920_mp4 : media_herodesktop_mp4}
             className={`slide-media ${isMobile ? "video-mobile" : "video-desktop"}`}
             width={isMobile ? "1080" : "1920"}
             height={isMobile ? "1920" : "1080"}

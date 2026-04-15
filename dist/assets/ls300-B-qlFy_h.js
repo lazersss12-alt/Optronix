@@ -1,0 +1,1 @@
+var e=`/assets/ls300-SGUNiUwc.pdf`;export{e as t};

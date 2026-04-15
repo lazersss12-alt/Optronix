@@ -1,4 +1,21 @@
-import { mediaUrl } from '../../config/media';
+import media_machine1video2_mp4 from '../../assets/img2/img/media/videos/machine1video2.mp4';
+import media_smt_machine_2_webp from '../../assets/img2/img/smt machine 2.webp';
+import media_smt_machine_2_up_webp from '../../assets/img2/img/smt machine 2 up.webp';
+import media_smt_machine_3_webp from '../../assets/img2/img/smt machine 3.webp';
+import media_smtvideo2_mp4 from '../../assets/img2/img/smtvideo2.mp4';
+import media_smt_machine_15_up_webp from '../../assets/img2/img/smt machine 15 up.webp';
+import media_chipmounter_mp4 from '../../assets/img2/img/media/videos/chipmounter.mp4';
+import media_smt_machine_8_updated_webp from '../../assets/img2/img/smt machine 8 updated.webp';
+import media_smt_machine_9_updated_webp from '../../assets/img2/img/smt machine 9 updated.webp';
+import media_smt_machine_11_webp from '../../assets/img2/img/smt machine 11.webp';
+import media_smt_machine_12_up_webp from '../../assets/img2/img/smt machine 12 up.webp';
+import media_smt_machine_13_up_webp from '../../assets/img2/img/smt machine 13 up.webp';
+import media_smtvideo5_mp4 from '../../assets/img2/img/smtvideo5.mp4';
+import media_smt_machine_5_up2_webp from '../../assets/img2/img/smt machine 5 up2.webp';
+import media_smt_machine_14_webp from '../../assets/img2/img/smt machine 14.webp';
+import media_X_ray_inspection_machine_webp from '../../assets/img2/img/X ray inspection machine.webp';
+import media_pcboven_mp4 from '../../assets/img2/img/pcboven.mp4';
+import media_stencils1_mp4 from '../../assets/img2/img/stencils1.mp4';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import './SurfaceMountingShowcase.css';
@@ -81,7 +98,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 1,
       title: 'SOLDER PASTE PRINTER- GKG (G – TITAN)',
-      images: [mediaUrl.video("machine1video2.mp4"), mediaUrl.image("smt machine 2.webp"), mediaUrl.image("smt machine 2 up.webp"), mediaUrl.image("smt machine 3.webp")],
+      images: [media_machine1video2_mp4, media_smt_machine_2_webp, media_smt_machine_2_up_webp, media_smt_machine_3_webp],
       features: [
         'Board Size: 50×50mm to 510×510mm',
         'PCB Thickness: 0.4–6mm',
@@ -94,7 +111,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 2,
       title: 'SOLDER PASTE INSPECTION SPI KOH YOUNG (Ky8080)',
-      images: [mediaUrl.video("smtvideo2.mp4"), mediaUrl.image("smt machine 15 up.webp")],
+      images: [media_smtvideo2_mp4, media_smt_machine_15_up_webp],
       features: [
         'Inspects: Volume, Area, Height, Offset & more',
         'Camera: 2M Pix',
@@ -107,7 +124,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 3,
       title: 'CHIP MOUNTER NPM –D3 –A (PANASONIC)',
-      images: [mediaUrl.video("chipmounter.mp4"), mediaUrl.image("smt machine 8 updated.webp"), mediaUrl.image("smt machine 9 updated.webp")],
+      images: [media_chipmounter_mp4, media_smt_machine_8_updated_webp, media_smt_machine_9_updated_webp],
       features: [
         'Dual Line Mode: up to 510×300mm',
         'Ultra-High Speed: 400,000 CPH',
@@ -119,7 +136,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 4,
       title: 'REFLOW OVEN (JT RS- 1000 II - N2)',
-      images: [mediaUrl.image("smt machine 11.webp"), mediaUrl.image("smt machine 12 up.webp"), mediaUrl.image("smt machine 13 up.webp")],
+      images: [media_smt_machine_11_webp, media_smt_machine_12_up_webp, media_smt_machine_13_up_webp],
       features: [
         'Heating Zones: 10 Top / 10 Bottom',
         'Cooling Methods: Air Oven & Forced Air',
@@ -130,7 +147,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 5,
       title: '3D AUTOMATIC OPTICAL INSPECTION (AOI) KOH YOUNG ZENIT',
-      images: [mediaUrl.video("smtvideo5.mp4"), mediaUrl.image("smt machine 5 up2.webp"), mediaUrl.image("smt machine 14.webp")],
+      images: [media_smtvideo5_mp4, media_smt_machine_5_up2_webp, media_smt_machine_14_webp],
       features: [
         'Min. Component Size: 01005',
         'Max. PCB Size: 490×510mm',
@@ -143,7 +160,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 6,
       title: 'X-RAY INSPECTION MACHINE',
-      images: [mediaUrl.image("X ray inspection machine.webp")],
+      images: [media_X_ray_inspection_machine_webp],
       features: [
         'High-resolution X-ray imaging for BGA, QFN, and other hidden joints',
         'Automatic defect detection and classification',
@@ -156,7 +173,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 7,
       title: 'PCB BAKING OVEN',
-      images: [mediaUrl.video("pcboven.mp4")],
+      images: [media_pcboven_mp4],
       features: [
         'Temperature range: Ambient to 200°C',
         'Uniform temperature distribution',
@@ -169,7 +186,7 @@ const SurfaceMountingShowcase = () => {
     {
       id: 8,
       title: 'STENCIL CLEANING MACHINE',
-      images: [mediaUrl.video("stencils1.mp4")],
+      images: [media_stencils1_mp4],
       features: [
         'Automated cleaning process',
         'Quick and efficient cleaning',

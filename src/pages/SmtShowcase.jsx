@@ -1,4 +1,20 @@
-import { mediaUrl } from '../config/media';
+import media_WS12_mp4 from '../assets/img2/img/WS12.mp4';
+import media_WS1_webp from '../assets/img2/img/WS1.webp';
+import media_WS2_webp from '../assets/img2/img/WS2.webp';
+import media_TU1_mp4 from '../assets/img2/img/TU1.mp4';
+import media_Testing2_webp from '../assets/img2/img/Testing2.webp';
+import media_onttesting1_mp4 from '../assets/img2/img/onttesting1.mp4';
+import media_ONU_Testing_webp from '../assets/img2/img/ONU Testing.webp';
+import media_coldstorage2_mp4 from '../assets/img2/img/media/videos/coldstorage2.mp4';
+import media_coldstorage1_webp from '../assets/img2/img/coldstorage1.webp';
+import media_ESDcontrol1_webp from '../assets/img2/img/ESDcontrol1.webp';
+import media_ESDcontrol_mp4 from '../assets/img2/img/media/videos/ESDcontrol.mp4';
+import media_Preform1_mp4 from '../assets/img2/img/Preform1.mp4';
+import media_Preform2_mp4 from '../assets/img2/img/Preform2.mp4';
+import media_Reeltray1_webp from '../assets/img2/img/Reeltray1.webp';
+import media_Reeltray2_mp4 from '../assets/img2/img/Reeltray2.mp4';
+import media_VacuumSealing1_webp from '../assets/img2/img/VacuumSealing1.webp';
+import media_Reelcounter_mp4 from '../assets/img2/img/Reelcounter.mp4';
 // src/pages/SmtShowcase.jsx
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -129,7 +145,7 @@ const SmtShowcase = () => {
     {
       id: 1,
       title: 'LEAD FREE WAVE SOLDERING M/C (JT-WS-350)',
-      images: [mediaUrl.video("WS12.mp4"), mediaUrl.image("WS1.webp"), mediaUrl.image("WS2.webp")],
+      images: [media_WS12_mp4, media_WS1_webp, media_WS2_webp],
       features: [
         'Features a robust PC + PLC control system for maximum reliability',
         'PID + SSR control loop with stable heating up to 300°C',
@@ -141,7 +157,7 @@ const SmtShowcase = () => {
     {
       id: 2,
       title: 'TOUCHUP & TESTING LINE',
-      images: [mediaUrl.video("TU1.mp4"), mediaUrl.image("Testing2.webp")],
+      images: [media_TU1_mp4, media_Testing2_webp],
       features: [
         'Meticulous Touch-ups',
         'Thorough Testing',
@@ -154,7 +170,7 @@ const SmtShowcase = () => {
     {
       id: 3,
       title: 'ONU/ONT TESTING LINE',
-      images: [mediaUrl.video("onttesting1.mp4"), mediaUrl.image("ONU Testing.webp")],
+      images: [media_onttesting1_mp4, media_ONU_Testing_webp],
       features: [
         'Expert-Led Testing',
         'Precision ONU/OLT Validation',
@@ -166,7 +182,7 @@ const SmtShowcase = () => {
     {
       id: 4,
       title: 'Utility',
-      images: [mediaUrl.video("coldstorage2.mp4"), mediaUrl.image("coldstorage1.webp"), mediaUrl.image("ESDcontrol1.webp"), mediaUrl.video("ESDcontrol.mp4"), mediaUrl.video("Preform1.mp4"), mediaUrl.video("Preform2.mp4"), mediaUrl.image("Reeltray1.webp"), mediaUrl.video("Reeltray2.mp4"), mediaUrl.image("VacuumSealing1.webp"), mediaUrl.video("Reelcounter.mp4")],
+      images: [media_coldstorage2_mp4, media_coldstorage1_webp, media_ESDcontrol1_webp, media_ESDcontrol_mp4, media_Preform1_mp4, media_Preform2_mp4, media_Reeltray1_webp, media_Reeltray2_mp4, media_VacuumSealing1_webp, media_Reelcounter_mp4],
       features: ['Cold storage', 'ESD Control System', 'Preform', 'Reeltray', 'Vacuum Sealing Machine', 'Reel Counter'],
     },
   ];

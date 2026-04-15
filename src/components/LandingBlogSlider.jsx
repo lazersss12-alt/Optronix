@@ -1,4 +1,9 @@
-import { mediaUrl } from '../config/media';
+import media_Republic1_webp from '../assets/img2/img/Republic1.webp';
+import media_Republic2_webp from '../assets/img2/img/Republic2.webp';
+import media_Republic3_webp from '../assets/img2/img/Republic3.webp';
+import media_Republic4_webp from '../assets/img2/img/Republic4.webp';
+import media_Republic5_webp from '../assets/img2/img/Republic5.webp';
+import media_Republic6_webp from '../assets/img2/img/Republic6.webp';
 // EventCarousel.withNavigate.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -22,7 +27,7 @@ const EventCarousel = () => {
   const eventData = [
     {
       id: 100,
-      images: [mediaUrl.image("Republic1.webp"), mediaUrl.image("Republic2.webp"), mediaUrl.image("Republic3.webp"), mediaUrl.image("Republic4.webp"), mediaUrl.image("Republic5.webp"), mediaUrl.image("Republic6.webp")],
+      images: [media_Republic1_webp, media_Republic2_webp, media_Republic3_webp, media_Republic4_webp, media_Republic5_webp, media_Republic6_webp],
       title: 'Republic Day Ceremony | Kotdwar Plant',
       subtitle: 'A proud moment captured – The Candid Optronix Family!',
       description:

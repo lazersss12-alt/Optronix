@@ -1,4 +1,22 @@
-import { mediaUrl } from '../../../config/media';
+import media_colouring33_mp4 from '../../../assets/img2/img/media/videos/colouring33.mp4';
+import media_colouring11_webp from '../../../assets/img2/img/colouring11.webp';
+import media_colouring22_webp from '../../../assets/img2/img/colouring22.webp';
+import media_chirag_mp4 from '../../../assets/img2/img/media/videos/chirag.mp4';
+import media_Bufferingvideo1_mp4 from '../../../assets/img2/img/media/videos/Bufferingvideo1.mp4';
+import media_Bufferingvideo2_mp4 from '../../../assets/img2/img/media/videos/Bufferingvideo2.mp4';
+import media_Bufferring_3_webp from '../../../assets/img2/img/Bufferring 3.webp';
+import media_Fibertesting_mp4 from '../../../assets/img2/img/media/videos/Fibertesting.mp4';
+import media_ofc1_mp4 from '../../../assets/img2/img/ofc1.mp4';
+import media_ofc3_webp from '../../../assets/img2/img/ofc3.webp';
+import media_ofc2_webp from '../../../assets/img2/img/ofc2.webp';
+import media_ftth_mp4 from '../../../assets/img2/img/media/videos/ftth.mp4';
+import media_FTTH_2_webp from '../../../assets/img2/img/FTTH 2.webp';
+import media_FTTH_1_webp from '../../../assets/img2/img/FTTH 1.webp';
+import media_HDPE2_mp4 from '../../../assets/img2/img/media/videos/HDPE2.mp4';
+import media_HDPEtesting1_webp from '../../../assets/img2/img/HDPEtesting1.webp';
+import media_OFC11_mp4 from '../../../assets/img2/img/OFC11.mp4';
+import media_OFC22_webp from '../../../assets/img2/img/OFC22.webp';
+import media_OFC33_webp from '../../../assets/img2/img/OFC33.webp';
 import React, { useState, useEffect, useLayoutEffect } from 'react';
 import '../../../components/ui/SurfaceMountingShowcase.css'; // Responsive CSS
 import SMT from './smt';
@@ -121,7 +139,7 @@ const Ofcpage = () => {
     {
       id: 1,
       title: 'Colouring Lines',
-      images: [mediaUrl.video("colouring33.mp4"), mediaUrl.image("colouring11.webp"), mediaUrl.image("colouring22.webp")],
+      images: [media_colouring33_mp4, media_colouring11_webp, media_colouring22_webp],
       features: [
         'Precision color accuracy',
         'Durable with excellent adhesion',
@@ -133,7 +151,7 @@ const Ofcpage = () => {
     {
       id: 2,
       title: 'Buffering lines',
-      images: [mediaUrl.video("chirag.mp4"), mediaUrl.video("Bufferingvideo1.mp4"), mediaUrl.video("Bufferingvideo2.mp4"), mediaUrl.image("Bufferring 3.webp")],
+      images: [media_chirag_mp4, media_Bufferingvideo1_mp4, media_Bufferingvideo2_mp4, media_Bufferring_3_webp],
       features: [
         'Optimal protection and mechanical strength',
         'Consistent buffer integrity and reliability',
@@ -145,7 +163,7 @@ const Ofcpage = () => {
     {
       id: 3,
       title: 'Fiber Testing',
-      images: [mediaUrl.video("Fibertesting.mp4")],
+      images: [media_Fibertesting_mp4],
       features: [
         'High precision testing equipment',
         'Ensures performance and durability',
@@ -157,7 +175,7 @@ const Ofcpage = () => {
     {
       id: 4,
       title: 'Sheathing lines',
-      images: [mediaUrl.video("ofc1.mp4"), mediaUrl.image("ofc3.webp"), mediaUrl.image("ofc2.webp"), mediaUrl.image("colouring11.webp")],
+      images: [media_ofc1_mp4, media_ofc3_webp, media_ofc2_webp, media_colouring11_webp],
       features: [
         'Long-lasting environmental protection',
         'High-quality sheaths with precision',
@@ -169,7 +187,7 @@ const Ofcpage = () => {
     {
       id: 5,
       title: 'Ftth sheathing line',
-      images: [mediaUrl.video("ftth.mp4"), mediaUrl.image("FTTH 2.webp"), mediaUrl.image("FTTH 1.webp")],
+      images: [media_ftth_mp4, media_FTTH_2_webp, media_FTTH_1_webp],
       features: [
         'Fast and reliable data delivery',
         'Easy installation design',
@@ -181,7 +199,7 @@ const Ofcpage = () => {
     {
       id: 6,
       title: 'HDPE Testing',
-      images: [mediaUrl.video("HDPE2.mp4"), mediaUrl.image("HDPEtesting1.webp")],
+      images: [media_HDPE2_mp4, media_HDPEtesting1_webp],
       features: [
         'Rigorous HDPE material testing',
         'Ensures durability and quality',
@@ -193,7 +211,7 @@ const Ofcpage = () => {
     {
       id: 7,
       title: 'Packaging',
-      images: [mediaUrl.video("OFC11.mp4"), mediaUrl.image("OFC22.webp"), mediaUrl.image("OFC33.webp")],
+      images: [media_OFC11_mp4, media_OFC22_webp, media_OFC33_webp],
       features: [
         'Secure and protective packaging',
         'Efficient packing process',

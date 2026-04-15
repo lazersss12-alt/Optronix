@@ -1,0 +1,1 @@
+var e=`/assets/flat%20cable%2024-05-25-B1uJuWH-.pdf`;export{e as t};

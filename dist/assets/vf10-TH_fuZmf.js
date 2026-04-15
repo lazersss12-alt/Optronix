@@ -1,0 +1,1 @@
+var e=`/assets/vf10-BLpRu5Au.pdf`;export{e as t};

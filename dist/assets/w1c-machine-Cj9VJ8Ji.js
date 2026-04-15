@@ -1,0 +1,1 @@
+var e=`/assets/w1c-machine-D-GEaZ0l.png`;export{e as t};

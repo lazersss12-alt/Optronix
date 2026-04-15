@@ -1,13 +1,17 @@
-import { mediaUrl } from '../../../../config/media';
+import media_vfl_webp from '../../../../assets/img2/img/vfl.webp';
+import media_vf10_pdf from '../../../../assets/img2/img/vf10.pdf';
+import media_AE1001_webp from '../../../../assets/img2/img/AE1001.webp';
+import media_ae210_webp from '../../../../assets/img2/img/ae210.webp';
+import media_ep310_webp from '../../../../assets/img2/img/ep310.webp';
 // import React, { useState } from 'react';
 // import './Deviserproduct.css';
 // import '../../../../components/index.css';
 // import { Link } from 'react-router-dom';
 
-// import mediaUrl.image("vfl.webp") from "../../../../assets/images/vfl.png";
+// import media_vfl_webp from "../../../../assets/images/vfl.png";
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/VF10-4.png";
-// import mediaUrl.doc("vf10.pdf") from "../../../../assets/images/vf10.pdf";
+// import media_vf10_pdf from "../../../../assets/images/vf10.pdf";
 // import productImage2 from "../../../../assets/images/VF10-2.png";
 // import productImage3 from "../../../../assets/images/VF10-3.jpg";
 // import z2cImg from "../../../../assets/images/ae3100_main.jpg";
@@ -27,7 +31,7 @@ import { mediaUrl } from '../../../../config/media';
 
 //       </>
 //     ),
-//     img: mediaUrl.image("vfl.webp")
+//     img: media_vfl_webp
 
 //   },
 //   {
@@ -88,7 +92,7 @@ import { mediaUrl } from '../../../../config/media';
 //             </button>
 //             <button className='enquire_button'
 
-//               onClick={() => window.open(mediaUrl.doc("vf10.pdf"), "_blank")}  
+//               onClick={() => window.open(media_vf10_pdf, "_blank")}  
 //             >
 //               Download Catalog
 //             </button>
@@ -99,7 +103,7 @@ import { mediaUrl } from '../../../../config/media';
 // ];
 
 // const Deviserproductnine = () => {
-// const [productImage] = useState(mediaUrl.image("vfl.webp"));
+// const [productImage] = useState(media_vfl_webp);
 //   const [enquireOpen, setEnquireOpen] = useState(false);
 
 //   return (
@@ -127,7 +131,7 @@ import { mediaUrl } from '../../../../config/media';
 //         </button>
 //         <button
 //           className="btn-pill btn-outline"
-//           onClick={() => window.open(mediaUrl.doc("vf10.pdf"), "_blank")}
+//           onClick={() => window.open(media_vf10_pdf, "_blank")}
 //         >
 //           Download Catalog
 //         </button>
@@ -137,7 +141,7 @@ import { mediaUrl } from '../../../../config/media';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-//         src={mediaUrl.image("vfl.webp")} /* or use any of your images like productImage2 */
+//         src={media_vfl_webp} /* or use any of your images like productImage2 */
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -270,7 +274,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 const Deviserproducteight = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-  const [productImage] = useState(mediaUrl.image("vfl.webp"));
+  const [productImage] = useState(media_vfl_webp);
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -314,7 +318,7 @@ const Deviserproducteight = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-    const imgs = [mediaUrl.image("AE1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("ep310.webp")];
+    const imgs = [media_AE1001_webp, media_ae210_webp, media_vfl_webp, media_ep310_webp];
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -396,7 +400,7 @@ const Deviserproducteight = () => {
                 <button className="btn btn-primary" onClick={() => setEnquireOpen(true)}>
                   Enquire Now
                 </button>
-                <button className="btn btn-outline" onClick={() => window.open(mediaUrl.doc("vf10.pdf"), "_blank")}>
+                <button className="btn btn-outline" onClick={() => window.open(media_vf10_pdf, "_blank")}>
                   Download Catalog
                 </button>
               </div>
@@ -598,7 +602,7 @@ const Deviserproducteight = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("AE1001.webp")} loading="lazy" alt="AE1001" /></div>
+            <div className="s-media"><img src={media_AE1001_webp} loading="lazy" alt="AE1001" /></div>
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>
@@ -610,7 +614,7 @@ const Deviserproducteight = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ae210.webp")} loading="lazy" alt="AE210 Series" /></div>
+            <div className="s-media"><img src={media_ae210_webp} loading="lazy" alt="AE210 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">AE210 Series</h4>
               <p className="s-desc">Portable OPM/OLS series for field testing.</p>
@@ -622,7 +626,7 @@ const Deviserproducteight = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("vfl.webp")} loading="lazy" alt="VF-10" /></div>
+            <div className="s-media"><img src={media_vfl_webp} loading="lazy" alt="VF-10" /></div>
             <div className="s-body">
               <h4 className="s-title">VF-10</h4>
               <p className="s-desc">Visual fault locator for quick breaks/leaks.</p>
@@ -634,7 +638,7 @@ const Deviserproducteight = () => {
 
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-            <div className="s-media"><img src={mediaUrl.image("ep310.webp")} loading="lazy" alt="EP-310 Series" /></div>
+            <div className="s-media"><img src={media_ep310_webp} loading="lazy" alt="EP-310 Series" /></div>
             <div className="s-body">
               <h4 className="s-title">EP-310 Series</h4>
               <p className="s-desc">PON power meters for GPON/EPON testing.</p>

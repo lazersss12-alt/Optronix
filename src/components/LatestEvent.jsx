@@ -1,4 +1,10 @@
-import { mediaUrl } from '../config/media';
+import media_Republic1_webp from '../assets/img2/img/Republic1.webp';
+import media_Republic2_webp from '../assets/img2/img/Republic2.webp';
+import media_Republic3_webp from '../assets/img2/img/Republic3.webp';
+import media_Republic4_webp from '../assets/img2/img/Republic4.webp';
+import media_Republic5_webp from '../assets/img2/img/Republic5.webp';
+import media_Republic6_webp from '../assets/img2/img/Republic6.webp';
+import media_Republic7_mp4 from '../assets/img2/img/Republic7.mp4';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LatestEvent.css'; // We'll create this CSS file next
@@ -12,8 +18,8 @@ const LatestEvent = () => {
         id: 100,
         title: 'Republic Day',
         subtitle: 'Republic Day Celebration 2025',
-        cover: mediaUrl.image("Republic1.webp"),
-        images: [mediaUrl.image("Republic1.webp"), mediaUrl.image("Republic2.webp"), mediaUrl.image("Republic3.webp"), mediaUrl.image("Republic4.webp"), mediaUrl.image("Republic5.webp"), mediaUrl.image("Republic6.webp"), mediaUrl.video("Republic7.mp4")]
+        cover: media_Republic1_webp,
+        images: [media_Republic1_webp, media_Republic2_webp, media_Republic3_webp, media_Republic4_webp, media_Republic5_webp, media_Republic6_webp, media_Republic7_mp4]
     };
 
     const handleViewGallery = () => {
@@ -27,7 +33,7 @@ const LatestEvent = () => {
         <div className="latest-event-container">
             <div className="latest-event-content">
                 <div className="latest-event-image-wrapper">
-                    <img src={mediaUrl.image("Republic1.webp")} alt="Republic Day Celebration" className="latest-event-main-image" decoding="async" fetchPriority="high" />
+                    <img src={media_Republic1_webp} alt="Republic Day Celebration" className="latest-event-main-image" decoding="async" fetchPriority="high" />
                 </div>
                 <div className="latest-event-details">
                     <span className="latest-event-badge">Latest Event</span>

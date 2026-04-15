@@ -1,4 +1,13 @@
-import { mediaUrl } from '../../../config/media';
+import media_f4_webp from '../../../assets/img2/img/f4.webp';
+import media_f2_webp from '../../../assets/img2/img/f2.webp';
+import media_f3_webp from '../../../assets/img2/img/f3.webp';
+import media_png8_webp from '../../../assets/img2/img/png8.webp';
+import media_final_png_1_webp from '../../../assets/img2/img/final png 1.webp';
+import media_png5_webp from '../../../assets/img2/img/png5.webp';
+import media_fr_webp from '../../../assets/img2/img/fr.webp';
+import media_png7_webp from '../../../assets/img2/img/png7.webp';
+import media_png6_webp from '../../../assets/img2/img/png6.webp';
+import media_Opticalplant_webp from '../../../assets/img2/img/Opticalplant.webp';
 import React, { useState, useEffect } from 'react';
 import '../styles/smt.css';
 import '../../../pages/PageHeader.css';  // Importing PageHeader styles
@@ -17,15 +26,15 @@ const SMT = () => {
   
 
   const featuresData = [
-    { icon: mediaUrl.image("f4.webp"), title: 'Rodent Resistant', description: 'Rodent-resistant sheathing for durability.' },
-    { icon: mediaUrl.image("f2.webp"), title: 'Standard Length', description: 'Standard lengths for fast installation.' },
-    { icon: mediaUrl.image("f3.webp"), title: 'External Use', description: 'Weather-resistant jackets for outdoor use.' },
-    { icon: mediaUrl.image("png8.webp"), title: 'Rapid Deployment', description: 'Quick and efficient installation.', hideOnMobile: true },
-    { icon: mediaUrl.image("final png 1.webp"), title: 'Fire Retardant', description: 'Flame-retardant materials enhance safety.' },
-    { icon: mediaUrl.image("png5.webp"), title: 'Premium Quality', description: 'Superior performance and reliability.' },
-    { icon: mediaUrl.image("fr.webp"), title: 'Internal Use', description: 'Low-smoke & fire-safe for indoor cabling.' },
-    { icon: mediaUrl.image("png7.webp"), title: 'Water Resistant', description: 'Moisture-blocking design to prevent ingress.' },
-    { icon: mediaUrl.image("png6.webp"), title: 'Telecommunications', description: 'High-speed fiber for telecom networks.' }
+    { icon: media_f4_webp, title: 'Rodent Resistant', description: 'Rodent-resistant sheathing for durability.' },
+    { icon: media_f2_webp, title: 'Standard Length', description: 'Standard lengths for fast installation.' },
+    { icon: media_f3_webp, title: 'External Use', description: 'Weather-resistant jackets for outdoor use.' },
+    { icon: media_png8_webp, title: 'Rapid Deployment', description: 'Quick and efficient installation.', hideOnMobile: true },
+    { icon: media_final_png_1_webp, title: 'Fire Retardant', description: 'Flame-retardant materials enhance safety.' },
+    { icon: media_png5_webp, title: 'Premium Quality', description: 'Superior performance and reliability.' },
+    { icon: media_fr_webp, title: 'Internal Use', description: 'Low-smoke & fire-safe for indoor cabling.' },
+    { icon: media_png7_webp, title: 'Water Resistant', description: 'Moisture-blocking design to prevent ingress.' },
+    { icon: media_png6_webp, title: 'Telecommunications', description: 'High-speed fiber for telecom networks.' }
   ];
 
   return (
@@ -41,7 +50,7 @@ const SMT = () => {
               backgroundImage: `
               linear-gradient(rgba(0, 0, 0, 0.3)),
                 
-                url(${mediaUrl.image("Opticalplant.webp")})
+                url(${media_Opticalplant_webp})
               `,
             }}
           >

@@ -1,16 +1,22 @@
-import { mediaUrl } from '../config/media';
+import media_t1_webp from '../assets/img2/img/t1.webp';
+import media_t2_webp from '../assets/img2/img/t2.webp';
+import media_t3_webp from '../assets/img2/img/t3.webp';
+import media_t4_webp from '../assets/img2/img/t4.webp';
+import media_t5_webp from '../assets/img2/img/t5.webp';
+import media_t6_webp from '../assets/img2/img/t6.webp';
+import media_t7_webp from '../assets/img2/img/t7.webp';
 // Testimonials.jsx (drop-in)
 import React, { useRef, useEffect, useState } from "react";
 import "./testimonials.css";
 const testimonialsData = [
-  { id: 1, image: mediaUrl.image("t1.webp"), name: "Gaurav Sharma", text: "Optronix provides excellent quality equipment and reliable performance for all our fiber projects." },
-  { id: 2, image: mediaUrl.image("t2.webp"), name: "Deepali Verma", text: "I have been consistently impressed with Optronix’s products and after-sales service. Highly recommended!" },
-  { id: 3, image: mediaUrl.image("t3.webp"), name: "Chetan (Gautam Rion)", text: "The build quality and precision of Optronix tools make installation work smooth and efficient." },
-  { id: 4, image: mediaUrl.image("t4.webp"), name: "Gaurav Tyagi", text: "Optronix offers durable and accurate solutions that make fiber deployment much easier for our team." },
-  { id: 5, image: mediaUrl.image("t5.webp"), name: "Sayyed Danish", text: "Their customer support is outstanding — quick response and genuine care for client satisfaction." },
-  { id: 6, image: mediaUrl.image("t6.webp"), name: "Computer kings", text: "High-quality equipment, timely delivery, and professional service. Optronix is a trusted brand for us." },
-  { id: 7, image: mediaUrl.image("t7.webp"), name: "Ravinder Ji", text: "I have been using Optronix products for years and never faced performance issues. Great experience overall." },
-  { id: 8, image: mediaUrl.image("t1.webp"), name: "Ankit Kumar", text: "Optronix’s fiber optic tools are reliable and user-friendly, making our installation jobs hassle-free." },
+  { id: 1, image: media_t1_webp, name: "Gaurav Sharma", text: "Optronix provides excellent quality equipment and reliable performance for all our fiber projects." },
+  { id: 2, image: media_t2_webp, name: "Deepali Verma", text: "I have been consistently impressed with Optronix’s products and after-sales service. Highly recommended!" },
+  { id: 3, image: media_t3_webp, name: "Chetan (Gautam Rion)", text: "The build quality and precision of Optronix tools make installation work smooth and efficient." },
+  { id: 4, image: media_t4_webp, name: "Gaurav Tyagi", text: "Optronix offers durable and accurate solutions that make fiber deployment much easier for our team." },
+  { id: 5, image: media_t5_webp, name: "Sayyed Danish", text: "Their customer support is outstanding — quick response and genuine care for client satisfaction." },
+  { id: 6, image: media_t6_webp, name: "Computer kings", text: "High-quality equipment, timely delivery, and professional service. Optronix is a trusted brand for us." },
+  { id: 7, image: media_t7_webp, name: "Ravinder Ji", text: "I have been using Optronix products for years and never faced performance issues. Great experience overall." },
+  { id: 8, image: media_t1_webp, name: "Ankit Kumar", text: "Optronix’s fiber optic tools are reliable and user-friendly, making our installation jobs hassle-free." },
 ];
 
 const Testimonials = () => {

@@ -1,6 +1,5 @@
-import { mediaUrl } from '../../../config/media';
-
-
+import media_mim_mp4 from '../../../assets/img2/img/mim.mp4';
+import media_mid_mp4 from '../../../assets/img2/img/mid.mp4';
 import React, { useEffect, useRef, useState } from 'react';
 import Miimgone from '../components/miimgone';
 
@@ -81,7 +80,7 @@ const SmtShowcase = () => {
   }, []);
 
   const isMobile = window.innerWidth <= 768;
-  const videoSrc = isMobile ? mediaUrl.video("mim.mp4") : mediaUrl.video("mid.mp4");
+  const videoSrc = isMobile ? media_mim_mp4 : media_mid_mp4;
 
   const scrollContainerStyle = {
     height: '300vh',

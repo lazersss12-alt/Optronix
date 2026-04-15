@@ -1,10 +1,16 @@
-import { mediaUrl } from '../config/media';
+import media_Z2C_webp from '../assets/img2/img/Z2C.webp';
+import media_i6_webp from '../assets/img2/img/i6.webp';
+import media_i7_webp from '../assets/img2/img/i7.webp';
+import media_i8_webp from '../assets/img2/img/i8.webp';
+import media_i9_webp from '../assets/img2/img/i9.webp';
+import media_i5_webp from '../assets/img2/img/i5.webp';
+import media_i10_webp from '../assets/img2/img/i10.webp';
 import React, { useState } from 'react';
 import './page.css';
 import { Link } from 'react-router-dom';
 import ProductLeadModal from '../components/common/ProductLeadModal';
 const Sumitomoproducttwelve = () => {
-  const [productImage, setProductImage] = useState(mediaUrl.image("Z2C.webp"));
+  const [productImage, setProductImage] = useState(media_Z2C_webp);
   const [activeIcon, setActiveIcon] = useState(null);
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,33 +41,33 @@ const Sumitomoproducttwelve = () => {
             <div className='product_s1v1_h2'>
               <img
                 className={`product_s1v1_icon1 product_s1v1_icon ${activeIcon === 'icon1' ? 'active' : ''}`}
-                src={mediaUrl.image("i6.webp")}
+                src={media_i6_webp}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i6.webp"), 'icon1')} />
+                onClick={() => handleIconClick(media_i6_webp, 'icon1')} />
 
               <img
                 className={`product_s1v1_icon2 product_s1v1_icon ${activeIcon === 'icon2' ? 'active' : ''}`}
-                src={mediaUrl.image("i7.webp")}
+                src={media_i7_webp}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i7.webp"), 'icon2')} />
+                onClick={() => handleIconClick(media_i7_webp, 'icon2')} />
 
               <img
                 className={`product_s1v1_icon3 product_s1v1_icon ${activeIcon === 'icon3' ? 'active' : ''}`}
-                src={mediaUrl.image("i8.webp")}
+                src={media_i8_webp}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i8.webp"), 'icon3')} />
+                onClick={() => handleIconClick(media_i8_webp, 'icon3')} />
 
               <img
                 className={`product_s1v1_icon4 product_s1v1_icon ${activeIcon === 'icon4' ? 'active' : ''}`}
-                src={mediaUrl.image("i9.webp")}
+                src={media_i9_webp}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i9.webp"), 'icon4')} />
+                onClick={() => handleIconClick(media_i9_webp, 'icon4')} />
 
               <img
                 className={`product_s1v1_icon5 product_s1v1_icon ${activeIcon === 'icon5' ? 'active' : ''}`}
-                src={mediaUrl.image("i5.webp")}
+                src={media_i5_webp}
                 alt='Feature Icon'
-                onClick={() => handleIconClick(mediaUrl.image("i5.webp"), 'icon5')} />
+                onClick={() => handleIconClick(media_i5_webp, 'icon5')} />
             </div>
           </div>
 
@@ -83,12 +89,12 @@ const Sumitomoproducttwelve = () => {
         </div>
         <div className='product_d_feature_img'>
           
-          {mediaUrl.image("i6.webp") && (
-            <img src={mediaUrl.image("i6.webp")} alt="Feature" style={{ width: "60%", display: "block", margin: "0 auto" }} />
+          {media_i6_webp && (
+            <img src={media_i6_webp} alt="Feature" style={{ width: "60%", display: "block", margin: "0 auto" }} />
           )}
         </div> 
 
-        <img style={{width: "100%"}} src={mediaUrl.image("i10.webp")} alt=" EPON OLT FEATURE" />
+        <img style={{width: "100%"}} src={media_i10_webp} alt=" EPON OLT FEATURE" />
 
       </div>**/}
 
@@ -96,7 +102,7 @@ const Sumitomoproducttwelve = () => {
       <div className='products1v-feature-section-f2'>
 
         <div className='featurez2c-section-f2-a'>
-          <img style={{ width: "100%" }} src={mediaUrl.image("i10.webp")} alt="EPON OLT FEATURE" />
+          <img style={{ width: "100%" }} src={media_i10_webp} alt="EPON OLT FEATURE" />
 
         </div>
         <div className='featurez2c-section-f2-b'>

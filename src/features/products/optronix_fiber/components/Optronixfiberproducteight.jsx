@@ -1,10 +1,10 @@
-// import React from 'react';
+import React, { useState } from 'react';
 // import './Optronixfiberproduct.css';
 // import { Link } from 'react-router-dom';
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 // const Optronixfiberproducteight = () => {
-  const [enquireOpen, setEnquireOpen] = useState(false);
+//   const [enquireOpen, setEnquireOpen] = useState(false);
 //   return (
 //     <div>
 //       <div className='product_d'>

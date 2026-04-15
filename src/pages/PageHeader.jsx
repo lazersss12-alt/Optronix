@@ -1,4 +1,5 @@
-import { mediaUrl } from '../config/media';
+import media_smtheader2_webp from '../assets/img2/img/smtheader2.webp';
+import media_Updated_3_mp4 from '../assets/img2/img/Updated 3.mp4';
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import './PageHeader.css';
 
@@ -67,7 +68,7 @@ const PageHeader = () => {
     rgba(0, 0, 0, 2) 0%,
     rgba(0, 0, 0, 0) 30%
   ),
-      url(${mediaUrl.image("smtheader2.webp")})
+      url(${media_smtheader2_webp})
     `,
   };
 
@@ -89,7 +90,7 @@ const PageHeader = () => {
         <VideoModal
           isOpen={isModalOpen}
           onClose={closeModal}
-          videoUrl={mediaUrl.video("Updated 3.mp4")}
+          videoUrl={media_Updated_3_mp4}
         />
       </div>
     </div>

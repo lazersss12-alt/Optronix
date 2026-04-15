@@ -1,0 +1,1 @@
+var e=`/assets/gpon4-Eap07525.webp`;export{e as t};

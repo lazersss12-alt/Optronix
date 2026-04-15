@@ -1,4 +1,20 @@
-import { mediaUrl } from '../../config/media';
+import media_ae3100_webp from '../../assets/img2/img/ae3100.webp';
+import media_ae3100_pdf from '../../assets/img2/img/media/docs/ae3100.pdf';
+import media_AE1001_webp from '../../assets/img2/img/AE1001.webp';
+import media_ae1001_pdf from '../../assets/img2/img/media/docs/ae1001.pdf';
+import media_ae3100dm_pdf from '../../assets/img2/img/media/docs/ae3100dm.pdf';
+import media_ae3100dpone_pdf from '../../assets/img2/img/media/docs/ae3100dpone.pdf';
+import media_ae210_webp from '../../assets/img2/img/ae210.webp';
+import media_ae200_pdf from '../../assets/img2/img/media/docs/ae200.pdf';
+import media_ep310_webp from '../../assets/img2/img/ep310.webp';
+import media_ep300_pdf from '../../assets/img2/img/media/docs/ep300.pdf';
+import media_ls310_webp from '../../assets/img2/img/ls310.webp';
+import media_ls300_pdf from '../../assets/img2/img/media/docs/ls300.pdf';
+import media_ep710_webp from '../../assets/img2/img/ep710.webp';
+import media_ep710_pdf from '../../assets/img2/img/media/docs/ep710.pdf';
+import media_vfl_webp from '../../assets/img2/img/vfl.webp';
+import media_vf10_pdf from '../../assets/img2/img/vf10.pdf';
+import media_Devisorbanner_webp from '../../assets/img2/img/Devisorbanner.webp';
 import React, { useState, useEffect } from 'react';
 import '../../components/index.css';
 import '../../components/sumitomo/Sumitomo.css';
@@ -7,146 +23,146 @@ import ProductLeadModal from '../common/ProductLeadModal';
 const productData = {
   1: [
     {
-      image: mediaUrl.image("ae3100.webp"),
+      image: media_ae3100_webp,
       title: "AE3100A~F Series",
       description: "Best OTDR in Segment",
       readMoreLink: "/deviser/AE3100A",
-      catalogLink: mediaUrl.doc("ae3100.pdf")
+      catalogLink: media_ae3100_pdf
     },
     {
-      image: mediaUrl.image("AE1001.webp"),
+      image: media_AE1001_webp,
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
-      catalogLink: mediaUrl.doc("ae1001.pdf")
+      catalogLink: media_ae1001_pdf
     },
     {
-      image: mediaUrl.image("ae3100.webp"),
+      image: media_ae3100_webp,
       title: "AE3100DM",
       description: "Best Multimode OTDR",
       readMoreLink: "/deviser/AE3100DM",
-      catalogLink: mediaUrl.doc("ae3100dm.pdf")
+      catalogLink: media_ae3100dm_pdf
     },
     {
-      image: mediaUrl.image("ae3100.webp"),
+      image: media_ae3100_webp,
       title: "AE3100 Live Series",
       description: "One of the best Live OTDR",
       readMoreLink: "/deviser/AE3100Live",
-      catalogLink: mediaUrl.doc("ae3100dpone.pdf")
+      catalogLink: media_ae3100dpone_pdf
     },
     {
-      image: mediaUrl.image("ae210.webp"),
+      image: media_ae210_webp,
       title: "AE210 Series",
       description: "Best Optical Power Meter",
       readMoreLink: "/deviser/AE210",
-      catalogLink: mediaUrl.doc("ae200.pdf")
+      catalogLink: media_ae200_pdf
     },
     {
-      image: mediaUrl.image("ep310.webp"),
+      image: media_ep310_webp,
       title: "EP-310 ",
       description: "PON Power Meter",
       readMoreLink: "/deviser/EP310",
-      catalogLink: mediaUrl.doc("ep300.pdf")
+      catalogLink: media_ep300_pdf
     },
     {
-      image: mediaUrl.image("ls310.webp"),
+      image: media_ls310_webp,
       title: "LS310 Series",
       description: "Optical Laser Source Meter",
       readMoreLink: "/deviser/LS310",
-      catalogLink: mediaUrl.doc("ls300.pdf")
+      catalogLink: media_ls300_pdf
     },
     {
-      image: mediaUrl.image("ep710.webp"),
+      image: media_ep710_webp,
       title: " EP710 Series",
       description: "Multimeter",
       readMoreLink: "/deviser/EP710",
-      catalogLink: mediaUrl.doc("ep710.pdf")
+      catalogLink: media_ep710_pdf
     },
     {
-      image: mediaUrl.image("vfl.webp"),
+      image: media_vfl_webp,
       title: "VF-10",
       description: "Visual Fault Locator",
       readMoreLink: "/deviser/VF10",
-      catalogLink: mediaUrl.doc("vf10.pdf")
+      catalogLink: media_vf10_pdf
     }
   ],
   2: [
     {
-      image: mediaUrl.image("ae3100.webp"),
+      image: media_ae3100_webp,
       title: "AE3100A~F Series",
       description: "Best OTDR in Segment",
       readMoreLink: "/deviser/AE3100A",
-      catalogLink: mediaUrl.doc("ae3100.pdf")
+      catalogLink: media_ae3100_pdf
     },
     {
-      image: mediaUrl.image("AE1001.webp"),
+      image: media_AE1001_webp,
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
-      catalogLink: mediaUrl.doc("ae1001.pdf")
+      catalogLink: media_ae1001_pdf
     }
   ],
   3: [
     {
-      image: mediaUrl.image("ae3100.webp"),
+      image: media_ae3100_webp,
       title: "AE3100DM",
       description: "Best Multimode OTDR",
       readMoreLink: "/deviser/AE3100DM",
-      catalogLink: mediaUrl.doc("ae3100dm.pdf")
+      catalogLink: media_ae3100dm_pdf
     }
   ],
   4: [
     {
-      image: mediaUrl.image("ae3100.webp"),
+      image: media_ae3100_webp,
       title: "AE3100 Live Series",
       description: "One of the best Live OTDR",
       readMoreLink: "/deviser/AE3100Live",
-      catalogLink: mediaUrl.doc("ae3100dpone.pdf")
+      catalogLink: media_ae3100dpone_pdf
     }
   ],
   5: [
     {
-      image: mediaUrl.image("ae210.webp"),
+      image: media_ae210_webp,
       title: "AE210 Series",
       description: "Best Optical Power Meter",
       readMoreLink: "/deviser/AE210",
-      catalogLink: mediaUrl.doc("ae200.pdf")
+      catalogLink: media_ae200_pdf
     }
   ],
   6: [
     {
-      image: mediaUrl.image("ep310.webp"),
+      image: media_ep310_webp,
       title: "EP-310 Series ",
       description: "PON Power Meter",
       readMoreLink: "/deviser/EP310",
-      catalogLink: mediaUrl.doc("ep300.pdf")
+      catalogLink: media_ep300_pdf
     }
   ],
   7: [
     {
-      image: mediaUrl.image("ls310.webp"),
+      image: media_ls310_webp,
       title: "LS300 Series",
       description: "Optical Laser Source Meter",
       readMoreLink: "/deviser/LS310",
-      catalogLink: mediaUrl.doc("ls300.pdf")
+      catalogLink: media_ls300_pdf
     }
   ],
   8: [
     {
-      image: mediaUrl.image("ep710.webp"),
+      image: media_ep710_webp,
       title: " EP710 Series",
       description: "Multimeter",
       readMoreLink: "/deviser/EP710",
-      catalogLink: mediaUrl.doc("ep710.pdf")
+      catalogLink: media_ep710_pdf
     }
   ],
   9: [
     {
-      image: mediaUrl.image("vfl.webp"),
+      image: media_vfl_webp,
       title: "VF-10",
       description: "Visual Fault Locator",
       readMoreLink: "/deviser/VF10",
-      catalogLink: mediaUrl.doc("vf10.pdf")
+      catalogLink: media_vf10_pdf
     }
   ]
 };
@@ -198,7 +214,7 @@ const Deviserproduct = () => {
     <div className="deviserproduct-page-main">
       {/* Banner Section */}
       <div className="deviser-page-banner">
-        <img src={mediaUrl.image("Devisorbanner.webp")} fetchpriority="high" alt="Deviser Products" className="banner-image" />
+        <img src={media_Devisorbanner_webp} fetchpriority="high" alt="Deviser Products" className="banner-image" />
       </div>
       <div className="deviserproduct-page-upperline"></div>
       <div className="product-page">

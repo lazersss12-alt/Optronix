@@ -1,0 +1,1 @@
+var e=`/assets/W1C%20file-DLeu1Dp6.webp`;export{e as t};

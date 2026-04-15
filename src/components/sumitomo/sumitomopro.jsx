@@ -1,4 +1,5 @@
-import { mediaUrl } from '../../config/media';
+import media_sumitomo_banner_webp from '../../assets/img2/img/sumitomo-banner.webp';
+import media_SUMITOMOupdated_webp from '../../assets/img2/img/SUMITOMOupdated.webp';
 import React, { useEffect } from 'react';
 import './Sumitomo.css';
 function SumitomoPro() {
@@ -11,14 +12,14 @@ function SumitomoPro() {
   //   <section className="sumitomo-page">
   //     <div
   //       className="sumitomo-hero"
-  //       style={{ backgroundImage: `url(${mediaUrl.image("sumitomo-banner.webp")})` }}
+  //       style={{ backgroundImage: `url(${media_sumitomo_banner_webp})` }}
   //     >
   //       <div className="sumitomo-hero__overlay" />
   //       <div className="sumitomo-hero__content">
   //         <h1 className="sumitomo-page-pro-name">
   //           <img
   //             className="sumitomo-logo"
-  //             src={mediaUrl.image("SUMITOMOupdated.webp")}
+  //             src={media_SUMITOMOupdated_webp}
   //             alt="Sumitomo Electric"
   //           />
   //         </h1>

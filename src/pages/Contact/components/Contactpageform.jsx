@@ -1,4 +1,4 @@
-import { mediaUrl } from '../../../config/media';
+import media_logo_webp from '../../../assets/img2/img/logo.webp';
 // import React, { useState, useEffect } from 'react';
 // import '../../../components/Contact.css';
 // import opticsphoto1 from '../../../assets/images/Opticalplant.png';
@@ -648,7 +648,7 @@ const thankYouEmailHTML = (customerName = 'Customer') => `
     
     <tr>
       <td style="padding:20px; text-align:center; background-color:#ffffff; border-top-left-radius:10px; border-top-right-radius:10px;">
-        <img src={mediaUrl.image("logo.webp")} loading="lazy" alt="Candid Optronix Pvt. Ltd." style="max-width:180px; height:auto;">
+        <img src={media_logo_webp} loading="lazy" alt="Candid Optronix Pvt. Ltd." style="max-width:180px; height:auto;">
       </td>
     </tr>
     

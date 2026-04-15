@@ -1,0 +1,1 @@
+var e=`/assets/Optronixgold-BlYPgUXL.webp`,t=`/assets/GOLDFIBER-DYy7pgWD.pdf`;export{e as n,t};

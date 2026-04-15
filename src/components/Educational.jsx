@@ -1,12 +1,15 @@
-import { mediaUrl } from '../config/media';
+import media_thumbnail1_webp from '../assets/img2/img/thumbnail1.webp';
+import media_thumbnail2_webp from '../assets/img2/img/thumbnail2.webp';
+import media_thumbnail3_webp from '../assets/img2/img/thumbnail3.webp';
+import media_thumbnail4_webp from '../assets/img2/img/thumbnail4.webp';
 import React, { useState, useRef, useEffect } from 'react';
 import './educational.css';
 import { Link } from 'react-router-dom';
 const videos = [
-  { id: 1, youtubeId: 'igbZ724SVU8', title: 'Splicer', description: 'How to turn on splicer.', thumbnail: mediaUrl.image("thumbnail1.webp") },
-  { id: 2, youtubeId: 'k9IPmX17K6k', title: 'WLAN Setup', description: 'How to setup WLAN?', thumbnail: mediaUrl.image("thumbnail2.webp") },
-  { id: 3, youtubeId: 'CR4LOEIRhbY', title: 'V-Groove Cleaning', description: 'How to clean v-groove?', thumbnail: mediaUrl.image("thumbnail3.webp") },
-  { id: 4, youtubeId: 'v1gISCwq-Xg', title: 'Electrode', description: 'How to change electrode?', thumbnail: mediaUrl.image("thumbnail4.webp") },
+  { id: 1, youtubeId: 'igbZ724SVU8', title: 'Splicer', description: 'How to turn on splicer.', thumbnail: media_thumbnail1_webp },
+  { id: 2, youtubeId: 'k9IPmX17K6k', title: 'WLAN Setup', description: 'How to setup WLAN?', thumbnail: media_thumbnail2_webp },
+  { id: 3, youtubeId: 'CR4LOEIRhbY', title: 'V-Groove Cleaning', description: 'How to clean v-groove?', thumbnail: media_thumbnail3_webp },
+  { id: 4, youtubeId: 'v1gISCwq-Xg', title: 'Electrode', description: 'How to change electrode?', thumbnail: media_thumbnail4_webp },
 ];
 
 const Educational = () => {

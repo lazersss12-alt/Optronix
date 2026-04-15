@@ -1,0 +1,1 @@
+var e=`/assets/op101x-CUuiQXMx.pdf`;export{e as t};

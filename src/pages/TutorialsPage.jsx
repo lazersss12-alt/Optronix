@@ -1,4 +1,4 @@
-import { mediaUrl } from '../config/media';
+import media_Updated_Video_mp4 from '../assets/img2/img/Updated Video.mp4';
 // src/pages/TutorialsPage.jsx
 
 // src/pages/TutorialsPage.jsx
@@ -116,7 +116,7 @@ const TutorialsPage = () => {
       <div style={videoContainerStyle}>
         <video
           ref={videoRef}
-          src={mediaUrl.video("Updated Video.mp4")}
+          src={media_Updated_Video_mp4}
           muted
           autoPlay
           playsInline

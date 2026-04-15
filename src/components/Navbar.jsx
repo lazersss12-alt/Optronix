@@ -1,4 +1,5 @@
-import { mediaUrl } from '../config/media';
+import media_logo_webp from '../assets/img2/img/logo.webp';
+import media_Optronix_Catalogue_pdf from '../assets/img2/img/Optronix_Catalogue.pdf';
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './index.css';
@@ -132,7 +133,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="nav-logo">
           <Link to="/" onClick={closeMenu}>
-            <img src={mediaUrl.image("logo.webp")} loading="lazy" alt="Optronix Logo" className="logo" />
+            <img src={media_logo_webp} loading="lazy" alt="Optronix Logo" className="logo" />
           </Link>
         </div>
 
@@ -256,7 +257,7 @@ const Navbar = () => {
             {isMobile && (
               <li className="mobile-download">
                 <a
-                  href={mediaUrl.root("Optronix_Catalogue.pdf")}
+                  href={media_Optronix_Catalogue_pdf}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={closeMenu}
@@ -295,7 +296,7 @@ const Navbar = () => {
           <span
             className="download-btn tooltip"
             data-tooltip="Download E-Catalog"
-            onClick={() => window.open(mediaUrl.root("Optronix_Catalogue.pdf"), "_blank")}
+            onClick={() => window.open(media_Optronix_Catalogue_pdf, "_blank")}
 
 
             aria-label="Download Catalog"
