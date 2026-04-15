@@ -9,28 +9,17 @@ import media_sumitomo82m12_pdf from '../../../../assets/img2/img/sumitomo82m12.p
 // import '../../../../pages/page.css';
 // import '../../../../components/index.css';
 // import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 // import media_82M11_webp from "../../../../assets/images/82M11.webp";
-=======
-// import mediaUrl.image("82m11.webp") from "../../../../assets/images/82M11.webp";
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 // import ProductBg from "../../../../assets/images/headerbackground.png";
 // import productImage4 from "../../../../assets/images/82M4.png";
 // import s1vpdf from "../../../../assets/images/sumitomo82m12.pdf";
 // import productImage2 from "../../../../assets/images/82M2.png";
 // import productImage3 from "../../../../assets/images/82M3.png";
 // import eponoltf1 from "../../../../assets/images/productsix.webp";
-<<<<<<< HEAD
 // import media_Backup_of_Z2C_2june_png from "../../../../assets/images/Backup_of_Z2C 2june.png";
 // import media_W1C_file_png from "../../../../assets/images/W1C file.png";
 // import media_82C__1Oct_2024_png from "../../../../assets/images/82C+ 1Oct 2024.png";
 // import media_FC8r_png from "../../../../assets/images/FC8r.png";
-=======
-// import mediaUrl.image("backup_of_z2c 2june.png") from "../../../../assets/images/Backup_of_Z2C 2june.png";
-// import mediaUrl.image("w1c file.png") from "../../../../assets/images/W1C file.png";
-// import mediaUrl.image("82c+ 1oct 2024.png") from "../../../../assets/images/82C+ 1Oct 2024.png";
-// import mediaUrl.image("fc8r.png") from "../../../../assets/images/FC8r.png";
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 // const sections = [
@@ -43,11 +32,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 
 //       </>
 //     ),
-<<<<<<< HEAD
 //     img: media_82M11_webp
-=======
-//     img: mediaUrl.image("82m11.webp")
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 
 //   },
 //   {
@@ -114,11 +99,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 // ];
 
 // const Sumitomoproductsix = () => {
-<<<<<<< HEAD
 //   const [productImage, setProductImage] = useState(media_82M11_webp);
-=======
-//   const [productImage, setProductImage] = useState(mediaUrl.image("82m11.webp"));
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //   const [enquireOpen, setEnquireOpen] = useState(false);
 //   const [activeIcon, setActiveIcon] = useState(null);
 
@@ -161,11 +142,7 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-<<<<<<< HEAD
 //         src={media_82M11_webp} /* or use any of your images like productImage2 */
-=======
-//         src={mediaUrl.image("82m11.webp")} /* or use any of your images like productImage2 */
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -729,44 +706,28 @@ import ProductLeadModal from '../../../../components/common/ProductLeadModal';
 //       </div>
 //       <div className='product_s1v1_product'>
 //                     <div className='product_s1v1_product1'>
-<<<<<<< HEAD
 //                       <img loading="lazy" className='product_s1v1_img' src={media_Backup_of_Z2C_2june_png} alt="Z2C" />
-=======
-//                       <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("backup_of_z2c 2june.png")} alt="Z2C" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //                       <h3 className='products1v_name_option'>Z2C</h3>
 //                       <Link to="/sumitomoproductthree" style={{ textDecoration: "none" }}>
 //                         <button className='products1v_button_option'>Know More</button>
 //                       </Link>
 //                     </div>
 //                     <div className='product_s1v1_product2'>
-<<<<<<< HEAD
 //                       <img loading="lazy" className='product_s1v1_img' src={media_82C__1Oct_2024_png} alt="82C+" />
-=======
-//                       <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("82c+ 1oct 2024.png")} alt="82C+" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //                       <h3 className='products1v_name_option'>82C+</h3>
 //                       <Link to="/sumitomoproductone" style={{ textDecoration: "none" }}>
 //                         <button className='products1v_button_option'>Know More</button>
 //                       </Link>
 //                     </div>
 //                     <div className='product_s1v1_product3'>
-<<<<<<< HEAD
 //                       <img loading="lazy" className='product_s1v1_img' src={media_W1C_file_png} alt="W1C" />
-=======
-//                       <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("w1c file.png")} alt="W1C" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //                       <h3 className='products1v_name_option'>W1C</h3>
 //                       <Link to="/sumitomoproducttwo" style={{ textDecoration: "none" }}>
 //                         <button className='products1v_button_option'>Know More</button>
 //                       </Link>
 //                     </div>
 //                     <div className='product_s1v1_product4'>
-<<<<<<< HEAD
 //                       <img loading="lazy" className='product_s1v1_img' src={media_FC8r_png} alt="FC8R" />
-=======
-//                       <img loading="lazy" className='product_s1v1_img' src={mediaUrl.image("fc8r.png")} alt="FC8R" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //                       <h3 className='productz2c_name_option'>FC8R</h3>
 //                       <Link to="/sumitomoproducttwo" style={{ textDecoration: "none" }}>
 //                         <button className='products1v_button_option'>Know More</button>
@@ -795,11 +756,7 @@ import z2cImg from '../components/img-s/z2c.png';
 const Sumitomoproductsix = () => {
   const [enquireOpen, setEnquireOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('overview');
-<<<<<<< HEAD
   const [productImage] = useState(media_82m12_png);
-=======
-  const [productImage] = useState(m12Img);
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
   // Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxSrc, setLightboxSrc] = useState(null);
@@ -842,21 +799,7 @@ const Sumitomoproductsix = () => {
   }, [lightboxOpen]);
 
   // Light mosaic background using your images (no S1Vbanner)
-<<<<<<< HEAD
   const mosaicBG = () => ({ backgroundColor: '#ffffff' });
-=======
-  const mosaicBG = (alpha = 0.92) => {
-    const imgs = [m12Img, m122Img, m123Img, m124Img];
-    return {
-      backgroundImage:
-        `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
-        `url(${imgs[0]}), url(${imgs[1]}), url(${imgs[2]}), url(${imgs[3]})`,
-      backgroundSize: 'cover, 50% 50%, 50% 50%, 50% 50%, 50% 50%',
-      backgroundPosition: 'center, left top, right top, left bottom, right bottom',
-      backgroundRepeat: 'no-repeat'
-    };
-  };
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 
   // ---- ACCORDION DATA ----
   const specAccordions = [
@@ -1247,11 +1190,7 @@ const Sumitomoproductsix = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_Backup_of_Z2C_2june_png} loading="lazy" alt="Z2C" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("backup_of_z2c 2june.png")} loading="lazy" alt="Z2C" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">Z2C</h4>
               <p className="s-desc">Core alignment fusion splicer for heavy-duty projects.</p>
@@ -1263,11 +1202,7 @@ const Sumitomoproductsix = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_82C__1Oct_2024_png} loading="lazy" alt="82C+" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("82c+ 1oct 2024.png")} loading="lazy" alt="82C+" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">82C+</h4>
               <p className="s-desc">High-speed splicer with advanced automation.</p>
@@ -1279,11 +1214,7 @@ const Sumitomoproductsix = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_W1C_file_png} loading="lazy" alt="W1C" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("w1c file.png")} loading="lazy" alt="W1C" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">W1C</h4>
               <p className="s-desc">Compact splicer optimized for FTTH deployments.</p>
@@ -1295,11 +1226,7 @@ const Sumitomoproductsix = () => {
 
           <div className="s-card">
             <span className="s-brand">SUMITOMO</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_FC8r_png} loading="lazy" alt="FC8R" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("fc8r.png")} loading="lazy" alt="FC8R" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">FC8R</h4>
               <p className="s-desc">Precision cleaver for stable fiber preparation.</p>

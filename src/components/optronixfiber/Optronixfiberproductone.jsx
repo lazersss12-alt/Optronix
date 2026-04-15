@@ -8,7 +8,6 @@ import media_Gold_series_fiber__webp from '../../assets/img2/img/Gold series fib
 // import './Optronixfiberproduct.css';
 // import '../../pages/page.css';
 // import { Link } from 'react-router-dom';
-<<<<<<< HEAD
 // import media_Drop_cable__webp from "../img/Drop cable .webp";
 // import media_flat_cable__webp from "../img/flat cable .webp";
 // import media_sumitomow1c_pdf from "../img/sumitomow1c.pdf";
@@ -16,24 +15,11 @@ import media_Gold_series_fiber__webp from '../../assets/img2/img/Gold series fib
 // import media_Drop_cable__webp from "../img/Drop cable .png";
 // import media_NEO_Series_Fiber_webp from "../img/NEO Series Fiber.png";
 // import media_Gold_series_fiber__webp from "../img/Gold series fiber .png";
-=======
-// import mediaUrl.image("drop cable .webp") from "../img/Drop cable .webp";
-// import mediaUrl.image("flat cable .webp") from "../img/flat cable .webp";
-// import mediaUrl.doc("sumitomow1c.pdf") from "../img/sumitomow1c.pdf";
-// import mediaUrl.image("fiber cable.webp") from "../img/fiber cable.png";
-// import mediaUrl.image("drop cable .webp") from "../img/Drop cable .png";
-// import mediaUrl.image("neo series fiber.webp") from "../img/NEO Series Fiber.png";
-// import mediaUrl.image("gold series fiber .webp") from "../img/Gold series fiber .png";
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 // import { div } from 'framer-motion/client';
 // import { useState } from 'react';
 
 // const Optronixfiberproductone = () => {
-<<<<<<< HEAD
 //   const [productImage, setProductImage] = useState(media_Drop_cable__webp);
-=======
-//   const [productImage, setProductImage] = useState(mediaUrl.image("drop cable .webp"));
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //   return (
 
 //   //   <div>
@@ -50,11 +36,7 @@ import media_Gold_series_fiber__webp from '../../assets/img2/img/Gold series fib
 //   //       </div>
 //   //     </div>
 //   //     <div className="product-image" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '32px' }}>
-<<<<<<< HEAD
 //   //       <img src={media_Drop_cable__webp} alt="Drop Cable Schematic" loading="lazy" style={{ width: '95%', maxWidth: '350px', display: 'block' }} />
-=======
-//   //       <img src={mediaUrl.image("drop cable .webp")} alt="Drop Cable Schematic" loading="lazy" style={{ width: '95%', maxWidth: '350px', display: 'block' }} />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //   //     </div>
 //   //   </div>
 
@@ -229,33 +211,21 @@ import media_Gold_series_fiber__webp from '../../assets/img2/img/Gold series fib
 //   //     </Link>
 //   //   </div>
 //   //   <div className='product_s1v1_product2'>
-<<<<<<< HEAD
 //   //     <img className='product_s1v1_img' src={media_Drop_cable__webp} alt="82C+" />
-=======
-//   //     <img className='product_s1v1_img' src={mediaUrl.image("drop cable .webp")} alt="82C+" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //   //     <h3 className='product_s1v1_name_option'>Optronix Drop Cable</h3>
 //   //     <Link to="/optronixfiberproducttwo" style={{ textDecoration: "none" }}>
 //   //       <button className='productz2c_button_option'>Know More</button>
 //   //     </Link>
 //   //   </div>
 //   //   <div className='product_s1v1_product3'>
-<<<<<<< HEAD
 //   //     <img className='product_s1v1_img' src={media_NEO_Series_Fiber_webp} alt="W1C" />
-=======
-//   //     <img className='product_s1v1_img' src={mediaUrl.image("neo series fiber.webp")} alt="W1C" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //   //     <h3 className='product_s1v1_name_option'>Optronix NEO</h3>
 //   //     <Link to="/optronixfiberproductthree" style={{ textDecoration: "none" }}>
 //   //       <button className='productz2c_button_option'>Know More</button>
 //   //     </Link>
 //   //   </div>
 //   //   <div className='product_s1v1_product4'>
-<<<<<<< HEAD
 //   //     <img className='product_s1v1_img' src={media_Gold_series_fiber__webp} alt="FC8R" />
-=======
-//   //     <img className='product_s1v1_img' src={mediaUrl.image("gold series fiber .webp")} alt="FC8R" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //   //     <h3 className='product_s1v1_name_option'>Optronix Gold</h3>
 //   //     <Link to="/optronixfiberproductfour" style={{ textDecoration: "none" }}>
 //   //       <button className='productz2c_button_option'>Know More</button>
@@ -297,11 +267,7 @@ import media_Gold_series_fiber__webp from '../../assets/img2/img/Gold series fib
 //     {/* Right: image */}
 //     <div className="hero-split__image-wrap">
 //       <img
-<<<<<<< HEAD
 //         src={media_Drop_cable__webp} /* or use any of your images like productImage2 */
-=======
-//         src={mediaUrl.image("drop cable .webp")} /* or use any of your images like productImage2 */
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //         alt="Sumitomo S1V Fusion Splicer"
 //         className="hero-split__img"
 //       />
@@ -483,33 +449,21 @@ import media_Gold_series_fiber__webp from '../../assets/img2/img/Gold series fib
 //        </Link>
 //      </div>
 //      <div className='product_s1v1_product2'>
-<<<<<<< HEAD
 //        <img className='product_s1v1_img' src={media_Drop_cable__webp} alt="82C+" />
-=======
-//        <img className='product_s1v1_img' src={mediaUrl.image("drop cable .webp")} alt="82C+" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //        <h3 className='product_s1v1_name_option'>Optronix Drop Cable</h3>
 //        <Link to="/optronix-fiber/optronix-drop-cable" style={{ textDecoration: "none" }}>
 //          <button className='productz2c_button_option'>Know More</button>
 //        </Link>
 //      </div>
 //      <div className='product_s1v1_product3'>
-<<<<<<< HEAD
 //        <img className='product_s1v1_img' src={media_NEO_Series_Fiber_webp} alt="W1C" />
-=======
-//        <img className='product_s1v1_img' src={mediaUrl.image("neo series fiber.webp")} alt="W1C" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //        <h3 className='product_s1v1_name_option'>Optronix NEO</h3>
 //        <Link to="/optronix-fiber/optronix-neo" style={{ textDecoration: "none" }}>
 //          <button className='productz2c_button_option'>Know More</button>
 //        </Link>
 //      </div>
 //      <div className='product_s1v1_product4'>
-<<<<<<< HEAD
 //        <img className='product_s1v1_img' src={media_Gold_series_fiber__webp} alt="FC8R" />
-=======
-//        <img className='product_s1v1_img' src={mediaUrl.image("gold series fiber .webp")} alt="FC8R" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
 //        <h3 className='product_s1v1_name_option'>Optronix Gold</h3>
 //        <Link to="/optronix-fiber/optronix-gold" style={{ textDecoration: "none" }}>
 //          <button className='productz2c_button_option'>Know More</button>
@@ -535,11 +489,7 @@ import ProductLeadModal from '../common/ProductLeadModal';
 
 const Optronixfiberproductone = () => {
   const [activeTab, setActiveTab] = useState('overview');
-<<<<<<< HEAD
   const [productImage] = useState(media_Drop_cable__webp);
-=======
-  const [productImage] = useState(mediaUrl.image("drop cable .webp"));
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
   // Modal State
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -586,11 +536,7 @@ const Optronixfiberproductone = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-<<<<<<< HEAD
     const imgs = [media_fiber_cable_webp, media_Drop_cable__webp, media_NEO_Series_Fiber_webp, media_Gold_series_fiber__webp];
-=======
-    const imgs = [mediaUrl.image("fiber cable.webp"), mediaUrl.image("drop cable .webp"), mediaUrl.image("neo series fiber.webp"), mediaUrl.image("gold series fiber .webp")];
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     return {
       backgroundSize: 'cover, 50% 50%, 50% 50%, 50% 50%, 50% 50%',
       backgroundPosition: 'center, left top, right top, left bottom, right bottom',
@@ -955,11 +901,7 @@ TX optical power: 0 ~ +4 dBm; RX sensitivity: −27 dBm; Overload: −3 dBm (EPO
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_Drop_cable__webp} loading="lazy" alt="Optronix Drop Cable" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("drop cable .webp")} loading="lazy" alt="Optronix Drop Cable" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">Optronix Drop Cable</h4>
               <p className="s-desc">FTTH drop cable options.</p>
@@ -971,11 +913,7 @@ TX optical power: 0 ~ +4 dBm; RX sensitivity: −27 dBm; Overload: −3 dBm (EPO
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_NEO_Series_Fiber_webp} loading="lazy" alt="Optronix NEO" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("neo series fiber.webp")} loading="lazy" alt="Optronix NEO" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">Optronix NEO</h4>
               <p className="s-desc">High-density NEO series fiber.</p>
@@ -987,11 +925,7 @@ TX optical power: 0 ~ +4 dBm; RX sensitivity: −27 dBm; Overload: −3 dBm (EPO
 
           <div className="s-card">
             <span className="s-brand">OPTRONIX</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_Gold_series_fiber__webp} loading="lazy" alt="Optronix Gold" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("gold series fiber .webp")} loading="lazy" alt="Optronix Gold" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">Optronix Gold</h4>
               <p className="s-desc">Ruggedized cable for harsh environments.</p>

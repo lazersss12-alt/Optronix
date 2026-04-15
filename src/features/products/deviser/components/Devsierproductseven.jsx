@@ -331,11 +331,7 @@ const Deviserproductseven = () => {
 
   // Light mosaic background using your images (no S1Vbanner)
   const mosaicBG = (alpha = 0.92) => {
-<<<<<<< HEAD
     const imgs = [media_AE1001_webp, media_ae210_webp, media_vfl_webp, media_ep310_webp];
-=======
-    const imgs = [mediaUrl.image("ae1001.webp"), mediaUrl.image("ae210.webp"), mediaUrl.image("vfl.webp"), mediaUrl.image("ep310.webp")];
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
     return {
       // backgroundImage:
       //   `linear-gradient(180deg, rgba(255,255,255,${alpha}) 0%, rgba(255,255,255,${alpha}) 100%), ` +
@@ -691,11 +687,7 @@ const Deviserproductseven = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_AE1001_webp} loading="lazy" alt="AE1001" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("ae1001.webp")} loading="lazy" alt="AE1001" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>

@@ -31,11 +31,7 @@ const productData = {
       catalogLink: media_ae3100_pdf
     },
     {
-<<<<<<< HEAD
       image: media_AE1001_webp,
-=======
-      image: mediaUrl.image("ae1001.webp"),
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
@@ -100,11 +96,7 @@ const productData = {
       catalogLink: media_ae3100_pdf
     },
     {
-<<<<<<< HEAD
       image: media_AE1001_webp,
-=======
-      image: mediaUrl.image("ae1001.webp"),
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       title: "AE1001",
       description: "Mini OTDR",
       readMoreLink: "/deviser/AE1001",
@@ -216,11 +208,7 @@ const Deviserproduct = () => {
     <div className="deviserproduct-page-main">
       {/* Banner Section */}
       <div className="deviser-page-banner">
-<<<<<<< HEAD
         <img src={media_Devisorbanner_webp} fetchpriority="high" alt="Deviser Products" className="banner-image" />
-=======
-        <img src={mediaUrl.image("devisorbanner.webp")} fetchpriority="high" alt="Deviser Products" className="banner-image" />
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
       </div>
       <div className="deviserproduct-page-upperline"></div>
       <div className="product-page">

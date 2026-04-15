@@ -813,11 +813,7 @@ const Deviserproductfour = () => {
         <div className="s-grid">
           <div className="s-card">
             <span className="s-brand">DEVISER</span>
-<<<<<<< HEAD
             <div className="s-media"><img src={media_AE1001_webp} loading="lazy" alt="AE1001" /></div>
-=======
-            <div className="s-media"><img src={mediaUrl.image("ae1001.webp")} loading="lazy" alt="AE1001" /></div>
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
             <div className="s-body">
               <h4 className="s-title">AE1001</h4>
               <p className="s-desc">Handheld optical power meter/light source.</p>

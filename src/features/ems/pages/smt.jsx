@@ -50,11 +50,7 @@ const SMT = () => {
               backgroundImage: `
               linear-gradient(rgba(0, 0, 0, 0.3)),
                 
-<<<<<<< HEAD
                 url(${media_Opticalplant_webp})
-=======
-                url(${mediaUrl.image("opticalplant.webp")})
->>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc
               `,
             }}
           >
