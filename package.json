@@ -38,6 +38,7 @@
     "build:with-webp": "npm run webp && npm run build"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.1"
+    "@vitejs/plugin-react": "^6.0.1",
+    "rollup-plugin-visualizer": "^7.0.1"
   }
 }
