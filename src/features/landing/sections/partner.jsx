@@ -2,6 +2,7 @@ import media_sumitomo_webp from '../../../assets/img2/img/sumitomo.webp';
 import media_deviser_webp from '../../../assets/img2/img/deviser.webp';
 import media_spec_webp from '../../../assets/img2/img/spec.webp';
 import media_invas_webp from '../../../assets/img2/img/invas.webp';
+import media_partnerimg_webp from '../../../assets/img2/img/partnerimg.webp';
 import React from 'react';
 import './partner.css';
 import { Helmet } from 'react-helmet-async';
@@ -43,7 +44,12 @@ const Partner = () => {
         <title>Partner with Optronix | Leading Fiber Optic Distribution Network India</title>
         <meta name="description" content="Become a part of India's fastest-growing telecom infrastructure network. Optronix offers genuine products from Sumitomo, Deviser, and our own indigenous brand. Unmatched after-sales support and technical expertise." />
       </Helmet>
-      <header className="import-header">
+      <header 
+        className="import-header"
+        style={{ 
+          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(${media_partnerimg_webp})` 
+        }}
+      >
         <div className="header-content">
           <h1>Optronix partners</h1>
           <p>We’ve integrated with the below partners and more</p>
