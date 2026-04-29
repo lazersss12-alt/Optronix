@@ -1,1 +1,0 @@
-var e=`https://candid.optronix.in`,t={image:t=>`${e}/media/images/${t}`,video:t=>`${e}/media/videos/${t}`,doc:t=>`${e}/media/docs/${t}`,root:t=>`${e}/${t}`};export{t};

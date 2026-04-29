@@ -1,8 +1,4 @@
-<<<<<<<< HEAD:dist/assets/AboutPage-BfCtJfzp.js
 import{n as e,t}from"./jsx-runtime-lZ6iXXV-.js";import{t as n}from"./index.esm-B2VAbDp8.js";import"./PublicationPage-BN6iN251.js";var r=`/assets/Banner11-BYchOyJD.webp`;e();var i=t(),a={hero:{description:`Optronix, in collaboration with SPEC Technology Corp, stands at the
-========
-import{n as e,t}from"./jsx-runtime-lZ6iXXV-.js";import{t as n}from"./media-D6pI-D8z.js";import{t as r}from"./index.esm-CSDiN14A.js";import"./PublicationPage-ip4j68jm.js";e();var i=t(),a={hero:{description:`Optronix, in collaboration with SPEC Technology Corp, stands at the
->>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc:dist/assets/AboutPage-BH2lwyhk.js
       forefront of innovation in advanced network solutions. Our vision is to
       create a seamlessly connected world through intelligent, secure, and
       efficient technologies that enhance human potential. We take pride in
@@ -12,11 +8,7 @@ import{n as e,t}from"./jsx-runtime-lZ6iXXV-.js";import{t as n}from"./media-D6pI-
       Integrity and transparency are the cornerstones of our operations,
       fostering trust and reliability in all our relationships. We embrace a
       collaborative environment that encourages teamwork, creativity, and
-<<<<<<<< HEAD:dist/assets/AboutPage-BfCtJfzp.js
       innovation, driving continuous improvement in our products and services.`,image:{src:r,alt:`About Optronix - Innovation in Network Solutions`}},values:[{id:`vision`,title:`Vision`,content:`To be a global leader in optical communication and electronic
-========
-      innovation, driving continuous improvement in our products and services.`,image:{src:n.image(`Banner11.webp`),alt:`About Optronix - Innovation in Network Solutions`}},values:[{id:`vision`,title:`Vision`,content:`To be a global leader in optical communication and electronic
->>>>>>>> 54d7a995d80297b97eaf55eeeca00ce44db276fc:dist/assets/AboutPage-BH2lwyhk.js
         solutions, driving innovation through cutting-edge technology and
         customer-centric services. We envision a connected world where our
         premium products and integrated solutions enable seamless

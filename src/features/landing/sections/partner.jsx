@@ -44,13 +44,14 @@ const Partner = () => {
         <title>Partner with Optronix | Leading Fiber Optic Distribution Network India</title>
         <meta name="description" content="Become a part of India's fastest-growing telecom infrastructure network. Optronix offers genuine products from Sumitomo, Deviser, and our own indigenous brand. Unmatched after-sales support and technical expertise." />
       </Helmet>
-      <header 
+      <header
         className="import-header"
-        style={{ 
-          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(${media_partnerimg_webp})` 
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(${media_partnerimg_webp})`
         }}
       >
         <div className="header-content">
+
           <h1>Optronix partners</h1>
           <p>We’ve integrated with the below partners and more</p>
         </div>
