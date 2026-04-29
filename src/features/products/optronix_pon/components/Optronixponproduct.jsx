@@ -180,7 +180,7 @@ const productData = {
       catalogLink: media_OP821GWV_D_with_FEM_pdf
     },
     {
-      image: media_fem_router_01_webp,
+      image: media_OP821GWV_D_webp,
       title: "OP821GW-D",
       description: "Dual Band ONU",
       readMoreLink: "/optronix-pon/OP821GWVD",
@@ -287,8 +287,8 @@ const Optronixponproduct = () => {
               <p className="card-description">{product.description}</p>
 
 
-              <button 
-                className="card-btn-main" 
+              <button
+                className="card-btn-main"
                 onClick={e => {
                   e.stopPropagation();
                   setEnquireModal(product.title);
